@@ -19,18 +19,3 @@ def index(request):
             "error": str(e)
         }, status=500)
     
-
-@api_view(["GET"])
-def item(request, id_):
-    try:
-        return Response({
-            "message": f"Item {id_} details for {request.user}"
-        }, status=200)
-        
-    except Exception as e:
-        return Response({
-            "message": "Error",
-            "error": str(e)
-        }, status=500)
-        
-        
