@@ -1,0 +1,167 @@
+/* aside */
+.backdrop {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.637);
+    opacity: 1;
+}
+
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+
+.no-scroll {
+    overflow: hidden;
+}
+
+
+.aside {
+    overflow: auto;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 6;
+    padding: 80px 20px;
+    position: relative;
+}
+
+
+.aside__btn-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+
+.aside__btn-close__icon {
+    fill: black;
+    width: 35px;
+    height: 35px;
+
+}
+
+
+.aside__nav {
+
+}
+
+
+.aside__nav__list {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.aside__nav__item:hover,
+.aside__nav__item:focus {
+    color: rgb(190, 161, 0);
+}
+
+
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header__nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.header__nav__item:nth-child(3),
+.header__nav__item:nth-child(4) {
+    display: none;
+}
+
+
+.header__nav__item__link__svg {
+    width: 33px;
+    height: 33px;
+    fill: rgb(255, 255, 255);
+    padding: 5px;
+
+}
+
+
+.header__nav__item__link__svg:hover,
+.header__nav__item__link__svg:focus{
+    background-color:rgb(97, 97, 97);
+}
+
+.header__nav__item__form {
+    display: flex;
+}
+
+
+.header__nav__item__form__input {
+    border-radius: 8px;
+    height: 40px;
+}
+
+
+.header__nav__item__form__btn {
+    color: white;
+    padding: 10px 15px;
+    background-color: #00a046;
+    border-radius: 8px;
+    position: relative;
+    left: -10px;
+}
+
+
+/* mobile 480px */
+@media screen and (min-width: 480px) {
+
+    .header__nav__item:nth-child(3),
+    .header__nav__item:nth-child(4) {
+        display: block;
+    }
+
+
+}
+
+
+/* tablet 768px */
+@media screen and (min-width: 768px) {
+    .header__nav__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    .header__nav__item__form__input {
+        width: 400px;
+    }
+
+    .header__nav__item__form__btn {
+        width: 100px;
+    }
+}
+
+
+/* desctop 1200px */
+@media screen and (min-width: 1200px) {
+    .header__nav__item__form__input {
+        width: 700px;
+    }
+
+    .header__nav__item__form__btn {
+        width: 120px;
+    }
+}
