@@ -20,9 +20,9 @@ function Registration() {
         })
             .then(res => res.json())
             .then(data => {
-                console.log("✅ Відповідь від сервера:", data);
+                console.log("Відповідь від сервера:", data);
             })
-            .catch(err => console.error("❌ Помилка:", err));
+            .catch(err => console.error("Помилка:", err));
     }
 
     return (

@@ -1,6 +1,14 @@
+import Registration from "./registration/registration";
+import Header from "./header/header"
+
+
+
 function App() {
     return (
-        <h1>штпгртпншшененш</h1>
+        <>
+            <Header />
+            <Registration />
+        </>
     );
 }
 
