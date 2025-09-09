@@ -1,5 +1,3 @@
-from django.shortcuts import render, redirect
-
 from rest_framework.decorators import api_view, router
 from rest_framework.response import Response
 

@@ -1,11 +1,9 @@
-from django.shortcuts import render, redirect
-
 from rest_framework.decorators import api_view, router
 from rest_framework.response import Response
 
 
 @api_view(["GET"])
-def item(request, id_):
+def product(request, id_):
     try:
         return Response({
             "message": f"Item {id_} details for {request.user}"
@@ -19,16 +17,16 @@ def item(request, id_):
         
         
 @api_view(['POST'])
-def buy_item(request, id_, user):
+def buy_product(request, id_):
     try:
         
-        # user_cart = UserCart(user)
+        # user_cart = UserCart(request.user)
         # user_cart.update({id_: id_.object})
         # user_cart.save()
         
         return Response({
             'item_id': id_,
-            'user': user,
+            'user': request.user,
         })
         
     except Exception as e:
