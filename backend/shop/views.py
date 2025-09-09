@@ -1,4 +1,4 @@
-from rest_framework.decorators import api_view, router
+from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from logging import getLogger

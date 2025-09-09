@@ -1,3 +1,15 @@
 [2025-09-09 15:47:54,149] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 [2025-09-09 16:01:16,965] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 [2025-09-09 16:03:22,643] INFO django.utils.autoreload:265 — /app/backend/settings.py changed, reloading.
+[2025-09-09 16:09:50,807] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-09 16:11:41,189] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-09 16:12:09,185] INFO django.utils.autoreload:265 — /app/shop/views.py changed, reloading.
+[2025-09-09 16:12:10,529] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-09 16:12:50,427] INFO django.utils.autoreload:265 — /app/users/urls.py changed, reloading.
+[2025-09-09 16:12:51,290] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-09 16:14:02,454] INFO django.utils.autoreload:265 — /app/orders/urls.py changed, reloading.
+[2025-09-09 16:14:03,370] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-09 16:14:21,923] INFO django.utils.autoreload:265 — /app/orders/urls.py changed, reloading.
+[2025-09-09 16:14:22,522] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-09 16:15:03,086] INFO django.utils.autoreload:265 — /app/payments/urls.py changed, reloading.
+[2025-09-09 16:15:04,373] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
