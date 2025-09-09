@@ -1,5 +1,6 @@
-import Registration from "./registration/registration";
 import Header from "./header/header"
+import Catalog from "./catalog/catalog"
+import Registration from "./registration/registration";
 
 
 
@@ -7,7 +8,8 @@ function App() {
     return (
         <>
             <Header />
-            <Registration />
+            <Catalog />
+            {/* <Registration /> */}
         </>
     );
 }
