@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.html import format_html
 
-from products import Product, Category, SubCategory 
+from .models import Product, Category, SubCategory 
 
 # Register your models here.
 
