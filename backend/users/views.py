@@ -4,6 +4,7 @@ from rest_framework import status
 
 from django.contrib.auth.models import User
 
+from .serializers import LoginSerializer, RegisterSerializer
 
 from logging import getLogger
 
@@ -15,26 +16,20 @@ logger = getLogger(__name__)
 def register_user(request):
     if request.method == 'POST':
             try:
-                name = request.data.get("name")
-                last_name = request.data.get("lastName")
-                email = request.data.get("email")
-                password = request.data.get("password")
-                password2 = request.data.get("password2")
+                serializer = RegisterSerializer(data=request.data)
+                if serializer.is_valid():
+                    user = serializer.save()
 
-
-                logger.info(
-                    f"""
-                    User created:\n
-                    name: {name}\n
-                    lastname: {last_name}\n
-                    email: {email}\n
-                    password: {password}\n
-                    """)
-                
+                logger.info(f"user: {user}")
+        
                 
                 return Response({
-                    "message": "User created",
-                    "user": request.data
+                    "message": "User created successfully",
+                    "user": {
+                        "username": user.username,
+                        "email": user.email,
+                        "phone_number": user.phone_number
+                    }
                 }, status=status.HTTP_201_CREATED)
             
             except Exception as e:
@@ -61,28 +56,22 @@ def register_user(request):
 def login_user(request):
     if request.method == 'POST':
         try:
-            name = request.data.get("name")
-            last_name = request.data.get("lastName")
-            email = request.data.get("email")
-            password = request.data.get("password")
-            password2 = request.data.get("password2")
             
-            user = User(name, last_name, email, password)
-            user.save()
+            serializer = LoginSerializer(data=request.data)
+            
+            if serializer.is_valid():
+                user = serializer.validated_data["user"]
 
-            logger.info(
-                    f"""
-                    User logined:\n
-                    name: {name}\n
-                    lastname: {last_name}\n
-                    email: {email}\n
-                    password: {password}\n
-                    """)
+            logger.info(f"user: {user}")
 
             return Response({
-                'user': request.data,
-                'message': 'User logged in successfully'
-                }, status=200)
+                "message": "User logged in successfully",
+                "user": {
+                    "username": user.username,
+                    "email": user.email,
+                    "phone_number": user.phone_number
+                }
+            }, status=status.HTTP_200_OK)
             
         except Exception as e:
             logger.error("Error:\n", str(e))
