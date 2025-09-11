@@ -29,4 +29,70 @@
 [2025-09-09 16:45:06,219] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 [2025-09-09 16:47:51,486] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 [2025-09-09 16:48:13,429] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
-[2025-09-09 16:55:39,908] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 15:08:00,120] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 15:15:27,435] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 15:16:14,804] INFO django.utils.autoreload:265 — /app/shop/urls.py changed, reloading.
+[2025-09-11 15:16:15,919] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 15:16:22,206] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 15:24:55,539] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 15:25:06,175] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 15:43:17,154] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 15:43:17,977] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 15:43:21,266] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 15:43:21,750] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 15:43:23,482] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 15:43:24,212] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 15:43:27,273] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 15:43:27,735] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 15:43:28,970] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 15:43:29,525] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 15:43:32,164] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 15:43:32,678] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 15:43:33,922] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 15:43:34,651] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 15:43:36,241] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 15:43:36,846] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 15:43:40,644] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 15:43:41,587] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:07:52,745] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 16:07:53,600] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:08:01,103] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 16:08:01,601] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:08:04,124] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 16:08:04,752] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:08:08,059] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 16:08:08,646] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:08:18,682] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 16:08:19,261] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:08:35,829] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 16:08:36,550] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:09:09,510] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 16:09:10,246] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:09:47,596] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 16:09:48,167] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:12:07,008] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 16:12:07,782] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:14:53,821] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 16:14:54,498] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:15:38,123] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 16:15:38,870] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:15:51,495] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 16:15:52,143] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:16:16,642] INFO django.utils.autoreload:265 — /app/users/models.py changed, reloading.
+[2025-09-11 16:16:17,364] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:17:24,417] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-11 16:17:25,300] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:18:35,603] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-11 16:18:36,267] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:19:17,698] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-11 16:19:18,258] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:19:39,097] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-11 16:19:39,649] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:20:02,102] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-11 16:20:02,765] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:20:14,845] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-11 16:20:15,625] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:21:25,548] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-11 16:21:26,290] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-11 16:22:51,044] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-11 16:22:51,613] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
