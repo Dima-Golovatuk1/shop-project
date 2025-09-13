@@ -12,7 +12,7 @@ class ProductAdmin(admin.ModelAdmin):
                     'subcategory_id', 'seller_id', 'stock_quantity',
                     'characteristics', 'price', 'get_photo', 'is_active', 'created_at')
     
-    list_filter = ('is_active', 'category_id')
+    list_filter = ('is_active', 'category_id', 'subcategory_id')
     ordering = ('-created_at',)
 
     def get_photo(self, obj):
@@ -30,5 +30,5 @@ class CategoryAdmin(admin.ModelAdmin):
 class SubCategoryAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'parent_id', 'created_at')
 
-    ordering = ('-created_at')
+    ordering = ('-created_at',)
     
