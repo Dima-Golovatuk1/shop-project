@@ -10,12 +10,16 @@ logger = getLogger(__name__)
 
 @api_view(["GET", 'POST'])
 def product(request, id_):
+    
+    products = Product.objects.all()
+    
     if request.method == 'POST':
         try:
             
             user_cart = Carts(request.user.id)
             user_cart.update({id_: id_.object})
             user_cart.save()
+            
             
             return Response({
                 'item_id': id_,
@@ -29,7 +33,8 @@ def product(request, id_):
                 'message': 'error',
                 'error': str(e)
             })
-    try:
+    try:        
+        
         return Response({
                 "message": f"Item {id_} details for {request.user}",
                 'products': products
