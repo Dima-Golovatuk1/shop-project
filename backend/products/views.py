@@ -16,6 +16,7 @@ def product(request, id_):
     if request.method == 'POST':
         try:
             
+            
             user_cart = Carts(request.user.id)
             user_cart.update({id_: id_.object})
             user_cart.save()

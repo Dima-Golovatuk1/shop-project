@@ -11,7 +11,7 @@ function Registration() {
 
         console.log(formDataObjectt);
 
-        fetch("http://localhost:8000/user/api/register/", {
+        fetch("http://localhost:8000/user/register/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -20,9 +20,9 @@ function Registration() {
         })
             .then(res => res.json())
             .then(data => {
-                console.log("Відповідь від сервера:", data);
+                console.log("Server Response:", data);
             })
-            .catch(err => console.error("Помилка:", err));
+            .catch(err => console.error("Error:", err));
     }
 
     return (
@@ -30,22 +30,28 @@ function Registration() {
             <div className="container">
                 <form ref={formRegistrRef} onSubmit={submitRegistr}>
                     <label>
-                        Ім'я
-                        <input name="name" type="text" placeholder="Ім'я" />
+                        Name
+                        <input name="name" type="text" placeholder="name" />
                     </label>
                     <label>
-                        Прізвище
-                        <input name="lastName" type="text" placeholder="Прізвище" />
+                        Surname
+                        <input name="lastName" type="text" placeholder="surname" />
                     </label>
                     <label>
-                        Пошта
-                        <input name="email" type="text" placeholder="Пошта" />
+                        Email
+                        <input name="email" type="text" placeholder="email" />
                     </label>
                     <label>
-                        Пароль
-                        <input name="password" type="password" placeholder="Пароль" />
+                        Password
+                        <input name="password" type="password" placeholder="password" />
                     </label>
-                    <button type="submit">Зареєструватися</button>
+                    <label>
+                        Repeat password
+                        <input name="password2" type="password" placeholder="repeat password" />
+                    </label>
+                    <button type="submit">Register</button>
+
+                    <p><a href="/user/login">Already have an account?</a></p>
                 </form>
             </div>
         </section>
