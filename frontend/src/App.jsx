@@ -9,8 +9,8 @@ function App() {
         <>
             <Header />
             <Catalog />
-            {/* <Registration />
-            <Login /> */}
+            <Registration />
+            <Login />
         </>
     );
 }
