@@ -16,7 +16,7 @@ function Registration({ setActivLoginForm  }) {
 
         console.log(formDataObjectt);
 
-        fetch("http://localhost:8000/user/register/", {
+        fetch("http://localhost:8000/user/api/register/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -25,9 +25,9 @@ function Registration({ setActivLoginForm  }) {
         })
             .then(res => res.json())
             .then(data => {
-                console.log("Server Response:", data);
+                console.log("Відповідь від сервера:", data);
             })
-            .catch(err => console.error("Error:", err));
+            .catch(err => console.error("Помилка:", err));
     }
 
     return (
