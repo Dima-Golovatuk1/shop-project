@@ -5,7 +5,7 @@ from django.contrib.auth.models import AbstractUser, BaseUserManager
 
 
 class MyUserManager(BaseUserManager):
-    def create_user(self, username: str, email: str, phone_number: str, password: str, is_seller: bool = False):
+    def create_user(self, username: str, email: str, password: str, is_seller: bool = False, phone_number = None,):
         try:
             email = self.normalize_email(email)
             user = self.model(
@@ -23,13 +23,11 @@ class MyUserManager(BaseUserManager):
         
         return user
 
-    def create_superuser(self, username: str, email: str, phone_number: str, password: str):
+    def create_superuser(self, username: str, email: str,  password: str):
         user = self.create_user(
             username=username,
             email=email,
-            phone_number=phone_number,
             password=password,
-            is_seller=False
         )
         
         user.is_staff = True

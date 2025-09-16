@@ -1,29 +1,28 @@
 import { useState } from "react";
-import Header from "./header/header"
-import Catalog from "./catalog/catalog"
+import Header from "./header/header";
+import Catalog from "./catalog/catalog";
 import Registration from "./registration/registration";
 import Login from "./login/login";
 
-
 function App() {
-    const [activLoginForm, setActivLoginForm] = useState(false);
+    const [activLoginForm, setActivLoginForm] = useState(null);
 
     return (
         <>
-            <Header />
             <Header setActivLoginForm={setActivLoginForm} />
 
             <main>
-                {activLoginForm && <Registration setActivLoginForm={setActivLoginForm} />}
-                {activLoginForm && <Login setActivLoginForm={setActivLoginForm} />}
+                {activLoginForm === "register" && (
+                    <Registration setActivLoginForm={setActivLoginForm} />
+                )}
+                {activLoginForm === "login" && (
+                    <Login setActivLoginForm={setActivLoginForm} />
+                )}
 
                 <Catalog />
-            {/* <Registration /> */}
-            {/* <Login/> */}
             </main>
-
-
-
         </>
     );
 }
+
+export default App;

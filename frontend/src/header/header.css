@@ -137,7 +137,7 @@ header .container {
     align-items: center;
     justify-content: center;
     padding: 12px;
-    border-radius: 12px;
+    border-radius: 12px;    
     transition: var(--transition);
     text-decoration: none;
     color: var(--text-primary);

@@ -7,9 +7,8 @@ from .models import CartItem, Carts
 
 @admin.register(Carts)
 class CartsAdmin(admin.ModelAdmin):
-    list_display = ('id', 'user_id', 'created_at')
+    list_display = ('id', 'user_id')
 
-    ordering = ('-created_at',)
 
 
 @admin.register(CartItem)
