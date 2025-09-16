@@ -4,16 +4,11 @@ import Catalog from "./catalog/catalog"
 import Registration from "./registration/registration";
 
 
-
 function App() {
     const [activLoginForm, setActivLoginForm] = useState(false);
 
     return (
         <>
-            <Header />
-            <Catalog />
-            <Registration />
-            <Login />
             <Header setActivLoginForm={setActivLoginForm} />
 
             <main>
@@ -21,8 +16,6 @@ function App() {
 
                 <Catalog />
             </main>
-
-
 
         </>
     );
