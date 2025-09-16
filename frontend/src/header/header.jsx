@@ -52,11 +52,11 @@ function Header() {
                 </a>
               </li>
               <li className="header__nav__item">
-                <a className="header__nav__item__link" href="{%if user%} /user/login {%else%} /user/register">
+                <button onClick={() => setActivLoginForm(true)} className="header__nav__item__button">
                   <svg className="header__nav__item__link__svg">
                     <use href="../../public/img/svg/symbol-defs.svg#icon-user"></use>
                   </svg>
-                </a>
+                </button>
               </li>
             </ul>
           </nav>
