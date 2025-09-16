@@ -10,11 +10,9 @@ function App() {
     return (
         <>
             <Header />
-<<<<<<< Updated upstream
-            <Catalog />
-            {/* <Registration />
-            <Login /> */}
-=======
+
+
+
             <Header setActivLoginForm={setActivLoginForm} />
 
             <main>
@@ -27,8 +25,6 @@ function App() {
 
 
 
->>>>>>> Stashed changes
         </>
     );
 }
-

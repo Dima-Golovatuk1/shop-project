@@ -116,6 +116,11 @@
 [2025-09-16 15:28:31,889] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 [2025-09-16 15:30:50,437] INFO django.utils.autoreload:265 — /app/cart/admin.py changed, reloading.
 [2025-09-16 15:30:51,148] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+<<<<<<< Updated upstream
 [2025-09-16 15:59:05,592] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 >>>>>>> Stashed changes
 [2025-09-16 16:02:08,972] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+=======
+[2025-09-16 16:02:43,946] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+>>>>>>> Stashed changes
+[2025-09-16 16:04:53,147] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
