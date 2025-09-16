@@ -10,6 +10,10 @@ function App() {
 
     return (
         <>
+            <Header />
+            <Catalog />
+            <Registration />
+            <Login />
             <Header setActivLoginForm={setActivLoginForm} />
 
             <main>

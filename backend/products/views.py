@@ -8,6 +8,7 @@ from logging import getLogger
 
 logger = getLogger(__name__)
 
+
 @api_view(["GET", 'POST'])
 def product(request, id_):
     
