@@ -303,3 +303,101 @@ LINE 1: ...yuser"."date_joined", "users_myuser"."is_seller", "users_myu...
 [2025-09-16 16:35:25,599] INFO django.server:213 — "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
 [2025-09-16 16:35:25,724] INFO django.server:213 — "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
 [2025-09-16 16:35:25,724] INFO django.server:213 — "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[2025-09-16 17:10:39,778] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-16 17:10:41,550] WARNING django.request:253 — Not Found: /
+[2025-09-16 17:10:41,555] WARNING django.server:213 — "GET / HTTP/1.1" 404 3056
+[2025-09-16 17:10:42,520] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-16 17:10:42,521] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 3107
+[2025-09-16 17:10:47,407] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 11611
+[2025-09-16 17:10:54,176] INFO django.server:213 — "GET /admin/products/product/add/ HTTP/1.1" 200 22036
+[2025-09-16 17:10:54,235] INFO django.server:213 — "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+[2025-09-16 17:10:54,271] INFO django.server:213 — "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+[2025-09-16 17:10:54,299] INFO django.server:213 — "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[2025-09-16 17:10:54,318] INFO django.server:213 — "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[2025-09-16 17:10:54,324] INFO django.server:213 — "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[2025-09-16 17:10:54,330] INFO django.server:213 — "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+[2025-09-16 17:10:54,332] INFO django.server:213 — "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[2025-09-16 17:10:54,332] INFO django.server:213 — "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+[2025-09-16 17:10:54,342] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-16 17:10:54,343] INFO django.server:213 — "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+[2025-09-16 17:10:54,363] INFO django.server:213 — "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+[2025-09-16 17:10:54,488] INFO django.server:213 — "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+[2025-09-16 17:10:54,510] INFO django.server:213 — "GET /static/admin/css/widgets.css HTTP/1.1" 200 11991
+[2025-09-16 17:10:54,526] INFO django.server:213 — "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[2025-09-16 17:12:30,951] INFO django.server:213 — "POST /admin/products/product/add/ HTTP/1.1" 200 22618
+[2025-09-16 17:12:31,015] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-16 17:12:47,222] INFO django.server:213 — "GET /admin/products/subcategory/add/?_to_field=id&_popup=1 HTTP/1.1" 200 6106
+[2025-09-16 17:12:47,304] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-16 17:12:50,281] INFO django.server:213 — "GET /admin/products/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 4389
+[2025-09-16 17:12:50,329] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-16 17:12:52,927] INFO django.server:213 — "POST /admin/products/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 323
+[2025-09-16 17:12:52,956] INFO django.server:213 — "GET /static/admin/js/popup_response.js HTTP/1.1" 200 532
+[2025-09-16 17:12:55,932] INFO django.server:213 — "POST /admin/products/subcategory/add/?_to_field=id&_popup=1 HTTP/1.1" 200 324
+[2025-09-16 17:12:59,030] INFO django.server:213 — "GET /admin/products/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 4389
+[2025-09-16 17:12:59,078] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-16 17:13:02,323] INFO django.server:213 — "POST /admin/products/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 323
+[2025-09-16 17:13:06,965] INFO django.server:213 — "POST /admin/products/product/add/ HTTP/1.1" 302 0
+[2025-09-16 17:13:07,029] INFO django.server:213 — "GET /admin/products/product/1/change/ HTTP/1.1" 200 22754
+[2025-09-16 17:13:07,134] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-16 17:13:07,273] INFO django.server:213 — "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[2025-09-16 17:13:12,960] WARNING django.request:253 — Not Found: /
+[2025-09-16 17:13:12,961] WARNING django.server:213 — "GET / HTTP/1.1" 404 3056
+[2025-09-16 17:13:15,993] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 13039
+[2025-09-16 17:13:17,542] INFO django.server:213 — "GET /shop HTTP/1.1" 301 0
+[2025-09-16 17:13:17,616] ERROR django.request:253 — Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/renderers.py", line 731, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/renderers.py", line 687, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/renderers.py", line 417, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/renderers.py", line 100, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/lib/python3.12/json/encoder.py", line 440, in _iterencode
+    yield from _iterencode(o, _current_indent_level)
+  File "/usr/local/lib/python3.12/json/encoder.py", line 430, in _iterencode
+    yield from _iterencode_list(o, _current_indent_level)
+  File "/usr/local/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/usr/local/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Product is not JSON serializable
+[2025-09-16 17:13:17,620] ERROR django.server:213 — "GET /shop/ HTTP/1.1" 500 161692
+[2025-09-16 17:13:39,049] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 13039
+[2025-09-16 17:14:00,061] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader

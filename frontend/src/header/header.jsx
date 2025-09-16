@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./header.css";
+import Registration from "../registration/registration";
 
-function Header() {
+function Header({ setActivLoginForm  }) {
   const [activBurger, setActivBurger] = useState(false);
 
   function onClickBurger(e) {
@@ -12,6 +13,7 @@ function Header() {
   function onCloseBurger() {
     setActivBurger(false);
   }
+
 
   return (
     <>
@@ -51,13 +53,13 @@ function Header() {
                   </svg>
                 </a>
               </li>
-              <li className="header__nav__item">
-                <button onClick={() => setActivLoginForm(true)} className="header__nav__item__button">
-                  <svg className="header__nav__item__link__svg">
-                    <use href="../../public/img/svg/symbol-defs.svg#icon-user"></use>
-                  </svg>
-                </button>
-              </li>
+          <li className="header__nav__item">
+            <button onClick={() => setActivLoginForm("register")} className="header__nav__item__button">
+              <svg className="header__nav__item__link__svg">
+                <use href="../../public/img/svg/symbol-defs.svg#icon-user"></use>
+              </svg>
+            </button>
+          </li>
             </ul>
           </nav>
         </div>

@@ -20,3 +20,8 @@ __pycache__/
 # Django logs
 *.log
 /backend/*.log
+backend/cart/__pycache__/admin.cpython-312.pyc
+*.pyc
+*.pyc
+backend/cart/__pycache__/views.cpython-312.pyc
+*.pyc

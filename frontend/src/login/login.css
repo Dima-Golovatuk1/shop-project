@@ -158,3 +158,13 @@ body {
     padding: 16px 20px;
   }
 }
+
+.link-button {
+  background: none;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}

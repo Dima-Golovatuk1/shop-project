@@ -81,8 +81,10 @@ function Login() {
             <button type="submit" className="submit-button">
                 Login
             </button>
+<a href="/user/register"><p>  
+    Don't have an account?
+</p></a>
 
-            <p><a href="/user/register">Don't have an account?</a></p>
         </form>
     </div>
 </section>

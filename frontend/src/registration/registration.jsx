@@ -17,13 +17,11 @@ function Registration({ setActivLoginForm }) {
     return (
         <div className="backdrop-registration" onClick={closeForm}>
             <div className="registration" onClick={(e) => e.stopPropagation()}>
-                <button onClick={closeForm} className="registration__close-btn">
-                    <svg className="aside__btn-close__icon">
-                        <use href="/img/svg/symbol-defs.svg#icon-close"></use>
-                    </svg>
-                </button>
                 <section className="registration__content">
+                                        
                     <div className="container">
+                        <h2>Register</h2>
+                        <br></br>
                         <form ref={formRegistrRef} onSubmit={submitRegistr}>
                             <label>
                                 Name
@@ -47,9 +45,11 @@ function Registration({ setActivLoginForm }) {
                             </label>
                             <button type="submit">Register</button>
 
-                            <p>
-                                <a href="/user/login">Already have an account?</a>
-                            </p>
+                    <a href="/user/login"><p>  
+                        Already have an account?
+                    </p></a>
+
+
                         </form>
                     </div>
                 </section>
