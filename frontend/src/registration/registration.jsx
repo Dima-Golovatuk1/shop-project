@@ -1,28 +1,17 @@
 import { useRef } from "react";
+import "./registration.css";
 
-function Registration() {
+function Registration({ setActivLoginForm }) {
     const formRegistrRef = useRef(null);
+
+    function closeForm() {
+        setActivLoginForm(false);
+    }
 
     function submitRegistr(e) {
         e.preventDefault();
         const formData = new FormData(formRegistrRef.current);
-        const formDataObject = Object.fromEntries(formData);
-        const formDataObjectt = Object.fromEntries(formData.entries());
-
-        console.log(formDataObjectt);
-
-        fetch("http://localhost:8000/user/register/", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(formDataObject)
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log("Server Response:", data);
-            })
-            .catch(err => console.error("Error:", err));
+        console.log(Object.fromEntries(formData));
     }
 
     return (
