@@ -1,0 +1,163 @@
+<<<<<<< Updated upstream
+=======
+:root {
+    --main-color: linear-gradient(135deg, #118f4c 0%, #0ceb69 100%);
+    --background-color: linear-gradient(135deg, #cbcbcb 0%, #11d438 ,  #138a2be1 80%, #026716 100% );
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.registration {
+  min-height: 100vh;
+  background: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.registration .container {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: slideUp 0.6s ease-out;
+}
+
+.registration form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.registration form::before {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.registration form::after {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.registration label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 1px;
+}
+
+.registration input {
+  padding: 16px 20px;
+  border: 2px solid #e1e5e9;
+  border-radius: 12px;
+  font-size: 16px;
+  background: #fff;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.registration input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  transform: translateY(-2px);
+}
+
+.registration input::placeholder {
+  color: #a0a0a0;
+  text-transform: none;
+}
+
+.registration button {
+  background: var(--main-color);
+  color: white;
+  border: none;
+  padding: 18px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+
+
+.registration button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+  filter: brightness(1.05);
+}
+
+.registration button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.registration label:focus-within {
+  color: #667eea;
+}
+
+.registration input:invalid {
+  border-color: #ff6b6b;
+}
+
+.registration input:valid {
+  border-color: #51cf66;
+}
+
+@media (max-width: 480px) {
+  .registration {
+    padding: 16px;
+  }
+  
+  .registration .container {
+    padding: 24px;
+  }
+  
+  .registration form::before {
+    font-size: 24px;
+  }
+  
+  .registration input {
+    padding: 14px 16px;
+    font-size: 16px;
+  }
+  
+  .registration button {
+    padding: 16px 20px;
+  }
+}
+>>>>>>> Stashed changes
