@@ -20,10 +20,10 @@ function Catalog() {
                 }
 
                 const data = await response.json();
-                console.log("Отримані дані:", data);
+                console.log("Data:", data);
                 setProducts(data);
             } catch (e) {
-                setError("Не вдалося завантажити.");
+                setError("Error");
                 console.error("Помилка:", e);
             } finally {
                 setIsLoading(false);
@@ -34,7 +34,7 @@ function Catalog() {
     }, []);
 
     if (isLoading) {
-        return <div className="text-center mt-8 text-xl font-semibold">Завантаження...</div>;
+        return <div className="text-center mt-8 text-xl font-semibold">Downloading...</div>;
     }
 
     if (error) {

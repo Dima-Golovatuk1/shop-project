@@ -16,3 +16,7 @@ __pycache__/
 
 # C extensions
 *.so
+
+# Django logs
+*.log
+/backend/*.log

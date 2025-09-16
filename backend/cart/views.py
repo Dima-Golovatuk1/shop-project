@@ -6,13 +6,26 @@ from logging import getLogger
 
 logger = getLogger(__name__)
 
-@api_view(["GET"])
+@api_view(["GET", 'POST'])
 def cart(request):
+    if request.method == 'POST':
+        try:
+            
+            return Response({
+                "message": f"Cart details for {request.user}"
+            }, status=200)
+            
+        except Exception as e:
+            logger.error("Error:\n", str(e))
+            return Response({
+                "message": "Error",
+                "error": str(e)
+            }, status=500)
     try:
         return Response({
             "message": f"Cart details for {request.user}"
         }, status=200)
-        
+            
     except Exception as e:
         logger.error("Error:\n", str(e))
         return Response({
