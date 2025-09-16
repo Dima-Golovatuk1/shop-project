@@ -89,7 +89,7 @@ header {
 }
 
 
-.header__nav__item__link__svg {
+.header__nav__item__button__svg {
     width: 33px;
     height: 33px;
     fill: rgb(255, 255, 255);
@@ -98,9 +98,10 @@ header {
 }
 
 
-.header__nav__item__link__svg:hover,
-.header__nav__item__link__svg:focus{
+.header__nav__item__button__svg:hover,
+.header__nav__item__button__svg:focus{
     background-color:rgb(97, 97, 97);
+    border-radius: 7px;
 }
 
 .header__nav__item__form {
