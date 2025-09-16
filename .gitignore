@@ -25,3 +25,5 @@ backend/cart/__pycache__/admin.cpython-312.pyc
 *.pyc
 backend/cart/__pycache__/views.cpython-312.pyc
 *.pyc
+*.log
+backend/django.log
