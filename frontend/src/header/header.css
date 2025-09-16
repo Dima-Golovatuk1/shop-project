@@ -262,25 +262,20 @@ header .container {
     overflow: hidden;
 }
 
-.aside__nav__item a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: var(--main-color);
-    transition: left 0.3s ease;
-    z-index: -1;
+
+.header__nav__item__button__svg {
+    width: 33px;
+    height: 33px;
+    fill: rgb(255, 255, 255);
+    padding: 5px;
+
 }
 
-.aside__nav__item a:hover::before {
-    left: 0;
-}
 
-.aside__nav__item a:hover {
-    color: white;
-    transform: translateX(10px);
+.header__nav__item__button__svg:hover,
+.header__nav__item__button__svg:focus{
+    background-color:rgb(97, 97, 97);
+    border-radius: 7px;
 }
 
 /* Mobile Responsive */

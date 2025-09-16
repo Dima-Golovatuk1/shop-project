@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./header.css";
+import Registration from "../registration/registration";
 
-function Header() {
+function Header({ setActivLoginForm  }) {
   const [activBurger, setActivBurger] = useState(false);
 
   function onClickBurger(e) {
@@ -13,6 +14,7 @@ function Header() {
     setActivBurger(false);
   }
 
+
   return (
     <>
       <header>
@@ -23,9 +25,9 @@ function Header() {
                 <button
                   onClick={onClickBurger}
                   id="header-burger"
-                  className="header__nav__item__btn"
+                  className="header__nav__item__button"
                 >
-                  <svg className="header__nav__item__link__svg">
+                  <svg className="header__nav__item__button__svg">
                     <use href="../../public/img/svg/symbol-defs.svg#icon-burger"></use>
                   </svg>
                 </button>
@@ -42,21 +44,20 @@ function Header() {
                 </form>
               </li>
               <li className="header__nav__item">
-                <a
-                  className="header__nav__item__link"
-                  href="/cart"
+                <button
+                  className="header__nav__item__button"
                 >
-                  <svg className="header__nav__item__link__svg">
+                  <svg className="header__nav__item__button__svg">
                     <use href="../../public/img/svg/symbol-defs.svg#icon-basket"></use>
                   </svg>
-                </a>
+                </button>
               </li>
               <li className="header__nav__item">
-                <a className="header__nav__item__link" href="{%if user%} /user/login {%else%} /user/register">
-                  <svg className="header__nav__item__link__svg">
+                <button onClick={() => setActivLoginForm(true)} className="header__nav__item__button">
+                  <svg className="header__nav__item__button__svg">
                     <use href="../../public/img/svg/symbol-defs.svg#icon-user"></use>
                   </svg>
-                </a>
+                </button>
               </li>
             </ul>
           </nav>
