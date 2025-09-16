@@ -1,6 +1,6 @@
 :root {
-    --main-color: linear-gradient(135deg, #00e03c 0%, #18643d 100%);
-    --background-color: linear-gradient(135deg, #f5f5f5 0%, #23da7cb0 100%);
+    --main-color: linear-gradient(135deg, #118f4c 0%, #0ceb69 100%);
+    --background-color: linear-gradient(135deg, #cbcbcb 0%, #11d438 ,  #138a2be1 80%, #026716 100% );
 }
 
 

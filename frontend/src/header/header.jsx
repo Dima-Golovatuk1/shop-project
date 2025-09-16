@@ -37,14 +37,14 @@ function Header() {
                     type="text"
                   />
                   <button className="header__nav__item__form__btn">
-                    Пошук
+                    Search
                   </button>
                 </form>
               </li>
               <li className="header__nav__item">
                 <a
                   className="header__nav__item__link"
-                  href="{% url 'cart-products' %}"
+                  href="/cart"
                 >
                   <svg className="header__nav__item__link__svg">
                     <use href="../../public/img/svg/symbol-defs.svg#icon-basket"></use>
@@ -52,7 +52,7 @@ function Header() {
                 </a>
               </li>
               <li className="header__nav__item">
-                <a className="header__nav__item__link" href="">
+                <a className="header__nav__item__link" href="{%if user%} /user/login {%else%} /user/register">
                   <svg className="header__nav__item__link__svg">
                     <use href="../../public/img/svg/symbol-defs.svg#icon-user"></use>
                   </svg>
@@ -80,13 +80,10 @@ function Header() {
           <nav className="aside__nav">
             <ul className="aside__nav__list">
               <li className="aside__nav__item">
-                <a href="{% url 'products' %}">головна</a>
+                <a href="/">Home</a>
               </li>
               <li className="aside__nav__item">
-                <a href="{% url 'products' %}">каталог</a>
-              </li>
-              <li className="aside__nav__item">
-                <a href="{% url 'cart-products' %}">кошик</a>
+                <a href="/cart">Cart</a>
               </li>
             </ul>
           </nav>

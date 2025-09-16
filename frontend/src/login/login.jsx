@@ -78,7 +78,6 @@ function Login() {
                     />
                 </label>
             </div>
-            <br></br>
             <button type="submit" className="submit-button">
                 Login
             </button>
