@@ -15,7 +15,8 @@
 /* Catalog Section */
 .catalog {
     min-height: 100vh;
-    background: linear-gradient(100deg, #deffd2 0%, #9cff9f 100%);
+    background: #004D47;
+    background: radial-gradient(circle, rgb(2, 163, 141) 0%, rgb(18, 130, 78) 100%);
     padding: 120px 0 80px;
     position: relative;
 }

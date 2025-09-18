@@ -11,6 +11,7 @@ logger = getLogger(__name__)
 def index(request):
     try:
         products = Product.objects.all()
+
         return Response({
             "message": f"welcome {request.user}",
             "products": products,

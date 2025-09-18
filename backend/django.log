@@ -109,3 +109,16 @@
 [2025-09-13 12:45:45,885] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 [2025-09-13 12:48:45,049] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 [2025-09-15 15:00:11,541] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-16 15:28:12,354] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-16 15:28:30,426] INFO django.utils.autoreload:265 — /app/products/urls.py changed, reloading.
+[2025-09-16 15:28:31,889] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-16 15:30:50,437] INFO django.utils.autoreload:265 — /app/cart/admin.py changed, reloading.
+[2025-09-16 15:30:51,148] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-16 16:18:51,232] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 15:03:30,505] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 15:03:32,120] WARNING django.request:253 — Not Found: /
+[2025-09-18 15:03:32,122] WARNING django.server:213 — "GET / HTTP/1.1" 404 3056
+[2025-09-18 15:03:32,939] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-18 15:03:32,940] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 3107
+[2025-09-18 15:07:23,303] INFO django.utils.autoreload:265 — /app/shop/views.py changed, reloading.
+[2025-09-18 15:07:24,570] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader

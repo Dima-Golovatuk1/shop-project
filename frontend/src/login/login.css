@@ -1,160 +1,104 @@
-:root {
-    --main-color: linear-gradient(135deg, #118f4c 0%, #0ceb69 100%);
-    --background-color: linear-gradient(135deg, #cbcbcb 0%, #11d438 ,  #138a2be1 80%, #026716 100% );
-}
 
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
-.registration {
-  min-height: 100vh;
-  background: var(--background-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.registration .container {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  padding: 40px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+.backdrop-login{
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 400px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  animation: slideUp 0.6s ease-out;
+  height: 100%;
+  background: radial-gradient(circle, rgb(2, 163, 141) 0%, rgb(18, 130, 78) 100%);
+  opacity: 1;
 }
 
-.registration form {
+
+.login__close-btn{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+
+.login{
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  z-index: 6;
+  padding: 60px 20px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.login__title{
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+.login__form{
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 
-.registration form::before {
-  font-size: 28px;
-  font-weight: 700;
-  color: #333;
-  text-align: center;
-  margin-bottom: 8px;
-  display: block;
-}
 
-.registration form::after {
-  font-size: 14px;
-  color: #666;
-  text-align: center;
-  margin-bottom: 16px;
-  display: block;
-}
 
-.registration label {
+.login__label{
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  font-weight: 600;
-  color: #333;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  padding: 1px;
+  gap: 5px;
 }
 
-.registration input {
-  padding: 16px 20px;
-  border: 2px solid #e1e5e9;
-  border-radius: 12px;
-  font-size: 16px;
-  background: #fff;
-  transition: all 0.3s ease;
-  outline: none;
+
+
+.login__input{
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 300px;
 }
 
-.registration input:focus {
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-  transform: translateY(-2px);
+
+.login__input:focus{
+  border: 2px solid #4F7302;
 }
 
-.registration input::placeholder {
-  color: #a0a0a0;
-  text-transform: none;
+
+.login__form__text{
+  position: relative;
 }
 
-.registration button {
-  background: var(--main-color);
-  color: white;
-  border: none;
-  padding: 18px 24px;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: 600;
+.login__form__text:hover{
+  color: #4F7302;
   cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 8px;
 }
 
 
-.registration button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
-  filter: brightness(1.05);
+.login__form__btn{
+  width: 200px;
+  color: white;
+  padding: 10px 15px;
+  background: #128277;
+  background: linear-gradient(90deg, rgba(18, 130, 119, 1) 0%, rgba(82, 149, 139, 1) 100%);
+  border-radius: 8px;
 }
 
-.registration button:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
-}
 
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+@media (max-width: 600px) {
+  .login {
+      width: 270px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-.registration label:focus-within {
-  color: #667eea;
-}
 
-.registration input:invalid {
-  border-color: #ff6b6b;
-}
-
-.registration input:valid {
-  border-color: #51cf66;
-}
-
-@media (max-width: 480px) {
-  .registration {
-    padding: 16px;
-  }
-  
-  .registration .container {
-    padding: 24px;
-  }
-  
-  .registration form::before {
-    font-size: 24px;
-  }
-  
-  .registration input {
-    padding: 14px 16px;
-    font-size: 16px;
-  }
-  
-  .registration button {
-    padding: 16px 20px;
+  .login__input{
+      width: 200px;
   }
 }

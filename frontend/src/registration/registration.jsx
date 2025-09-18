@@ -1,7 +1,17 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import "./registration.css";
 
-function Registration() {
+function Registration({ setActivRegistrationForm, setActivLoginForm }) {
     const formRegistrRef = useRef(null);
+
+    function closeForm(){
+        setActivRegistrationForm(false)
+    }
+
+    function openLoginForm(){
+        setActivLoginForm(true)
+        setActivRegistrationForm(false)
+    }
 
     function submitRegistr(e) {
         e.preventDefault();
@@ -25,36 +35,44 @@ function Registration() {
             .catch(err => console.error("Error:", err));
     }
 
-    return (
-        <section className="registration">
-            <div className="container">
-                <form ref={formRegistrRef} onSubmit={submitRegistr}>
-                    <label>
-                        Name
-                        <input name="name" type="text" placeholder="name" />
-                    </label>
-                    <label>
-                        Surname
-                        <input name="lastName" type="text" placeholder="surname" />
-                    </label>
-                    <label>
-                        Email
-                        <input name="email" type="text" placeholder="email" />
-                    </label>
-                    <label>
-                        Password
-                        <input name="password" type="password" placeholder="password" />
-                    </label>
-                    <label>
-                        Repeat password
-                        <input name="password2" type="password" placeholder="repeat password" />
-                    </label>
-                    <button type="submit">Register</button>
 
-                    <p><a href="/user/login">Already have an account?</a></p>
+    return (
+        <>
+            <div className="backdrop-registration"></div>
+            <div className="registration">
+            <button onClick={closeForm} className="registration__close-btn">
+                <svg className="aside__btn-close__icon">
+                    <use href="../../public/img/svg/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+                <h2 className="registration__title">Sign up</h2>
+                <form className="registration__form" ref={formRegistrRef} onSubmit={submitRegistr}>
+                    <label className="registration__label">
+                        Name
+                        <input className="registration__input" name="name" type="text" placeholder="Name" />
+                    </label>
+                    <label className="registration__label">
+                        Surname
+                        <input className="registration__input" name="lastName" type="text" placeholder="Surname" />
+                    </label>
+                    <label className="registration__label">
+                        Email
+                        <input className="registration__input" name="email" type="email" placeholder="Email" />
+                    </label>
+                    <label className="registration__label">
+                        Phone number
+                        <input className="registration__input" name="phone" type="phone" placeholder="Phone number" />
+                    </label>
+                    <label className="registration__label">
+                        Password
+                        <input className="registration__input" name="password" type="password" placeholder="Password" />
+                    </label>
+        
+                    <button className="registration__form__btn" type="submit">Register</button>
+                    <p onClick={openLoginForm} className="registration__form__text">Already have an account?</p>
                 </form>
             </div>
-        </section>
+        </>
     );
 }
 
