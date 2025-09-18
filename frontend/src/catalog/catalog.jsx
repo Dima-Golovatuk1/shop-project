@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./catalog.css";
+import { Link } from "react-router-dom";
 
 
 function Catalog() {
@@ -24,7 +25,7 @@ function Catalog() {
                 setProducts(data.products || []);
             } catch (e) {
                 setError("Error");
-                console.error("Error:", e);
+                console.error("Помилка:", e);
             } finally {
                 setIsLoading(false);
             }
@@ -50,7 +51,7 @@ function Catalog() {
                     {
                         products.map(product => (
                             <li key={product.id} className="catalog__item">
-                                <a className="catalog__item__link" href="">
+                                <Link className="catalog__item__link" to={`/product/${product.id}`}>
                                     <img
                                         src={`http://localhost:8000${product.photo_url}`}
                                         alt={product.title}
@@ -60,7 +61,7 @@ function Catalog() {
                                         <p className="catalog__item__text"></p>
                                         <p className="catalog__item__text-price">{product.price}</p>
                                     </div>
-                                </a>
+                                </Link>
                             </li>
                         ))
                     }
