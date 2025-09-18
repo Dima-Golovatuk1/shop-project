@@ -729,3 +729,23 @@ name 'SingleProduct' is not defined
 [2025-09-18 16:35:04,229] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
 [2025-09-18 16:35:04,860] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 [2025-09-18 16:35:07,554] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 7583
+[2025-09-18 16:35:45,937] INFO django.utils.autoreload:265 — /app/products/urls.py changed, reloading.
+[2025-09-18 16:35:46,785] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:36:13,299] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
+[2025-09-18 16:36:14,204] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:36:33,627] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
+[2025-09-18 16:36:34,311] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:39:02,515] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
+[2025-09-18 16:39:03,475] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:40:28,053] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
+[2025-09-18 16:40:29,414] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:41:38,578] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
+[2025-09-18 16:41:39,346] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:43:18,158] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
+[2025-09-18 16:43:18,757] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:45:45,387] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
+[2025-09-18 16:45:46,048] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:47:22,373] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
+[2025-09-18 16:47:23,212] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:47:58,882] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
+[2025-09-18 16:47:59,910] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
