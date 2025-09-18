@@ -707,3 +707,25 @@ TypeError: Object of type Product is not JSON serializable
 [2025-09-18 16:23:28,805] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 [2025-09-18 16:24:10,905] INFO django.utils.autoreload:265 — /app/products/serializers.py changed, reloading.
 [2025-09-18 16:24:11,275] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:28:58,519] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:29:12,475] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:30:35,289] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:31:20,141] INFO django.utils.autoreload:265 — /app/backend/settings.py changed, reloading.
+[2025-09-18 16:31:21,065] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:31:44,881] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
+[2025-09-18 16:31:45,540] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:32:11,172] INFO django.utils.autoreload:265 — /app/products/urls.py changed, reloading.
+[2025-09-18 16:32:11,785] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:32:38,951] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:33:51,797] INFO django.utils.autoreload:265 — /app/products/urls.py changed, reloading.
+[2025-09-18 16:33:52,665] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:34:02,336] WARNING django.request:253 — Not Found: /
+[2025-09-18 16:34:02,344] WARNING django.server:213 — "GET / HTTP/1.1" 404 2754
+[2025-09-18 16:34:09,173] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 11998
+[2025-09-18 16:34:12,141] ERROR products.views:68 — Error:
+name 'SingleProduct' is not defined
+[2025-09-18 16:34:12,170] ERROR django.request:253 — Internal Server Error: /products/1/
+[2025-09-18 16:34:12,171] ERROR django.server:213 — "GET /products/1/ HTTP/1.1" 500 6933
+[2025-09-18 16:35:04,229] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
+[2025-09-18 16:35:04,860] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:35:07,554] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 7583

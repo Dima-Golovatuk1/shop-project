@@ -5,7 +5,7 @@ from rest_framework import status
 from cart.models import CartItem, Carts
 from products.models import Product
 
-from .serializers import SingleProduct
+from .serializers import SingleProductSerializer
 
 from logging import getLogger
 
@@ -18,7 +18,7 @@ def product(request, product_id):
         try:
             product = Product.objects.get(pk=product_id)
 
-            serializer = SingleProduct(instance=product)
+            serializer = SingleProductSerializer(instance=product)
             product_data = serializer.data
 
             user_cart = Carts.objects.get(user=request.user)
@@ -54,7 +54,7 @@ def product(request, product_id):
 
     try:
         products = Product.objects.all()
-        serializer = SingleProduct(products, many=True)
+        serializer = SingleProductSerializer(products, many=True)
 
         return Response(
             {

@@ -23,8 +23,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'shop',
-    'payments',
-    'orders',
     'users',
     'rest_framework',
     'corsheaders',
