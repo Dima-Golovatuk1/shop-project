@@ -44,30 +44,31 @@ function Registration({ setActivRegistrationForm, setActivLoginForm }) {
                     <use href="../../public/img/svg/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
-                <h2 className="registration__title">Реєстрація</h2>
+                <h2 className="registration__title">Sign up</h2>
                 <form className="registration__form" ref={formRegistrRef} onSubmit={submitRegistr}>
                     <label className="registration__label">
-                        Ім'я
-                        <input className="registration__input" name="name" type="text" placeholder="Ім'я" />
+                        Name
+                        <input className="registration__input" name="name" type="text" placeholder="Name" />
                     </label>
                     <label className="registration__label">
-                        Прізвище
-                        <input className="registration__input" name="lastName" type="text" placeholder="Прізвище" />
+                        Surname
+                        <input className="registration__input" name="lastName" type="text" placeholder="Surname" />
                     </label>
                     <label className="registration__label">
-                        Пошта
-                        <input className="registration__input" name="email" type="email" placeholder="Пошта" />
+                        Email
+                        <input className="registration__input" name="email" type="email" placeholder="Email" />
                     </label>
                     <label className="registration__label">
-                        Номер телефону
-                        <input className="registration__input" name="phone" type="phone" placeholder="Номер телефону" />
+                        Phone number
+                        <input className="registration__input" name="phone" type="phone" placeholder="Phone number" />
                     </label>
                     <label className="registration__label">
-                        Пароль
-                        <input className="registration__input" name="password" type="password" placeholder="Пароль" />
+                        Password
+                        <input className="registration__input" name="password" type="password" placeholder="Password" />
                     </label>
-                    <p onClick={openLoginForm} className="registration__form__text">Вхід</p>
-                    <button className="registration__form__btn" type="submit">Зареєструватися</button>
+        
+                    <button className="registration__form__btn" type="submit">Register</button>
+                    <p onClick={openLoginForm} className="registration__form__text">Already have an account?</p>
                 </form>
             </div>
         </>
