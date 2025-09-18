@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./catalog.css";
+import { Link } from "react-router-dom";
 
 
 function Catalog() {
@@ -9,7 +10,7 @@ function Catalog() {
 
 
     useEffect(() => {
-        const API_URL = 'https://jsonplaceholder.typicode.com/users';
+        const API_URL = 'http://localhost:8000/shop/products/';
 
         async function fetchProducts() {
             try {
@@ -20,8 +21,8 @@ function Catalog() {
                 }
 
                 const data = await response.json();
-                console.log("Data:", data);
-                setProducts(data);
+                console.log("Data:", data.products);
+                setProducts(data.products || []);
             } catch (e) {
                 setError("Error");
                 console.error("Помилка:", e);
@@ -50,14 +51,17 @@ function Catalog() {
                     {
                         products.map(product => (
                             <li key={product.id} className="catalog__item">
-                                <a className="catalog__item__link" href="">
-                                    <img src="" alt="" />
+                                <Link className="catalog__item__link" to={`/product/${product.id}`}>
+                                    <img
+                                        src={`http://localhost:8000${product.photo_url}`}
+                                        alt={product.title}
+                                    />
                                     <div className="catalog__item__div">
-                                        <h3 className="catalog__item__title">{product.email}</h3>
+                                        <h3 className="catalog__item__title">{product.title}</h3>
                                         <p className="catalog__item__text"></p>
-                                        <p className="catalog__item__text-price"></p>
+                                        <p className="catalog__item__text-price">{product.price}</p>
                                     </div>
-                                </a>
+                                </Link>
                             </li>
                         ))
                     }

@@ -21,7 +21,7 @@ function Registration({ setActivRegistrationForm, setActivLoginForm }) {
 
         console.log(formDataObjectt);
 
-        fetch("http://localhost:8000/user/api/register/", {
+        fetch("http://localhost:8000/user/register/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
