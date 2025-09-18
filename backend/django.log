@@ -1,0 +1,45 @@
+[2025-09-18 16:49:25,856] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:49:51,744] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-18 16:51:25,340] WARNING django.request:253 — Not Found: /
+[2025-09-18 16:51:25,342] WARNING django.server:213 — "GET / HTTP/1.1" 404 2923
+[2025-09-18 16:51:29,023] INFO django.server:213 — "GET /shop/products/ HTTP/1.1" 200 792
+[2025-09-18 16:51:29,205] INFO django.server:213 — "GET /shop/products/ HTTP/1.1" 200 6385
+[2025-09-18 16:51:29,257] INFO django.server:213 — "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[2025-09-18 16:51:29,263] INFO django.server:213 — "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+[2025-09-18 16:51:29,268] INFO django.server:213 — "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[2025-09-18 16:51:29,270] INFO django.server:213 — "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+[2025-09-18 16:51:29,270] INFO django.server:213 — "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+[2025-09-18 16:51:29,294] INFO django.server:213 — "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+[2025-09-18 16:51:29,295] INFO django.server:213 — "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+[2025-09-18 16:51:29,296] INFO django.server:213 — "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[2025-09-18 16:51:29,297] INFO django.server:213 — "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+[2025-09-18 16:51:29,299] INFO django.server:213 — "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+[2025-09-18 16:51:29,302] INFO django.server:213 — "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+[2025-09-18 16:51:29,479] INFO django.server:213 — "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[2025-09-18 16:51:33,078] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-18 16:52:19,360] WARNING django.request:253 — Not Found: /products/${id}/
+[2025-09-18 16:52:19,362] WARNING django.server:213 — "GET /products/$%7Bid%7D/ HTTP/1.1" 404 3402
+[2025-09-18 16:52:19,548] WARNING django.request:253 — Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-18 16:52:19,561] WARNING django.server:213 — "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3085
+[2025-09-18 16:52:48,087] WARNING django.request:253 — Not Found: /shop/products/1/
+[2025-09-18 16:52:48,090] WARNING django.server:213 — "GET /shop/products/1/ HTTP/1.1" 404 3106
+[2025-09-18 16:53:34,085] WARNING django.request:253 — Not Found: /shop/products/1
+[2025-09-18 16:53:34,088] WARNING django.server:213 — "GET /shop/products/1 HTTP/1.1" 404 3103
+[2025-09-18 16:53:45,850] INFO django.server:213 — "GET /products/1 HTTP/1.1" 301 0
+[2025-09-18 16:53:45,914] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 6392
+[2025-09-18 16:54:06,113] INFO django.server:213 — "GET /shop/products/ HTTP/1.1" 200 792
+[2025-09-18 16:54:17,964] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-18 16:57:30,814] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-18 16:57:52,497] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-18 16:57:54,561] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-18 17:01:01,161] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-18 17:02:57,265] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-18 17:04:25,348] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-18 17:07:04,005] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-18 17:07:36,688] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-18 17:07:53,581] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-18 17:08:04,451] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-18 17:08:39,768] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-18 17:08:46,716] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-18 17:10:17,830] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-18 17:10:41,372] INFO django.server:213 — "GET /shop/products/ HTTP/1.1" 200 792
