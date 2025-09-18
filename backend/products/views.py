@@ -12,21 +12,49 @@ from logging import getLogger
 logger = getLogger(__name__)
 
 
-@api_view(["GET", "POST"])
+@api_view(["GET"])
 def product(request, product_id):
-    if request.method == "POST":
-        try:
-            product = Product.objects.get(pk=product_id)
+    try:
+        products = Product.objects.all()
+        serializer = SingleProductSerializer(products, many=True)
 
-            serializer = SingleProductSerializer(instance=product)
-            product_data = serializer.data
+        
+        return Response(
+            {
+                "message": f"Item {product_id} details for {request.user}",
+                "products": serializer.data,
+            },
+            status=status.HTTP_200_OK,
+        )
+        
+    except Product.DoesNotExist:
+         return Response(
+                {"error": "Product not found"},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+         
+    except Exception as e:
+        logger.error("Error:\n", str(e))
+        return Response(
+            {"Error": str(e)},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR,
+        )
 
-            user_cart = Carts.objects.get(user=request.user)
+ 
+@api_view(['POST'])
+def buy_product(request, product_id):
+    try:
+        product = Product.objects.get(pk=product_id)
 
-            user_cart.items.update({str(product_id): product_data})
-            user_cart.save()
+        serializer = SingleProductSerializer(instance=product)
+        product_data = serializer.data
 
-            return Response(
+        user_cart = Carts.objects.get(user=request.user)
+
+        user_cart.items.update({str(product_id): product_data})
+        user_cart.save()
+
+        return Response(
                 {
                     "item_id": product_id,
                     "product": product_data,
@@ -35,38 +63,18 @@ def product(request, product_id):
                 status=status.HTTP_200_OK,
             )
 
-        except Product.DoesNotExist:
-            return Response(
+    except Product.DoesNotExist:
+        return Response(
                 {"error": "Product not found"},
                 status=status.HTTP_404_NOT_FOUND,
             )
-        except Carts.DoesNotExist:
-            return Response(
+    except Carts.DoesNotExist:
+        return Response(
                 {"error": "Cart not found"},
                 status=status.HTTP_404_NOT_FOUND,
             )
-        except Exception as e:
-            logger.error("Error:\n%s", str(e))
-            return Response(
-                {"message": "error", "error": str(e)},
-                status=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            )
-
-    try:
-        products = Product.objects.all()
-        serializer = SingleProductSerializer(products, many=True)
-
-        return Response(
-            {
-                "message": f"Item {product_id} details for {request.user}",
-                "products": serializer.data,
-            },
-            status=status.HTTP_200_OK,
-        )
-
     except Exception as e:
-        logger.error("Error:\n%s", str(e))
+        logger.error("Error:\n", str(e))
         return Response(
-            {"message": "Error", "error": str(e)},
-            status=status.HTTP_500_INTERNAL_SERVER_ERROR,
-        )
+                {"Error": str(e)},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR)
