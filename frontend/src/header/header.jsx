@@ -39,7 +39,7 @@ function Header({ setActivLoginForm  }) {
                     type="text"
                   />
                   <button className="header__nav__item__form__btn">
-                    Пошук
+                    Search
                   </button>
                 </form>
               </li>
@@ -81,13 +81,13 @@ function Header({ setActivLoginForm  }) {
           <nav className="aside__nav">
             <ul className="aside__nav__list">
               <li className="aside__nav__item">
-                <a href="{% url 'products' %}">головна</a>
+                <a href="{% url 'products' %}">Home</a>
               </li>
               <li className="aside__nav__item">
-                <a href="{% url 'products' %}">каталог</a>
+                <a href="{% url 'products' %}">Catalog</a>
               </li>
               <li className="aside__nav__item">
-                <a href="{% url 'cart-products' %}">кошик</a>
+                <a href="{% url 'cart-products' %}">Cart</a>
               </li>
             </ul>
           </nav>

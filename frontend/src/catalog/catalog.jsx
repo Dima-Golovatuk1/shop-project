@@ -25,7 +25,7 @@ function Catalog() {
                 setProducts(data.products || []);
             } catch (e) {
                 setError("Error");
-                console.error("Помилка:", e);
+                console.error("Error:", e);
             } finally {
                 setIsLoading(false);
             }
@@ -51,7 +51,11 @@ function Catalog() {
                     {
                         products.map(product => (
                             <li key={product.id} className="catalog__item">
+<<<<<<< HEAD
                                 <Link className="catalog__item__link" to={`/product/${product.id}`}>
+=======
+                                <a className="catalog__item__link" href="">
+>>>>>>> 0e9ce5af28b256e48b9bc8d77af266e80f41dd27
                                     <img
                                         src={`http://localhost:8000${product.photo_url}`}
                                         alt={product.title}

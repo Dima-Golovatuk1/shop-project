@@ -12,6 +12,7 @@ logger = getLogger(__name__)
 def index(request):
     try:
         products = Product.objects.all()
+<<<<<<< HEAD
         # categories = Category.objects.all()
         # sub_categories = SubCategory.objects.all()
         
@@ -19,6 +20,9 @@ def index(request):
         # category_serializer = CategorySerializer(categories, many=True)
         # sub_category_serializer = SubCategorySerializer(sub_categories, many=True)
         
+=======
+
+>>>>>>> 0e9ce5af28b256e48b9bc8d77af266e80f41dd27
         return Response({
             "message": f"welcome {request.user}",
             "products": product_serializer.data,

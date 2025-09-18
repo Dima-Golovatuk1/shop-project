@@ -16,7 +16,7 @@
 .catalog {
     min-height: 100vh;
     background: #004D47;
-    background: radial-gradient(circle, rgba(0, 77, 71, 1) 0%, rgba(18, 130, 119, 1) 100%);
+    background: radial-gradient(circle, rgb(2, 163, 141) 0%, rgb(18, 130, 78) 100%);
     padding: 120px 0 80px;
     position: relative;
 }

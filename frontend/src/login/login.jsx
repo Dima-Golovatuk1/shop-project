@@ -44,22 +44,22 @@ function Login({ setActivRegistrationForm, setActivLoginForm }) {
                         <use href="../../public/img/svg/symbol-defs.svg#icon-close"></use>
                     </svg>
                 </button>
-                <h2 className="login__title">Вхід</h2>
+                <h2 className="login__title">Sign in</h2>
                 <form className="login__form" ref={formLoginRef} onSubmit={submitLogin}>
                     <label className="login__label">
-                        Пошта
-                        <input className="login__input" name="email" type="email" placeholder="Пошта" />
+                        Email
+                        <input className="login__input" name="email" type="email" placeholder="Email" />
                     </label>
                     <label className="login__label">
-                        Номер телефону
-                        <input className="login__input" name="phone" type="tel" placeholder="Номер телефону" />
+                        Phone Number
+                        <input className="login__input" name="phone" type="tel" placeholder="Phone Number" />
                     </label>
                     <label className="login__label">
-                        Пароль
-                        <input className="login__input" name="password" type="password" placeholder="Пароль" />
+                        Password
+                        <input className="login__input" name="password" type="password" placeholder="Password" />
                     </label>
-                    <p onClick={openRegistrationForm} className="login__form__text">Не зареєстрований користувач?</p>
-                    <button className="login__form__btn" type="submit">Увійти</button>
+                    <button className="login__form__btn" type="submit">Login</button>
+                    <p onClick={openRegistrationForm} className="login__form__text">Don't have an account?</p>
                 </form>
             </div>
         </>
