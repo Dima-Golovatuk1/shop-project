@@ -1,11 +1,16 @@
 import { useRef, useState } from "react";
 import "./registration.css";
 
-function Registration({ setActivLoginForm  }) {
+function Registration({ setActivRegistrationForm, setActivLoginForm }) {
     const formRegistrRef = useRef(null);
 
     function closeForm(){
-        setActivLoginForm(false)
+        setActivRegistrationForm(false)
+    }
+
+    function openLoginForm(){
+        setActivLoginForm(true)
+        setActivRegistrationForm(false)
     }
 
     function submitRegistr(e) {
@@ -51,12 +56,17 @@ function Registration({ setActivLoginForm  }) {
                     </label>
                     <label className="registration__label">
                         Пошта
-                        <input className="registration__input" name="email" type="text" placeholder="Пошта" />
+                        <input className="registration__input" name="email" type="email" placeholder="Пошта" />
+                    </label>
+                    <label className="registration__label">
+                        Номер телефону
+                        <input className="registration__input" name="phone" type="phone" placeholder="Номер телефону" />
                     </label>
                     <label className="registration__label">
                         Пароль
                         <input className="registration__input" name="password" type="password" placeholder="Пароль" />
                     </label>
+                    <p onClick={openLoginForm} className="registration__form__text">Вхід</p>
                     <button className="registration__form__btn" type="submit">Зареєструватися</button>
                 </form>
             </div>

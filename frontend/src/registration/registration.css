@@ -1,3 +1,5 @@
+
+
 .backdrop-registration{
     z-index: 5;
     position: fixed;
@@ -5,8 +7,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #262626;
-    background: radial-gradient(circle, rgba(38, 38, 38, 1) 0%, rgba(131, 166, 3, 1) 100%);
+    background: #004D47;
+    background: radial-gradient(circle, rgba(0, 77, 71, 1) 0%, rgba(18, 130, 119, 1) 100%);
     opacity: 1;
 }
 
@@ -19,9 +21,9 @@
 
 
 .registration{
-    overflow: auto;
+    overflow: hidden;
     width: 400px;
-    height: 500px;
+    height: 600px;
     background-color: rgb(255, 255, 255);
     z-index: 6;
     padding: 60px 20px;
@@ -71,11 +73,33 @@
 }
 
 
+.registration__form__text{
+    position: relative;
+}
+
+.registration__form__text:hover{
+    color: #4F7302;
+    cursor: pointer;
+}
+
+
 .registration__form__btn{
     width: 200px;
     color: white;
     padding: 10px 15px;
-    background: #4F7302;
-    background: linear-gradient(90deg, rgba(79, 115, 2, 1) 0%, rgba(192, 217, 4, 1) 89%);
+    background: #128277;
+    background: linear-gradient(90deg, rgba(18, 130, 119, 1) 0%, rgba(82, 149, 139, 1) 100%);
     border-radius: 8px;
+}
+
+
+@media (max-width: 600px) {
+    .registration {
+        width: 270px;
+    }
+
+
+    .registration__input{
+        width: 200px;
+    }
 }
