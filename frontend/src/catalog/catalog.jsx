@@ -10,7 +10,7 @@ function Catalog() {
 
 
     useEffect(() => {
-        const API_URL = 'http://localhost:8000/shop/products/';
+        const API_URL = 'http://localhost:8000/products/api';
 
         async function fetchProducts() {
             try {

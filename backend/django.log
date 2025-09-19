@@ -13,3 +13,108 @@
 [2025-09-19 15:31:44,179] INFO django.server:213 — "OPTIONS /cart/api/add/1/ HTTP/1.1" 200 7353
 [2025-09-19 15:31:45,454] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
 [2025-09-19 15:31:45,455] ERROR django.server:213 — "GET /cart/api/add/1/ HTTP/1.1" 500 7184
+[2025-09-19 15:36:02,530] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:36:16,166] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-19 15:36:16,194] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-19 15:36:20,265] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:36:20,267] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 102
+[2025-09-19 15:36:38,513] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:36:41,192] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-19 15:36:41,228] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-19 15:36:45,694] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5314
+[2025-09-19 15:36:48,978] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5320
+[2025-09-19 15:37:13,972] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:37:13,973] ERROR django.server:213 — "GET /cart/api/add/1/?format=api HTTP/1.1" 500 7261
+[2025-09-19 15:37:16,048] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:37:16,050] ERROR django.server:213 — "GET /cart/api/add/1/?format=api HTTP/1.1" 500 7261
+[2025-09-19 15:37:20,693] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:37:20,695] ERROR django.server:213 — "GET /cart/api/add/1/?format=api HTTP/1.1" 500 7261
+[2025-09-19 15:37:59,396] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-19 15:37:59,437] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-19 15:38:04,983] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-19 15:38:05,005] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-19 15:40:26,209] WARNING django.request:253 — Not Found: /shop/products/
+[2025-09-19 15:40:26,211] WARNING django.server:213 — "GET /shop/products/ HTTP/1.1" 404 3308
+[2025-09-19 15:40:28,555] WARNING django.request:253 — Not Found: /shop/products/
+[2025-09-19 15:40:28,557] WARNING django.server:213 — "GET /shop/products/ HTTP/1.1" 404 3308
+[2025-09-19 15:40:31,425] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-19 15:40:31,448] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-19 15:40:38,162] WARNING django.request:253 — Not Found: /shop/products/
+[2025-09-19 15:40:38,163] WARNING django.server:213 — "GET /shop/products/ HTTP/1.1" 404 3308
+[2025-09-19 15:40:43,106] WARNING django.request:253 — Not Found: /shop/products/
+[2025-09-19 15:40:43,108] WARNING django.server:213 — "GET /shop/products/ HTTP/1.1" 404 3308
+[2025-09-19 15:41:10,404] WARNING django.request:253 — Not Found: /shop/products/
+[2025-09-19 15:41:10,405] WARNING django.server:213 — "GET /shop/products/ HTTP/1.1" 404 3308
+[2025-09-19 15:41:15,623] WARNING django.request:253 — Not Found: /shop/product/
+[2025-09-19 15:41:15,624] WARNING django.server:213 — "GET /shop/product/ HTTP/1.1" 404 3305
+[2025-09-19 15:41:46,482] WARNING django.request:253 — Not Found: /shop/products/1
+[2025-09-19 15:41:46,484] WARNING django.server:213 — "GET /shop/products/1 HTTP/1.1" 404 3311
+[2025-09-19 15:41:58,578] INFO django.server:213 — "GET /products/1 HTTP/1.1" 301 0
+[2025-09-19 15:41:58,617] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 6464
+[2025-09-19 15:42:01,901] WARNING django.request:253 — Not Found: /products/
+[2025-09-19 15:42:01,905] WARNING django.server:213 — "GET /products/ HTTP/1.1" 404 3705
+[2025-09-19 15:42:05,106] WARNING django.request:253 — Not Found: /product/
+[2025-09-19 15:42:05,107] WARNING django.server:213 — "GET /product/ HTTP/1.1" 404 3290
+[2025-09-19 15:43:47,607] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
+[2025-09-19 15:43:49,199] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:44:31,534] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
+[2025-09-19 15:44:32,652] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:45:04,806] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
+[2025-09-19 15:45:05,850] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:45:23,892] INFO django.utils.autoreload:265 — /app/products/serializers.py changed, reloading.
+[2025-09-19 15:45:24,799] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:45:57,978] INFO django.utils.autoreload:265 — /app/products/serializers.py changed, reloading.
+[2025-09-19 15:45:58,761] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:46:24,172] INFO django.utils.autoreload:265 — /app/products/urls.py changed, reloading.
+[2025-09-19 15:46:25,025] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:46:52,924] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
+[2025-09-19 15:46:53,698] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:47:25,963] INFO django.utils.autoreload:265 — /app/products/urls.py changed, reloading.
+[2025-09-19 15:47:26,780] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:47:28,032] WARNING django.request:253 — Not Found: /product/api
+[2025-09-19 15:47:28,033] WARNING django.server:213 — "GET /product/api HTTP/1.1" 404 3299
+[2025-09-19 15:47:42,679] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-19 15:47:42,770] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 7004
+[2025-09-19 15:49:02,996] WARNING django.request:253 — Not Found: /shop/products/
+[2025-09-19 15:49:03,003] WARNING django.server:213 — "GET /shop/products/ HTTP/1.1" 404 3308
+[2025-09-19 15:50:34,827] INFO django.utils.autoreload:265 — /app/shop/urls.py changed, reloading.
+[2025-09-19 15:50:36,146] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:50:49,474] INFO django.utils.autoreload:265 — /app/shop/urls.py changed, reloading.
+[2025-09-19 15:50:50,295] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:51:00,586] WARNING django.request:253 — Not Found: /shop/products/
+[2025-09-19 15:51:00,587] WARNING django.server:213 — "GET /shop/products/ HTTP/1.1" 404 3308
+[2025-09-19 15:51:03,046] WARNING django.request:253 — Not Found: /shop
+[2025-09-19 15:51:03,047] WARNING django.server:213 — "GET /shop HTTP/1.1" 404 3278
+[2025-09-19 15:51:09,121] WARNING django.request:253 — Not Found: /shop
+[2025-09-19 15:51:09,122] WARNING django.server:213 — "GET /shop HTTP/1.1" 404 3278
+[2025-09-19 15:51:25,057] INFO django.utils.autoreload:265 — /app/backend/urls.py changed, reloading.
+[2025-09-19 15:51:25,867] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:51:26,932] INFO django.server:213 — "GET /shop HTTP/1.1" 200 6783
+[2025-09-19 15:53:43,592] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:54:23,426] INFO django.server:213 — "GET /shop HTTP/1.1" 200 6783
+[2025-09-19 15:59:37,913] WARNING django.request:253 — Not Found: /shop/products/
+[2025-09-19 15:59:37,914] WARNING django.server:213 — "GET /shop/products/ HTTP/1.1" 404 3316
+[2025-09-19 16:00:14,824] WARNING django.request:253 — Not Found: /shop/products/
+[2025-09-19 16:00:14,825] WARNING django.server:213 — "GET /shop/products/ HTTP/1.1" 404 3316
+[2025-09-19 16:00:28,096] INFO django.server:213 — "GET /shop HTTP/1.1" 200 982
+[2025-09-19 16:00:29,231] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-19 16:00:29,251] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-19 16:00:31,971] INFO django.server:213 — "GET /shop HTTP/1.1" 200 982
+[2025-09-19 16:00:58,700] INFO django.server:213 — "GET /shop HTTP/1.1" 200 982
+[2025-09-19 16:01:02,389] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-19 16:01:02,406] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-19 16:01:05,719] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 16:01:05,719] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 102
+[2025-09-19 16:01:28,346] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-19 16:01:28,366] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-19 16:01:29,842] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-19 16:01:29,864] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-19 16:01:33,716] INFO django.server:213 — "GET /shop HTTP/1.1" 200 982
+[2025-09-19 16:01:38,462] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-19 16:01:38,482] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-19 16:02:37,386] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-19 16:02:37,404] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-19 16:02:39,659] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-19 16:02:39,687] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-19 16:02:43,943] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-19 16:02:43,960] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803

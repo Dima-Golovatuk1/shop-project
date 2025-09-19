@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState} from "react";
+import { Link } from "react-router-dom";
 import "./header.css";
 import Registration from "../registration/registration";
 
@@ -84,7 +85,7 @@ function Header({ setActivLoginForm  }) {
                 <a href="{% url 'products' %}">Home</a>
               </li>
               <li className="aside__nav__item">
-                <a href="{% url 'products' %}">Catalog</a>
+                <Link to={`/`}>Catalog</Link>
               </li>
               <li className="aside__nav__item">
                 <a href="{% url 'cart-products' %}">Cart</a>
