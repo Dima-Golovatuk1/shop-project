@@ -17,9 +17,10 @@ function Login({ setActivRegistrationForm, setActivLoginForm }) {
     function submitLogin(e) {
         e.preventDefault();
         const formData = new FormData(formLoginRef.current);
-        const formDataObject = Object.fromEntries(formData.entries());
+        const formDataObject = Object.fromEntries(formData);
+        const formDataObjectt = Object.fromEntries(formData.entries());
 
-        console.log(formDataObject);
+        console.log(formDataObjectt);
 
         fetch("http://localhost:8000/user/login", {
             method: "POST",
