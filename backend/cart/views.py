@@ -6,6 +6,7 @@ from logging import getLogger
 from cart.models import CartItem, Carts
 from products.models import Product
 from .serializers import CartItemsSerializer
+from .utils import check_autheticated
 
 logger = getLogger(__name__)
 
@@ -13,15 +14,7 @@ logger = getLogger(__name__)
 @api_view(["GET"])
 def cart(request):
     try:
-        user_identificator = ""
-
-        if request.user.is_authenticated:
-            user_identificator = request.user.id
-        
-        else:
-            if not request.session.session_key:
-                request.session.create()
-            user_identificator = request.session.session_key
+        user_identificator = check_autheticated(request)
 
         cart, created = Carts.objects.get_or_create(user_id=user_identificator)
         items = CartItem.objects.filter(cart_id=cart).select_related('product')
@@ -44,15 +37,7 @@ def cart(request):
 @api_view(["GET", "POST"])
 def cart_items(request, product_id):
     try:
-        user_identificator = ""
-
-        if request.user.is_authenticated:
-            user_identificator = request.user.id
-        
-        else:
-            if not request.session.session_key:
-                request.session.create()
-            user_identificator = request.session.session_key
+        user_identificator = check_autheticated(request)
 
         cart, created = Carts.objects.get_or_create(user_id=user_identificator)
 
@@ -65,7 +50,7 @@ def cart_items(request, product_id):
             )
             item.save()
         
-        items = CartItem.objects.filter(cart_id=cart).select_related('product')
+        items = CartItem.objects.filter(cart_id=cart)
 
         items_serializer = CartItemsSerializer(items, many=True)
 
@@ -85,20 +70,12 @@ def cart_items(request, product_id):
 @api_view(["PUT"])
 def cart_item_adding(request, item_id):
     try:
-        user_identificator = ""
-
-        if request.user.is_authenticated:
-            user_identificator = request.user.id
-        
-        else:
-            if not request.session.session_key:
-                request.session.create()
-            user_identificator = request.session.session_key
+        user_identificator = check_autheticated(request)
 
         if request.method == "PUT":
             cart_id = Carts.objects.filter(user_id=user_identificator).first()
             product = Product.objects.filter(pk=item_id).first()
-            item = CartItem.objects.filter(cart_id=cart_id, product_id=product)
+            item = CartItem.objects.filter(cart_id=cart_id, product_id=product).first()
 
             item.quantity += 1
             item.save()
@@ -123,20 +100,12 @@ def cart_item_adding(request, item_id):
 @api_view(["PUT"])
 def cart_item_removing(request, item_id):
     try:
-        user_identificator = ""
-
-        if request.user.is_authenticated:
-            user_identificator = request.user.id
-        
-        else:
-            if not request.session.session_key:
-                request.session.create()
-            user_identificator = request.session.session_key
+        user_identificator = check_autheticated(request)
 
         if request.method == "PUT":
             cart_id = Carts.objects.filter(user_id=user_identificator).first()
             product = Product.objects.filter(pk=item_id).first()
-            item = CartItem.objects.filter(cart_id=cart_id, product_id=product)
+            item = CartItem.objects.filter(cart_id=cart_id, product_id=product).first()
 
             item.quantity -= 1
             item.save()
@@ -161,15 +130,7 @@ def cart_item_removing(request, item_id):
 @api_view(["DELETE"])
 def cart_item_delete(request, item_id):
     try:
-        user_identificator = ""
-
-        if request.user.is_authenticated:
-            user_identificator = request.user.id
-        
-        else:
-            if not request.session.session_key:
-                request.session.create()
-            user_identificator = request.session.session_key
+        user_identificator = check_autheticated(request)
 
         if request.method == "DELETE":
             cart_id = Carts.objects.filter(user_id=user_identificator).first()
