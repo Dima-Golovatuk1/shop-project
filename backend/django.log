@@ -241,3 +241,5 @@
 [2025-09-19 15:11:18,781] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 [2025-09-19 15:11:46,172] INFO django.utils.autoreload:265 — /app/backend/settings.py changed, reloading.
 [2025-09-19 15:11:47,145] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:12:05,840] INFO django.utils.autoreload:265 — /app/backend/settings.py changed, reloading.
+[2025-09-19 15:12:06,622] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
