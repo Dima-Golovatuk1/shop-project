@@ -52,12 +52,13 @@ function Product() {
     return (
         <section className="product">
             <div className="container">
+                <h2 className="product__title">{product.title}</h2>
                 <img
+                    className="product__img"
                     src={`http://localhost:8000${product.photo_url}`}
                     alt={product.title}
                 />
                 <div className="product__div">
-                    <h2 className="product__title">{product.title}</h2>
                     <p className="product__text-description">{product.description}</p>
                     <p className="product__text-price">{product.price}</p>
                     <button className="product__btn">Купити</button>
