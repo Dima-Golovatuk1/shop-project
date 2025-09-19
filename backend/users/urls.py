@@ -3,7 +3,8 @@ from rest_framework import routers
 from . import views
 
 urlpatterns = [
-    path("api/check-auth/", views.check_auth, name="check-auth"),
-    path("register/", views.register_user, name="register"),
-    path('login/', views.login_user, name='login'),
+    path("register/", views.register_user),
+    path('login/', views.login_user),
+    path('logout/', views.logout_user),
+    path("api/check-auth/", views.check_auth),
 ]

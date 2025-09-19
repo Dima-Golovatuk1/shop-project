@@ -106,23 +106,20 @@ def login_user(request):
         
         
       
-@api_view(['GET', 'POST'])
+@api_view(['GET'])
 def logout_user(request):
     try:
         
-        if request.method == 'POST':
-            user = request.user
-            logout(request=request)
+        user = request.user
+        logout(request=request)
 
-            return Response({
+        return Response({
                 'message': 'logout succesfully',
                 'user': user.id
             }, status=200)
         
         
-        return Response({
-            'message': 'Logout page',
-        })
+
     
     except Exception as e:
         logger.error("Error:\n", str(e))
