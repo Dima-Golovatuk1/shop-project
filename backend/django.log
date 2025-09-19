@@ -230,3 +230,79 @@
 [2025-09-19 14:54:32,393] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 102
 [2025-09-19 14:55:44,993] INFO django.utils.autoreload:265 — /app/backend/urls.py changed, reloading.
 [2025-09-19 14:55:46,674] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 14:57:03,985] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-19 14:57:05,262] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 14:57:05,263] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 102
+[2025-09-19 14:59:46,440] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-19 14:59:48,938] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:00:30,098] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-19 15:00:31,020] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:00:32,415] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-19 15:00:34,082] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:00:34,083] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 102
+[2025-09-19 15:00:34,980] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:00:34,980] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 102
+[2025-09-19 15:00:50,438] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-19 15:00:51,490] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:00:53,118] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-19 15:01:39,795] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:01:39,796] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 102
+[2025-09-19 15:02:55,169] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:02:55,170] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 7222
+[2025-09-19 15:02:56,499] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:02:56,500] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 7222
+[2025-09-19 15:02:57,232] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:02:57,234] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 7222
+[2025-09-19 15:02:57,927] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:02:57,928] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 7222
+[2025-09-19 15:02:58,377] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:02:58,378] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 7222
+[2025-09-19 15:03:11,061] WARNING django.request:253 — Bad Request: /cart/api/add/1/
+[2025-09-19 15:03:11,062] WARNING django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 400 7134
+[2025-09-19 15:03:15,090] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:03:15,091] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 7222
+[2025-09-19 15:03:17,367] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:03:17,368] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 7222
+[2025-09-19 15:03:17,798] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:03:17,799] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 7222
+[2025-09-19 15:03:17,980] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:03:17,981] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 7222
+[2025-09-19 15:03:18,143] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:03:18,144] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 7222
+[2025-09-19 15:03:25,244] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:03:25,245] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 7222
+[2025-09-19 15:03:29,497] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:03:29,498] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 7222
+[2025-09-19 15:03:37,528] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:03:37,529] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 7222
+[2025-09-19 15:03:41,156] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:03:41,157] ERROR django.server:213 — "GET /cart/api/add/1/ HTTP/1.1" 500 7221
+[2025-09-19 15:03:43,743] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:03:43,744] ERROR django.server:213 — "GET /cart/api/add/1/?format=json HTTP/1.1" 500 99
+[2025-09-19 15:03:47,785] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:03:47,786] ERROR django.server:213 — "GET /cart/api/add/1/?format=api HTTP/1.1" 500 7298
+[2025-09-19 15:03:48,887] INFO django.server:213 — "OPTIONS /cart/api/add/1/?format=api HTTP/1.1" 200 7460
+[2025-09-19 15:03:50,365] INFO django.server:213 — "OPTIONS /cart/api/add/1/?format=api HTTP/1.1" 200 7460
+[2025-09-19 15:03:52,631] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:03:52,632] ERROR django.server:213 — "GET /cart/api/add/1/?format=api HTTP/1.1" 500 7298
+[2025-09-19 15:03:53,800] INFO django.server:213 — "OPTIONS /cart/api/add/1/?format=api HTTP/1.1" 200 7460
+[2025-09-19 15:03:55,412] INFO django.server:213 — "OPTIONS /cart/api/add/1/?format=api HTTP/1.1" 200 7460
+[2025-09-19 15:03:56,102] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:03:56,103] ERROR django.server:213 — "GET /cart/api/add/1/?format=api HTTP/1.1" 500 7298
+[2025-09-19 15:09:08,645] WARNING django.request:253 — Not Found: /api/check-auth/
+[2025-09-19 15:09:08,649] WARNING django.server:213 — "GET /api/check-auth/ HTTP/1.1" 404 3311
+[2025-09-19 15:09:08,690] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-19 15:10:45,184] INFO django.utils.autoreload:265 — /app/backend/settings.py changed, reloading.
+[2025-09-19 15:10:46,551] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:11:14,347] INFO django.utils.autoreload:265 — /app/backend/settings.py changed, reloading.
+[2025-09-19 15:11:15,237] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:11:43,940] INFO django.utils.autoreload:265 — /app/backend/settings.py changed, reloading.
+[2025-09-19 15:11:44,790] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:12:01,511] INFO django.utils.autoreload:265 — /app/backend/settings.py changed, reloading.
+[2025-09-19 15:12:02,414] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:12:19,212] WARNING django.request:253 — Not Found: /api/check-auth/
+[2025-09-19 15:12:19,214] WARNING django.server:213 — "GET /api/check-auth/ HTTP/1.1" 404 3311
+[2025-09-19 15:12:19,221] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-19 15:12:27,533] WARNING django.request:253 — Not Found: /api/check-auth/
+[2025-09-19 15:12:27,535] WARNING django.server:213 — "GET /api/check-auth/ HTTP/1.1" 404 3311
+[2025-09-19 15:12:27,551] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
