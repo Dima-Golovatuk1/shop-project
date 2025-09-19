@@ -1,3 +1,15 @@
+:root {
+    /* Light */
+    --main-color: #0C5AA6;
+    --secondary-color: #100B6C;
+    --button-color: #27B080;
+    --button-color-hover: #006843;
+    --card-color: #053564;
+    --text-color: #acd7ff;
+    /* Dark */
+}
+
+
 .container{
     width: calc(100% - (20px + 18px));
     margin: 0 auto;
