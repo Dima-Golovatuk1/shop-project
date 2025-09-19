@@ -11,6 +11,17 @@ from logging import getLogger
 
 logger = getLogger(__name__)
 
+
+@api_view(["GET"])
+def check_auth(request):
+    if request.user.is_authenticated:
+        return Response({
+            "authenticated": True,
+            "username": request.user.username
+        })
+    return Response({"authenticated": False})
+
+
     
 @api_view(["GET", "POST"])
 def register_user(request):
