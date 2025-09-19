@@ -2,7 +2,8 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User 
+from django.contrib.auth import logout
 
 from .serializers import LoginSerializer, RegisterSerializer
 
@@ -10,6 +11,17 @@ from logging import getLogger
 
 
 logger = getLogger(__name__)
+
+
+@api_view(["GET"])
+def check_auth(request):
+    if request.user.is_authenticated:
+        return Response({
+            "authenticated": True,
+            "username": request.user.username
+        })
+    return Response({"authenticated": False})
+
 
     
 @api_view(["GET", "POST"])
@@ -84,6 +96,30 @@ def login_user(request):
         return Response({
             'message': 'Login page',
         })
+    
+    except Exception as e:
+        logger.error("Error:\n", str(e))
+        return Response({
+            'message': 'Error',
+            'error': str(e),
+        })
+        
+        
+      
+@api_view(['GET'])
+def logout_user(request):
+    try:
+        
+        user = request.user
+        logout(request=request)
+
+        return Response({
+                'message': 'logout succesfully',
+                'user': user.id
+            }, status=200)
+        
+        
+
     
     except Exception as e:
         logger.error("Error:\n", str(e))

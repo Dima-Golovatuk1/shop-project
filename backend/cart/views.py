@@ -1,5 +1,7 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from rest_framework import status
+from django.shortcuts import get_object_or_404
 
 from logging import getLogger
 
@@ -19,11 +21,9 @@ def cart(request):
         cart, created = Carts.objects.get_or_create(user_id=user_identificator)
         items = CartItem.objects.filter(cart_id=cart).select_related('product')
 
-        items_serializer = CartItemsSerializer(items, many=True)
-
         return Response({
             "message": f"Cart details for {request.user}",
-            "items": items_serializer.data
+            "items": items
         }, status=200)
             
     except Exception as e:
@@ -56,7 +56,7 @@ def cart_items(request, product_id):
 
         return Response({
             "message": f"Cart details for {request.user}",
-            "items": items_serializer.data
+            "items": items
         }, status=200)
     
     except Exception as e:
@@ -82,11 +82,9 @@ def cart_item_adding(request, item_id):
         
         items = CartItem.objects.filter(cart_id=cart).select_related('product')
 
-        items_serializer = CartItemsSerializer(items, many=True)
-
         return Response({
             "message": f"Cart details for {request.user}",
-            "items": items_serializer.data
+            "items": items
         }, status=200)
 
     except Exception as e:
@@ -112,11 +110,9 @@ def cart_item_removing(request, item_id):
         
         items = CartItem.objects.filter(cart_id=cart).select_related('product')
 
-        items_serializer = CartItemsSerializer(items, many=True)
-
         return Response({
             "message": f"Cart details for {request.user}",
-            "items": items_serializer.data
+            "items": items
         }, status=200)
 
     except Exception as e:
@@ -141,11 +137,9 @@ def cart_item_delete(request, item_id):
             
         items = CartItem.objects.filter(cart_id=cart).select_related('product')
 
-        items_serializer = CartItemsSerializer(items, many=True)
-
         return Response({
             "message": f"Cart details for {request.user}",
-            "items": items_serializer.data
+            "items": items
         }, status=200)
 
     except Exception as e:
