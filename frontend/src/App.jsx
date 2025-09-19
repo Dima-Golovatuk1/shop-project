@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./header/header"
 import Catalog from "./catalog/catalog"
 import Registration from "./registration/registration";
@@ -8,6 +8,23 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
+    useEffect(() => {
+        fetch("http://localhost:8000/user/api/check-auth/", {
+            method: "GET",
+            credentials: "include",
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.authenticated) {
+                    console.log("Користувач увійшов:", data.username);
+                } else {
+                    console.log("Гість");
+                }
+            })
+            .catch(err => console.error("Error:", err));
+    }, []);
+
+
     const [activRegistrationForm, setActivRegistrationForm] = useState(false);
     const [activLoginForm, setActivLoginForm] = useState(false);
 

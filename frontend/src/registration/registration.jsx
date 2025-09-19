@@ -4,11 +4,11 @@ import "./registration.css";
 function Registration({ setActivRegistrationForm, setActivLoginForm }) {
     const formRegistrRef = useRef(null);
 
-    function closeForm(){
+    function closeForm() {
         setActivRegistrationForm(false)
     }
 
-    function openLoginForm(){
+    function openLoginForm() {
         setActivLoginForm(true)
         setActivRegistrationForm(false)
     }
@@ -40,34 +40,34 @@ function Registration({ setActivRegistrationForm, setActivLoginForm }) {
         <>
             <div className="backdrop-registration"></div>
             <div className="registration">
-            <button onClick={closeForm} className="registration__close-btn">
-                <svg className="aside__btn-close__icon">
-                    <use href="../../public/img/svg/symbol-defs.svg#icon-close"></use>
-                </svg>
-            </button>
+                <button onClick={closeForm} className="registration__close-btn">
+                    <svg className="aside__btn-close__icon">
+                        <use href="../../public/img/svg/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
                 <h2 className="registration__title">Sign up</h2>
                 <form className="registration__form" ref={formRegistrRef} onSubmit={submitRegistr}>
                     <label className="registration__label">
                         Name
-                        <input className="registration__input" name="name" type="text" placeholder="Name" />
+                        <input className="registration__input" name="name" type="text" placeholder="Name" autoComplete="given-name" />
                     </label>
                     <label className="registration__label">
                         Surname
-                        <input className="registration__input" name="lastName" type="text" placeholder="Surname" />
+                        <input className="registration__input" name="lastName" type="text" placeholder="Surname" autoComplete="family-name" />
                     </label>
                     <label className="registration__label">
                         Email
-                        <input className="registration__input" name="email" type="email" placeholder="Email" />
+                        <input className="registration__input" name="email" type="email" placeholder="Email" autoComplete="email" />
                     </label>
                     <label className="registration__label">
                         Phone number
-                        <input className="registration__input" name="phone" type="phone" placeholder="Phone number" />
+                        <input className="registration__input" name="phone" type="tel" placeholder="Phone number" autoComplete="tel" />
                     </label>
                     <label className="registration__label">
                         Password
-                        <input className="registration__input" name="password" type="password" placeholder="Password" />
+                        <input className="registration__input" name="password" type="password" placeholder="Password" autoComplete="current-password" />
                     </label>
-        
+
                     <button className="registration__form__btn" type="submit">Register</button>
                     <p onClick={openLoginForm} className="registration__form__text">Already have an account?</p>
                 </form>

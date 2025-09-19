@@ -11,24 +11,6 @@ function Product() {
     const [error, setError] = useState(null);
 
 
-    useEffect(() => {
-        fetch("http://localhost:8000/user/api/check-auth/", {
-            method: "GET",
-            credentials: "include",
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (data.authenticated) {
-                    console.log("Користувач увійшов:", data.username);
-                } else {
-                    console.log("Гість");
-                }
-            })
-            .catch(err => console.error("Error:", err));
-    }, []);
-    
-
-
     function submitAddCart(e) {
         fetch(`http://localhost:8000/cart/api/add/${id}/`, {
             method: "POST",

@@ -7,7 +7,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgb(2, 163, 141) 0%, rgb(18, 130, 78) 100%);
+    background: radial-gradient(circle, var(--main-color) 0%, var(--secondary-color) 100%);
     opacity: 1;
 }
 
