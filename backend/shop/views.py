@@ -36,7 +36,7 @@ def index(request):
     
 
 
-@api_view(['GET'])
+@api_view(['GET', 'POST'])
 def search(request):
     try:
         query = request.GET.get('q')
