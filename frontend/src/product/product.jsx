@@ -12,7 +12,7 @@ function Product() {
 
 
     useEffect(() => {
-        fetch("http://localhost:8000/api/check-auth/", {
+        fetch("http://localhost:8000/user/api/check-auth/", {
             method: "GET",
             credentials: "include",
         })
