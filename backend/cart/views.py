@@ -194,3 +194,19 @@ def cart_item_delete(request, item_id):
             "error": str(e)
         }, status=500)
     
+    
+@api_view(['GET'])
+def cart_buy(request):
+    try:
+        
+        
+        return Response({}, status=200)
+        
+        
+        
+    except Exception as e:
+        logger.error("Error:\n", str(e))
+        return Response({
+            "message": "Error",
+            "error": str(e)
+        }, status=500)
