@@ -2,5 +2,6 @@ from django.urls import path
 from . import views  
 
 urlpatterns = [
-    path('products/', views.index, name='api-index'),
+    path('', views.index, ),
+    path('search/', views.search),
 ]
