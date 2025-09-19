@@ -1,0 +1,15 @@
+[2025-09-19 15:25:31,518] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-19 15:25:32,400] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:25:35,871] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-19 15:25:36,410] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:30:25,437] INFO django.utils.autoreload:265 — /app/shop/views.py changed, reloading.
+[2025-09-19 15:30:26,168] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-19 15:30:32,928] INFO django.server:213 — "GET / HTTP/1.1" 200 6465
+[2025-09-19 15:30:54,824] WARNING django.request:253 — Not Found: /cart/add/1
+[2025-09-19 15:30:54,825] WARNING django.server:213 — "GET /cart/add/1 HTTP/1.1" 404 4728
+[2025-09-19 15:31:01,980] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:31:01,981] ERROR django.server:213 — "GET /cart/api/add/1/ HTTP/1.1" 500 7184
+[2025-09-19 15:31:43,409] INFO django.server:213 — "OPTIONS /cart/api/add/1/ HTTP/1.1" 200 7353
+[2025-09-19 15:31:44,179] INFO django.server:213 — "OPTIONS /cart/api/add/1/ HTTP/1.1" 200 7353
+[2025-09-19 15:31:45,454] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-19 15:31:45,455] ERROR django.server:213 — "GET /cart/api/add/1/ HTTP/1.1" 500 7184

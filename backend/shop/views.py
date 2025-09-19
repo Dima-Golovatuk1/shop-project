@@ -64,4 +64,4 @@ def search(request):
         return Response({
             "message": "Error",
             "error": str(e)
-        }, status=500)
+        }, status=500) 
