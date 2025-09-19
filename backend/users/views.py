@@ -2,7 +2,8 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User 
+from django.contrib.auth import logout
 
 from .serializers import LoginSerializer, RegisterSerializer
 
@@ -83,6 +84,33 @@ def login_user(request):
     try:        
         return Response({
             'message': 'Login page',
+        })
+    
+    except Exception as e:
+        logger.error("Error:\n", str(e))
+        return Response({
+            'message': 'Error',
+            'error': str(e),
+        })
+        
+        
+      
+@api_view(['GET', 'POST'])
+def logout_user(request):
+    try:
+        
+        if request.method == 'POST':
+            user = request.user
+            logout(request=request)
+
+            return Response({
+                'message': 'logout succesfully',
+                'user': user.id
+            }, status=200)
+        
+        
+        return Response({
+            'message': 'Logout page',
         })
     
     except Exception as e:
