@@ -2,13 +2,9 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 
-from django.contrib.auth.models import User 
-from django.contrib.auth import logout
-
+from django.contrib.auth import authenticate, login, logout
 from .serializers import LoginSerializer, RegisterSerializer
-
 from logging import getLogger
-
 
 logger = getLogger(__name__)
 
@@ -23,18 +19,16 @@ def check_auth(request):
     return Response({"authenticated": False})
 
 
-    
 @api_view(["GET", "POST"])
 def register_user(request):
     if request.method == 'POST':
-            try:
-                serializer = RegisterSerializer(data=request.data)
-                if serializer.is_valid():
-                    user = serializer.save()
+        try:
+            serializer = RegisterSerializer(data=request.data)
+            if serializer.is_valid():
+                user = serializer.save()
 
-                logger.info(f"user: {user}")
-        
-                
+                login(request, user)
+
                 return Response({
                     "message": "User created successfully",
                     "user": {
@@ -43,87 +37,64 @@ def register_user(request):
                         "phone_number": user.phone_number
                     }
                 }, status=status.HTTP_201_CREATED)
-            
-            except Exception as e:
-                return Response({
-                    "message": "Error",
-                    "error": str(e)
-                }, status=500)
-                
-    try:
-        return Response({
-            "message": "Register"
-        }, status=200)
-        
-    
-    except Exception as e:
-        return Response({
-            "message": "Error",
-            "error": str(e)
-        }, status=500)
 
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-      
-@api_view(['GET', 'POST'])
-def login_user(request):
-    if request.method == 'POST':
-        try:
-            
-            serializer = LoginSerializer(data=request.data)
-            
-            if serializer.is_valid():
-                user = serializer.validated_data["user"]
-
-            logger.info(f"user: {user}")
-
-            return Response({
-                "message": "User logged in successfully",
-                "user": {
-                    "username": user.username,
-                    "email": user.email,
-                    "phone_number": user.phone_number
-                }
-            }, status=status.HTTP_200_OK)
-            
         except Exception as e:
-            logger.error("Error:\n", str(e))
             return Response({
                 "message": "Error",
                 "error": str(e)
             }, status=500)
-    
-    try:        
-        return Response({
-            'message': 'Login page',
-        })
-    
-    except Exception as e:
-        logger.error("Error:\n", str(e))
-        return Response({
-            'message': 'Error',
-            'error': str(e),
-        })
-        
-        
-      
-@api_view(['GET'])
+
+    return Response({"message": "Register"}, status=200)
+
+
+@api_view(['GET', 'POST'])
+def login_user(request):
+    if request.method == 'POST':
+        try:
+            serializer = LoginSerializer(data=request.data)
+            if serializer.is_valid():
+                user = serializer.validated_data["user"]
+
+                request.user = user
+
+                return Response({
+                    "message": "User logged in successfully",
+                    "user": {
+                        "username": user.username,
+                        "email": user.email,
+                        "phone_number": user.phone_number
+                    }
+                }, status=status.HTTP_200_OK)
+
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+        except Exception as e:
+            logger.error("Error:\n", str(e))
+            return Response({"message": "Error", "error": str(e)}, status=500)
+
+    return Response({'message': 'Login page'})
+
+
+@api_view(['GET', 'POST'])
 def logout_user(request):
     try:
         
-        user = request.user
-        logout(request=request)
+        if not request.user.is_authenticated:
+            return Response({
+                "message": "No user is logged in"
+                             }, status=404)
+    
+        if request.method == 'POST':
+            logout(request=request)
+            return Response({'message': 'logout successfully'}, status=200)
 
         return Response({
-                'message': 'logout succesfully',
-                'user': user.id
-            }, status=200)
-        
-        
+            'message': 'logout page',
+            'user': getattr(request.user, "id", None)
+        }, status=200)
 
-    
     except Exception as e:
         logger.error("Error:\n", str(e))
-        return Response({
-            'message': 'Error',
-            'error': str(e),
-        })
+        return Response({'message': 'Error', 'error': str(e)}, status=500)
