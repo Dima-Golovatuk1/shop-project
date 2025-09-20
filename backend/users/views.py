@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework import status
 
 from django.contrib.auth.models import User 
-from django.contrib.auth import logout
+from django.contrib.auth import logout, login
 
 from .serializers import LoginSerializer, RegisterSerializer
 
@@ -63,21 +63,22 @@ def register_user(request):
         }, status=500)
 
 
-      
+
 @api_view(['GET', 'POST'])
 def login_user(request):
     if request.method == 'POST':
         try:
-            
             serializer = LoginSerializer(data=request.data)
             
             if serializer.is_valid():
                 user = serializer.validated_data["user"]
 
+            login(request, user) 
             logger.info(f"user: {user}")
 
             return Response({
                 "message": "User logged in successfully",
+                "authenticated": True,
                 "user": {
                     "username": user.username,
                     "email": user.email,
@@ -103,9 +104,8 @@ def login_user(request):
             'message': 'Error',
             'error': str(e),
         })
-        
-        
-      
+
+
 @api_view(['GET'])
 def logout_user(request):
     try:

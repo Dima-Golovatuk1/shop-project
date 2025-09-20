@@ -360,3 +360,578 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [2025-09-20 06:58:45,108] WARNING django.request:253 — Not Found: /
 [2025-09-20 06:58:45,109] WARNING django.server:213 — "GET / HTTP/1.1" 404 2922
 [2025-09-20 06:58:49,829] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5150
+[2025-09-20 11:20:52,499] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 11:20:59,477] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-20 11:20:59,517] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 11:20:59,534] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-20 11:20:59,552] INFO django.server:213 — "GET /media/catalog/487793279_I0LTg7r.png HTTP/1.1" 304 0
+[2025-09-20 11:20:59,576] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 11:21:01,675] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 13218
+[2025-09-20 11:21:02,159] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-20 11:21:02,160] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 2973
+[2025-09-20 11:21:19,326] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-20 11:21:20,347] INFO django.server:213 — "OPTIONS /cart/api/add/1/ HTTP/1.1" 200 0
+[2025-09-20 11:21:20,485] ERROR django.request:253 — Internal Server Error: /cart/api/add/1/
+[2025-09-20 11:21:20,487] ERROR django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 500 268
+[2025-09-20 11:21:46,271] ERROR django.request:253 — Internal Server Error: /admin/cart/cartitem/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column cart_cartitem.cart_id does not exist
+LINE 1: SELECT "cart_cartitem"."id", "cart_cartitem"."cart_id", "car...
+                                     ^
+HINT:  Perhaps you meant to reference the column "cart_cartitem.cart_id_id".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 2163, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column cart_cartitem.cart_id does not exist
+LINE 1: SELECT "cart_cartitem"."id", "cart_cartitem"."cart_id", "car...
+                                     ^
+HINT:  Perhaps you meant to reference the column "cart_cartitem.cart_id_id".
+
+[2025-09-20 11:21:46,280] ERROR django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 500 158820
+[2025-09-20 11:21:50,559] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 13218
+[2025-09-20 11:21:51,603] ERROR django.request:253 — Internal Server Error: /admin/cart/carts/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column cart_carts.user_id does not exist
+LINE 1: SELECT "cart_carts"."id", "cart_carts"."user_id", "cart_cart...
+                                  ^
+HINT:  Perhaps you meant to reference the column "cart_carts.user_id_id".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 2163, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column cart_carts.user_id does not exist
+LINE 1: SELECT "cart_carts"."id", "cart_carts"."user_id", "cart_cart...
+                                  ^
+HINT:  Perhaps you meant to reference the column "cart_carts.user_id_id".
+
+[2025-09-20 11:21:51,609] ERROR django.server:213 — "GET /admin/cart/carts/ HTTP/1.1" 500 157318
+[2025-09-20 11:21:52,997] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 13218
+[2025-09-20 11:21:54,806] INFO django.server:213 — "GET /admin/products/product/ HTTP/1.1" 200 17106
+[2025-09-20 11:21:54,846] INFO django.server:213 — "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2025-09-20 11:21:54,847] INFO django.server:213 — "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[2025-09-20 11:21:54,859] INFO django.server:213 — "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[2025-09-20 11:21:54,864] INFO django.server:213 — "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[2025-09-20 11:21:54,865] INFO django.server:213 — "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[2025-09-20 11:21:54,866] INFO django.server:213 — "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2025-09-20 11:21:54,866] INFO django.server:213 — "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[2025-09-20 11:21:54,871] INFO django.server:213 — "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[2025-09-20 11:21:54,872] INFO django.server:213 — "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[2025-09-20 11:21:54,882] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-20 11:21:54,885] INFO django.server:213 — "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[2025-09-20 11:21:54,897] INFO django.server:213 — "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[2025-09-20 11:21:54,904] INFO django.server:213 — "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[2025-09-20 11:21:54,909] INFO django.server:213 — "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[2025-09-20 11:21:54,912] INFO django.server:213 — "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[2025-09-20 11:21:54,959] INFO django.server:213 — "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[2025-09-20 11:21:54,964] INFO django.server:213 — "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[2025-09-20 11:21:54,976] INFO django.server:213 — "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[2025-09-20 11:21:54,978] INFO django.server:213 — "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+[2025-09-20 11:21:54,981] INFO django.server:213 — "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[2025-09-20 11:21:56,855] ERROR django.request:253 — Internal Server Error: /admin/cart/cartitem/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column cart_cartitem.cart_id does not exist
+LINE 1: SELECT "cart_cartitem"."id", "cart_cartitem"."cart_id", "car...
+                                     ^
+HINT:  Perhaps you meant to reference the column "cart_cartitem.cart_id_id".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 2163, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column cart_cartitem.cart_id does not exist
+LINE 1: SELECT "cart_cartitem"."id", "cart_cartitem"."cart_id", "car...
+                                     ^
+HINT:  Perhaps you meant to reference the column "cart_cartitem.cart_id_id".
+
+[2025-09-20 11:21:56,861] ERROR django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 500 158837
+[2025-09-20 11:22:39,136] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-20 11:22:39,140] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-20 11:22:40,475] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:02:22,149] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-20 12:02:22,150] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:02:24,265] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-20 12:02:38,487] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:03:11,118] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-20 12:03:11,121] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:04:23,139] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-20 12:04:23,142] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:05:51,632] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:05:51,632] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-20 12:05:56,372] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-20 12:05:57,493] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:06:27,323] WARNING django.request:253 — Not Found: /users/logut
+[2025-09-20 12:06:27,324] WARNING django.server:213 — "GET /users/logut HTTP/1.1" 404 2973
+[2025-09-20 12:06:39,856] WARNING django.request:253 — Not Found: /users/logout
+[2025-09-20 12:06:39,857] WARNING django.server:213 — "GET /users/logout HTTP/1.1" 404 2976
+[2025-09-20 12:06:47,688] WARNING django.request:253 — Not Found: /users/logout
+[2025-09-20 12:06:47,689] WARNING django.server:213 — "GET /users/logout HTTP/1.1" 404 2976
+[2025-09-20 12:06:51,425] INFO django.server:213 — "GET /user/logout HTTP/1.1" 301 0
+[2025-09-20 12:06:51,497] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5227
+[2025-09-20 12:06:55,699] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5230
+[2025-09-20 12:07:00,127] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 12:07:00,160] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:07:01,726] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 12:07:01,754] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:07:10,367] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-20 12:27:59,457] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 12:27:59,474] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-20 12:28:26,225] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 12:28:26,256] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:28:34,133] INFO django.server:213 — "GET /user/login/ HTTP/1.1" 200 6829
+[2025-09-20 12:29:31,104] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 6914
+[2025-09-20 12:30:11,488] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:31:50,061] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-20 12:31:51,542] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 12:32:02,762] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-20 12:32:03,584] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 12:37:21,686] ERROR django.request:253 — Internal Server Error: /user/login/
+[2025-09-20 12:37:21,687] ERROR django.server:213 — "POST /user/login/ HTTP/1.1" 500 6975
+[2025-09-20 12:37:57,036] ERROR django.request:253 — Internal Server Error: /user/login/
+[2025-09-20 12:37:57,037] ERROR django.server:213 — "POST /user/login/ HTTP/1.1" 500 6975
+[2025-09-20 12:38:01,013] INFO django.server:213 — "GET /user/login/ HTTP/1.1" 200 6829
+[2025-09-20 12:38:07,810] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:38:08,790] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:38:11,796] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:38:13,304] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:38:14,039] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:38:20,775] ERROR django.request:253 — Internal Server Error: /user/login/
+[2025-09-20 12:38:20,776] ERROR django.server:213 — "POST /user/login/ HTTP/1.1" 500 6975
+[2025-09-20 12:38:26,040] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:38:28,548] ERROR django.request:253 — Internal Server Error: /user/login/
+[2025-09-20 12:38:28,549] ERROR django.server:213 — "POST /user/login/ HTTP/1.1" 500 6966
+[2025-09-20 12:38:32,430] ERROR django.request:253 — Internal Server Error: /user/login/
+[2025-09-20 12:38:32,431] ERROR django.server:213 — "POST /user/login/ HTTP/1.1" 500 6975
+[2025-09-20 12:38:35,263] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:39:22,539] INFO users.views:77 — user: 1
+[2025-09-20 12:39:22,601] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 7065
+[2025-09-20 12:39:32,243] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:39:33,291] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:39:34,450] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:39:39,602] INFO django.server:213 — "GET /user/login/ HTTP/1.1" 200 6829
+[2025-09-20 12:39:43,778] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:39:49,443] INFO users.views:77 — user: 1
+[2025-09-20 12:39:49,450] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 7065
+[2025-09-20 12:39:54,161] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:39:54,810] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:39:58,614] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-20 12:40:51,899] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-20 12:40:53,211] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 12:42:17,886] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-20 12:42:19,138] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 12:42:44,501] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-20 12:42:45,426] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 12:43:28,880] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-20 12:43:30,138] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 12:44:18,961] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-20 12:44:19,748] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 12:44:32,442] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:44:39,598] ERROR django.request:253 — Internal Server Error: /user/login/
+[2025-09-20 12:44:39,599] ERROR django.server:213 — "POST /user/login/ HTTP/1.1" 500 6944
+[2025-09-20 12:44:43,140] INFO django.server:213 — "GET /user/login/ HTTP/1.1" 200 6829
+[2025-09-20 12:44:45,263] ERROR django.request:253 — Internal Server Error: /user/login/
+[2025-09-20 12:44:45,264] ERROR django.server:213 — "POST /user/login/ HTTP/1.1" 500 6944
+[2025-09-20 12:45:18,834] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-20 12:45:20,145] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 12:45:21,769] INFO django.server:213 — "GET /user/login/ HTTP/1.1" 200 6829
+[2025-09-20 12:45:34,753] INFO users.views:77 — user: 1
+[2025-09-20 12:45:34,823] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 7132
+[2025-09-20 12:45:45,979] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5294
+[2025-09-20 12:45:51,034] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5294
+[2025-09-20 12:46:09,507] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5227
+[2025-09-20 12:46:12,132] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5230
+[2025-09-20 12:46:15,577] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:46:17,941] INFO django.server:213 — "GET /user/login/ HTTP/1.1" 200 6829
+[2025-09-20 12:46:26,273] INFO users.views:77 — user: 1
+[2025-09-20 12:46:26,282] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 7132
+[2025-09-20 12:46:29,476] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5294
+[2025-09-20 12:46:35,098] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-20 12:46:35,107] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-20 12:46:35,796] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:46:38,307] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-20 12:46:39,743] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:46:41,263] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-20 12:46:49,078] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5227
+[2025-09-20 12:46:51,962] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5230
+[2025-09-20 12:46:54,842] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:46:57,148] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:47:01,756] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 12:47:01,789] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:47:50,996] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 12:47:51,052] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:48:03,722] INFO django.server:213 — "OPTIONS /user/login HTTP/1.1" 200 0
+[2025-09-20 12:48:03,768] ERROR django.request:253 — Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/user/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2025-09-20 12:48:03,771] ERROR django.server:213 — "POST /user/login HTTP/1.1" 500 63387
+[2025-09-20 12:48:07,388] ERROR django.request:253 — Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/user/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2025-09-20 12:48:07,390] ERROR django.server:213 — "POST /user/login HTTP/1.1" 500 63387
+[2025-09-20 12:48:11,772] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 12:48:11,802] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:48:20,766] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 12:48:20,784] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-20 12:48:42,648] ERROR django.request:253 — Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/user/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2025-09-20 12:48:42,650] ERROR django.server:213 — "POST /user/login HTTP/1.1" 500 63387
+[2025-09-20 12:48:59,463] ERROR django.request:253 — Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/user/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2025-09-20 12:48:59,466] ERROR django.server:213 — "POST /user/login HTTP/1.1" 500 63387
+[2025-09-20 12:49:00,376] ERROR django.request:253 — Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/user/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2025-09-20 12:49:00,379] ERROR django.server:213 — "POST /user/login HTTP/1.1" 500 63387
+[2025-09-20 12:49:00,807] ERROR django.request:253 — Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/user/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2025-09-20 12:49:00,809] ERROR django.server:213 — "POST /user/login HTTP/1.1" 500 63387
+[2025-09-20 12:50:36,542] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 12:50:36,603] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:50:47,037] INFO django.server:213 — "OPTIONS /user/login/ HTTP/1.1" 200 0
+[2025-09-20 12:50:47,759] INFO users.views:77 — user: 1
+[2025-09-20 12:50:47,765] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-20 12:51:07,308] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 12:51:07,344] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:51:17,112] INFO users.views:77 — user: 1
+[2025-09-20 12:51:17,117] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-20 12:51:27,435] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:51:28,416] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:51:31,093] INFO users.views:77 — user: 1
+[2025-09-20 12:51:31,098] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-20 12:51:31,315] INFO users.views:77 — user: 1
+[2025-09-20 12:51:31,319] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-20 12:51:31,506] INFO users.views:77 — user: 1
+[2025-09-20 12:51:31,511] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-20 12:51:31,670] INFO users.views:77 — user: 1
+[2025-09-20 12:51:31,676] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-20 12:51:47,358] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 12:51:47,374] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-20 12:53:08,709] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:53:09,408] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:53:12,828] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 12:53:12,852] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:55:57,301] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 12:55:57,319] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-20 12:55:57,384] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 12:55:57,409] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:56:06,380] INFO django.server:213 — "OPTIONS /user/login/ HTTP/1.1" 200 0
+[2025-09-20 12:56:06,826] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 12:56:06,849] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:56:07,275] INFO users.views:77 — user: 1
+[2025-09-20 12:56:07,281] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-20 12:56:17,535] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:56:18,602] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 12:57:01,377] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 12:57:01,402] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:57:14,402] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 12:57:14,427] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:57:14,886] INFO users.views:77 — user: 1
+[2025-09-20 12:57:14,890] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-20 12:57:39,224] ERROR django.request:253 — Internal Server Error: /user/login/
+[2025-09-20 12:57:39,226] ERROR django.server:213 — "POST /user/login/ HTTP/1.1" 500 105
+[2025-09-20 12:57:39,608] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 12:57:39,667] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:59:32,663] INFO users.views:77 — user: 1
+[2025-09-20 12:59:32,674] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 7132
+[2025-09-20 12:59:35,450] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5294
+[2025-09-20 12:59:38,175] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-20 12:59:38,178] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:59:43,231] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-20 12:59:45,316] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 12:59:48,134] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-20 12:59:48,826] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 13:00:08,075] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-20 13:00:08,081] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-20 13:00:17,144] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5227
+[2025-09-20 13:00:21,791] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 13:00:21,817] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 13:00:30,756] ERROR django.request:253 — Internal Server Error: /user/login/
+[2025-09-20 13:00:30,759] ERROR django.server:213 — "POST /user/login/ HTTP/1.1" 500 105
+[2025-09-20 13:00:31,112] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 13:00:31,134] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 13:00:41,657] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 6914
+[2025-09-20 13:02:10,809] ERROR django.request:253 — Internal Server Error: /user/login/
+[2025-09-20 13:02:10,811] ERROR django.server:213 — "POST /user/login/ HTTP/1.1" 500 105
+[2025-09-20 13:02:11,179] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 13:02:11,206] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 13:02:37,163] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 13:02:37,188] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 13:02:43,616] ERROR django.request:253 — Internal Server Error: /user/login/
+[2025-09-20 13:02:43,618] ERROR django.server:213 — "POST /user/login/ HTTP/1.1" 500 105
+[2025-09-20 13:02:54,996] INFO django.server:213 — "GET /user/login/ HTTP/1.1" 200 6829
+[2025-09-20 13:08:19,614] INFO django.utils.autoreload:265 — /app/users/serializers.py changed, reloading.
+[2025-09-20 13:08:20,891] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 13:08:38,228] ERROR django.request:253 — Internal Server Error: /user/login/
+[2025-09-20 13:08:38,229] ERROR django.server:213 — "POST /user/login/ HTTP/1.1" 500 105
+[2025-09-20 13:09:19,459] ERROR django.request:253 — Internal Server Error: /user/login/
+[2025-09-20 13:09:19,461] ERROR django.server:213 — "POST /user/login/ HTTP/1.1" 500 6966
+[2025-09-20 13:09:25,090] INFO django.utils.autoreload:265 — /app/users/serializers.py changed, reloading.
+[2025-09-20 13:09:26,318] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 13:09:28,020] INFO django.server:213 — "GET /user/login/ HTTP/1.1" 200 6829
+[2025-09-20 13:09:31,931] INFO users.views:77 — user: 1
+[2025-09-20 13:09:32,000] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 7132
+[2025-09-20 13:09:37,626] INFO django.server:213 — "GET /user/login/ HTTP/1.1" 200 6859
+[2025-09-20 13:09:46,838] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5294
+[2025-09-20 13:09:50,830] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5227
+[2025-09-20 13:09:51,760] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5230
+[2025-09-20 13:09:53,658] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
