@@ -36,32 +36,65 @@ def index(request):
     
 
 
-@api_view(['GET', 'POST'])
+from rest_framework.response import Response
+from django.db.models import Q
+from rest_framework.decorators import api_view
+from .models import Product
+from .serializers import ProductSerializer
+import logging
+
+# Set up logging
+logger = logging.getLogger(__name__)
+
+@api_view(['GET'])
 def search(request):
     try:
-        query = request.GET.get('q')
-        products = Product.objects.filter(Q(title__icontains=query) | Q(description__icontains=query) | Q(product_code__icontains=query))
+        query = request.GET.get('q') or None
+        price = request.GET.get('price') or None
+        brand = request.GET.get('brand') or None
+        category = request.GET.get('category') or None
+        sub_category = request.GET.get('sub_category') or None
 
-        if not products:
-            return Response({
-               'message': 'Products not found' 
-            }, status=404)
-
-            
-        products_serializer = ProductSerializer(products, many=True)
-       
-        product_ids = [i.id for i in products]
+        filters = Q()
         
+        if query:
+            filters &= Q(name__icontains=query)
+        if price:
+            filters &= Q(price__lte=price)  
+        if brand:
+            filters &= Q(brand__icontains=brand)
+        if category:
+            filters &= Q(category__icontains=category)
+        if sub_category:
+            filters &= Q(sub_category__icontains=sub_category)
+        
+        products = Product.objects.filter(filters)
+        
+        if not products.exists():
+            return Response({
+                'message': 'No products found matching your criteria.',
+            }, status=200)
+
+        products_serializer = ProductSerializer(products, many=True)
+        
+        product_ids = [product.id for product in products]
+
         return Response({
-            'message': f"Searched products: {len(product_ids)} found",
+            'message': f"Searched products: {len(product_ids)} found.",
             'product_ids': product_ids,
             'products': products_serializer.data,
+            'filters': { 
+                'query': query,
+                'price': price,
+                'brand': brand,
+                'category': category,
+                'sub_category': sub_category
+            }
         }, status=200)
         
-        
     except Exception as e:
-        logger.error("Error:\n", str(e))
+        logger.error(f"Error:\n {str(e)}")
         return Response({
-            "message": "Error",
-            "error": str(e)
-        }, status=500) 
+            'message': '\nError:\n',
+            'error': str(e)
+        }, status=500)
