@@ -312,3 +312,51 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [2025-09-19 20:13:40,726] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
 [2025-09-19 20:13:43,780] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
 [2025-09-19 20:13:45,737] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 06:43:31,015] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 06:45:18,725] INFO django.utils.autoreload:265 — /app/cart/models.py changed, reloading.
+[2025-09-20 06:45:19,083] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 06:46:31,276] INFO django.utils.autoreload:265 — /app/cart/models.py changed, reloading.
+[2025-09-20 06:46:31,639] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 06:47:36,722] INFO django.utils.autoreload:265 — /app/cart/models.py changed, reloading.
+[2025-09-20 06:47:37,073] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 06:48:29,498] INFO django.utils.autoreload:265 — /app/cart/models.py changed, reloading.
+[2025-09-20 06:48:29,901] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 06:49:04,395] WARNING django.request:253 — Not Found: /
+[2025-09-20 06:49:04,396] WARNING django.server:213 — "GET / HTTP/1.1" 404 2922
+[2025-09-20 06:49:04,484] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-20 06:49:04,485] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 2973
+[2025-09-20 06:49:15,944] WARNING django.request:253 — Not Found: /api/cart
+[2025-09-20 06:49:15,944] WARNING django.server:213 — "GET /api/cart HTTP/1.1" 404 2964
+[2025-09-20 06:49:39,424] WARNING django.request:253 — Not Found: /cart/api/cart
+[2025-09-20 06:49:39,424] WARNING django.server:213 — "GET /cart/api/cart HTTP/1.1" 404 4411
+[2025-09-20 06:49:57,247] INFO django.server:213 — "GET /cart HTTP/1.1" 301 0
+[2025-09-20 06:49:57,295] ERROR django.request:253 — Internal Server Error: /cart/
+[2025-09-20 06:49:57,296] ERROR django.server:213 — "GET /cart/ HTTP/1.1" 500 5246
+[2025-09-20 06:49:57,315] INFO django.server:213 — "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+[2025-09-20 06:49:57,315] INFO django.server:213 — "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[2025-09-20 06:49:57,320] INFO django.server:213 — "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[2025-09-20 06:49:57,321] INFO django.server:213 — "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+[2025-09-20 06:49:57,323] INFO django.server:213 — "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+[2025-09-20 06:49:57,323] INFO django.server:213 — "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+[2025-09-20 06:49:57,325] INFO django.server:213 — "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+[2025-09-20 06:49:57,326] INFO django.server:213 — "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+[2025-09-20 06:49:57,327] INFO django.server:213 — "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[2025-09-20 06:49:57,329] INFO django.server:213 — "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+[2025-09-20 06:49:57,329] INFO django.server:213 — "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+[2025-09-20 06:49:57,330] INFO django.server:213 — "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[2025-09-20 06:52:35,134] INFO django.utils.autoreload:265 — /app/cart/models.py changed, reloading.
+[2025-09-20 06:52:35,509] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 06:55:14,228] INFO django.utils.autoreload:265 — /app/cart/utils.py changed, reloading.
+[2025-09-20 06:55:14,769] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 06:55:21,478] INFO django.utils.autoreload:265 — /app/cart/utils.py changed, reloading.
+[2025-09-20 06:55:21,837] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 06:57:47,065] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-20 06:57:47,430] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 06:57:56,663] WARNING django.request:253 — Not Found: /
+[2025-09-20 06:57:56,664] WARNING django.server:213 — "GET / HTTP/1.1" 404 2922
+[2025-09-20 06:58:01,703] ERROR django.request:253 — Internal Server Error: /cart/
+[2025-09-20 06:58:01,704] ERROR django.server:213 — "GET /cart/ HTTP/1.1" 500 5388
+[2025-09-20 06:58:17,378] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 06:58:45,108] WARNING django.request:253 — Not Found: /
+[2025-09-20 06:58:45,109] WARNING django.server:213 — "GET / HTTP/1.1" 404 2922
+[2025-09-20 06:58:49,829] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5150

@@ -1,12 +1,12 @@
+from .models import Carts
+
 
 def check_autheticated(request):
-    user_identificator = ''
     if request.user.is_authenticated:
-        user_identificator += request.user.id
-    
+        cart, created = Carts.objects.get_or_create(user=request.user)
     else:
         if not request.session.session_key:
             request.session.create()
-        user_identificator += request.session.session_key
+        cart, created = Carts.objects.get_or_create(session_key=request.session.session_key)
 
-    return user_identificator
+    return cart

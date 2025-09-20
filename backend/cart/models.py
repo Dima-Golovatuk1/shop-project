@@ -8,18 +8,19 @@ from backend.settings import AUTH_USER_MODEL
 
 
 class Carts(models.Model):
-    user_id = models.OneToOneField(AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
+    user = models.OneToOneField(AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, blank=True)
+    session_key = models.TextField(null=True, blank=True)
     
     def __str__(self):
-        return f"{self.user_id}'s cart"
+        return f"{self.user}'s cart"
 
 
 class CartItem(models.Model):
-    cart_id = models.ForeignKey(Carts, on_delete=models.CASCADE, null=True)
-    product_id = models.ForeignKey(Product, on_delete=models.CASCADE, null=True)
+    cart = models.ForeignKey(Carts, on_delete=models.CASCADE, null=True, blank=True)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, null=True, blank=True)
     quantity = models.PositiveIntegerField()
     price = models.PositiveIntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.cart_id}"
+        return f"{self.cart}"
