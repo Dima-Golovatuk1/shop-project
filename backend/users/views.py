@@ -95,7 +95,9 @@ def logout_user(request):
                              }, status=404)
     
         if request.method == 'POST':
+            
             logout(request=request)
+            
             return Response({'message': 'logout successfully'}, status=200)
 
         return Response({
