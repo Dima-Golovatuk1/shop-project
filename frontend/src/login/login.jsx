@@ -22,12 +22,13 @@ function Login({ setActivRegistrationForm, setActivLoginForm }) {
 
         console.log(formDataObjectt);
 
-        fetch("http://localhost:8000/user/login", {
+        fetch("http://localhost:8000/user/login/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(formDataObject)
+            body: JSON.stringify(formDataObject),
+            credentials: "include"
         })
             .then(res => res.json())
             .then(data => {
@@ -51,10 +52,10 @@ function Login({ setActivRegistrationForm, setActivLoginForm }) {
                         Email
                         <input className="login__input" name="email" type="email" placeholder="Email" />
                     </label>
-                    <label className="login__label">
+                    {/* <label className="login__label">
                         Phone Number
                         <input className="login__input" name="phone" type="tel" placeholder="Phone Number" />
-                    </label>
+                    </label> */}
                     <label className="login__label">
                         Password
                         <input className="login__input" name="password" type="password" placeholder="Password" />

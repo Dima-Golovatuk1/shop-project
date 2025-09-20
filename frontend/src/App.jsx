@@ -8,6 +8,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
+    const [activRegistrationForm, setActivRegistrationForm] = useState(false);
+    const [activLoginForm, setActivLoginForm] = useState(false);
+
+    const [dataAuthenticated, setdataAuthenticated] = useState(false)
+    const [username, setUsername] = useState(null);
+
+
     useEffect(() => {
         fetch("http://localhost:8000/user/api/check-auth/", {
             method: "GET",
@@ -16,21 +23,25 @@ function App() {
             .then(res => res.json())
             .then(data => {
                 if (data.authenticated) {
-                    console.log("Користувач увійшов:", data.username);
+                    setdataAuthenticated(true)
+                    setUsername(data.username)
+                    console.log("username:", data.username);
                 } else {
-                    console.log("Гість");
+                    setdataAuthenticated(false);
+                    setUsername(null);
+                    console.log("Guest");
                 }
             })
             .catch(err => console.error("Error:", err));
     }, []);
 
 
-    const [activRegistrationForm, setActivRegistrationForm] = useState(false);
-    const [activLoginForm, setActivLoginForm] = useState(false);
-
     return (
         <BrowserRouter>
-            <Header setActivLoginForm={setActivRegistrationForm} />
+            <Header
+                dataAuthenticated={dataAuthenticated} 
+                setActivLoginForm={setActivRegistrationForm} 
+                />
             <main>
                 {activRegistrationForm && <Registration setActivRegistrationForm={setActivRegistrationForm} setActivLoginForm={setActivLoginForm} />}
                 {activLoginForm && <Login setActivLoginForm={setActivLoginForm} setActivRegistrationForm={setActivRegistrationForm} />}
@@ -39,6 +50,8 @@ function App() {
                     <Route path="/" element={<Catalog />} />
 
                     <Route path="/product/:id" element={<Product />} />
+
+                    <Route path="/profile" element={<Catalog />} />
                 </Routes>
             </main>
         </BrowserRouter>

@@ -1,10 +1,12 @@
 import { useState} from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate  } from "react-router-dom";
 import "./header.css";
 import Registration from "../registration/registration";
 
-function Header({ setActivLoginForm  }) {
+function Header({ setActivLoginForm , dataAuthenticated }) {
   const [activBurger, setActivBurger] = useState(false);
+  const navigate = useNavigate();
+  console.log(dataAuthenticated);
 
   function onClickBurger(e) {
     e.preventDefault();
@@ -13,6 +15,15 @@ function Header({ setActivLoginForm  }) {
 
   function onCloseBurger() {
     setActivBurger(false);
+  }
+
+
+  function userClick() {
+    if (dataAuthenticated){
+      navigate('/profile'); 
+    } else {
+      setActivLoginForm(true)
+    }
   }
 
 
@@ -54,7 +65,7 @@ function Header({ setActivLoginForm  }) {
                 </button>
               </li>
               <li className="header__nav__item">
-                <button onClick={() => setActivLoginForm(true)} className="header__nav__item__button">
+                <button onClick={userClick} className="header__nav__item__button">
                   <svg className="header__nav__item__button__svg">
                     <use href="../../public/img/svg/symbol-defs.svg#icon-user"></use>
                   </svg>
