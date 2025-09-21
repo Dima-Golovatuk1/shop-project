@@ -73,18 +73,23 @@ def login_user(request):
             if serializer.is_valid():
                 user = serializer.validated_data["user"]
 
-            login(request, user) 
-            logger.info(f"user: {user}")
+                login(request, user) 
+                logger.info(f"user: {user}")
 
-            return Response({
-                "message": "User logged in successfully",
-                "authenticated": True,
-                "user": {
-                    "username": user.username,
-                    "email": user.email,
-                    "phone_number": user.phone_number
-                }
-            }, status=status.HTTP_200_OK)
+                return Response({
+                    "message": "User logged in successfully",
+                    "authenticated": True,
+                    "user": {
+                        "username": user.username,
+                        "email": user.email,
+                        "phone_number": user.phone_number
+                    }
+                }, status=status.HTTP_200_OK)
+            
+            else:
+                return Response({
+                    'message': 'error'
+                }, status=400)
             
         except Exception as e:
             logger.error("Error:\n", str(e))
