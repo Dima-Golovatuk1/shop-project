@@ -115,14 +115,20 @@ def login_user(request):
 def logout_user(request):
     try:
         
-        user = request.user
-        logout(request=request)
+        if not request.user.is_authenticated:
+            return Response({
+                "message": "No user is logged in"
+                             }, status=404)
 
-        return Response({
-                'message': 'logout succesfully',
-                'user': user.id
-            }, status=200)
-        
+            
+        logout(request=request)
+            
+        return Response({'message': 'logout successfully'}, status=200)
+
+
+    except Exception as e:
+        logger.error("Error:\n", str(e))
+        return Response({'message': 'Error', 'error': str(e)}, status=500)
         
 
     
