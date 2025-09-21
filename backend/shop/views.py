@@ -36,6 +36,16 @@ def index(request):
     
 
 
+from rest_framework.response import Response
+from django.db.models import Q
+from rest_framework.decorators import api_view
+# from .models import Product
+from .serializers import ProductSerializer
+import logging
+
+# Set up logging
+logger = logging.getLogger(__name__)
+
 @api_view(['GET'])
 def search(request):
     try:
