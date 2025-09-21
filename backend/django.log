@@ -1065,3 +1065,10 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [2025-09-20 13:09:51,760] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5230
 [2025-09-20 13:09:53,658] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
 >>>>>>> 0a37971ef570aeb7a173d19fe84909b2c133b0a5
+[2025-09-21 13:51:39,924] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 13:52:39,302] INFO django.utils.autoreload:265 — /app/orders/admin.py changed, reloading.
+[2025-09-21 13:52:39,697] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 13:53:14,747] INFO django.utils.autoreload:265 — /app/orders/admin.py changed, reloading.
+[2025-09-21 13:53:15,136] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 13:53:45,475] INFO django.utils.autoreload:265 — /app/orders/admin.py changed, reloading.
+[2025-09-21 13:53:45,889] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
