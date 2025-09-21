@@ -1122,3 +1122,28 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [2025-09-21 14:58:46,353] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 [2025-09-21 15:01:37,716] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
 [2025-09-21 15:01:38,108] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 15:03:40,260] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 15:03:49,509] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5294
+[2025-09-21 15:03:50,238] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5294
+[2025-09-21 15:03:54,081] INFO django.server:213 — "GET /cart/api/add/1/ HTTP/1.1" 200 7016
+[2025-09-21 15:03:56,076] INFO django.server:213 — "GET /cart/api/add/1/ HTTP/1.1" 200 7016
+[2025-09-21 15:03:58,795] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5168
+[2025-09-21 15:03:59,995] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5168
+[2025-09-21 15:04:04,433] INFO django.server:213 — "GET /cart/api/add/1/ HTTP/1.1" 200 7016
+[2025-09-21 15:04:05,130] INFO django.server:213 — "GET /cart/api/add/1/ HTTP/1.1" 200 7016
+[2025-09-21 15:04:05,485] INFO django.server:213 — "GET /cart/api/add/1/ HTTP/1.1" 200 7016
+[2025-09-21 15:04:05,875] INFO django.server:213 — "GET /cart/api/add/1/ HTTP/1.1" 200 7016
+[2025-09-21 15:04:06,225] INFO django.server:213 — "GET /cart/api/add/1/ HTTP/1.1" 200 7016
+[2025-09-21 15:04:08,506] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5168
+[2025-09-21 15:04:09,983] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5168
+[2025-09-21 15:04:11,339] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5168
+[2025-09-21 15:04:11,677] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5168
+[2025-09-21 15:04:12,142] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5168
+[2025-09-21 15:04:16,357] INFO django.server:213 — "GET /cart/api/add/1/ HTTP/1.1" 200 7016
+[2025-09-21 15:04:16,997] INFO django.server:213 — "GET /cart/api/add/1/ HTTP/1.1" 200 7016
+[2025-09-21 15:04:58,421] INFO django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 200 7292
+[2025-09-21 15:05:02,779] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5443
+[2025-09-21 15:05:03,970] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5443
+[2025-09-21 15:05:25,713] INFO django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 200 7563
+[2025-09-21 15:05:27,594] INFO django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 200 7834
+[2025-09-21 15:05:30,820] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5985
