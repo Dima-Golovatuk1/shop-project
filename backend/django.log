@@ -1072,3 +1072,7 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [2025-09-21 13:53:15,136] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 [2025-09-21 13:53:45,475] INFO django.utils.autoreload:265 — /app/orders/admin.py changed, reloading.
 [2025-09-21 13:53:45,889] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 13:59:22,783] INFO django.utils.autoreload:265 — /app/orders/models.py changed, reloading.
+[2025-09-21 13:59:23,196] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 14:00:18,309] INFO django.utils.autoreload:265 — /app/orders/models.py changed, reloading.
+[2025-09-21 14:00:18,686] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
