@@ -1076,3 +1076,17 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [2025-09-21 13:59:23,196] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 [2025-09-21 14:00:18,309] INFO django.utils.autoreload:265 — /app/orders/models.py changed, reloading.
 [2025-09-21 14:00:18,686] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 14:19:46,676] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-21 14:19:47,230] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 14:20:27,476] INFO django.utils.autoreload:265 — /app/cart/utils.py changed, reloading.
+[2025-09-21 14:20:27,876] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 14:20:59,325] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-21 14:20:59,689] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 14:22:05,409] INFO django.utils.autoreload:265 — /app/cart/utils.py changed, reloading.
+[2025-09-21 14:22:05,788] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 14:22:24,040] INFO django.utils.autoreload:265 — /app/cart/utils.py changed, reloading.
+[2025-09-21 14:22:24,421] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 14:23:35,438] INFO django.utils.autoreload:265 — /app/orders/models.py changed, reloading.
+[2025-09-21 14:23:35,847] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 14:24:58,068] INFO django.utils.autoreload:265 — /app/orders/migrations/0001_initial.py changed, reloading.
+[2025-09-21 14:24:58,483] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader

@@ -22,8 +22,7 @@ class Order(models.Model):
         CARD_ONLINE = "CARD_ONLINE", "Банківська карта онлайн"
         CARD_ON_DELIVERY = "CARD_ON_DELIVERY", "Карта при отриманні"
 
-    user = models.ForeignKey(AUTH_USER_MODEL, on_delete=models.CASCADE)
-    session_key = models.TextField(null=True, blank=True)
+    user = models.ForeignKey(AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
     first_name = models.TextField()
     last_name = models.TextField()
     middle_name = models.TextField()
