@@ -1065,3 +1065,6 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [2025-09-20 13:09:51,760] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5230
 [2025-09-20 13:09:53,658] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
 >>>>>>> 0a37971ef570aeb7a173d19fe84909b2c133b0a5
+[2025-09-21 16:04:11,676] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:04:19,133] WARNING django.request:253 — Not Found: /
+[2025-09-21 16:04:19,135] WARNING django.server:213 — "GET / HTTP/1.1" 404 2922
