@@ -4,12 +4,14 @@ import Catalog from "./catalog/catalog"
 import Registration from "./registration/registration";
 import Login from "./login/login";
 import Product from "./product/product";
+import Cart from "./cart/cart";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
     const [activRegistrationForm, setActivRegistrationForm] = useState(false);
     const [activLoginForm, setActivLoginForm] = useState(false);
+    const [activCart, setActivCart] = useState(false)
 
     const [dataAuthenticated, setdataAuthenticated] = useState(false)
     const [username, setUsername] = useState(null);
@@ -41,10 +43,11 @@ function App() {
             <Header
                 dataAuthenticated={dataAuthenticated} 
                 setActivLoginForm={setActivRegistrationForm} 
-                />
+            />
             <main>
                 {activRegistrationForm && <Registration setActivRegistrationForm={setActivRegistrationForm} setActivLoginForm={setActivLoginForm} />}
                 {activLoginForm && <Login setActivLoginForm={setActivLoginForm} setActivRegistrationForm={setActivRegistrationForm} />}
+                {activCart && <Cart setActivCart={setActivCart}/>}
 
                 <Routes>
                     <Route path="/" element={<Catalog />} />

@@ -39,8 +39,7 @@ function Product() {
 
                 const data = await response.json();
                 console.log("Data:", data);
-
-                setProduct(data.products[0]);
+                setProduct(data.products);
                 setError(null);
             } catch (e) {
                 setError("Помилка завантаження товару");
