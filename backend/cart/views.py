@@ -5,6 +5,7 @@ from logging import getLogger
 
 from cart.models import CartItem
 from products.models import Product
+from orders.models import Order, OrderItem
 from .serializers import CartItemsSerializer
 from .utils import check_autheticated_cart
 
@@ -161,7 +162,20 @@ def cart_buy(request):
             payment_method = request.POST.get('payment_number')
             shipping_address = request.POST.get('shipping_address')
 
+            data = {}
 
+            if request.user.is_authenticated:
+                data["user"] = request.user
+
+            data.update({
+                'first_name': first_name,
+                'last_name': last_name,
+                'middle_name': middle_name,
+            })
+
+            order, created = Order.objects.get_or_create(**data)
+
+            
         
         return Response({}, status=200)
         
