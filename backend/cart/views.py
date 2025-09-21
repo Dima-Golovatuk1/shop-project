@@ -1,14 +1,12 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from rest_framework import status
-from django.shortcuts import get_object_or_404
 
 from logging import getLogger
 
-from cart.models import CartItem, Carts
+from cart.models import CartItem
 from products.models import Product
 from .serializers import CartItemsSerializer
-from .utils import check_autheticated
+from .utils import check_autheticated_cart
 
 logger = getLogger(__name__)
 
@@ -16,7 +14,7 @@ logger = getLogger(__name__)
 @api_view(["GET"])
 def cart(request):
     try:
-        cart = check_autheticated(request)
+        cart = check_autheticated_cart(request)
 
         items = CartItem.objects.filter(cart=cart).select_related('product')
 
@@ -38,7 +36,7 @@ def cart(request):
 @api_view(["GET", "POST"])
 def cart_items(request, product_id):
     try:
-        cart = check_autheticated(request)
+        cart = check_autheticated_cart(request)
 
         if request.method == "POST":
             product = Product.objects.filter(pk=product_id).first()
@@ -69,7 +67,7 @@ def cart_items(request, product_id):
 @api_view(["PUT"])
 def cart_item_adding(request, item_id):
     try:
-        cart = check_autheticated(request)
+        cart = check_autheticated_cart(request)
 
         if request.method == "PUT":
             product = Product.objects.filter(pk=item_id).first()
@@ -98,7 +96,7 @@ def cart_item_adding(request, item_id):
 @api_view(["PUT"])
 def cart_item_removing(request, item_id):
     try:
-        cart = check_autheticated(request)
+        cart = check_autheticated_cart(request)
 
         if request.method == "PUT":
             product = Product.objects.filter(pk=item_id).first()
@@ -127,7 +125,7 @@ def cart_item_removing(request, item_id):
 @api_view(["DELETE"])
 def cart_item_delete(request, item_id):
     try:
-        cart = check_autheticated(request)
+        cart = check_autheticated_cart(request)
 
         if request.method == "DELETE":
             product = Product.objects.filter(pk=item_id).first()
@@ -155,7 +153,15 @@ def cart_item_delete(request, item_id):
 @api_view(['GET'])
 def cart_buy(request):
     try:
-        
+        if request.method == "POST":
+            first_name = request.POST.get('first_name')
+            last_name = request.POST.get('last_name')
+            middle_name = request.POST.get('middle_name')
+            phone_number = request.POST.get('phone_number')
+            payment_method = request.POST.get('payment_number')
+            shipping_address = request.POST.get('shipping_address')
+
+
         
         return Response({}, status=200)
         
