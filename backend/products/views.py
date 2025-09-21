@@ -42,9 +42,13 @@ def get_all_products(request):
 @api_view(["GET"])
 def product(request, product_id):
     try:
-        products = Product.objects.all()
-        serializer = SingleProductSerializer(products, many=True)
-
+        product = Product.objects.get(pk=product_id) or None
+        if not product:
+            return Response({
+                'message': 'product does not exists'
+            })
+        serializer = SingleProductSerializer(product)
+        
         
         return Response(
             {

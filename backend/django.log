@@ -6,3 +6,299 @@
 [2025-09-21 16:09:29,510] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 [2025-09-21 16:09:35,374] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
 [2025-09-21 16:09:35,856] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:12:34,537] INFO django.server:213 — "GET /shop HTTP/1.1" 200 6515
+[2025-09-21 16:12:34,597] INFO django.server:213 — "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[2025-09-21 16:12:34,600] INFO django.server:213 — "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[2025-09-21 16:12:34,601] INFO django.server:213 — "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[2025-09-21 16:12:34,602] INFO django.server:213 — "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[2025-09-21 16:12:34,867] INFO django.server:213 — "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[2025-09-21 16:12:34,875] INFO django.server:213 — "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[2025-09-21 16:12:34,877] INFO django.server:213 — "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[2025-09-21 16:12:34,878] INFO django.server:213 — "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[2025-09-21 16:12:34,879] INFO django.server:213 — "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[2025-09-21 16:12:34,881] INFO django.server:213 — "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[2025-09-21 16:12:34,882] INFO django.server:213 — "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[2025-09-21 16:12:34,890] INFO django.server:213 — "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[2025-09-21 16:12:43,788] WARNING django.request:253 — Not Found: /
+[2025-09-21 16:12:43,789] WARNING django.server:213 — "GET / HTTP/1.1" 404 2922
+[2025-09-21 16:12:50,838] INFO django.server:213 — "GET /user/register HTTP/1.1" 301 0
+[2025-09-21 16:12:50,891] INFO django.server:213 — "GET /user/register/ HTTP/1.1" 200 6906
+[2025-09-21 16:13:48,776] INFO users.views:35 — user: john_doe
+[2025-09-21 16:13:48,780] INFO django.server:213 — "POST /user/register/ HTTP/1.1" 201 7165
+[2025-09-21 16:13:51,633] INFO django.server:213 — "GET /user/login HTTP/1.1" 301 0
+[2025-09-21 16:13:51,672] INFO django.server:213 — "GET /user/login/ HTTP/1.1" 200 6863
+[2025-09-21 16:14:00,059] INFO django.server:213 — "OPTIONS /user/login/ HTTP/1.1" 200 7175
+[2025-09-21 16:14:01,100] INFO django.server:213 — "OPTIONS /user/login/ HTTP/1.1" 200 7175
+[2025-09-21 16:14:03,296] WARNING django.request:253 — Bad Request: /user/login/
+[2025-09-21 16:14:03,297] WARNING django.server:213 — "POST /user/login/ HTTP/1.1" 400 6868
+[2025-09-21 16:14:14,013] WARNING django.request:253 — Bad Request: /user/login/
+[2025-09-21 16:14:14,014] WARNING django.server:213 — "POST /user/login/ HTTP/1.1" 400 6923
+[2025-09-21 16:14:34,900] INFO users.views:77 — user: john_doe
+[2025-09-21 16:14:34,909] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 7157
+[2025-09-21 16:14:38,702] INFO django.server:213 — "GET /user/logout HTTP/1.1" 301 0
+[2025-09-21 16:14:38,732] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5203
+[2025-09-21 16:14:47,538] WARNING django.request:253 — Not Found: /user/logout/
+[2025-09-21 16:14:47,538] WARNING django.server:213 — "GET /user/logout/ HTTP/1.1" 404 5211
+[2025-09-21 16:15:38,211] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-21 16:15:39,049] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:15:41,932] WARNING django.request:253 — Not Found: /user/logout/
+[2025-09-21 16:15:41,933] WARNING django.server:213 — "GET /user/logout/ HTTP/1.1" 404 5211
+[2025-09-21 16:15:44,800] INFO django.server:213 — "GET /user/login HTTP/1.1" 301 0
+[2025-09-21 16:15:44,842] INFO django.server:213 — "GET /user/login/ HTTP/1.1" 200 6829
+[2025-09-21 16:15:54,379] INFO users.views:77 — user: john_doe
+[2025-09-21 16:15:54,420] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 7157
+[2025-09-21 16:15:57,055] INFO django.server:213 — "GET /user/logout HTTP/1.1" 301 0
+[2025-09-21 16:15:57,084] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5205
+[2025-09-21 16:17:26,604] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-21 16:17:27,246] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:17:29,400] INFO django.server:213 — "GET /user/login HTTP/1.1" 301 0
+[2025-09-21 16:17:29,432] INFO django.server:213 — "GET /user/login/ HTTP/1.1" 200 6829
+[2025-09-21 16:17:40,319] INFO users.views:77 — user: john_doe
+[2025-09-21 16:17:40,353] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 7157
+[2025-09-21 16:17:42,705] INFO django.server:213 — "GET /user/logout HTTP/1.1" 301 0
+[2025-09-21 16:17:42,741] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5231
+[2025-09-21 16:17:47,184] INFO django.server:213 — "GET /admin HTTP/1.1" 301 0
+[2025-09-21 16:17:47,218] INFO django.server:213 — "GET /admin/ HTTP/1.1" 302 0
+[2025-09-21 16:17:47,240] INFO django.server:213 — "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+[2025-09-21 16:17:47,277] INFO django.server:213 — "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[2025-09-21 16:17:47,277] INFO django.server:213 — "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+[2025-09-21 16:17:47,278] INFO django.server:213 — "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+[2025-09-21 16:17:47,407] INFO django.server:213 — "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[2025-09-21 16:17:47,407] INFO django.server:213 — "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[2025-09-21 16:17:47,411] INFO django.server:213 — "GET /static/admin/css/login.css HTTP/1.1" 200 951
+[2025-09-21 16:17:47,412] INFO django.server:213 — "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+[2025-09-21 16:17:51,368] INFO django.server:213 — "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-09-21 16:17:51,407] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 14690
+[2025-09-21 16:17:51,444] INFO django.server:213 — "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[2025-09-21 16:17:51,598] INFO django.server:213 — "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[2025-09-21 16:17:51,599] INFO django.server:213 — "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[2025-09-21 16:17:54,656] INFO django.server:213 — "GET /admin/users/myuser/ HTTP/1.1" 200 18856
+[2025-09-21 16:17:54,696] INFO django.server:213 — "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[2025-09-21 16:17:54,697] INFO django.server:213 — "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+[2025-09-21 16:17:54,698] INFO django.server:213 — "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+[2025-09-21 16:17:54,699] INFO django.server:213 — "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+[2025-09-21 16:17:54,711] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-21 16:17:54,713] INFO django.server:213 — "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[2025-09-21 16:17:54,714] INFO django.server:213 — "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[2025-09-21 16:17:54,715] INFO django.server:213 — "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+[2025-09-21 16:17:54,716] INFO django.server:213 — "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+[2025-09-21 16:17:54,721] INFO django.server:213 — "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+[2025-09-21 16:17:54,727] INFO django.server:213 — "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+[2025-09-21 16:17:54,731] INFO django.server:213 — "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[2025-09-21 16:17:54,732] INFO django.server:213 — "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[2025-09-21 16:17:54,870] INFO django.server:213 — "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[2025-09-21 16:18:07,463] INFO django.server:213 — "GET /user/logout HTTP/1.1" 301 0
+[2025-09-21 16:18:07,491] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5231
+[2025-09-21 16:18:10,764] WARNING django.request:253 — Not Found: /
+[2025-09-21 16:18:10,765] WARNING django.server:213 — "GET / HTTP/1.1" 404 2922
+[2025-09-21 16:18:16,468] INFO django.server:213 — "GET /products/1 HTTP/1.1" 301 0
+[2025-09-21 16:18:16,490] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 5916
+[2025-09-21 16:18:19,262] INFO django.server:213 — "GET /products/2/ HTTP/1.1" 200 5916
+[2025-09-21 16:18:22,962] INFO django.server:213 — "GET /products/3 HTTP/1.1" 301 0
+[2025-09-21 16:18:22,983] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 5916
+[2025-09-21 16:18:34,468] WARNING django.request:253 — Not Found: /
+[2025-09-21 16:18:34,469] WARNING django.server:213 — "GET / HTTP/1.1" 404 2922
+[2025-09-21 16:18:55,204] INFO django.server:213 — "GET /admin HTTP/1.1" 301 0
+[2025-09-21 16:18:55,239] INFO django.server:213 — "GET /admin/ HTTP/1.1" 302 0
+[2025-09-21 16:18:55,262] INFO django.server:213 — "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+[2025-09-21 16:19:05,305] INFO django.server:213 — "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-09-21 16:19:05,334] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 14690
+[2025-09-21 16:19:09,842] INFO django.server:213 — "GET /admin/products/product/add/ HTTP/1.1" 200 24518
+[2025-09-21 16:19:09,883] INFO django.server:213 — "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+[2025-09-21 16:19:09,889] INFO django.server:213 — "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[2025-09-21 16:19:09,890] INFO django.server:213 — "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[2025-09-21 16:19:09,896] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-21 16:19:09,929] INFO django.server:213 — "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+[2025-09-21 16:19:10,038] INFO django.server:213 — "GET /static/admin/css/widgets.css HTTP/1.1" 200 11991
+[2025-09-21 16:19:35,543] INFO django.server:213 — "POST /admin/products/product/add/ HTTP/1.1" 200 24796
+[2025-09-21 16:19:35,589] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-21 16:19:41,381] INFO django.server:213 — "POST /admin/products/product/add/ HTTP/1.1" 200 24945
+[2025-09-21 16:19:41,429] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-21 16:19:52,883] INFO django.server:213 — "POST /admin/products/product/add/ HTTP/1.1" 200 24796
+[2025-09-21 16:19:52,924] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-21 16:19:53,175] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-21 16:19:53,176] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 2973
+[2025-09-21 16:20:27,384] INFO django.server:213 — "GET /admin/products/product/add/ HTTP/1.1" 200 24518
+[2025-09-21 16:20:28,390] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 14690
+[2025-09-21 16:20:31,364] WARNING django.request:253 — Not Found: /users/logout
+[2025-09-21 16:20:31,365] WARNING django.server:213 — "GET /users/logout HTTP/1.1" 404 2976
+[2025-09-21 16:20:34,562] INFO django.server:213 — "GET /user/logout HTTP/1.1" 301 0
+[2025-09-21 16:20:34,608] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5231
+[2025-09-21 16:20:39,495] WARNING django.request:253 — Not Found: /
+[2025-09-21 16:20:39,497] WARNING django.server:213 — "GET / HTTP/1.1" 404 2922
+[2025-09-21 16:20:41,727] INFO django.server:213 — "GET /cart HTTP/1.1" 301 0
+[2025-09-21 16:20:41,773] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5150
+[2025-09-21 16:20:48,240] WARNING django.request:253 — Not Found: /
+[2025-09-21 16:20:48,240] WARNING django.server:213 — "GET / HTTP/1.1" 404 2922
+[2025-09-21 16:21:11,207] INFO django.utils.autoreload:265 — /app/products/models.py changed, reloading.
+[2025-09-21 16:21:11,945] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:21:18,820] INFO django.utils.autoreload:265 — /app/products/models.py changed, reloading.
+[2025-09-21 16:21:19,280] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:21:44,833] INFO django.utils.autoreload:265 — /app/products/models.py changed, reloading.
+[2025-09-21 16:21:45,245] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:22:01,186] WARNING django.request:253 — Not Found: /
+[2025-09-21 16:22:01,187] WARNING django.server:213 — "GET / HTTP/1.1" 404 2922
+[2025-09-21 16:22:04,149] INFO django.server:213 — "GET /admin HTTP/1.1" 301 0
+[2025-09-21 16:22:04,192] INFO django.server:213 — "GET /admin/ HTTP/1.1" 302 0
+[2025-09-21 16:22:04,232] INFO django.server:213 — "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+[2025-09-21 16:22:07,782] INFO django.server:213 — "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-09-21 16:22:07,814] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 14690
+[2025-09-21 16:22:10,358] INFO django.server:213 — "GET /admin/products/category/ HTTP/1.1" 200 15400
+[2025-09-21 16:22:10,443] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-21 16:22:10,585] INFO django.server:213 — "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[2025-09-21 16:22:10,601] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-21 16:22:10,603] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 2973
+[2025-09-21 16:22:11,647] INFO django.server:213 — "GET /admin/products/product/ HTTP/1.1" 200 18303
+[2025-09-21 16:22:11,694] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-21 16:22:11,704] WARNING django.request:253 — Not Found: /media/catalog/Screenshot_2025-08-28_190234.png
+[2025-09-21 16:22:11,705] WARNING django.server:213 — "GET /media/catalog/Screenshot_2025-08-28_190234.png HTTP/1.1" 404 3291
+[2025-09-21 16:22:11,851] WARNING django.request:253 — Not Found: /media/catalog/Screenshot_2025-08-28_190234.png
+[2025-09-21 16:22:11,852] WARNING django.server:213 — "GET /media/catalog/Screenshot_2025-08-28_190234.png HTTP/1.1" 404 3291
+[2025-09-21 16:22:12,286] INFO django.server:213 — "GET /admin/products/product/add/ HTTP/1.1" 200 23927
+[2025-09-21 16:22:12,338] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-21 16:22:29,439] INFO django.server:213 — "POST /admin/products/product/add/ HTTP/1.1" 302 0
+[2025-09-21 16:22:29,473] INFO django.server:213 — "GET /admin/products/product/add/ HTTP/1.1" 200 24163
+[2025-09-21 16:22:29,519] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-21 16:22:29,785] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-21 16:22:29,786] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 2973
+[2025-09-21 16:22:32,380] INFO django.server:213 — "GET /admin/products HTTP/1.1" 301 0
+[2025-09-21 16:22:32,402] INFO django.server:213 — "GET /admin/products/ HTTP/1.1" 200 6745
+[2025-09-21 16:22:38,647] INFO django.server:213 — "GET /user/logout HTTP/1.1" 301 0
+[2025-09-21 16:22:38,693] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5231
+[2025-09-21 16:22:38,907] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-21 16:22:38,907] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 2973
+[2025-09-21 16:22:41,824] WARNING django.request:253 — Not Found: /products
+[2025-09-21 16:22:41,825] WARNING django.server:213 — "GET /products HTTP/1.1" 404 2964
+[2025-09-21 16:22:48,742] WARNING django.request:253 — Not Found: /products
+[2025-09-21 16:22:48,743] WARNING django.server:213 — "GET /products HTTP/1.1" 404 2964
+[2025-09-21 16:22:52,715] WARNING django.request:253 — Not Found: /products/
+[2025-09-21 16:22:52,716] WARNING django.server:213 — "GET /products/ HTTP/1.1" 404 3641
+[2025-09-21 16:22:55,579] WARNING django.request:253 — Not Found: /products.1
+[2025-09-21 16:22:55,580] WARNING django.server:213 — "GET /products.1 HTTP/1.1" 404 2970
+[2025-09-21 16:22:58,135] INFO django.server:213 — "GET /products/1 HTTP/1.1" 301 0
+[2025-09-21 16:22:58,168] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 6527
+[2025-09-21 16:23:20,879] WARNING django.request:253 — Not Found: /
+[2025-09-21 16:23:20,880] WARNING django.server:213 — "GET / HTTP/1.1" 404 2922
+[2025-09-21 16:23:24,244] INFO django.utils.autoreload:265 — /app/shop/urls.py changed, reloading.
+[2025-09-21 16:23:24,931] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:23:25,932] WARNING django.request:253 — Not Found: /shop
+[2025-09-21 16:23:25,933] WARNING django.server:213 — "GET /shop HTTP/1.1" 404 3290
+[2025-09-21 16:23:28,689] INFO django.utils.autoreload:265 — /app/shop/urls.py changed, reloading.
+[2025-09-21 16:23:29,248] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:23:29,863] INFO django.server:213 — "GET /shop HTTP/1.1" 200 7100
+[2025-09-21 16:23:36,210] WARNING django.request:253 — Not Found: /products
+[2025-09-21 16:23:36,211] WARNING django.server:213 — "GET /products HTTP/1.1" 404 2964
+[2025-09-21 16:23:42,103] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-21 16:23:42,147] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 7231
+[2025-09-21 16:25:32,758] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
+[2025-09-21 16:25:33,450] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:25:34,786] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 7231
+[2025-09-21 16:25:37,912] INFO django.server:213 — "GET /products/1 HTTP/1.1" 301 0
+[2025-09-21 16:25:37,965] ERROR django.request:253 — Internal Server Error: /products/1/
+[2025-09-21 16:25:37,965] ERROR django.server:213 — "GET /products/1/ HTTP/1.1" 500 5209
+[2025-09-21 16:25:41,584] INFO django.server:213 — "GET /products/2 HTTP/1.1" 301 0
+[2025-09-21 16:25:41,615] ERROR django.request:253 — Internal Server Error: /products/2/
+[2025-09-21 16:25:41,616] ERROR django.server:213 — "GET /products/2/ HTTP/1.1" 500 5209
+[2025-09-21 16:25:55,507] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
+[2025-09-21 16:25:56,045] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:25:56,740] INFO django.server:213 — "GET /products/2/ HTTP/1.1" 200 5799
+[2025-09-21 16:26:02,726] INFO django.server:213 — "GET /products/1 HTTP/1.1" 301 0
+[2025-09-21 16:26:02,750] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 5800
+[2025-09-21 16:26:05,506] INFO django.server:213 — "GET /products/2 HTTP/1.1" 301 0
+[2025-09-21 16:26:05,528] INFO django.server:213 — "GET /products/2/ HTTP/1.1" 200 5799
+[2025-09-21 16:26:09,539] WARNING django.request:253 — Not Found: /search
+[2025-09-21 16:26:09,540] WARNING django.server:213 — "GET /search HTTP/1.1" 404 2958
+[2025-09-21 16:26:13,766] WARNING django.request:253 — Not Found: /shop/search
+[2025-09-21 16:26:13,767] WARNING django.server:213 — "GET /shop/search HTTP/1.1" 404 3307
+[2025-09-21 16:26:15,948] WARNING django.request:253 — Not Found: /shop/search/1
+[2025-09-21 16:26:15,949] WARNING django.server:213 — "GET /shop/search/1 HTTP/1.1" 404 3313
+[2025-09-21 16:26:31,549] WARNING django.request:253 — Not Found: /shop/search/
+[2025-09-21 16:26:31,550] WARNING django.server:213 — "GET /shop/search/?q=1 HTTP/1.1" 404 3314
+[2025-09-21 16:26:59,386] WARNING django.request:253 — Not Found: /shop/search/
+[2025-09-21 16:26:59,388] WARNING django.server:213 — "GET /shop/search/?q=1 HTTP/1.1" 404 3314
+[2025-09-21 16:26:59,927] INFO django.utils.autoreload:265 — /app/backend/urls.py changed, reloading.
+[2025-09-21 16:27:00,588] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:27:01,638] INFO django.server:213 — "GET / HTTP/1.1" 200 7076
+[2025-09-21 16:27:04,327] WARNING django.request:253 — Not Found: /search/1
+[2025-09-21 16:27:04,328] WARNING django.server:213 — "GET /search/1 HTTP/1.1" 404 3290
+[2025-09-21 16:27:09,543] INFO django.server:213 — "GET /search/ HTTP/1.1" 200 6848
+[2025-09-21 16:27:36,274] WARNING django.request:253 — Not Found: /search/1
+[2025-09-21 16:27:36,275] WARNING django.server:213 — "GET /search/1 HTTP/1.1" 404 3290
+[2025-09-21 16:27:44,065] ERROR shop.views:86 — Error:
+ Cannot resolve keyword 'name' into field. Choices are: cartitem, category_id, category_id_id, characteristics, created_at, description, id, is_active, orderitem, photo_url, price, product_code, seller_id, seller_id_id, stock_quantity, subcategory_id, subcategory_id_id, title, wishlist
+[2025-09-21 16:27:44,068] ERROR django.request:253 — Internal Server Error: /search/
+[2025-09-21 16:27:44,069] ERROR django.server:213 — "GET /search/?q=1 HTTP/1.1" 500 5598
+[2025-09-21 16:28:06,794] INFO django.utils.autoreload:265 — /app/shop/views.py changed, reloading.
+[2025-09-21 16:28:07,219] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:28:33,490] ERROR shop.views:86 — Error:
+ Cannot resolve keyword 'product' into field. Choices are: cartitem, category_id, category_id_id, characteristics, created_at, description, id, is_active, orderitem, photo_url, price, product_code, seller_id, seller_id_id, stock_quantity, subcategory_id, subcategory_id_id, title, wishlist
+[2025-09-21 16:28:33,512] ERROR django.request:253 — Internal Server Error: /search/
+[2025-09-21 16:28:33,513] ERROR django.server:213 — "GET /search/?q=1 HTTP/1.1" 500 5601
+[2025-09-21 16:28:33,989] INFO django.utils.autoreload:265 — /app/shop/views.py changed, reloading.
+[2025-09-21 16:28:34,517] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:28:35,319] INFO django.server:213 — "GET /search/?q=1 HTTP/1.1" 200 5278
+[2025-09-21 16:28:40,287] INFO django.server:213 — "GET /search/?q=milk HTTP/1.1" 200 6237
+[2025-09-21 16:29:05,928] INFO django.utils.autoreload:265 — /app/shop/views.py changed, reloading.
+[2025-09-21 16:29:06,498] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:29:09,523] ERROR shop.views:86 — Error:
+ Cannot resolve keyword 'category' into field. Choices are: cartitem, category_id, category_id_id, characteristics, created_at, description, id, is_active, orderitem, photo_url, price, product_code, seller_id, seller_id_id, stock_quantity, subcategory_id, subcategory_id_id, title, wishlist
+[2025-09-21 16:29:09,549] ERROR django.request:253 — Internal Server Error: /search/
+[2025-09-21 16:29:09,549] ERROR django.server:213 — "GET /search/?c=Max HTTP/1.1" 500 5612
+[2025-09-21 16:30:38,846] INFO django.utils.autoreload:265 — /app/shop/views.py changed, reloading.
+[2025-09-21 16:30:39,682] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:30:48,715] INFO django.utils.autoreload:265 — /app/shop/views.py changed, reloading.
+[2025-09-21 16:30:49,257] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:30:49,814] ERROR shop.views:86 — Error:
+ Unsupported lookup 'icontains' for ForeignKey or join on the field not permitted.
+[2025-09-21 16:30:49,839] ERROR django.request:253 — Internal Server Error: /search/
+[2025-09-21 16:30:49,840] ERROR django.server:213 — "GET /search/?c=Max HTTP/1.1" 500 5404
+[2025-09-21 16:31:05,329] ERROR shop.views:86 — Error:
+ Cannot resolve keyword 'brand' into field. Choices are: cartitem, category_id, category_id_id, characteristics, created_at, description, id, is_active, orderitem, photo_url, price, product_code, seller_id, seller_id_id, stock_quantity, subcategory_id, subcategory_id_id, title, wishlist
+[2025-09-21 16:31:05,332] ERROR django.request:253 — Internal Server Error: /search/
+[2025-09-21 16:31:05,333] ERROR django.server:213 — "GET /search/?b=max HTTP/1.1" 500 5609
+[2025-09-21 16:31:24,296] INFO django.utils.autoreload:265 — /app/shop/views.py changed, reloading.
+[2025-09-21 16:31:24,947] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:31:31,564] INFO django.server:213 — "GET /search/?p=12 HTTP/1.1" 200 5283
+[2025-09-21 16:31:36,489] ERROR shop.views:83 — Error:
+ Field 'price' expected a number but got '12314214\\'.
+[2025-09-21 16:31:36,493] ERROR django.request:253 — Internal Server Error: /search/
+[2025-09-21 16:31:36,494] ERROR django.server:213 — "GET /search/?p=12314214\ HTTP/1.1" 500 5428
+[2025-09-21 16:31:39,795] ERROR shop.views:83 — Error:
+ name 'brand' is not defined
+[2025-09-21 16:31:39,797] ERROR django.request:253 — Internal Server Error: /search/
+[2025-09-21 16:31:39,798] ERROR django.server:213 — "GET /search/?p=12314214 HTTP/1.1" 500 5375
+[2025-09-21 16:31:50,612] INFO django.utils.autoreload:265 — /app/shop/views.py changed, reloading.
+[2025-09-21 16:31:51,235] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:31:52,742] INFO django.server:213 — "GET /search/?p=12314214 HTTP/1.1" 200 6894
+[2025-09-21 16:32:08,484] INFO django.server:213 — "GET /search/?p=1241 HTTP/1.1" 200 6203
+[2025-09-21 16:32:18,230] INFO django.server:213 — "GET /search/?n=milk HTTP/1.1" 200 6858
+[2025-09-21 16:32:24,131] INFO django.server:213 — "GET /search/?q=milk HTTP/1.1" 200 6204
+[2025-09-21 16:33:13,074] INFO django.utils.autoreload:265 — /app/shop/views.py changed, reloading.
+[2025-09-21 16:33:13,847] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:33:15,719] INFO django.server:213 — "GET /search/?q=milk HTTP/1.1" 200 6204
+[2025-09-21 16:33:19,682] ERROR shop.views:85 — Error:
+ cannot access local variable 'filter' where it is not associated with a value
+[2025-09-21 16:33:19,685] ERROR django.request:253 — Internal Server Error: /search/
+[2025-09-21 16:33:19,686] ERROR django.server:213 — "GET /search/?d=xui HTTP/1.1" 500 5400
+[2025-09-21 16:33:24,526] ERROR shop.views:85 — Error:
+ cannot access local variable 'filter' where it is not associated with a value
+[2025-09-21 16:33:24,528] ERROR django.request:253 — Internal Server Error: /search/
+[2025-09-21 16:33:24,529] ERROR django.server:213 — "GET /search/?d=xui HTTP/1.1" 500 5400
+[2025-09-21 16:33:25,216] ERROR shop.views:85 — Error:
+ cannot access local variable 'filter' where it is not associated with a value
+[2025-09-21 16:33:25,220] ERROR django.request:253 — Internal Server Error: /search/
+[2025-09-21 16:33:25,221] ERROR django.server:213 — "GET /search/?d=xui HTTP/1.1" 500 5400
+[2025-09-21 16:33:25,702] ERROR shop.views:85 — Error:
+ cannot access local variable 'filter' where it is not associated with a value
+[2025-09-21 16:33:25,704] ERROR django.request:253 — Internal Server Error: /search/
+[2025-09-21 16:33:25,705] ERROR django.server:213 — "GET /search/?d=xui HTTP/1.1" 500 5400
+[2025-09-21 16:33:27,143] ERROR shop.views:85 — Error:
+ cannot access local variable 'filter' where it is not associated with a value
+[2025-09-21 16:33:27,145] ERROR django.request:253 — Internal Server Error: /search/
+[2025-09-21 16:33:27,145] ERROR django.server:213 — "GET /search/?d=xui HTTP/1.1" 500 5400
+[2025-09-21 16:33:47,207] INFO django.utils.autoreload:265 — /app/shop/views.py changed, reloading.
+[2025-09-21 16:33:47,634] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:34:27,389] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 16:34:29,425] INFO django.server:213 — "GET /search/?d=xui HTTP/1.1" 200 6237
+[2025-09-21 16:38:34,972] INFO django.utils.autoreload:265 — /app/shop/views.py changed, reloading.
+[2025-09-21 16:38:35,709] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader

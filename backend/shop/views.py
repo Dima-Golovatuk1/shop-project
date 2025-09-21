@@ -34,29 +34,29 @@ def index(request):
             "error": str(e)
         }, status=500)
     
-    
+
 
 @api_view(['GET'])
 def search(request):
     try:
         query = request.GET.get('q') or None
-        price = request.GET.get('price') or None
-        brand = request.GET.get('brand') or None
-        category = request.GET.get('category') or None
-        sub_category = request.GET.get('sub_category') or None
+        description = request.GET.get('d') or None
+        price = request.GET.get('p') or None
+        category = request.GET.get('c') or None
+        sub_category = request.GET.get('sb') or None
 
         filters = Q()
         
         if query:
-            filters &= Q(name__icontains=query)
+            filters &= Q(title__icontains=query)
+        if description:
+            filters &= Q(description__icontains=description)
         if price:
             filters &= Q(price__lte=price)  
-        if brand:
-            filters &= Q(brand__icontains=brand)
         if category:
-            filters &= Q(category__icontains=category)
+            filters &= Q(category_id__icontains=category)
         if sub_category:
-            filters &= Q(sub_category__icontains=sub_category)
+            filters &= Q(subcategory_id__icontains=sub_category)
         
         products = Product.objects.filter(filters)
         
@@ -75,8 +75,8 @@ def search(request):
             'products': products_serializer.data,
             'filters': { 
                 'query': query,
+                'description': description,
                 'price': price,
-                'brand': brand,
                 'category': category,
                 'sub_category': sub_category
             }

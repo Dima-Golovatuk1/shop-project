@@ -121,9 +121,14 @@ def logout_user(request):
                              }, status=404)
 
             
+        user_id = request.user.id
+        
         logout(request=request)
             
-        return Response({'message': 'logout successfully'}, status=200)
+        return Response({
+            'message': 'logout successfully',
+            'user_id': user_id
+            }, status=200)
 
 
     except Exception as e:

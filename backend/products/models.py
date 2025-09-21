@@ -37,7 +37,6 @@ class Product(models.Model):
     characteristics = models.JSONField(default=dict, blank=True)
     price = models.PositiveIntegerField()
     photo_url = models.ImageField(upload_to="catalog")
-    slug = models.SlugField(unique=True, blank=True)
     is_active = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
 
