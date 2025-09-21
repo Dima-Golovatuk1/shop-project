@@ -1119,3 +1119,6 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [2025-09-21 14:47:45,203] INFO django.server:213 — "GET /user/register HTTP/1.1" 301 0
 [2025-09-21 14:47:45,225] INFO django.server:213 — "GET /user/register/ HTTP/1.1" 200 6872
 [2025-09-21 14:50:51,086] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 14:58:46,353] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-21 15:01:37,716] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-21 15:01:38,108] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader

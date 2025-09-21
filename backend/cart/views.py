@@ -44,7 +44,8 @@ def cart_items(request, product_id):
             item = CartItem.objects.create(
                 cart=cart,
                 product=product,
-                quantity=1
+                quantity=1,
+                price=product.price
             )
             item.save()
         
