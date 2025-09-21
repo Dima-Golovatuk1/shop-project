@@ -1065,3 +1065,30 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [2025-09-20 13:09:51,760] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5230
 [2025-09-20 13:09:53,658] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
 >>>>>>> 0a37971ef570aeb7a173d19fe84909b2c133b0a5
+[2025-09-20 17:05:26,362] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 17:06:06,235] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 17:06:52,015] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 17:10:51,148] INFO django.utils.autoreload:265 — /app/shop/views.py changed, reloading.
+[2025-09-20 17:10:51,962] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-20 17:10:58,493] WARNING django.request:253 — Not Found: /
+[2025-09-20 17:10:58,494] WARNING django.server:213 — "GET / HTTP/1.1" 404 2922
+[2025-09-20 17:10:58,738] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-20 17:10:58,741] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 2973
+[2025-09-20 17:11:01,352] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 17:11:02,300] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5224
+[2025-09-20 17:11:03,709] INFO django.server:213 — "GET /user/login/ HTTP/1.1" 200 6824
+[2025-09-20 17:11:06,459] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-20 17:11:06,513] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 17:11:06,533] INFO django.server:213 — "GET /media/catalog/487793279_I0LTg7r.png HTTP/1.1" 304 0
+[2025-09-20 17:11:08,345] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-20 17:11:09,830] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 17:11:11,297] INFO django.server:213 — "GET /user/login/ HTTP/1.1" 200 6824
+[2025-09-20 17:11:23,241] INFO django.server:213 — "OPTIONS /user/login/ HTTP/1.1" 200 0
+[2025-09-20 17:11:23,995] INFO users.views:63 — user: 1
+[2025-09-20 17:11:24,001] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-20 17:11:29,422] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-20 17:11:29,431] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 17:11:32,194] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 803
+[2025-09-20 17:11:32,802] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 982
+[2025-09-20 17:11:37,353] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5294
+[2025-09-21 14:37:08,063] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader

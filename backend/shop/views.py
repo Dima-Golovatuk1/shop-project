@@ -39,7 +39,7 @@ def index(request):
 from rest_framework.response import Response
 from django.db.models import Q
 from rest_framework.decorators import api_view
-from .models import Product
+# from .models import Product
 from .serializers import ProductSerializer
 import logging
 
