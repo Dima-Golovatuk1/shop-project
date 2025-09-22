@@ -17,7 +17,7 @@ def cart(request):
     try:
         cart = check_autheticated_cart(request)
 
-        items = CartItem.objects.filter(cart=cart).select_related('product')
+        items = CartItem.objects.filter(cart=cart)
 
         
         serializer = CartItemsSerializer(items, many=True)
@@ -40,7 +40,7 @@ def cart(request):
 def cart_items(request):
     try:
         cart = check_autheticated_cart(request)
-        product_id = request.POST.get('product_id')
+        product_id = request.data.get('product_id')
 
         if request.method == "POST":
             product = Product.objects.filter(pk=product_id).first()
@@ -76,9 +76,10 @@ def cart_items(request):
 
 
 @api_view(["PUT"])
-def cart_item_adding(request, item_id):
+def cart_item_adding(request):
     try:
         cart = check_autheticated_cart(request)
+        item_id = request.data.get("item_id")
 
         if request.method == "PUT":
             product = Product.objects.filter(pk=item_id).first()
@@ -106,9 +107,10 @@ def cart_item_adding(request, item_id):
     
 
 @api_view(["PUT"])
-def cart_item_removing(request, item_id):
+def cart_item_removing(request):
     try:
         cart = check_autheticated_cart(request)
+        item_id = request.data.get("item_id")
 
         if request.method == "PUT":
             product = Product.objects.filter(pk=item_id).first()
@@ -139,9 +141,10 @@ def cart_item_removing(request, item_id):
     
 
 @api_view(["DELETE"])
-def cart_item_delete(request, item_id):
+def cart_item_delete(request):
     try:
         cart = check_autheticated_cart(request)
+        item_id = request.data.get("item_id")
 
         if request.method == "DELETE":
             product = Product.objects.filter(pk=item_id).first()
