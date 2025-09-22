@@ -21,13 +21,11 @@ def cart(request):
 
         
         serializer = CartItemsSerializer(items, many=True)
-
-        if serializer.is_valid():
-                item = serializer.save()
-
+        
+        
         return Response({
             "message": f"Cart details for {request.user}",
-            "items": item.data
+            "items": serializer.data
         }, status=200)
             
     except Exception as e:
