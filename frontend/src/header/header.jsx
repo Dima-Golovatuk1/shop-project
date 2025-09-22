@@ -3,7 +3,7 @@ import { Link, useNavigate  } from "react-router-dom";
 import "./header.css";
 import Registration from "../registration/registration";
 
-function Header({ setActivLoginForm , dataAuthenticated }) {
+function Header({ setActivLoginForm , dataAuthenticated, setActivCart }) {
   const [activBurger, setActivBurger] = useState(false);
   const navigate = useNavigate();
   console.log(dataAuthenticated);
@@ -17,6 +17,9 @@ function Header({ setActivLoginForm , dataAuthenticated }) {
     setActivBurger(false);
   }
 
+  function onCloseCart(){
+    setActivCart(true)
+  }
 
   function userClick() {
     if (dataAuthenticated){
@@ -57,6 +60,7 @@ function Header({ setActivLoginForm , dataAuthenticated }) {
               </li>
               <li className="header__nav__item">
                 <button
+                  onClick={onCloseCart}
                   className="header__nav__item__button"
                 >
                   <svg className="header__nav__item__button__svg">

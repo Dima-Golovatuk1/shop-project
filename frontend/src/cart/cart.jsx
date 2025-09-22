@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 
 function Cart({ setActivCart }) {
     const [products, setProducts] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
 
 
     useEffect(() => {
