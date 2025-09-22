@@ -46,11 +46,13 @@ def cart_items(request, product_id):
             item, created = CartItem.objects.get_or_create(
                 cart=cart,
                 product=product,
-                quantity=1,
-                price=product.price
+                defaults={
+                    "quantity": 1,
+                    "price": product.price
+                    }
             )
 
-            if created == True:
+            if not created:
                 item.quantity += 1
                 
             item.save()
@@ -81,8 +83,9 @@ def cart_item_adding(request, item_id):
             product = Product.objects.filter(pk=item_id).first()
             item = CartItem.objects.filter(cart=cart, product=product).first()
 
-            item.quantity += 1
-            item.save()
+            if item:
+                item.quantity += 1
+                item.save()
         
         items = CartItem.objects.filter(cart=cart).select_related('product')
 
@@ -110,8 +113,12 @@ def cart_item_removing(request, item_id):
             product = Product.objects.filter(pk=item_id).first()
             item = CartItem.objects.filter(cart=cart, product=product).first()
 
-            item.quantity -= 1
-            item.save()
+            if item:
+                if item.quantity > 1:
+                    item.quantity -= 1
+                    item.save()
+                else:
+                    item.delete()
         
         items = CartItem.objects.filter(cart=cart).select_related('product')
 
@@ -138,8 +145,9 @@ def cart_item_delete(request, item_id):
         if request.method == "DELETE":
             product = Product.objects.filter(pk=item_id).first()
             item = CartItem.objects.filter(cart=cart, product=product).first()
-
-            item.delete()
+            
+            if item:
+                item.delete()
             
         items = CartItem.objects.filter(cart=cart).select_related('product')
 

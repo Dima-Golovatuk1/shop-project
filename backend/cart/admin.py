@@ -7,9 +7,9 @@ from .models import CartItem, Carts
 
 @admin.register(Carts)
 class CartsAdmin(admin.ModelAdmin):
-    list_display = ('id', 'user_id')
+    list_display = ('id', 'user', 'session_key')
 
 
 @admin.register(CartItem)
 class CartItemAdmin(admin.ModelAdmin):
-    list_display = ('id', 'product_id', 'quantity', 'price')
+    list_display = ('id', 'cart', 'product', 'quantity', 'price')

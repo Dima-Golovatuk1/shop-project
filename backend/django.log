@@ -1744,3 +1744,19 @@ LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
 [2025-09-22 15:07:04,292] INFO django.utils.autoreload:265 — /app/orders/utils.py changed, reloading.
 [2025-09-22 15:07:04,637] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 >>>>>>> 4981badf424ed1e9b6a866f415927a0f70db6850
+[2025-09-22 15:52:09,938] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-22 15:55:31,662] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-22 15:55:32,036] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-22 15:56:48,387] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-22 15:56:48,770] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-22 15:57:12,301] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-22 15:57:12,699] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-22 15:59:19,007] INFO django.utils.autoreload:265 — /app/cart/admin.py changed, reloading.
+[2025-09-22 15:59:19,404] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-22 15:59:54,590] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-22 16:01:19,963] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-22 16:02:58,590] INFO django.utils.autoreload:265 — /app/cart/admin.py changed, reloading.
+[2025-09-22 16:02:58,986] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-22 16:03:11,240] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-22 16:03:45,709] INFO django.utils.autoreload:265 — /app/cart/admin.py changed, reloading.
+[2025-09-22 16:03:46,108] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
