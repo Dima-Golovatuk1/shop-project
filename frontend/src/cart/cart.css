@@ -1,0 +1,86 @@
+.backdrop-cart{
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.637);
+    opacity: 1;
+}
+
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+
+
+.cart{
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    z-index: 6;
+    padding: 60px 20px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.cart__close-btn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+.cart__btn-close__icon{
+    width: 20px;
+    height: 20px;
+    fill: black;
+}
+
+
+.cart__title{}
+
+
+.cart__list{}
+
+
+.cart__item{}
+
+
+.cart__item__img{}
+
+
+.cart__item__div{}
+
+
+.cart__item__div__title{}
+
+
+.cart__item__div__text-price{}
+
+
+.cart__item__div__btn-minus{}
+
+
+.cart__item__div__text-quantity{}
+
+
+.cart__item__div__btn-plus{}
+
+
+.cart__item__text-notfound{}
+
+
+.cart__text{}
+
+
+.cart__btn{}

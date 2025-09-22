@@ -9,7 +9,7 @@ function Login({ setActivRegistrationForm, setActivLoginForm }) {
     }
 
 
-    function openRegistrationForm(){
+    function openRegistrationForm() {
         setActivLoginForm(false);
         setActivRegistrationForm(true);
     }

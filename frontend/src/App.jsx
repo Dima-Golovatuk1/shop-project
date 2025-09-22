@@ -48,7 +48,7 @@ function App() {
             <main>
                 {activRegistrationForm && <Registration setActivRegistrationForm={setActivRegistrationForm} setActivLoginForm={setActivLoginForm} />}
                 {activLoginForm && <Login setActivLoginForm={setActivLoginForm} setActivRegistrationForm={setActivRegistrationForm} />}
-                {activCart && <Cart setActivCart={setActivCart}/>}
+                {activCart && <Cart setActivCart={setActivCart} activCart={activCart}/>}
 
                 <Routes>
                     <Route path="/" element={<Catalog />} />
