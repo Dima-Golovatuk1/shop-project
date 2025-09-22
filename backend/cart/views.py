@@ -19,11 +19,15 @@ def cart(request):
 
         items = CartItem.objects.filter(cart=cart).select_related('product')
 
-        items_serializer = CartItemsSerializer(items, many=True)
+        
+        serializer = CartItemsSerializer(items, many=True)
+
+        if serializer.is_valid():
+                item = serializer.save()
 
         return Response({
             "message": f"Cart details for {request.user}",
-            "items": items_serializer.data
+            "items": item.data
         }, status=200)
             
     except Exception as e:
