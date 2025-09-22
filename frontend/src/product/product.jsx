@@ -12,17 +12,22 @@ function Product() {
 
 
     function submitAddCart(e) {
-        fetch(`http://localhost:8000/cart/api/add/${id}/`, {
+        const data = {
+            "product_id": id 
+        };
+        
+        fetch(`http://localhost:8000/cart/api/add/`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
-            }
+            },
+            body: JSON.stringify(data)
         })
-            .then(res => res.json())
-            .then(data => {
-                console.log("Server Response:", data);
-            })
-            .catch(err => console.error("Error:", err));
+        .then(res => res.json())
+        .then(data => {
+            console.log("Server Response:", data);
+        })
+        .catch(err => console.error("Error:", err));
     }
 
 
