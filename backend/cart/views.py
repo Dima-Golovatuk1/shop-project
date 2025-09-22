@@ -43,12 +43,16 @@ def cart_items(request, product_id):
 
         if request.method == "POST":
             product = Product.objects.filter(pk=product_id).first()
-            item = CartItem.objects.create(
+            item, created = CartItem.objects.get_or_create(
                 cart=cart,
                 product=product,
                 quantity=1,
                 price=product.price
             )
+
+            if created == True:
+                item.quantity += 1
+                
             item.save()
         
         items = CartItem.objects.filter(cart=cart)
@@ -133,7 +137,7 @@ def cart_item_delete(request, item_id):
 
         if request.method == "DELETE":
             product = Product.objects.filter(pk=item_id).first()
-            item = CartItem.objects.filter(cart=cart, product=product)
+            item = CartItem.objects.filter(cart=cart, product=product).first()
 
             item.delete()
             

@@ -54,9 +54,9 @@ def search(request):
         if price:
             filters &= Q(price__lte=price)  
         if category:
-            filters &= Q(category_id__icontains=category)
+            filters &= Q(category__icontains=category)
         if sub_category:
-            filters &= Q(subcategory_id__icontains=sub_category)
+            filters &= Q(subcategory__icontains=sub_category)
         
         products = Product.objects.filter(filters)
         
