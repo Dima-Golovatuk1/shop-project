@@ -43,6 +43,7 @@ function App() {
             <Header
                 dataAuthenticated={dataAuthenticated} 
                 setActivLoginForm={setActivRegistrationForm} 
+                setActivCart={setActivCart}
             />
             <main>
                 {activRegistrationForm && <Registration setActivRegistrationForm={setActivRegistrationForm} setActivLoginForm={setActivLoginForm} />}
