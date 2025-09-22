@@ -1,0 +1,19 @@
+[2025-09-22 13:52:57,912] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-22 13:53:45,353] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 15678
+[2025-09-22 13:53:45,439] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-22 13:53:45,715] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-22 13:53:45,718] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 3299
+[2025-09-22 13:53:56,947] INFO django.server:213 — "GET /cart/api/add/1/ HTTP/1.1" 200 7106
+[2025-09-22 13:54:00,178] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 6366
+[2025-09-22 13:54:01,235] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-22 13:54:01,243] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 791
+[2025-09-22 13:54:01,263] INFO django.server:213 — "GET /media/catalog/487793279_I0LTg7r.png HTTP/1.1" 304 0
+[2025-09-22 13:54:02,388] WARNING django.request:253 — Method Not Allowed: /cart/api/remove/1/
+[2025-09-22 13:54:02,390] WARNING django.server:213 — "GET /cart/api/remove/1/ HTTP/1.1" 405 5245
+[2025-09-22 13:54:03,376] WARNING django.request:253 — Method Not Allowed: /cart/api/remove/1/
+[2025-09-22 13:54:03,377] WARNING django.server:213 — "GET /cart/api/remove/1/ HTTP/1.1" 405 5245
+[2025-09-22 13:54:32,877] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5258
+[2025-09-22 13:54:34,899] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5258
+[2025-09-22 13:54:35,770] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5258
+[2025-09-22 13:54:42,950] INFO django.server:213 — "POST /cart/api/add/1/ HTTP/1.1" 200 7384
+[2025-09-22 13:54:45,303] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5535
