@@ -20,8 +20,8 @@
 
 .cart{
     overflow: hidden;
-    width: 400px;
-    height: 400px;
+    width: 280px;
+    height: 280px;
     background-color: rgb(255, 255, 255);
     z-index: 6;
     padding: 60px 20px;
@@ -80,7 +80,19 @@
 .cart__item__text-notfound{}
 
 
-.cart__text{}
+.cart__text{
+    margin-top: 100px;
+}
 
 
-.cart__btn{}
+.cart__btn{
+    width: 200px;
+    padding: 20px 20px;
+    border-radius: 7px;
+    background-color: var(--button-color);
+}
+
+.cart__btn:hover
+.cart__btn:focus{
+    background-color: var(--button-color-hover);
+}

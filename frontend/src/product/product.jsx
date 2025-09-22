@@ -12,11 +12,16 @@ function Product() {
 
 
     function submitAddCart(e) {
+        const data = {
+            "product_id": id 
+        };
+        
         fetch(`http://localhost:8000/cart/api/add/${id}/`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
-            }
+            },
+            body: JSON.stringify(data)
         })
             .then(res => res.json())
             .then(data => {
