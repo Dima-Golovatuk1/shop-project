@@ -3,7 +3,6 @@ from django.utils.timezone import now
 
 from products.models import Product
 from backend.settings import AUTH_USER_MODEL
-from .utils import generate_tracking_number
 
 # Create your models here.
 
@@ -27,7 +26,7 @@ class Order(models.Model):
     first_name = models.TextField()
     last_name = models.TextField()
     middle_name = models.TextField()
-    tracking_number = models.CharField(max_length=50, unique=True, blank=True, default=generate_tracking_number())
+    tracking_number = models.CharField(max_length=50, unique=True, blank=True)
     status = models.CharField(max_length=15, choices=Status, default=Status.PENDING)
     total_price = models.PositiveIntegerField()
     phone_number = models.CharField(max_length=15, blank=True)
