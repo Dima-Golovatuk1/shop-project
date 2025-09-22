@@ -18,7 +18,7 @@ class Category(models.Model):
 
 
 class SubCategory(models.Model):
-    parent_id = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
+    parent = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
     name = models.CharField(max_length=255)
     created_at = models.DateTimeField(auto_now_add=True)
 
@@ -30,9 +30,9 @@ class Product(models.Model):
     product_code = models.PositiveIntegerField(unique=True)
     title = models.CharField(max_length=255)
     description = models.TextField()
-    category_id = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
-    subcategory_id = models.ForeignKey(SubCategory, on_delete=models.CASCADE, null=True)
-    seller_id = models.ForeignKey(AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
+    subcategory = models.ForeignKey(SubCategory, on_delete=models.CASCADE, null=True)
+    seller = models.ForeignKey(AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
     stock_quantity = models.PositiveIntegerField(default=0)
     characteristics = models.JSONField(default=dict, blank=True)
     price = models.PositiveIntegerField()
@@ -44,12 +44,6 @@ class Product(models.Model):
         indexes = [
             GinIndex(fields=["characteristics"], name="product_characteristics_idx")
         ]
-
-    def publish(self, *args, **kwargs):
-        if not self.slug:
-            time_ = now().strftime("%Y%m%d%H%M%S")
-            self.slug = f"{slugify(self.title)}-{time_}"
-        self.save(*args, **kwargs)
 
     def __str__(self):
         return f"{self.title}"
