@@ -37,9 +37,10 @@ def cart(request):
     
 
 @api_view(["GET", "POST"])
-def cart_items(request, product_id):
+def cart_items(request):
     try:
         cart = check_autheticated_cart(request)
+        product_id = request.POST.get('product_id')
 
         if request.method == "POST":
             product = Product.objects.filter(pk=product_id).first()
