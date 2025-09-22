@@ -23,12 +23,12 @@ class MyUserManager(BaseUserManager):
         
         return user
 
-    def create_superuser(self, username: str, email: str, phone_number: str, password: str):
+    def create_superuser(self, username: str, email: str, password: str):
         user = self.create_user(
             username=username,
             email=email,
-            phone_number=phone_number,
             password=password,
+            phone_number=False,
             is_seller=False
         )
         
