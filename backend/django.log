@@ -2723,3 +2723,163 @@ TypeError: buy_product() got an unexpected keyword argument 'id_'
 [2025-09-23 15:49:50,502] INFO django.utils.autoreload:265 — /app/products/views.py changed, reloading.
 [2025-09-23 15:49:51,128] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 [2025-09-23 15:49:54,765] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 15:50:02,904] WARNING django.request:253 — Method Not Allowed: /products/buy/1/
+[2025-09-23 15:50:02,905] WARNING django.server:213 — "GET /products/buy/1/ HTTP/1.1" 405 5621
+[2025-09-23 15:50:04,979] INFO django.server:213 — "POST /products/buy/1/ HTTP/1.1" 200 6204
+[2025-09-23 15:50:08,791] INFO django.server:213 — "GET /cart HTTP/1.1" 301 0
+[2025-09-23 15:50:08,834] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 15:50:08,838] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5467
+[2025-09-23 15:50:13,122] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-23 15:50:13,188] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 38
+[2025-09-23 15:50:14,529] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 195
+[2025-09-23 15:50:17,227] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 15:50:17,230] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
+[2025-09-23 15:51:24,329] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 15:51:24,334] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
+[2025-09-23 15:51:32,935] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 15:51:32,951] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 38
+[2025-09-23 15:51:33,065] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 15:51:36,164] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 15:51:36,171] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
+[2025-09-23 15:51:39,192] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-23 15:51:40,639] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 15:51:40,700] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 15:51:45,549] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 15:51:45,550] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
+[2025-09-23 15:51:47,918] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-23 15:51:49,227] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 15:51:49,230] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
+[2025-09-23 15:51:55,048] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 15:51:55,052] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
+[2025-09-23 15:52:02,004] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 15:52:02,033] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 38
+[2025-09-23 15:52:02,192] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 15:52:34,782] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 15:52:34,787] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
+[2025-09-23 15:53:37,392] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-23 15:53:37,528] INFO django.server:213 — "GET /media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg HTTP/1.1" 200 127260
+[2025-09-23 15:53:39,531] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 15:53:39,594] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 15:53:56,728] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 15:53:56,735] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
+[2025-09-23 15:54:01,372] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 333
+[2025-09-23 15:54:07,455] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 15:54:07,563] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 15:54:11,609] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 15:54:11,630] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 38
+[2025-09-23 15:54:11,725] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 15:55:38,996] WARNING django.request:253 — Not Found: /cart/delete
+[2025-09-23 15:55:38,998] WARNING django.server:213 — "GET /cart/delete HTTP/1.1" 404 4383
+[2025-09-23 15:55:53,557] INFO django.server:213 — "GET /cart/api/update_add/3 HTTP/1.1" 301 0
+[2025-09-23 15:55:53,612] WARNING django.request:253 — Method Not Allowed: /cart/api/update_add/3/
+[2025-09-23 15:55:53,613] WARNING django.server:213 — "GET /cart/api/update_add/3/ HTTP/1.1" 405 5863
+[2025-09-23 15:55:55,915] ERROR django.request:253 — Internal Server Error: /cart/api/update_add/3/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: cart_item_adding() got an unexpected keyword argument 'product_id'
+[2025-09-23 15:55:55,918] ERROR django.server:213 — "PUT /cart/api/update_add/3/ HTTP/1.1" 500 87455
+[2025-09-23 15:56:04,106] WARNING django.request:253 — Not Found: /cart/api/update_add/
+[2025-09-23 15:56:04,107] WARNING django.server:213 — "GET /cart/api/update_add/ HTTP/1.1" 404 4410
+[2025-09-23 15:56:07,643] INFO django.server:213 — "GET /cart/api/update_add/1 HTTP/1.1" 301 0
+[2025-09-23 15:56:07,677] WARNING django.request:253 — Method Not Allowed: /cart/api/update_add/1/
+[2025-09-23 15:56:07,678] WARNING django.server:213 — "GET /cart/api/update_add/1/ HTTP/1.1" 405 5863
+[2025-09-23 15:56:10,575] ERROR django.request:253 — Internal Server Error: /cart/api/update_add/1/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: cart_item_adding() got an unexpected keyword argument 'product_id'
+[2025-09-23 15:56:10,577] ERROR django.server:213 — "PUT /cart/api/update_add/1/ HTTP/1.1" 500 87455
+[2025-09-23 15:56:52,934] INFO django.utils.autoreload:265 — /app/cart/urls.py changed, reloading.
+[2025-09-23 15:56:53,852] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 15:56:57,777] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 15:56:59,609] WARNING django.request:253 — Method Not Allowed: /cart/api/update_add/
+[2025-09-23 15:56:59,609] WARNING django.server:213 — "GET /cart/api/update_add/ HTTP/1.1" 405 5855
+[2025-09-23 15:57:02,166] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:04,611] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:05,315] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:05,998] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:06,695] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:07,213] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:07,497] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:08,016] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:08,363] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:08,585] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:08,798] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:09,028] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:09,238] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:09,455] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:09,672] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:10,192] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:10,502] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:11,115] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:12,323] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 6143
+[2025-09-23 15:57:15,318] INFO django.server:213 — "GET /cart/api/update_remove HTTP/1.1" 301 0
+[2025-09-23 15:57:15,379] WARNING django.request:253 — Method Not Allowed: /cart/api/update_remove/
+[2025-09-23 15:57:15,380] WARNING django.server:213 — "GET /cart/api/update_remove/ HTTP/1.1" 405 5877
+[2025-09-23 15:57:17,071] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 6165
+[2025-09-23 15:57:18,938] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 6165
+[2025-09-23 15:57:19,113] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 6165
+[2025-09-23 15:57:19,302] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 6165
+[2025-09-23 15:57:19,487] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 6165
+[2025-09-23 15:57:19,650] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 6165
+[2025-09-23 15:57:19,840] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 6165
+[2025-09-23 15:57:20,045] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 6165
+[2025-09-23 15:57:32,869] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 6165
+[2025-09-23 15:58:03,418] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 6165
+[2025-09-23 15:58:11,845] WARNING django.request:253 — Not Found: /
+[2025-09-23 15:58:11,846] WARNING django.server:213 — "GET / HTTP/1.1" 404 2923
+[2025-09-23 16:01:19,920] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-23 16:01:19,971] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 16:01:19,973] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
+[2025-09-23 16:01:20,132] INFO django.server:213 — "GET /media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg HTTP/1.1" 200 127260
+[2025-09-23 16:01:21,890] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 195
+[2025-09-23 16:01:24,186] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 195
+[2025-09-23 16:01:26,886] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 16:01:26,889] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
