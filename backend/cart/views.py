@@ -174,14 +174,16 @@ def cart_item_delete(request):
 def cart_buy(request):
     try:
         if request.method == "POST":
-            first_name = request.POST.get('first_name')
-            last_name = request.POST.get('last_name')
-            middle_name = request.POST.get('middle_name')
-            phone_number = request.POST.get('phone_number')
-            payment_method = request.POST.get('payment_number')
-            shipping_address = request.POST.get('shipping_address')
+            first_name = request.data.get('first_name')
+            last_name = request.data.get('last_name')
+            middle_name = request.data.get('middle_name')
+            phone_number = request.data.get('phone_number')
+            payment_method = request.data.get('payment_number')
+            shipping_address = request.data.get('shipping_address')
 
             data = {}
+
+            total_price = 0
 
             if request.user.is_authenticated:
                 data["user"] = request.user
@@ -190,6 +192,10 @@ def cart_buy(request):
                 'first_name': first_name,
                 'last_name': last_name,
                 'middle_name': middle_name,
+                'phone_number': phone_number,
+                'payment_method': payment_method,
+                'shipping_address': shipping_address,
+                'total_price': total_price,
             })
 
             order, created = Order.objects.get_or_create(**data)
