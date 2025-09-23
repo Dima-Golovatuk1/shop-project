@@ -6,7 +6,8 @@ from .models import CartItem
 class CartItemsSerializer(serializers.ModelSerializer):
     product_title = serializers.CharField(source="product.title", read_only=True)
     product_photo_url = serializers.ImageField(source="product.photo_url")
+    product_price = serializers.IntegerField(sourse="product.price", read_only=True)
 
     class Meta:
         model = CartItem
-        fields = ["id", "quantity", "product_title", "product_photo_url"]
+        fields = ["id", "quantity", "product_title", "product_photo_url", "product_price"]
