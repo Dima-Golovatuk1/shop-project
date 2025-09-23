@@ -39,8 +39,6 @@ def register_user(request):
                 serializer = RegisterSerializer(data=request.data)
                 if serializer.is_valid():
                     user = serializer.save()
-
-                logger.info(f"user: {user}")
         
                 
                 return Response({
