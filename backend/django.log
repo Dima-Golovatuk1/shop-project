@@ -2164,3 +2164,17 @@ TypeError: cart_items() got an unexpected keyword argument 'product_id'
 [2025-09-23 13:29:55,487] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 [2025-09-23 13:30:46,032] INFO django.utils.autoreload:265 — /app/cart/serializers.py changed, reloading.
 [2025-09-23 13:30:46,867] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 13:31:35,936] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 13:31:42,083] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 13:33:14,062] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 13:33:34,778] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 13:33:34,844] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 44
+[2025-09-23 13:33:35,473] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 498
+[2025-09-23 13:33:44,415] INFO cart.views:24 — [{'id': 2, 'quantity': 1, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 13:33:44,416] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 183
+[2025-09-23 13:34:26,368] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 13:34:26,375] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 44
+[2025-09-23 13:34:26,400] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 498
+[2025-09-23 13:34:28,940] INFO cart.views:24 — [{'id': 2, 'quantity': 1, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 13:34:28,941] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 183
+[2025-09-23 13:34:35,690] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader

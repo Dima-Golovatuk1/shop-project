@@ -45,6 +45,7 @@ function Catalog() {
 
 
     return (
+        
         <section className="catalog">
             <div className="container">
                 <ul className="catalog__list">
@@ -59,7 +60,7 @@ function Catalog() {
                                     <div className="catalog__item__div">
                                         <h3 className="catalog__item__title">{product.title}</h3>
                                         <p className="catalog__item__text"></p>
-                                        <p className="catalog__item__text-price">{product.price}</p>
+                                        <p className="catalog__item__text-price">{product.price}$</p>
                                     </div>
                                 </Link>
                             </li>
