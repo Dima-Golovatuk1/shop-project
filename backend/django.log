@@ -2162,3 +2162,5 @@ TypeError: cart_items() got an unexpected keyword argument 'product_id'
 [2025-09-23 13:25:03,873] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 165
 [2025-09-23 13:29:54,370] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
 [2025-09-23 13:29:55,487] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 13:30:46,032] INFO django.utils.autoreload:265 — /app/cart/serializers.py changed, reloading.
+[2025-09-23 13:30:46,867] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
