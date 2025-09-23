@@ -1886,3 +1886,4 @@ TypeError: cart_items() got an unexpected keyword argument 'product_id'
 [2025-09-22 16:40:43,136] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 400 5812
 [2025-09-22 16:42:20,237] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
 [2025-09-22 16:42:21,101] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 15:40:52,163] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
