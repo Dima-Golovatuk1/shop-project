@@ -47,8 +47,8 @@ function Product() {
                 setProduct(data.products);
                 setError(null);
             } catch (e) {
-                setError("Помилка завантаження товару");
-                console.error("Помилка:", e);
+                setError("Error while downloading product");
+                console.error("Error:", e);
             } finally {
                 setIsLoading(false);
             }
@@ -81,8 +81,8 @@ function Product() {
                         <h2 className="product__title">{product.title}</h2>
                         <p className="product__text-description">{product.description}</p>
                         <div className="product__div-buy">
-                            <p className="product__text-price">{product.price}</p>
-                            <button onClick={submitAddCart} className="product__btn">Купити</button>
+                            <p className="product__text-price">{product.price}$</p>
+                            <button onClick={submitAddCart} className="product__btn">Buy</button>
                         </div>
                     </div>
                 </div>

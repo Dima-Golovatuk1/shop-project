@@ -48,12 +48,8 @@ function Registration({ setActivRegistrationForm, setActivLoginForm }) {
                 <h2 className="registration__title">Sign up</h2>
                 <form className="registration__form" ref={formRegistrRef} onSubmit={submitRegistr}>
                     <label className="registration__label">
-                        Name
-                        <input className="registration__input" name="name" type="text" placeholder="Name" autoComplete="given-name" />
-                    </label>
-                    <label className="registration__label">
-                        Surname
-                        <input className="registration__input" name="lastName" type="text" placeholder="Surname" autoComplete="family-name" />
+                        Username
+                        <input className="registration__input" name="username" type="text" placeholder="Username" autoComplete="given-name" />
                     </label>
                     <label className="registration__label">
                         Email
@@ -61,13 +57,16 @@ function Registration({ setActivRegistrationForm, setActivLoginForm }) {
                     </label>
                     <label className="registration__label">
                         Phone number
-                        <input className="registration__input" name="phone" type="tel" placeholder="Phone number" autoComplete="tel" />
+                        <input className="registration__input" name="phone_number" type="tel" placeholder="Phone number" autoComplete="tel" />
                     </label>
                     <label className="registration__label">
                         Password
                         <input className="registration__input" name="password" type="password" placeholder="Password" autoComplete="current-password" />
                     </label>
-
+                    <label className="registration__label">
+                        Repeat Password
+                        <input className="registration__input" name="password2" type="password" placeholder="Repeat password" autoComplete="current-password" />
+                    </label>
                     <button className="registration__form__btn" type="submit">Register</button>
                     <p onClick={openLoginForm} className="registration__form__text">Already have an account?</p>
                 </form>
