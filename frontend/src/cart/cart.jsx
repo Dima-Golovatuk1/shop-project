@@ -65,20 +65,22 @@ function Cart({ setActivCart }) {
             </button>
             <div className="container">
                 <h2 className="cart__title">Cart</h2>
+                <br></br><br></br>
                 <ul>
                     {products.length > 0 ? (
                         products.map(product => (
                             <li key={product.id}>
-                                <img src={product.product_photo_url} alt={product.product_title} />
+                                <img src={product.photo_url}/>
                                 <div>
-                                    <h3>{product.product_title}</h3>
-                                    <p>{product.product_price}</p>
+                                    <h3>Title: {product.product_title}</h3>
+                                    <p>Price: {product.product_price}</p>
                                 </div>
                                 <div>
                                     <button>-</button>
-                                    <p>{product.quantity}</p>
+                                    <h4>Quantity: {product.quantity}</h4>
                                     <button>+</button>
                                 </div>
+                                <br></br>
                             </li>
                         ))
                     ) : (

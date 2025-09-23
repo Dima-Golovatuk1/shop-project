@@ -1,0 +1,45 @@
+[2025-09-23 16:04:03,491] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 16:04:04,923] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-23 16:04:04,928] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 38
+[2025-09-23 16:04:06,313] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 195
+[2025-09-23 16:04:09,782] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 16:04:09,801] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 38
+[2025-09-23 16:04:09,993] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 16:04:10,501] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 16:04:10,505] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
+[2025-09-23 16:05:26,695] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 16:05:38,669] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 16:05:38,676] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 38
+[2025-09-23 16:05:38,742] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 16:05:40,772] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-23 16:05:42,474] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 16:05:42,476] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
+[2025-09-23 16:05:53,602] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 38
+[2025-09-23 16:05:53,607] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-23 16:05:58,732] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 16:05:58,751] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 38
+[2025-09-23 16:05:59,029] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 16:06:00,472] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 16:06:00,474] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
+[2025-09-23 16:06:55,602] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 16:06:55,648] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 38
+[2025-09-23 16:06:55,771] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 16:06:55,863] INFO django.server:213 — "GET /media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg HTTP/1.1" 200 127260
+[2025-09-23 16:07:01,388] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 16:07:01,412] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 38
+[2025-09-23 16:07:01,478] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 16:07:02,285] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 16:07:02,290] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
+[2025-09-23 16:07:34,624] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 16:07:34,640] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 38
+[2025-09-23 16:07:34,694] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 16:07:39,003] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-23 16:07:40,311] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 16:07:40,404] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 16:07:40,528] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 16:07:40,530] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
+[2025-09-23 16:08:12,553] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 16:08:12,595] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 38
+[2025-09-23 16:08:12,735] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 16:08:17,891] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-23 16:08:17,895] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
