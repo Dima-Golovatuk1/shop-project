@@ -7,23 +7,32 @@ function Cart({ setActivCart }) {
     const [error, setError] = useState(null);
 
 
+    function closeForm() {
+        setActivCart(false);
+    }
+
+
     useEffect(() => {
         const API_URL = 'http://localhost:8000/cart/';
 
         async function fetchProducts() {
             try {
-                const response = await fetch(API_URL);
+                const response = await fetch(API_URL, {
+                    method: 'GET',
+                    credentials: 'include'
+                });
 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
 
                 const data = await response.json();
+                console.log("Data:", data);
                 console.log("Data:", data.products);
                 setProducts(data.products || []);
             } catch (e) {
                 setError("Error");
-                console.error("Помилка:", e);
+                console.error("Error:", e);
             } finally {
                 setIsLoading(false);
             }
@@ -45,7 +54,7 @@ function Cart({ setActivCart }) {
         return <p>Error: {error}</p>;
     }
 
-    retur(
+    return(
         <>
             <div className="backdrop-cart"></div>
             <section className="cart">
@@ -55,14 +64,14 @@ function Cart({ setActivCart }) {
                     </svg>
                 </button>
                 <div className="container">
-                    <h2 className="cart__title">Кошик</h2>
+                    <h2 className="cart__title">Cart</h2>
                     <ul>
                         {products.length > 0 ? (
                             products.map(product => (
                                 <li key={product.id}>
-                                    <img src="" alt="" />
+                                    <img src="{product.photo_url}" alt="" />
                                     <div>
-                                        {/* <h3>{product}</h3> */}
+                                        <h3>{product.product_title}</h3>
                                         <p>{product.price}</p>
                                     </div>
                                     <div>
@@ -73,11 +82,11 @@ function Cart({ setActivCart }) {
                                 </li>
                             ))
                         ) : (
-                            <p>Кошик порожній.</p>
+                            <p>Cart is empty.</p>
                         )}
                     </ul>
-                    <p>До сплати{ totalPrice }</p>
-                    <button>Купити</button>
+                    <p>Total price: { totalPrice }</p>
+                    <button>Buy</button>
                 </div>
             </section>
         </>

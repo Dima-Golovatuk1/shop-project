@@ -13,6 +13,14 @@ from logging import getLogger
 logger = getLogger(__name__)
 
 
+@api_view(['GET'])
+def profile(request):
+    if request.user.is_authenticated:
+        return Response({
+            'user': request.user
+        })
+
+
 @api_view(["GET"])
 def check_auth(request):
     if request.user.is_authenticated:
