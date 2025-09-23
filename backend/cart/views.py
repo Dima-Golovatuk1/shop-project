@@ -21,11 +21,11 @@ def cart(request):
 
         
         serializer = CartItemsSerializer(items, many=True)
-        
+        logger.info(serializer.data)
         
         return Response({
             "message": f"Cart details for {request.user}",
-            "items": serializer.data
+            "products": serializer.data
         }, status=200)
             
     except Exception as e:

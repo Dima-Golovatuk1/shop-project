@@ -80,11 +80,15 @@ def buy_product(request, product_id):
         serializer = SingleProductSerializer(instance=product)
         product_data = serializer.data
 
-        user_cart = Carts.objects.get(user=request.user)
-
-        user_cart.items.update({str(product_id): product_data})
+        user_cart, created = Carts.objects.get_or_create(user=request.user)
         user_cart.save()
-
+        item, created = CartItem.objects.get_or_create(cart=user_cart, product=product, defaults={"quantity": 1, "price": product.price})
+        
+        if not created:
+            item.quantity += 1
+        
+        item.save()
+        
         return Response(
                 {
                     "item_id": product_id,
