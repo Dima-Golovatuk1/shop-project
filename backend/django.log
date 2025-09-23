@@ -2500,3 +2500,116 @@ TypeError: cart_items() got an unexpected keyword argument 'product_id'
 [2025-09-23 15:21:46,782] ERROR django.request:253 — Internal Server Error: /user/register/
 [2025-09-23 15:21:46,783] ERROR django.server:213 — "POST /user/register/ HTTP/1.1" 500 105
 [2025-09-23 15:23:26,863] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 15:23:29,212] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 15:23:29,232] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-23 15:23:29,344] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 15:23:29,421] INFO django.server:213 — "GET /media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg HTTP/1.1" 200 127260
+[2025-09-23 15:23:30,997] INFO cart.views:24 — []
+[2025-09-23 15:23:30,998] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 58
+[2025-09-23 15:23:52,452] INFO django.server:213 — "POST /user/register/ HTTP/1.1" 201 119
+[2025-09-23 15:24:10,396] INFO users.views:83 — user: maxx
+[2025-09-23 15:24:10,411] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 142
+[2025-09-23 15:24:12,613] INFO cart.views:24 — []
+[2025-09-23 15:24:12,615] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 49
+[2025-09-23 15:24:51,685] INFO django.server:213 — "GET /admin HTTP/1.1" 301 0
+[2025-09-23 15:24:51,761] INFO django.server:213 — "GET /admin/ HTTP/1.1" 302 0
+[2025-09-23 15:24:51,824] INFO django.server:213 — "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3686
+[2025-09-23 15:25:03,237] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-23 15:25:04,378] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 195
+[2025-09-23 15:25:08,364] INFO cart.views:24 — []
+[2025-09-23 15:25:08,370] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 49
+[2025-09-23 15:25:13,244] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 195
+[2025-09-23 15:25:45,984] INFO django.server:213 — "GET / HTTP/1.1" 200 6905
+[2025-09-23 15:25:46,237] INFO django.server:213 — "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+[2025-09-23 15:26:48,491] INFO django.utils.autoreload:265 — /app/backend/urls.py changed, reloading.
+[2025-09-23 15:26:49,186] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 15:26:54,590] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 15:26:55,293] WARNING django.request:253 — Not Found: /
+[2025-09-23 15:26:55,293] WARNING django.server:213 — "GET / HTTP/1.1" 404 2923
+[2025-09-23 15:26:55,545] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-23 15:26:55,546] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 2974
+[2025-09-23 15:27:01,370] INFO django.server:213 — "GET /shop HTTP/1.1" 301 0
+[2025-09-23 15:27:01,429] INFO django.server:213 — "GET /shop/ HTTP/1.1" 200 6935
+[2025-09-23 15:27:07,274] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-23 15:27:07,278] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-23 15:27:07,445] INFO django.server:213 — "GET /media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg HTTP/1.1" 200 127260
+[2025-09-23 15:27:13,779] INFO django.server:213 — "GET /user/logout HTTP/1.1" 301 0
+[2025-09-23 15:27:13,818] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5231
+[2025-09-23 15:27:46,202] INFO django.server:213 — "GET /user/register HTTP/1.1" 301 0
+[2025-09-23 15:27:46,275] INFO django.server:213 — "GET /user/register/ HTTP/1.1" 200 6872
+[2025-09-23 15:28:59,595] ERROR django.request:253 — Internal Server Error: /user/register/
+[2025-09-23 15:28:59,595] ERROR django.server:213 — "POST /user/register/ HTTP/1.1" 500 7006
+[2025-09-23 15:29:13,566] WARNING django.request:253 — Not Found: /
+[2025-09-23 15:29:13,567] WARNING django.server:213 — "GET / HTTP/1.1" 404 2923
+[2025-09-23 15:29:18,134] INFO django.server:213 — "GET /products/1 HTTP/1.1" 301 0
+[2025-09-23 15:29:18,173] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 5790
+[2025-09-23 15:29:21,097] INFO django.server:213 — "GET /products/2 HTTP/1.1" 301 0
+[2025-09-23 15:29:21,143] WARNING django.request:253 — Not Found: /products/2/
+[2025-09-23 15:29:21,144] WARNING django.server:213 — "GET /products/2/ HTTP/1.1" 404 5172
+[2025-09-23 15:29:23,960] INFO django.server:213 — "GET /products/3 HTTP/1.1" 301 0
+[2025-09-23 15:29:23,998] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 5794
+[2025-09-23 15:29:27,835] WARNING django.request:253 — Not Found: /
+[2025-09-23 15:29:27,836] WARNING django.server:213 — "GET / HTTP/1.1" 404 2923
+[2025-09-23 15:29:31,057] INFO django.server:213 — "GET /cart HTTP/1.1" 301 0
+[2025-09-23 15:29:31,125] INFO cart.views:24 — []
+[2025-09-23 15:29:31,131] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5153
+[2025-09-23 15:29:45,843] INFO django.server:213 — "GET /cart/api/add/ HTTP/1.1" 200 6984
+[2025-09-23 15:30:14,108] WARNING django.request:253 — Not Found: /
+[2025-09-23 15:30:14,109] WARNING django.server:213 — "GET / HTTP/1.1" 404 2923
+[2025-09-23 15:30:20,367] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 15:30:20,376] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-23 15:30:20,457] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 15:30:20,763] INFO django.server:213 — "GET /media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg HTTP/1.1" 200 127260
+[2025-09-23 15:30:25,462] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 333
+[2025-09-23 15:30:27,649] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 15:30:27,702] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 15:30:28,279] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-23 15:30:30,526] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 195
+[2025-09-23 15:30:32,288] INFO cart.views:24 — []
+[2025-09-23 15:30:32,292] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 58
+[2025-09-23 15:30:40,003] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 195
+[2025-09-23 15:30:47,126] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 15:30:47,250] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 15:31:08,596] INFO django.server:213 — "POST /user/register/ HTTP/1.1" 201 115
+[2025-09-23 15:31:20,925] INFO users.views:83 — user: ww
+[2025-09-23 15:31:20,929] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 138
+[2025-09-23 15:31:26,317] INFO cart.views:24 — []
+[2025-09-23 15:31:26,322] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 47
+[2025-09-23 15:31:33,279] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-23 15:31:34,571] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 195
+[2025-09-23 15:31:36,609] INFO cart.views:24 — []
+[2025-09-23 15:31:36,611] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 47
+[2025-09-23 15:31:42,195] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 15:31:42,225] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 38
+[2025-09-23 15:31:42,355] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 15:31:43,189] INFO cart.views:24 — []
+[2025-09-23 15:31:43,191] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 47
+[2025-09-23 15:31:53,148] INFO cart.views:24 — []
+[2025-09-23 15:31:53,153] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 47
+[2025-09-23 15:32:09,721] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 15:32:09,737] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 38
+[2025-09-23 15:32:09,791] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 15:32:15,698] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 15:32:15,715] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 38
+[2025-09-23 15:32:16,155] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 15:32:28,135] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 15:32:28,149] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 38
+[2025-09-23 15:32:28,408] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 15:32:55,439] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-23 15:32:55,999] INFO django.server:213 — "GET /media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg HTTP/1.1" 304 0
+[2025-09-23 15:33:02,248] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 15:33:02,318] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 15:33:03,157] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-23 15:33:07,747] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-23 15:33:07,788] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-23 15:33:08,295] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-23 15:35:30,111] INFO django.utils.autoreload:265 — /app/users/urls.py changed, reloading.
+[2025-09-23 15:35:31,113] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 15:35:37,881] INFO django.utils.autoreload:265 — /app/users/urls.py changed, reloading.
+[2025-09-23 15:35:38,433] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 15:36:18,117] INFO django.utils.autoreload:265 — /app/users/urls.py changed, reloading.
+[2025-09-23 15:36:18,964] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 15:37:57,169] INFO django.utils.autoreload:265 — /app/users/urls.py changed, reloading.
+[2025-09-23 15:37:57,734] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 15:38:41,262] INFO django.utils.autoreload:265 — /app/users/urls.py changed, reloading.
+[2025-09-23 15:38:42,104] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader

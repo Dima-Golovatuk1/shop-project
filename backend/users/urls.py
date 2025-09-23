@@ -7,4 +7,5 @@ urlpatterns = [
     path('login/', views.login_user),
     path('logout/', views.logout_user),
     path("api/check-auth/", views.check_auth),
+    path('profile/', views.profile)
 ]
