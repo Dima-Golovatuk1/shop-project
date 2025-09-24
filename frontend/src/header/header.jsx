@@ -21,6 +21,11 @@ function Header({ setActivLoginForm , dataAuthenticated, setActivCart }) {
     setActivCart(true)
   }
 
+
+  function homeClick() {
+    navigate('/'); 
+  }
+
   function userClick() {
     if (dataAuthenticated){
       navigate('/profile'); 
@@ -44,6 +49,13 @@ function Header({ setActivLoginForm , dataAuthenticated, setActivCart }) {
                 >
                   <svg className="header__nav__item__button__svg">
                     <use href="../../public/img/svg/symbol-defs.svg#icon-burger"></use>
+                  </svg>
+                </button>
+              </li>
+                <li className="header__nav__item">
+                  <button onClick={homeClick}>
+                  <svg className="header__nav__item__button__svg">
+                    <use href="../../public/img/svg/symbol-defs.svg#icon-user"></use>
                   </svg>
                 </button>
               </li>
@@ -97,13 +109,13 @@ function Header({ setActivLoginForm , dataAuthenticated, setActivCart }) {
           <nav className="aside__nav">
             <ul className="aside__nav__list">
               <li className="aside__nav__item">
-                <a href="{% url 'products' %}">Home</a>
+                <Link to={`/`}>Home</Link>
               </li>
               <li className="aside__nav__item">
-                <Link to={`/`}>Catalog</Link>
-              </li>
-              <li className="aside__nav__item">
-                <a href="{% url 'cart-products' %}">Cart</a>
+                                <button
+                  onClick={onCloseCart}
+                  className="header__nav__item__button"
+                >Cart</button>
               </li>
             </ul>
           </nav>
