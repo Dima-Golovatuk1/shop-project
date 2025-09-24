@@ -43,3 +43,337 @@
 [2025-09-23 16:08:12,735] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
 [2025-09-23 16:08:17,891] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
 [2025-09-23 16:08:17,895] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
+[2025-09-24 14:02:46,825] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:03:03,759] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5231
+[2025-09-24 14:03:04,096] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-24 14:03:04,098] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 2974
+[2025-09-24 14:07:23,252] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 302 0
+[2025-09-24 14:07:23,363] INFO django.server:213 — "GET /admin/login/?next=/admin/cart/cartitem/ HTTP/1.1" 200 4201
+[2025-09-24 14:07:53,297] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-24 14:07:53,349] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:07:53,368] INFO django.server:213 — "GET /media/catalog/487793279_I0LTg7r.png HTTP/1.1" 304 0
+[2025-09-24 14:08:04,044] INFO cart.views:24 — []
+[2025-09-24 14:08:04,049] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 58
+[2025-09-24 14:16:39,456] INFO cart.views:24 — []
+[2025-09-24 14:16:39,468] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5153
+[2025-09-24 14:16:39,562] INFO django.server:213 — "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[2025-09-24 14:16:39,564] INFO django.server:213 — "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[2025-09-24 14:16:39,564] INFO django.server:213 — "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[2025-09-24 14:16:39,566] INFO django.server:213 — "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[2025-09-24 14:16:39,569] INFO django.server:213 — "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[2025-09-24 14:16:39,574] INFO django.server:213 — "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[2025-09-24 14:16:39,581] INFO django.server:213 — "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[2025-09-24 14:16:39,581] INFO django.server:213 — "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[2025-09-24 14:16:39,584] INFO django.server:213 — "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[2025-09-24 14:16:39,589] INFO django.server:213 — "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[2025-09-24 14:16:39,592] INFO django.server:213 — "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[2025-09-24 14:16:39,694] INFO django.server:213 — "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[2025-09-24 14:16:43,834] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-24 14:16:43,859] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:19:04,086] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 14:19:15,810] INFO cart.views:24 — []
+[2025-09-24 14:19:15,812] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 58
+[2025-09-24 14:20:17,539] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-24 14:20:17,546] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 14:20:18,354] INFO cart.views:24 — []
+[2025-09-24 14:20:18,356] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 58
+[2025-09-24 14:20:24,335] INFO cart.views:24 — []
+[2025-09-24 14:20:24,337] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 58
+[2025-09-24 14:22:09,047] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-24 14:22:09,049] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 14:22:10,380] INFO cart.views:24 — []
+[2025-09-24 14:22:10,382] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 58
+[2025-09-24 14:22:11,551] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:22:13,017] INFO django.server:213 — "OPTIONS /cart/api/add/ HTTP/1.1" 200 0
+[2025-09-24 14:22:13,075] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:22:14,803] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:22:17,313] INFO cart.views:24 — []
+[2025-09-24 14:22:17,315] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 58
+[2025-09-24 14:22:22,002] INFO cart.views:24 — []
+[2025-09-24 14:22:22,009] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5153
+[2025-09-24 14:22:23,051] INFO cart.views:24 — []
+[2025-09-24 14:22:23,056] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5153
+[2025-09-24 14:22:24,433] INFO cart.views:24 — []
+[2025-09-24 14:22:24,440] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5153
+[2025-09-24 14:22:27,911] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:22:28,417] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:22:28,570] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:22:28,745] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:22:28,915] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:22:32,048] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 14:22:34,079] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:22:35,209] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:22:36,787] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:22:36,986] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:22:37,160] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:22:37,330] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:22:37,484] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:22:39,418] INFO cart.views:24 — []
+[2025-09-24 14:22:39,423] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5153
+[2025-09-24 14:22:47,771] INFO django.server:213 — "GET /cart/api/add/ HTTP/1.1" 200 6984
+[2025-09-24 14:23:00,931] INFO django.server:213 — "OPTIONS /user/login/ HTTP/1.1" 200 0
+[2025-09-24 14:23:01,926] INFO users.views:83 — user: 1
+[2025-09-24 14:23:01,934] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-24 14:23:03,638] WARNING django.request:253 — Forbidden: /user/login/
+[2025-09-24 14:23:03,640] WARNING django.server:213 — "POST /user/login/ HTTP/1.1" 403 45
+[2025-09-24 14:23:03,839] WARNING django.request:253 — Forbidden: /user/login/
+[2025-09-24 14:23:03,841] WARNING django.server:213 — "POST /user/login/ HTTP/1.1" 403 45
+[2025-09-24 14:23:09,482] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:23:09,485] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 14:23:10,158] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 14:23:12,173] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:23:13,205] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:23:15,820] INFO cart.views:24 — []
+[2025-09-24 14:23:15,831] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5171
+[2025-09-24 14:23:21,449] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:23:22,586] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:23:32,936] INFO django.server:213 — "GET /cart/api/add/ HTTP/1.1" 200 7002
+[2025-09-24 14:23:34,919] ERROR django.request:253 — Internal Server Error: /cart/api/add/
+[2025-09-24 14:23:34,920] ERROR django.server:213 — "POST /cart/api/add/ HTTP/1.1" 500 7081
+[2025-09-24 14:23:45,407] INFO django.server:213 — "GET /admin/login/?next=/admin/cart/cartitem/ HTTP/1.1" 302 0
+[2025-09-24 14:23:45,469] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 16420
+[2025-09-24 14:23:45,516] INFO django.server:213 — "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2025-09-24 14:23:45,516] INFO django.server:213 — "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[2025-09-24 14:23:45,520] INFO django.server:213 — "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[2025-09-24 14:23:45,520] INFO django.server:213 — "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[2025-09-24 14:23:45,521] INFO django.server:213 — "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[2025-09-24 14:23:45,521] INFO django.server:213 — "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2025-09-24 14:23:45,611] INFO django.server:213 — "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[2025-09-24 14:23:45,642] INFO django.server:213 — "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[2025-09-24 14:23:45,644] INFO django.server:213 — "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[2025-09-24 14:23:45,655] INFO django.server:213 — "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[2025-09-24 14:23:47,166] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 25970
+[2025-09-24 14:23:47,204] INFO django.server:213 — "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[2025-09-24 14:23:47,214] INFO django.server:213 — "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[2025-09-24 14:23:47,215] INFO django.server:213 — "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[2025-09-24 14:23:47,215] INFO django.server:213 — "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[2025-09-24 14:23:47,215] INFO django.server:213 — "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[2025-09-24 14:23:47,224] INFO django.server:213 — "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[2025-09-24 14:23:47,225] INFO django.server:213 — "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[2025-09-24 14:23:47,225] INFO django.server:213 — "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[2025-09-24 14:23:47,226] INFO django.server:213 — "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[2025-09-24 14:23:47,245] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:23:47,281] INFO django.server:213 — "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[2025-09-24 14:23:47,303] INFO django.server:213 — "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[2025-09-24 14:23:51,138] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:23:51,307] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:23:51,468] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:23:51,641] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:23:51,796] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:23:55,590] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 28525
+[2025-09-24 14:23:55,646] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:25:14,376] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:25:14,376] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 14:25:15,793] INFO django.server:213 — "OPTIONS /cart/api/add/ HTTP/1.1" 200 0
+[2025-09-24 14:25:15,816] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:25:15,817] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:25:17,219] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:25:17,220] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:25:20,307] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 28525
+[2025-09-24 14:25:20,357] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:25:21,184] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 28525
+[2025-09-24 14:25:21,235] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:25:23,714] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:25:23,716] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 14:25:24,669] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:25:24,671] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:25:24,815] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:25:24,817] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:25:24,978] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:25:24,979] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:25:27,939] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 28525
+[2025-09-24 14:25:27,986] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:25:28,639] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 28525
+[2025-09-24 14:25:28,702] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:25:30,437] INFO cart.views:24 — []
+[2025-09-24 14:25:30,441] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5171
+[2025-09-24 14:25:40,837] INFO django.server:213 — "POST /admin/cart/cartitem/ HTTP/1.1" 200 17199
+[2025-09-24 14:25:40,868] INFO django.server:213 — "GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+[2025-09-24 14:25:41,986] INFO django.server:213 — "POST /admin/cart/cartitem/ HTTP/1.1" 302 0
+[2025-09-24 14:25:42,026] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 13300
+[2025-09-24 14:25:42,077] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:25:42,107] INFO django.server:213 — "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[2025-09-24 14:25:43,549] INFO django.server:213 — "GET /admin/cart/carts/ HTTP/1.1" 200 26137
+[2025-09-24 14:25:43,606] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:25:45,641] INFO django.server:213 — "POST /admin/cart/carts/ HTTP/1.1" 302 0
+[2025-09-24 14:25:45,702] INFO django.server:213 — "GET /admin/cart/carts/ HTTP/1.1" 200 26330
+[2025-09-24 14:25:45,750] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:25:47,541] INFO django.server:213 — "POST /admin/cart/carts/ HTTP/1.1" 302 0
+[2025-09-24 14:25:47,604] INFO django.server:213 — "GET /admin/cart/carts/ HTTP/1.1" 200 26262
+[2025-09-24 14:25:47,670] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:25:51,223] INFO django.server:213 — "POST /admin/cart/carts/ HTTP/1.1" 200 17716
+[2025-09-24 14:25:52,822] INFO django.server:213 — "POST /admin/cart/carts/ HTTP/1.1" 302 0
+[2025-09-24 14:25:52,863] INFO django.server:213 — "GET /admin/cart/carts/ HTTP/1.1" 200 13270
+[2025-09-24 14:25:52,928] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:25:54,220] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 13159
+[2025-09-24 14:25:54,286] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:25:57,332] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 14:25:58,353] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:25:59,256] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:25:59,257] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:26:02,335] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5231
+[2025-09-24 14:26:02,373] INFO django.server:213 — "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[2025-09-24 14:26:02,374] INFO django.server:213 — "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[2025-09-24 14:26:02,375] INFO django.server:213 — "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[2025-09-24 14:26:02,375] INFO django.server:213 — "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[2025-09-24 14:26:02,375] INFO django.server:213 — "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[2025-09-24 14:26:02,377] INFO django.server:213 — "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[2025-09-24 14:26:02,380] INFO django.server:213 — "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[2025-09-24 14:26:02,384] INFO django.server:213 — "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[2025-09-24 14:26:02,384] INFO django.server:213 — "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[2025-09-24 14:26:02,387] INFO django.server:213 — "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[2025-09-24 14:26:02,388] INFO django.server:213 — "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[2025-09-24 14:26:02,489] INFO django.server:213 — "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[2025-09-24 14:26:08,195] WARNING django.request:253 — Not Found: /user/logout/
+[2025-09-24 14:26:08,197] WARNING django.server:213 — "GET /user/logout/ HTTP/1.1" 404 5211
+[2025-09-24 14:26:12,420] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 14:26:14,599] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-24 14:26:14,628] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 14:26:22,184] INFO users.views:83 — user: 1
+[2025-09-24 14:26:22,189] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-24 14:26:22,757] INFO users.views:83 — user: 1
+[2025-09-24 14:26:22,761] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-24 14:26:22,912] WARNING django.request:253 — Forbidden: /user/login/
+[2025-09-24 14:26:22,913] WARNING django.server:213 — "POST /user/login/ HTTP/1.1" 403 45
+[2025-09-24 14:26:23,059] WARNING django.request:253 — Forbidden: /user/login/
+[2025-09-24 14:26:23,060] WARNING django.server:213 — "POST /user/login/ HTTP/1.1" 403 45
+[2025-09-24 14:26:24,653] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 14:26:24,655] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 14:26:28,420] INFO cart.views:24 — []
+[2025-09-24 14:26:28,422] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 46
+[2025-09-24 14:26:29,957] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:26:31,042] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:26:31,043] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:26:31,226] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:26:31,227] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:26:31,361] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:26:31,363] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:27:15,131] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 13159
+[2025-09-24 14:27:15,180] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:29:22,342] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 13159
+[2025-09-24 14:29:22,408] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:29:23,473] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 13159
+[2025-09-24 14:29:23,526] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:30:00,622] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:30:00,625] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 14:31:04,074] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:31:04,077] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 14:31:05,863] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:31:08,231] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 15238
+[2025-09-24 14:31:08,326] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:31:13,590] INFO django.server:213 — "GET /admin/cart/carts/ HTTP/1.1" 200 15124
+[2025-09-24 14:31:13,650] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:31:18,744] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 15238
+[2025-09-24 14:31:18,809] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:31:21,545] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:31:21,875] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 266
+[2025-09-24 14:31:24,618] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 16261
+[2025-09-24 14:31:24,668] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:31:25,749] INFO django.server:213 — "GET /admin/cart/carts/ HTTP/1.1" 200 15858
+[2025-09-24 14:31:25,807] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:31:26,735] INFO django.server:213 — "GET /admin/cart/carts/ HTTP/1.1" 200 15858
+[2025-09-24 14:31:26,792] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:32:12,035] INFO django.server:213 — "GET /admin/cart/carts/ HTTP/1.1" 200 15858
+[2025-09-24 14:32:12,085] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:35:23,063] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-24 14:35:24,532] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:35:38,451] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-24 14:35:39,685] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:35:52,750] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:35:55,809] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 14:35:58,017] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:36:04,505] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-24 14:36:05,944] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:36:13,719] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-24 14:36:15,347] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:36:27,112] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 14:36:27,126] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 14:36:50,327] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:37:58,492] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:37:58,499] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 14:37:59,515] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:37:59,516] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:38:02,861] INFO cart.views:24 — []
+[2025-09-24 14:38:02,903] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5171
+[2025-09-24 14:38:05,260] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:38:05,261] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:38:05,667] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:38:05,668] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:38:05,913] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:38:05,914] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:38:06,115] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:38:06,116] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:38:06,267] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:38:06,268] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:38:08,885] INFO django.server:213 — "GET /admin/cart/carts/ HTTP/1.1" 200 15858
+[2025-09-24 14:38:08,935] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:38:09,693] INFO django.server:213 — "GET /admin/cart/carts/ HTTP/1.1" 200 15858
+[2025-09-24 14:38:09,752] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:38:11,924] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 16261
+[2025-09-24 14:38:11,974] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:38:14,210] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 16261
+[2025-09-24 14:38:14,262] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:39:52,294] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:39:52,296] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:39:53,038] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:39:53,040] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:39:53,286] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:39:53,288] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:39:53,503] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:39:53,504] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:39:53,688] WARNING django.request:253 — Forbidden: /cart/api/add/
+[2025-09-24 14:39:53,689] WARNING django.server:213 — "POST /cart/api/add/ HTTP/1.1" 403 45
+[2025-09-24 14:43:18,133] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 14:43:18,139] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:43:19,495] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 254
+[2025-09-24 14:43:22,013] INFO cart.views:24 — [{'id': 129, 'quantity': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 14:43:22,019] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5545
+[2025-09-24 14:43:25,084] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 254
+[2025-09-24 14:43:25,396] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 254
+[2025-09-24 14:43:26,995] INFO cart.views:24 — [{'id': 129, 'quantity': 3, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 14:43:27,000] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5545
+[2025-09-24 14:43:28,007] INFO cart.views:24 — [{'id': 129, 'quantity': 3, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 14:43:28,013] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5545
+[2025-09-24 14:43:30,255] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 254
+[2025-09-24 14:43:30,395] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 254
+[2025-09-24 14:43:30,543] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 254
+[2025-09-24 14:43:32,319] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 14:43:32,323] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5545
+[2025-09-24 14:43:40,357] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 14:43:40,359] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 14:43:42,754] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:43:42,761] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 14:43:43,971] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 14:43:43,973] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 14:43:47,035] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 14:43:47,040] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5545
+[2025-09-24 14:44:17,402] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:44:17,409] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 14:44:18,624] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 14:44:18,626] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 14:44:23,139] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 14:44:23,140] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 14:44:56,770] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 14:44:56,771] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 14:45:02,634] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:45:02,639] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 14:45:03,059] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 14:45:03,061] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 14:45:37,951] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:45:37,955] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 14:46:45,385] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 14:46:45,387] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 14:53:28,517] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:53:28,521] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 14:53:34,814] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 14:53:34,819] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 14:53:35,774] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 14:53:35,775] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 14:53:42,090] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 14:53:42,095] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5545
+[2025-09-24 14:55:01,131] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 14:55:01,133] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 14:55:03,419] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 14:55:03,422] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 14:55:05,995] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 14:55:05,996] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
