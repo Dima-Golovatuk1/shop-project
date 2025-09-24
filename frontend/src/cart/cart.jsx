@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-// import "./catalog.css";
+import "./cart.css";
 
 function Cart({ setActivCart }) {
     const [products, setProducts] = useState([]);
