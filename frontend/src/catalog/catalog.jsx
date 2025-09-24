@@ -55,6 +55,7 @@ function Catalog() {
                                 <Link className="catalog__item__link" to={`/product/${product.id}`}>
                                     <img
                                         src={`http://localhost:8000${product.photo_url}`}
+                                        alt={product.title}
                                     />
                                     <div className="catalog__item__div">
                                         <h3 className="catalog__item__title">{product.title}</h3>
