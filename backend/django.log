@@ -43,3 +43,50 @@
 [2025-09-23 16:08:12,735] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
 [2025-09-23 16:08:17,891] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
 [2025-09-23 16:08:17,895] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
+[2025-09-24 14:47:26,886] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:47:34,877] WARNING django.request:253 — Not Found: /
+[2025-09-24 14:47:34,879] WARNING django.server:213 — "GET / HTTP/1.1" 404 2923
+[2025-09-24 14:47:35,851] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-24 14:47:35,967] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 38
+[2025-09-24 14:47:37,760] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-24 14:47:37,956] INFO django.server:213 — "GET /media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg HTTP/1.1" 304 0
+[2025-09-24 14:47:38,102] INFO django.server:213 — "GET /media/catalog/photo_2025-06-17_19-04-21.jpg HTTP/1.1" 200 51047
+[2025-09-24 14:47:42,544] INFO django.server:213 — "GET /cart HTTP/1.1" 301 0
+[2025-09-24 14:47:42,620] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-24 14:47:42,648] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5467
+[2025-09-24 14:48:11,014] INFO cart.views:24 — [{'id': 16, 'quantity': 2, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-24 14:48:11,020] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 178
+[2025-09-24 14:48:23,732] INFO django.server:213 — "GET /admin HTTP/1.1" 301 0
+[2025-09-24 14:48:23,798] INFO django.server:213 — "GET /admin/ HTTP/1.1" 302 0
+[2025-09-24 14:48:23,887] INFO django.server:213 — "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3684
+[2025-09-24 14:48:27,172] INFO django.server:213 — "POST /admin/login/?next=/admin/ HTTP/1.1" 200 3851
+[2025-09-24 14:48:31,420] INFO django.server:213 — "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-09-24 14:48:31,465] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 15364
+[2025-09-24 14:48:31,714] INFO django.server:213 — "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[2025-09-24 14:48:31,715] INFO django.server:213 — "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[2025-09-24 14:48:31,715] INFO django.server:213 — "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[2025-09-24 14:48:38,161] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 23139
+[2025-09-24 14:48:38,235] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:48:39,509] INFO django.server:213 — "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[2025-09-24 14:49:52,362] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 333
+[2025-09-24 14:49:54,382] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-24 14:49:54,437] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-24 14:49:55,148] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-24 14:49:56,509] INFO django.server:213 — "OPTIONS /cart/api/add/ HTTP/1.1" 200 0
+[2025-09-24 14:49:56,609] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 195
+[2025-09-24 14:50:00,193] INFO cart.views:24 — []
+[2025-09-24 14:50:00,196] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 48
+[2025-09-24 14:50:02,044] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 195
+[2025-09-24 14:50:04,016] INFO cart.views:24 — []
+[2025-09-24 14:50:04,020] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 48
+[2025-09-24 14:50:11,335] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 195
+[2025-09-24 14:50:12,626] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 195
+[2025-09-24 14:50:12,804] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 195
+[2025-09-24 14:50:12,926] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 195
+[2025-09-24 14:50:13,011] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 195
+[2025-09-24 14:50:18,976] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-24 14:50:19,041] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-24 14:50:20,305] INFO cart.views:24 — []
+[2025-09-24 14:50:20,312] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 48
+[2025-09-24 14:50:21,906] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 26093
+[2025-09-24 14:50:21,963] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
