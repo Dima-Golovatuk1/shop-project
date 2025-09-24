@@ -2961,3 +2961,4 @@ TypeError: cart_item_delete() missing 1 required positional argument: 'item_id'
 [2025-09-24 14:49:18,472] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 [2025-09-24 14:49:25,251] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
 [2025-09-24 14:49:25,626] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:51:42,012] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
