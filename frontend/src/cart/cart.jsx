@@ -151,7 +151,7 @@ function Cart({ setActivCart, activCart }) {
                 <ul className="cart__list">
                     {products.length > 0 ? (
                         products.map((product) => (
-                            <li className="cart__item" key={product.id}>
+                            <li className="cart__item" key={product.product_id}>
                                 <img
                                     className="cart__item__img"
                                     src={`http://localhost:8000${product.product_photo_url}`}
@@ -166,8 +166,8 @@ function Cart({ setActivCart, activCart }) {
                                 </div>
                                 <div className="cart__item__div cart__item__div-quantity">
                                     <button
-                                        // Правильно: обгорнуто в анонімну функцію
-                                        onClick={() => removQuantity(product.id)}
+                                        
+                                        onClick={() => removQuantity(product.product_id)}
                                         className="cart__item__div__btn-add"
                                     >
                                         -
@@ -176,15 +176,15 @@ function Cart({ setActivCart, activCart }) {
                                         Quantity: {product.quantity}
                                     </h4>
                                     <button
-                                        // Правильно: обгорнуто в анонімну функцію
-                                        onClick={() => addQuantity(product.id)}
+                                        
+                                        onClick={() => addQuantity(product.product_id)}
                                         className="cart__item__div__btn-remov"
                                     >
                                         +
                                     </button>
                                     <button
-                                        // Для кнопки видалення теж потрібен onClick
-                                        onClick={() => deleteProduct(product.id)} // Потрібно створити функцію deleteProduct
+                                        
+                                        onClick={() => deleteProduct(product.product_id)}
                                         className="cart__item__div__title-quantity"
                                     >
                                         delete

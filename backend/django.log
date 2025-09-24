@@ -4580,3 +4580,55 @@ TypeError: cart_item_delete() missing 1 required positional argument: 'item_id'
 [2025-09-24 20:31:49,048] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 [2025-09-24 20:31:49,955] INFO django.server:213 — "GET /admin/cart/cartitem/129/change/ HTTP/1.1" 200 18461
 [2025-09-24 20:31:50,004] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 20:33:02,570] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 20:33:23,573] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 20:33:26,428] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 20:33:28,019] INFO cart.views:24 — [{'id': 129, 'quantity': 7, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:33:28,021] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 20:33:34,789] INFO cart.views:24 — [{'id': 129, 'quantity': 7, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:33:34,791] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 20:34:23,078] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 20:34:44,427] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 20:34:44,470] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 20:34:46,336] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 20:34:48,529] INFO cart.views:24 — [{'id': 129, 'quantity': 7, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:34:48,531] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 20:34:53,231] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 20:35:29,041] INFO cart.views:24 — [{'id': 129, 'quantity': 7, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:35:29,047] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 20:35:35,323] INFO django.server:213 — "GET /admin/cart/cartitem/129/change/ HTTP/1.1" 200 18461
+[2025-09-24 20:35:35,374] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 20:35:36,499] INFO django.server:213 — "GET /admin/cart/cartitem/129/change/ HTTP/1.1" 200 18461
+[2025-09-24 20:35:36,550] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 20:38:43,179] INFO django.utils.autoreload:265 — /app/cart/serializers.py changed, reloading.
+[2025-09-24 20:38:44,168] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 20:40:17,456] INFO django.utils.autoreload:265 — /app/cart/serializers.py changed, reloading.
+[2025-09-24 20:40:18,397] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 20:40:26,654] INFO cart.views:24 — [{'id': 129, 'quantity': 7, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:40:26,703] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5584
+[2025-09-24 20:40:28,700] INFO cart.views:24 — [{'id': 129, 'quantity': 7, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:40:28,709] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5584
+[2025-09-24 20:43:33,559] INFO cart.views:24 — [{'id': 129, 'quantity': 7, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:43:33,562] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 272
+[2025-09-24 20:43:46,282] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 20:43:46,282] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 20:43:47,324] INFO cart.views:24 — [{'id': 129, 'quantity': 7, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:43:47,325] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 272
+[2025-09-24 20:43:48,735] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 269
+[2025-09-24 20:43:49,694] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 269
+[2025-09-24 20:43:50,052] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 270
+[2025-09-24 20:43:51,107] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 269
+[2025-09-24 20:43:51,660] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 269
+[2025-09-24 20:43:51,851] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 269
+[2025-09-24 20:43:52,069] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 269
+[2025-09-24 20:43:52,268] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 269
+[2025-09-24 20:43:53,547] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 269
+[2025-09-24 20:43:53,699] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 269
+[2025-09-24 20:43:53,869] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 269
+[2025-09-24 20:43:54,083] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 269
+[2025-09-24 20:43:54,925] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 43
+[2025-09-24 20:43:58,158] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 20:43:58,943] INFO django.server:213 — "OPTIONS /cart/api/add/ HTTP/1.1" 200 0
+[2025-09-24 20:43:58,987] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 269
+[2025-09-24 20:43:59,878] INFO cart.views:24 — [{'id': 130, 'quantity': 1, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:43:59,880] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 272
