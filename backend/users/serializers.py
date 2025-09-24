@@ -4,6 +4,12 @@ from django.contrib.auth import authenticate
 from .models import MyUser
 
 
+class ProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = MyUser
+        fields = ('username', 'email', 'phone_number')
+
+
 class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, validators=[validate_password])
     password2 = serializers.CharField(write_only=True)

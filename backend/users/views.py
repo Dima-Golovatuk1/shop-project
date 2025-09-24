@@ -5,7 +5,7 @@ from rest_framework import status
 from django.contrib.auth.models import User 
 from django.contrib.auth import logout, login
 
-from .serializers import LoginSerializer, RegisterSerializer
+from .serializers import LoginSerializer, RegisterSerializer, ProfileSerializer
 
 from logging import getLogger
 
@@ -16,9 +16,19 @@ logger = getLogger(__name__)
 @api_view(['GET'])
 def profile(request):
     if request.user.is_authenticated:
+        
+        serializer = ProfileSerializer(instance=request.user)
+        
+        user = serializer.data
+        
         return Response({
-            'user': request.user
-        })
+            'user': user
+        }, status=200)
+        
+    else:
+        return Response({
+            'user': 'User is not authentificated'
+        }, status=401)
 
 
 @api_view(["GET"])

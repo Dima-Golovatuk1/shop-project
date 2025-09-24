@@ -3103,3 +3103,164 @@ TypeError: cart_item_delete() missing 1 required positional argument: 'item_id'
 [2025-09-24 15:08:14,103] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
 [2025-09-24 15:08:15,070] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
 [2025-09-24 15:08:15,102] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-24 15:15:04,804] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 15:15:15,286] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-24 15:15:15,794] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 15:15:28,200] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-24 15:15:28,765] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 15:15:56,491] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-24 15:15:57,223] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 15:15:58,089] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 5186
+[2025-09-24 15:16:02,364] WARNING django.request:253 — Not Found: /login
+[2025-09-24 15:16:02,365] WARNING django.server:213 — "GET /login HTTP/1.1" 404 2956
+[2025-09-24 15:16:07,499] INFO django.server:213 — "GET /user/login HTTP/1.1" 301 0
+[2025-09-24 15:16:07,560] INFO django.server:213 — "GET /user/login/ HTTP/1.1" 200 6829
+[2025-09-24 15:16:25,203] INFO django.server:213 — "GET /user/login/ HTTP/1.1" 200 6829
+[2025-09-24 15:16:25,527] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-24 15:16:25,527] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-24 15:16:25,595] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-24 15:16:37,427] INFO django.server:213 — "OPTIONS /user/login/ HTTP/1.1" 200 0
+[2025-09-24 15:16:37,848] INFO users.views:88 — user: maxx
+[2025-09-24 15:16:37,857] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 142
+[2025-09-24 15:16:44,497] INFO django.server:213 — "GET /user/profile HTTP/1.1" 301 0
+[2025-09-24 15:16:44,550] ERROR django.request:253 — Internal Server Error: /user/profile/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/renderers.py", line 731, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/renderers.py", line 687, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/renderers.py", line 417, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/renderers.py", line 100, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type MyUser is not JSON serializable
+[2025-09-24 15:16:44,553] ERROR django.server:213 — "GET /user/profile/ HTTP/1.1" 500 133663
+[2025-09-24 15:17:28,402] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-24 15:17:29,058] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 15:19:08,646] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-24 15:19:09,455] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 15:19:10,211] ERROR django.request:253 — Internal Server Error: /user/profile/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/views.py", line 22, in profile
+    user = serializer.data()
+           ^^^^^^^^^^^^^^^^^
+TypeError: 'ReturnDict' object is not callable
+[2025-09-24 15:19:10,216] ERROR django.server:213 — "GET /user/profile/ HTTP/1.1" 500 90845
+[2025-09-24 15:19:16,508] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-24 15:19:17,143] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 15:19:17,949] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 5516
+[2025-09-24 15:19:39,560] INFO django.utils.autoreload:265 — /app/users/serializers.py changed, reloading.
+[2025-09-24 15:19:40,101] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 15:19:43,691] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-24 15:19:44,347] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 15:19:45,273] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 5383
+[2025-09-24 15:19:49,007] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-24 15:19:49,016] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:19:49,061] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-24 15:20:07,551] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-24 15:20:07,570] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:20:07,628] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-24 15:20:08,820] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-24 15:20:08,864] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:20:08,904] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-24 15:22:15,338] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-24 15:22:15,356] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:22:15,414] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-24 15:26:18,437] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:26:20,243] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:26:22,276] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-24 15:26:22,371] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-24 15:26:38,563] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:26:42,890] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:26:43,622] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:27:05,225] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:27:06,979] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:27:30,897] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:27:31,795] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:28:16,028] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-24 15:28:16,037] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:28:16,162] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-24 15:28:20,456] WARNING django.request:253 — Not Found: /
+[2025-09-24 15:28:20,457] WARNING django.server:213 — "GET / HTTP/1.1" 404 2923
+[2025-09-24 15:28:20,800] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-24 15:28:20,800] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 2974
+[2025-09-24 15:28:28,083] INFO django.server:213 — "GET /user/profile HTTP/1.1" 301 0
+[2025-09-24 15:28:28,126] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 5383
+[2025-09-24 15:29:35,127] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:30:25,564] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:30:51,874] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:31:57,723] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-24 15:31:59,075] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 15:32:12,345] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-24 15:32:13,087] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 15:32:58,391] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:33:44,697] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-24 15:33:45,202] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 15:33:52,684] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:34:04,146] INFO django.utils.autoreload:265 — /app/users/views.py changed, reloading.
+[2025-09-24 15:34:04,759] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 15:34:28,470] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:35:22,123] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-24 15:35:40,896] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
