@@ -3345,3 +3345,1238 @@ TypeError: cart_item_delete() missing 1 required positional argument: 'item_id'
 [2025-09-24 14:51:42,012] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 >>>>>>> f3381a0fa158bee895575ddea431a3f55f5c3559
 [2025-09-24 14:59:49,212] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 15:02:01,926] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 16934
+[2025-09-24 15:02:01,990] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 15:07:09,395] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:07:09,409] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5545
+[2025-09-24 15:11:01,340] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:11:01,342] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:12:25,391] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 15:12:25,396] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:12:26,494] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:12:26,495] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:15:12,000] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-24 15:15:12,003] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:15:14,301] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:15:14,303] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:18:46,350] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:26:12,449] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:26:12,449] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:26:13,845] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:26:13,846] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:28:44,993] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:28:44,995] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:29:11,570] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:29:11,570] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:29:12,779] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:29:12,781] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:31:28,688] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:31:28,688] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:31:29,778] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:31:29,779] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:34:06,678] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:34:06,678] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:34:07,474] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:34:07,475] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:34:54,429] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:34:54,469] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:34:55,114] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:34:55,121] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:35:37,644] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:35:37,659] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:35:38,720] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:35:38,722] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:38:21,992] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:38:22,006] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:38:23,562] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:38:23,564] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:40:22,495] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:40:22,498] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:40:39,254] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:40:39,267] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:40:39,790] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:40:39,791] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:43:37,272] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:43:37,288] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:43:38,150] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:43:38,152] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:43:50,249] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:43:50,267] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:46:04,828] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:46:04,845] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:46:05,875] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:46:05,876] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:48:03,279] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:48:03,291] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:48:04,743] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:48:04,745] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:48:20,092] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:48:20,094] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:49:28,004] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:49:28,020] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:49:33,240] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:49:33,253] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:49:35,681] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:49:35,683] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:50:55,031] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:50:55,045] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:50:57,809] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:50:57,811] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:51:30,411] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:51:30,424] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:51:31,245] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:51:31,246] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:52:54,680] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:52:54,695] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:52:57,376] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:52:57,378] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:53:31,738] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:53:31,749] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:53:35,678] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:53:35,679] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:55:57,533] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:55:57,549] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:55:59,967] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:55:59,969] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:56:25,592] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:56:25,604] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:56:28,461] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:56:28,463] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:56:49,171] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:56:49,185] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:56:56,505] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:56:56,507] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:57:20,141] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:57:20,155] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:57:21,532] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:57:21,534] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 15:57:31,374] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 15:57:31,388] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 15:57:33,271] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 15:57:33,272] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 16:00:06,290] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 16:00:06,300] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 16:00:09,551] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 16:00:09,553] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 16:01:06,525] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 16:01:06,538] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 16:01:07,350] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 16:01:07,351] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 16:01:34,031] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 16:01:34,040] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 16:01:34,500] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 16:01:34,501] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 16:02:52,995] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 16:02:53,007] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 16:02:53,406] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 16:02:53,408] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 16:03:26,724] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 16:03:26,735] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 16:03:28,299] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 16:03:28,300] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 16:03:44,874] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 16:03:44,875] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 19:47:37,638] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 19:47:37,648] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 19:47:39,986] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 19:47:39,988] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 19:52:37,185] INFO django.server:213 — "GET /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:52:37,429] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-24 19:52:37,430] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 2974
+[2025-09-24 19:52:41,918] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:52:44,204] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:52:44,799] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:52:45,399] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:52:47,027] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:52:47,615] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:52:48,047] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:53:12,228] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:53:13,021] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:53:14,137] INFO django.server:213 — "GET /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:53:14,950] INFO django.server:213 — "GET /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:53:16,033] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:53:16,670] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:53:16,878] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:53:57,317] ERROR django.request:253 — Internal Server Error: /cart/api/update_add/
+[2025-09-24 19:53:57,318] ERROR django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 500 7290
+[2025-09-24 19:54:05,739] ERROR django.request:253 — Internal Server Error: /cart/api/update_add/
+[2025-09-24 19:54:05,740] ERROR django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 500 7305
+[2025-09-24 19:54:17,636] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:54:22,629] INFO django.server:213 — "GET /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:54:24,767] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:54:25,109] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:54:36,936] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:54:39,690] INFO django.server:213 — "GET /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:54:41,969] INFO django.server:213 — "GET /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:54:44,872] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 19:58:39,842] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 19:58:39,859] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 19:58:40,467] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 19:58:40,469] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 19:59:22,359] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 19:59:22,363] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 19:59:23,901] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 19:59:23,902] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 20:00:12,913] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 20:00:25,719] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 20:00:29,476] INFO django.server:213 — "GET /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 20:02:10,666] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 20:02:14,534] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 20:09:11,078] INFO django.server:213 — "GET /cart/api/update_remove/ HTTP/1.1" 200 7605
+[2025-09-24 20:09:36,100] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 20:09:36,111] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 20:09:36,650] INFO cart.views:24 — [{'id': 129, 'quantity': 8, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:09:36,652] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 20:09:36,659] INFO django.server:213 — "OPTIONS /cart/api/update_remove/ HTTP/1.1" 200 0
+[2025-09-24 20:09:36,664] INFO django.server:213 — "OPTIONS /cart/api/update_add/ HTTP/1.1" 200 0
+[2025-09-24 20:09:36,697] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:36,705] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:36,708] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:36,741] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:36,799] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:36,800] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:36,821] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:36,837] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:36,838] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:36,896] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:36,905] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:36,906] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:36,979] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:36,998] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:36,999] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:37,052] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:37,061] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:37,062] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:37,127] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:37,143] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:37,143] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:37,208] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:37,217] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:37,218] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:37,289] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:37,302] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:37,303] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:37,364] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:37,373] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:37,374] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:37,441] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:37,455] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:37,456] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:37,517] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:37,527] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:37,528] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:37,589] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:37,609] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:37,609] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:37,668] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:37,679] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:37,680] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:37,747] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:37,765] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:37,765] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:37,823] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:37,833] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:37,834] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:37,905] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:37,917] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:37,918] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:37,983] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:37,993] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:37,994] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:38,065] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:38,079] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:38,080] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:38,143] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:38,151] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:38,155] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:38,218] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:38,238] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:38,239] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:38,291] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:38,299] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:38,300] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:38,370] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:38,383] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:38,384] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:38,445] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:38,459] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:38,460] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:38,519] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:38,539] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:38,540] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:38,595] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:38,605] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:38,606] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:38,670] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:38,687] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:38,688] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:38,745] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:38,755] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:38,756] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:38,833] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:38,845] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:38,846] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:38,909] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:38,924] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:38,925] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:38,992] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:39,001] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:39,003] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:39,073] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:39,091] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:39,092] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:39,154] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:39,165] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:39,166] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:39,234] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:39,249] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:39,250] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:39,311] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:39,322] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:39,323] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:39,387] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:39,404] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:39,405] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:39,460] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:39,468] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:39,469] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:39,537] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:39,548] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:39,549] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:39,616] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:39,627] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:39,629] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:39,702] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:39,718] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:39,719] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:39,875] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 20:09:39,877] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 20:09:40,983] INFO cart.views:24 — [{'id': 129, 'quantity': 8, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:09:40,984] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 20:09:41,019] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:41,028] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:41,030] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:41,094] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:41,102] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:41,103] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:41,167] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:41,177] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:41,179] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:41,243] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:41,265] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:41,266] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:41,323] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:41,330] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:41,332] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:41,400] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:41,412] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:41,413] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:41,475] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:41,483] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:41,485] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:41,551] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:41,563] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:41,564] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:41,639] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:41,649] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:41,651] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:41,721] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:41,733] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:41,735] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:41,804] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:41,823] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:41,824] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:41,889] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:41,899] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:41,904] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:41,975] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:41,991] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:41,992] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:42,050] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:42,060] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:42,061] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:42,124] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:42,143] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:42,144] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:42,198] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:42,206] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:42,210] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:42,272] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:42,287] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:42,288] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:42,345] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:42,353] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:42,355] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:42,420] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:42,441] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:42,442] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:42,498] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:42,506] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:42,507] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:42,575] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:42,586] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:42,587] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:42,650] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:42,657] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:42,659] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:42,720] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:42,737] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:42,738] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:42,795] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:42,803] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:42,804] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:42,870] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:42,881] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:42,882] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:42,945] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:42,953] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:42,954] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:43,028] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:43,045] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:43,046] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:43,107] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:43,116] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:43,121] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:43,194] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:43,214] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:43,215] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:43,283] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:43,300] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:43,302] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:43,379] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:43,402] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:43,404] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:43,457] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:43,465] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:43,467] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:43,540] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:43,555] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:43,555] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:43,619] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:43,629] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:43,633] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:43,696] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:43,710] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:43,711] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:43,824] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:43,829] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:43,833] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:43,858] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:43,911] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:43,912] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:43,939] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:43,953] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:43,954] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:44,014] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:44,037] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:44,038] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:44,088] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:44,098] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:44,099] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:44,166] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:44,182] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:44,183] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:44,251] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:44,261] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:44,263] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:44,332] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:44,353] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:44,354] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:44,433] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:44,447] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:44,449] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:44,535] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:44,560] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:44,561] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:45,033] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:45,041] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:45,043] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:45,079] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:45,094] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:45,096] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:45,178] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:45,187] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:45,189] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:45,269] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:45,280] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:45,282] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:45,386] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:45,390] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:45,392] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:45,427] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:45,479] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:45,481] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:45,513] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:45,526] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:45,527] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:45,596] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:45,606] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:45,608] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:45,684] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:45,697] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:45,698] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:45,768] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:45,780] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:45,781] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:45,870] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:45,884] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:45,889] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:45,962] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:45,988] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:45,991] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:46,049] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:46,059] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:46,060] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:46,134] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:46,152] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:46,154] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:46,224] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:46,227] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:46,228] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:46,317] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:46,327] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:46,329] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:46,409] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:46,418] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:46,421] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:46,500] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:46,511] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:46,515] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:46,548] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:46,604] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:46,606] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:46,643] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:46,655] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:46,657] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:46,734] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:46,748] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:46,752] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:46,783] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:46,847] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:46,848] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:46,870] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:46,895] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:46,896] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:46,965] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:46,987] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:46,991] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:47,063] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:47,089] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:47,091] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:47,156] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:47,163] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:47,168] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:47,257] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:47,271] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:47,273] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:47,348] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:47,360] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:47,366] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:47,435] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:47,452] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:47,453] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:47,531] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:47,540] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:47,542] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:47,621] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:47,629] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:47,630] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:47,698] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:47,706] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:47,708] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:47,775] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:47,789] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:47,789] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:47,866] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:47,874] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:47,876] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:47,949] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:47,963] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:47,964] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:48,032] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:48,041] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:48,042] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:48,116] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:48,124] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:48,126] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:48,207] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:48,216] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:48,222] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:48,253] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:48,312] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:48,314] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:48,343] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:48,361] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:48,361] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:48,420] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:48,428] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:48,429] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:48,499] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:48,508] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:48,512] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:48,579] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:48,588] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:48,591] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:48,621] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:48,686] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:48,691] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:48,720] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:48,788] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:48,790] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:48,815] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:48,883] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:48,885] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:48,912] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:48,935] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:48,936] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:49,001] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:49,011] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:49,012] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:49,082] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:49,095] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:49,096] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:49,160] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:49,167] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:49,169] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:49,245] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:49,258] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:49,259] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:49,322] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:49,329] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:49,330] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:49,416] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:49,425] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:49,426] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:49,504] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:49,522] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:49,524] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:49,587] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:49,595] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:49,596] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:49,672] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:49,680] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:49,681] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:49,758] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:49,766] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:49,769] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:49,798] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:49,851] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:49,852] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:49,881] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:49,894] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:49,895] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:49,961] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:49,968] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:49,970] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:50,054] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:50,067] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:50,067] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:50,137] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:50,145] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:50,146] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:50,219] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:50,233] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:50,234] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:50,308] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:50,315] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:50,316] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:50,393] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:50,401] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:50,403] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:50,475] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:50,482] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:50,483] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:50,512] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:50,576] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:50,577] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:50,597] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:50,626] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:50,627] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:50,686] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:50,695] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:50,697] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:50,781] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:50,790] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:50,792] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:50,874] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:50,888] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:50,891] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:50,922] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:50,981] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:50,982] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:51,011] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:51,035] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:51,041] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:51,105] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:51,115] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:51,116] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:51,189] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:51,199] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:51,200] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:51,283] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:51,295] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:51,299] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:51,332] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:51,380] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:51,381] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:51,427] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:51,442] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:51,443] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:51,525] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:51,534] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:51,539] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:51,575] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:51,644] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:51,645] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:51,671] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:51,697] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:51,698] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:51,769] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:51,783] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:51,785] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:51,862] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:51,881] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:51,883] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:51,960] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:51,979] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:51,982] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:52,047] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:52,072] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:52,073] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:52,144] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:52,151] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:52,153] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:52,236] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:52,248] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:52,250] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:52,326] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:52,338] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:52,340] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:52,409] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:52,433] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:52,434] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:52,508] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:52,519] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:52,521] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:52,599] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:52,612] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:52,614] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:52,683] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:52,693] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:52,695] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:52,771] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:52,787] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:52,790] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:52,866] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:52,879] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:52,881] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:52,970] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:52,985] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:52,988] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:53,080] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:53,096] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:53,101] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:53,139] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:53,217] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:53,218] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:53,248] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:53,289] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:53,292] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:53,366] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:53,407] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:53,408] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:53,462] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:53,500] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:53,501] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:53,551] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:53,561] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:53,562] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:53,637] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:53,654] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:53,655] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:53,728] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:53,737] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:53,742] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:53,815] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:53,830] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:53,831] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:53,916] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:53,926] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:53,931] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:53,970] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:54,027] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:54,028] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:54,064] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:54,082] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:54,083] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:54,153] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:54,161] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:54,175] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:54,251] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:54,272] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:54,273] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:54,341] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:54,379] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:54,383] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:54,450] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:54,463] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:54,465] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:54,550] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:54,586] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:54,587] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:54,654] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:54,680] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:54,683] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:54,764] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:54,899] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:54,952] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:54,960] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:55,007] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:55,032] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:55,033] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:55,095] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:55,097] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:55,105] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:55,150] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:55,152] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:55,204] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:55,212] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:55,213] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:55,292] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:09:55,312] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:09:55,313] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:09:59,947] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 20:09:59,949] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 20:10:01,501] INFO cart.views:24 — [{'id': 129, 'quantity': 8, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:10:01,503] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 20:10:01,560] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:01,579] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:01,583] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:01,613] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:01,671] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:01,672] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:01,706] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:01,724] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:01,725] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:01,791] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:01,799] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:01,801] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:01,872] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:01,882] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:01,886] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:01,957] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:01,964] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:01,970] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:01,997] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:02,054] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:02,055] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:02,085] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:02,098] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:02,099] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:02,168] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:02,177] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:02,178] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:02,253] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:02,264] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:02,265] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:02,329] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:02,337] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:02,338] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:02,412] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:02,421] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:02,424] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:02,494] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:02,504] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:02,508] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:02,531] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:02,591] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:02,593] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:02,613] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:02,643] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:02,645] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:02,700] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:02,715] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:02,717] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:02,792] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:02,824] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:02,825] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:02,881] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:02,892] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:02,894] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:02,975] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:02,986] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:02,988] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:03,062] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:03,076] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:03,079] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:03,114] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:03,181] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:03,183] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:03,213] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:03,230] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:03,232] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:03,292] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:03,301] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:03,305] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:03,371] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:03,386] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:03,387] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:03,454] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:03,463] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:03,464] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:03,535] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:03,544] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:03,545] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:03,630] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:03,640] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:03,644] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:03,676] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:03,739] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:03,742] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:03,764] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:03,782] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:03,783] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:03,842] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:03,851] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:03,852] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:03,927] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:03,946] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:03,948] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:04,025] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:04,040] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:04,042] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:04,110] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:04,129] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:04,130] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:04,190] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:04,198] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:04,199] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:04,297] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:04,305] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:04,308] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:04,389] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:04,410] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:04,411] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:04,492] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:04,504] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:04,506] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:04,586] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:04,597] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:04,598] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:04,664] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:04,675] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:04,678] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:04,702] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:04,760] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:04,761] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:04,785] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:04,801] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:04,802] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:04,865] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:04,874] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:04,876] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:04,964] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:04,980] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:04,985] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:05,056] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:05,083] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:05,085] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:05,149] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:05,163] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:05,165] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:05,238] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:05,266] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:05,267] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:05,317] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:05,323] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:05,324] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:05,396] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:05,403] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:05,405] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:05,476] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:05,488] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:05,489] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:05,553] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:05,561] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:05,563] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:05,643] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:05,655] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:05,658] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:05,743] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:05,752] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:05,754] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:05,830] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:05,843] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:05,844] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:05,919] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:05,930] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:05,932] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:06,019] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:06,028] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:06,030] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:06,102] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:06,115] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:06,118] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:06,145] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:06,196] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:06,199] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:06,228] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:06,239] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:06,240] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:06,316] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:06,325] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:06,326] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:06,413] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:06,425] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:06,426] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:06,508] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:06,525] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:06,527] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:06,589] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:06,597] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:06,598] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:06,677] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:06,686] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:06,688] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:06,758] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:06,768] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:06,771] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:06,795] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:06,863] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:06,863] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:06,879] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:06,901] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:06,902] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:06,959] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:06,969] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:06,975] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:07,050] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:07,071] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:07,072] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:07,148] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:07,157] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:07,158] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:07,254] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:07,320] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:07,321] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:07,366] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:07,398] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:07,400] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:07,477] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:07,490] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:07,492] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:07,601] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:07,624] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:07,626] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:07,702] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:07,727] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:07,729] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:07,798] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:07,807] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:07,809] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:07,890] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:07,914] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:07,915] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:07,991] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:08,000] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:08,001] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:08,079] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:08,091] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:08,093] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:08,161] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:08,172] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:08,173] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:08,273] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:08,291] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:08,295] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:08,378] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:08,387] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:08,389] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:08,464] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:08,472] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:08,474] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:08,546] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:08,554] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:08,559] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:08,581] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:08,650] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:08,652] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:08,676] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:08,696] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:08,697] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:08,760] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:08,765] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:08,766] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:08,850] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:08,860] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:08,861] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:08,943] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:08,968] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:08,969] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:09,026] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:09,033] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:09,035] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:09,106] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:09,114] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:09,117] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:09,190] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:09,196] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:09,197] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:09,226] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:09,275] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:09,276] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:09,314] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:09,322] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:09,324] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:09,393] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:09,400] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:09,401] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:09,480] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:09,491] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:09,494] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:09,519] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:09,573] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:09,575] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:09,606] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:09,616] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:09,617] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:09,685] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:09,696] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:09,699] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:09,724] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:09,786] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:09,789] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:09,807] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:09,827] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:09,828] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:09,892] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:09,899] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:09,900] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:09,972] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:09,985] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:09,986] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:10,070] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:10,085] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:10,088] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:10,123] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:10,195] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:10,198] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:10,222] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:10,266] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:10,267] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:10,316] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:10,325] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:10,327] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:10,408] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:10,426] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:10,426] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:10,486] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:10,495] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:10,496] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:10,566] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:10:10,585] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:10:10,585] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:10:16,576] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 20:10:16,577] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 20:13:22,298] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 20:13:22,299] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 20:13:24,146] INFO cart.views:24 — [{'id': 129, 'quantity': 8, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:13:24,147] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 20:13:25,991] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:13:27,294] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:13:28,224] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:13:30,114] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 20:13:30,135] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 20:13:31,193] INFO cart.views:24 — [{'id': 129, 'quantity': 8, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:13:31,195] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 20:13:35,443] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:13:35,959] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:13:36,240] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:13:36,407] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:13:39,306] INFO django.server:213 — "GET /cart/api/update_remove/ HTTP/1.1" 200 7605
+[2025-09-24 20:13:41,896] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:13:42,112] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:13:42,336] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:14:05,992] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:14:09,504] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:14:09,505] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:14:12,219] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:14:12,219] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:15:35,712] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 20:15:35,714] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 20:15:36,611] INFO cart.views:24 — [{'id': 129, 'quantity': 8, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:15:36,612] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 20:15:37,776] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:15:38,928] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:15:41,038] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 20:15:41,041] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 20:15:42,022] INFO cart.views:24 — [{'id': 129, 'quantity': 8, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:15:42,023] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 20:15:43,905] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:15:44,063] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:15:44,250] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:15:52,678] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:15:52,806] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:16:02,910] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 20:16:02,911] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 20:16:04,394] INFO cart.views:24 — [{'id': 129, 'quantity': 8, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:16:04,396] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 20:16:05,926] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:16:06,088] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:16:06,274] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:16:06,456] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:16:06,627] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:16:07,734] INFO django.server:213 — "GET /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 20:16:18,168] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/
+[2025-09-24 20:16:18,169] ERROR django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 500 71
+[2025-09-24 20:17:14,679] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 20:17:14,730] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-24 20:17:16,423] INFO cart.views:24 — [{'id': 129, 'quantity': 8, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:17:16,425] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 20:17:18,848] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:17:19,514] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:17:19,716] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:17:19,887] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:17:22,881] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:17:23,290] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:17:23,973] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:17:24,682] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:17:25,091] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:17:25,551] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:17:25,769] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:17:25,969] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:17:26,178] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 254
+[2025-09-24 20:17:52,857] INFO cart.views:24 — [{'id': 129, 'quantity': 8, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:17:52,862] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5545
+[2025-09-24 20:19:00,473] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 7605
+[2025-09-24 20:19:05,023] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 7605
+[2025-09-24 20:19:13,277] INFO cart.views:24 — [{'id': 129, 'quantity': 6, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:19:13,279] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 20:19:19,483] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 7568
+[2025-09-24 20:19:23,269] INFO cart.views:24 — [{'id': 129, 'quantity': 7, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:19:23,270] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 257
+[2025-09-24 20:21:20,711] INFO cart.views:24 — [{'id': 129, 'quantity': 7, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-24 20:21:20,715] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5545
+[2025-09-24 20:28:19,768] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 16420
+[2025-09-24 20:28:19,983] INFO django.server:213 — "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[2025-09-24 20:28:21,839] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 16934
+[2025-09-24 20:28:21,910] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 20:28:23,563] INFO django.server:213 — "GET /admin/cart/cartitem/129/change/ HTTP/1.1" 200 18461
+[2025-09-24 20:28:23,620] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 20:28:23,638] INFO django.server:213 — "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+[2025-09-24 20:29:02,642] INFO django.server:213 — "GET /admin/cart/carts/ HTTP/1.1" 200 15942
+[2025-09-24 20:29:02,697] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 20:29:05,576] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 16934
+[2025-09-24 20:29:05,629] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 20:29:10,245] INFO django.server:213 — "GET /admin/cart/cartitem/129/change/ HTTP/1.1" 200 18461
+[2025-09-24 20:29:10,296] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 20:30:09,653] INFO django.utils.autoreload:265 — /app/cart/models.py changed, reloading.
+[2025-09-24 20:30:11,186] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 20:31:17,587] INFO django.utils.autoreload:265 — /app/cart/models.py changed, reloading.
+[2025-09-24 20:31:19,221] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 20:31:28,487] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-24 20:31:29,438] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 20:31:48,980] INFO django.server:213 — "GET /admin/cart/cartitem/129/change/ HTTP/1.1" 200 18461
+[2025-09-24 20:31:49,048] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 20:31:49,955] INFO django.server:213 — "GET /admin/cart/cartitem/129/change/ HTTP/1.1" 200 18461
+[2025-09-24 20:31:50,004] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
