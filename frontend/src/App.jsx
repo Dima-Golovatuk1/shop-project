@@ -6,7 +6,7 @@ import Login from "./login/login";
 import Product from "./product/product";
 import Cart from "./cart/cart";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import UserProfile from './profile/profile' 
 
 function App() {
     const [activRegistrationForm, setActivRegistrationForm] = useState(false);
@@ -55,7 +55,7 @@ function App() {
 
                     <Route path="/product/:id" element={<Product />} />
 
-                    <Route path="/profile" element={<Catalog />} />
+                    <Route path="/profile" element={<UserProfile />} />
                 </Routes>
             </main>
         </BrowserRouter>
