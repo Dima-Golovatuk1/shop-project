@@ -13,9 +13,12 @@ logger = getLogger(__name__)
 @api_view(["GET"])
 def orders(request):
     try:
-        cart = check_autheticated_cart(request)
+        if request.user.is_authenticated:
+            orders = Order.objects.filter(user=request.user)
+        else:
+            orders = Order.objects.filter(session_key=request.session.session_key)
 
-        orders = Order.objects.filter(cart=cart)
+        orders = Order.objects.filter()
 
         serializer = OrderSerializer(orders, many=True)
         logger.info(serializer.data)

@@ -1,5 +1,7 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from django.contrib.auth import get_user_model
+from django.utils.timezone import now
 
 from logging import getLogger
 
@@ -79,7 +81,7 @@ def cart_items(request):
 def cart_item_adding(request):
     try:
         cart = check_autheticated_cart(request)
-        item_id = request.data.get("item_id")
+        item_id = request.data.get('product_id')
 
         if request.method == "PUT":
             product = Product.objects.filter(pk=item_id).first()
@@ -110,7 +112,7 @@ def cart_item_adding(request):
 def cart_item_removing(request):
     try:
         cart = check_autheticated_cart(request)
-        item_id = request.data.get("item_id")
+        item_id = request.data.get('product_id')
 
         if request.method == "PUT":
             product = Product.objects.filter(pk=item_id).first()
@@ -119,11 +121,10 @@ def cart_item_removing(request):
             if item:
                 if item.quantity > 1:
                     item.quantity -= 1
+                    item.save()
                     
                 else:
                     item.delete()
-
-            item.save()
         
         items = CartItem.objects.filter(cart=cart).select_related('product')
 
@@ -148,14 +149,12 @@ def cart_item_delete(request):
         cart = check_autheticated_cart(request)
 
         if request.method == "DELETE":
-            item_id = request.data.get("item_id")
+            item_id = request.data.get('product_id')
             product = Product.objects.filter(pk=item_id).first()
             item = CartItem.objects.filter(cart=cart, product=product).first()
             
             if item:
                 item.delete()
-
-            item.save()
             
         items = CartItem.objects.filter(cart=cart).select_related('product')
 
@@ -182,26 +181,15 @@ def cart_buy(request):
             last_name = request.data.get('last_name')
             middle_name = request.data.get('middle_name')
             phone_number = request.data.get('phone_number')
-            payment_method = request.data.get('payment_number')
+            payment_method = request.data.get('payment_method')
             shipping_address = request.data.get('shipping_address')
 
             data = {}
 
             cart = check_autheticated_cart(request)
-
             cart_items = CartItem.objects.filter(cart=cart)
-
-            total_price = sum(item.price * item.quantity for item in cart_items)
-
-            if request.user.is_authenticated:
-                data["user"] = request.user
-
-            else:
-                if not request.session.session_key:
-                    request.session.create()
-                data["session_key"] = request.session.session_key
-
-
+            total_price = sum([item.price * item.quantity for item in cart_items])
+            
             data.update({
                 'first_name': first_name,
                 'last_name': last_name,
@@ -210,9 +198,20 @@ def cart_buy(request):
                 'payment_method': payment_method,
                 'shipping_address': shipping_address,
                 'total_price': total_price,
+                "tracking_number": f"TRACK-{now().strftime("%Y%m%d%H%M%S")}"
             })
 
-            order = Order.objects.create(**data)
+            order = Order(**data)
+
+            if request.user.is_authenticated:
+                User = get_user_model()
+                user = User.objects.get(id=request.user.id)
+                logger.info(user)
+                order.user = user
+            else:
+                if not request.session.session_key:
+                    request.session.create()
+                order.session_key = request.session.session_key
 
             order.save()
 
@@ -227,6 +226,8 @@ def cart_buy(request):
             ]
 
             OrderItem.objects.bulk_create(order_items)
+
+            cart_items.delete()
         
         return Response({}, status=200)
         
@@ -236,3 +237,4 @@ def cart_buy(request):
             "message": "Error",
             "error": str(e)
         }, status=500)
+    

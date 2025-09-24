@@ -38,8 +38,7 @@ class Order(models.Model):
 
     def save(self, *args, **kwargs):
         if not self.tracking_number:
-            time_ = now().strftime("%Y%m%d%H%M%S")
-            self.tracking_number = f"{self.id}{time_}"
+            self.tracking_number = f"TRACK-{int(time.time())}"
         super().save(*args, **kwargs)
 
     def __str__(self):
