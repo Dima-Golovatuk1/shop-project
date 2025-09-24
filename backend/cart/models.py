@@ -12,7 +12,7 @@ class Carts(models.Model):
     session_key = models.TextField(null=True, blank=True)
     
     def __str__(self):
-        return f"{self.user}'s cart"
+        return f"{self.user or self.session_key}'s cart"
 
 
 class CartItem(models.Model):

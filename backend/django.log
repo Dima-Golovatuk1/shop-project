@@ -2728,3 +2728,236 @@ TypeError: buy_product() got an unexpected keyword argument 'id_'
 [2025-09-23 15:49:54,765] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 >>>>>>> c2cb6b0dc5072474b99e236c00498509297a06be
 [2025-09-23 15:55:08,528] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 16:01:00,836] WARNING django.request:253 — Not Found: /
+[2025-09-23 16:01:00,837] WARNING django.server:213 — "GET / HTTP/1.1" 404 2923
+[2025-09-23 16:01:03,662] INFO cart.views:24 — [{'id': 1, 'quantity': 5, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/avatarki-mainkraft-2.webp', 'product_price': 7399}]
+[2025-09-23 16:01:03,679] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5547
+[2025-09-23 16:01:03,690] INFO django.server:213 — "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[2025-09-23 16:01:03,691] INFO django.server:213 — "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[2025-09-23 16:01:03,691] INFO django.server:213 — "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[2025-09-23 16:01:03,696] INFO django.server:213 — "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[2025-09-23 16:01:03,697] INFO django.server:213 — "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[2025-09-23 16:01:03,733] INFO django.server:213 — "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[2025-09-23 16:01:03,742] INFO django.server:213 — "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[2025-09-23 16:01:03,742] INFO django.server:213 — "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[2025-09-23 16:01:03,777] INFO django.server:213 — "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[2025-09-23 16:01:03,785] INFO django.server:213 — "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[2025-09-23 16:01:03,786] INFO django.server:213 — "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[2025-09-23 16:01:03,831] INFO django.server:213 — "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[2025-09-23 16:01:19,864] WARNING django.request:253 — Not Found: /cart/api/update_remove/
+[2025-09-23 16:01:19,864] WARNING django.server:213 — "GET /cart/api/update_remove/ HTTP/1.1" 404 4419
+[2025-09-23 16:01:22,379] WARNING django.request:253 — Not Found: /
+[2025-09-23 16:01:22,379] WARNING django.server:213 — "GET / HTTP/1.1" 404 2923
+[2025-09-23 16:01:25,117] INFO django.server:213 — "GET /cart/api/update_remove/1 HTTP/1.1" 301 0
+[2025-09-23 16:01:25,137] WARNING django.request:253 — Method Not Allowed: /cart/api/update_remove/1/
+[2025-09-23 16:01:25,138] WARNING django.server:213 — "GET /cart/api/update_remove/1/ HTTP/1.1" 405 5884
+[2025-09-23 16:01:45,250] ERROR django.request:253 — Internal Server Error: /cart/api/update_remove/1/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: cart_item_removing() got an unexpected keyword argument 'product_id'
+[2025-09-23 16:01:45,252] ERROR django.server:213 — "PUT /cart/api/update_remove/1/ HTTP/1.1" 500 87771
+[2025-09-23 16:02:08,543] INFO django.utils.autoreload:265 — /app/cart/urls.py changed, reloading.
+[2025-09-23 16:02:08,955] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 16:02:15,078] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-23 16:02:19,571] WARNING django.request:253 — Not Found: /cart/api/update_remove/1/
+[2025-09-23 16:02:19,572] WARNING django.server:213 — "GET /cart/api/update_remove/1/ HTTP/1.1" 404 4356
+[2025-09-23 16:02:21,994] WARNING django.request:253 — Method Not Allowed: /cart/api/update_remove/
+[2025-09-23 16:02:21,994] WARNING django.server:213 — "GET /cart/api/update_remove/ HTTP/1.1" 405 5876
+[2025-09-23 16:02:37,908] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 6245
+[2025-09-23 16:02:50,744] WARNING django.request:253 — Method Not Allowed: /cart/api/remove/
+[2025-09-23 16:02:50,744] WARNING django.server:213 — "GET /cart/api/remove/ HTTP/1.1" 405 5147
+[2025-09-23 16:02:54,766] INFO django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 200 5519
+[2025-09-24 14:27:44,647] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:27:49,623] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-24 14:27:49,632] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 977
+[2025-09-24 14:27:49,640] INFO django.server:213 — "GET /media/catalog/avatarki-mainkraft-2.webp HTTP/1.1" 304 0
+[2025-09-24 14:27:50,465] WARNING django.request:253 — Not Found: /
+[2025-09-24 14:27:50,466] WARNING django.server:213 — "GET / HTTP/1.1" 404 2923
+[2025-09-24 14:27:53,935] INFO cart.views:24 — [{'id': 1, 'quantity': 4, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/avatarki-mainkraft-2.webp', 'product_price': 7399}]
+[2025-09-24 14:27:53,952] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5547
+[2025-09-24 14:27:58,920] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 14437
+[2025-09-24 14:27:58,940] INFO django.server:213 — "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2025-09-24 14:27:58,940] INFO django.server:213 — "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[2025-09-24 14:27:58,943] INFO django.server:213 — "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[2025-09-24 14:27:58,944] INFO django.server:213 — "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[2025-09-24 14:27:58,944] INFO django.server:213 — "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[2025-09-24 14:27:58,946] INFO django.server:213 — "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2025-09-24 14:27:58,949] INFO django.server:213 — "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[2025-09-24 14:27:58,989] INFO django.server:213 — "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[2025-09-24 14:27:58,989] INFO django.server:213 — "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[2025-09-24 14:28:01,213] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 15226
+[2025-09-24 14:28:01,240] INFO django.server:213 — "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[2025-09-24 14:28:01,240] INFO django.server:213 — "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[2025-09-24 14:28:01,240] INFO django.server:213 — "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[2025-09-24 14:28:01,241] INFO django.server:213 — "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[2025-09-24 14:28:01,241] INFO django.server:213 — "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[2025-09-24 14:28:01,242] INFO django.server:213 — "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[2025-09-24 14:28:01,242] INFO django.server:213 — "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[2025-09-24 14:28:01,244] INFO django.server:213 — "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[2025-09-24 14:28:01,245] INFO django.server:213 — "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[2025-09-24 14:28:01,249] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:28:01,293] INFO django.server:213 — "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[2025-09-24 14:28:01,296] INFO django.server:213 — "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[2025-09-24 14:28:35,741] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 799
+[2025-09-24 14:28:37,865] INFO django.server:213 — "OPTIONS /cart/api/add/ HTTP/1.1" 200 0
+[2025-09-24 14:28:37,892] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 268
+[2025-09-24 14:28:41,463] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 15732
+[2025-09-24 14:28:41,486] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:28:50,554] INFO django.server:213 — "GET /admin/cart/carts/ HTTP/1.1" 200 16195
+[2025-09-24 14:28:50,580] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:28:58,872] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 15732
+[2025-09-24 14:28:58,897] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:29:02,188] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 268
+[2025-09-24 14:29:08,321] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 16237
+[2025-09-24 14:29:08,346] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:29:34,372] INFO cart.views:24 — [{'id': 1, 'quantity': 4, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/avatarki-mainkraft-2.webp', 'product_price': 7399}]
+[2025-09-24 14:29:34,375] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5547
+[2025-09-24 14:30:01,799] WARNING django.request:253 — Not Found: /cart/api/add/1/
+[2025-09-24 14:30:01,800] WARNING django.server:213 — "GET /cart/api/add/1/ HTTP/1.1" 404 4326
+[2025-09-24 14:30:03,948] INFO django.server:213 — "GET /cart/api/add/ HTTP/1.1" 200 7378
+[2025-09-24 14:30:17,215] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 7379
+[2025-09-24 14:30:37,111] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5231
+[2025-09-24 14:30:38,960] WARNING django.request:253 — Not Found: /user/logout/
+[2025-09-24 14:30:38,960] WARNING django.server:213 — "GET /user/logout/ HTTP/1.1" 404 5211
+[2025-09-24 14:30:43,011] INFO cart.views:24 — []
+[2025-09-24 14:30:43,014] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5153
+[2025-09-24 14:30:50,903] INFO cart.views:24 — []
+[2025-09-24 14:30:50,906] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5153
+[2025-09-24 14:30:57,287] INFO django.server:213 — "GET /cart/api/add/ HTTP/1.1" 200 6984
+[2025-09-24 14:31:08,426] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 7361
+[2025-09-24 14:33:04,124] INFO django.utils.autoreload:265 — /app/cart/models.py changed, reloading.
+[2025-09-24 14:33:04,758] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:33:34,456] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:33:44,743] INFO cart.views:24 — [{'id': 4, 'quantity': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/avatarki-mainkraft-2.webp', 'product_price': 7399}]
+[2025-09-24 14:33:44,760] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5529
+[2025-09-24 14:33:48,369] INFO django.server:213 — "GET /admin/ HTTP/1.1" 302 0
+[2025-09-24 14:33:48,393] INFO django.server:213 — "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+[2025-09-24 14:33:48,405] INFO django.server:213 — "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[2025-09-24 14:33:56,294] INFO django.server:213 — "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-09-24 14:33:56,318] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 14437
+[2025-09-24 14:33:58,186] INFO django.server:213 — "GET /admin/cart/carts/ HTTP/1.1" 200 17085
+[2025-09-24 14:33:58,212] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:34:03,997] INFO django.server:213 — "GET /admin/cart/cartitem/ HTTP/1.1" 200 16910
+[2025-09-24 14:34:04,022] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-24 14:41:38,722] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:41:41,052] WARNING django.request:253 — Not Found: /
+[2025-09-24 14:41:41,053] WARNING django.server:213 — "GET / HTTP/1.1" 404 2923
+[2025-09-24 14:41:51,095] INFO cart.views:24 — [{'id': 1, 'quantity': 5, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/avatarki-mainkraft-2.webp', 'product_price': 7399}]
+[2025-09-24 14:41:51,112] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5547
+[2025-09-24 14:42:05,766] WARNING django.request:253 — Not Found: /cart/api/delete/
+[2025-09-24 14:42:05,766] WARNING django.server:213 — "GET /cart/api/delete/ HTTP/1.1" 404 4329
+[2025-09-24 14:42:13,719] WARNING django.request:253 — Method Not Allowed: /cart/api/remove/
+[2025-09-24 14:42:13,720] WARNING django.server:213 — "GET /cart/api/remove/ HTTP/1.1" 405 5147
+[2025-09-24 14:42:21,280] ERROR django.request:253 — Internal Server Error: /cart/api/remove/
+[2025-09-24 14:42:21,280] ERROR django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 500 5220
+[2025-09-24 14:42:50,952] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-24 14:42:51,342] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:45:13,299] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-24 14:45:13,861] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:45:26,951] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-24 14:45:27,352] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:45:37,872] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:45:46,420] ERROR django.request:253 — Internal Server Error: /cart/api/remove/
+[2025-09-24 14:45:46,420] ERROR django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 500 6555
+[2025-09-24 14:46:15,445] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-24 14:46:15,829] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:46:21,603] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-24 14:46:21,975] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:46:38,198] INFO django.utils.autoreload:265 — /app/cart/urls.py changed, reloading.
+[2025-09-24 14:46:38,564] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:47:22,841] WARNING django.request:253 — Not Found: /cart/api/remove/1/
+[2025-09-24 14:47:22,842] WARNING django.server:213 — "GET /cart/api/remove/1/ HTTP/1.1" 404 4355
+[2025-09-24 14:47:33,699] WARNING django.request:253 — Not Found: /
+[2025-09-24 14:47:33,700] WARNING django.server:213 — "GET / HTTP/1.1" 404 2923
+[2025-09-24 14:47:36,155] INFO cart.views:24 — [{'id': 1, 'quantity': 5, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/avatarki-mainkraft-2.webp', 'product_price': 7399}]
+[2025-09-24 14:47:36,168] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5547
+[2025-09-24 14:47:55,783] ERROR django.request:253 — Internal Server Error: /cart/api/remove/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: cart_item_delete() missing 1 required positional argument: 'item_id'
+[2025-09-24 14:47:55,785] ERROR django.server:213 — "GET /cart/api/remove/ HTTP/1.1" 500 87224
+[2025-09-24 14:48:01,526] WARNING django.request:253 — Not Found: /cart/api/remove/1/
+[2025-09-24 14:48:01,527] WARNING django.server:213 — "GET /cart/api/remove/1/ HTTP/1.1" 404 4355
+[2025-09-24 14:48:19,227] ERROR django.request:253 — Internal Server Error: /cart/api/remove/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: cart_item_delete() missing 1 required positional argument: 'item_id'
+[2025-09-24 14:48:19,229] ERROR django.server:213 — "GET /cart/api/remove/ HTTP/1.1" 500 87498
+[2025-09-24 14:48:25,957] WARNING django.request:253 — Not Found: /cart/api/remove/item_id=1
+[2025-09-24 14:48:25,958] WARNING django.server:213 — "GET /cart/api/remove/item_id=1 HTTP/1.1" 404 4378
+[2025-09-24 14:49:18,067] INFO django.utils.autoreload:265 — /app/cart/urls.py changed, reloading.
+[2025-09-24 14:49:18,472] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-24 14:49:25,251] INFO django.utils.autoreload:265 — /app/cart/views.py changed, reloading.
+[2025-09-24 14:49:25,626] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
