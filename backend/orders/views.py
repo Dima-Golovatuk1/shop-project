@@ -11,6 +11,21 @@ logger = getLogger(__name__)
 
 
 @api_view(["GET"])
+def thanks_for_order(request):
+    try:      
+        return Response({
+            "message": f"Cart details for {request.user}",
+        }, status=200)
+            
+    except Exception as e:
+        logger.error("Error:\n", str(e))
+        return Response({
+            "message": "Error",
+            "error": str(e)
+        }, status=500)
+    
+
+@api_view(["GET"])
 def orders(request):
     try:
         if request.user.is_authenticated:

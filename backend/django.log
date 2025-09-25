@@ -3752,3 +3752,33 @@ TypeError: 'ReturnDict' object is not callable
 [2025-09-24 15:35:22,123] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
 [2025-09-24 15:35:40,896] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
 >>>>>>> 05afa430b97b2d0057ba453847707fbbfdec203c
+[2025-09-25 14:46:55,935] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 14:46:57,377] WARNING django.request:253 — Not Found: /
+[2025-09-25 14:46:57,378] WARNING django.server:213 — "GET / HTTP/1.1" 404 3072
+[2025-09-25 14:47:02,471] INFO cart.views:26 — []
+[2025-09-25 14:47:02,485] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5171
+[2025-09-25 14:47:02,494] INFO django.server:213 — "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[2025-09-25 14:47:02,495] INFO django.server:213 — "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[2025-09-25 14:47:02,496] INFO django.server:213 — "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[2025-09-25 14:47:02,499] INFO django.server:213 — "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[2025-09-25 14:47:02,500] INFO django.server:213 — "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[2025-09-25 14:47:02,540] INFO django.server:213 — "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[2025-09-25 14:47:02,543] INFO django.server:213 — "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[2025-09-25 14:47:02,544] INFO django.server:213 — "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[2025-09-25 14:47:02,583] INFO django.server:213 — "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[2025-09-25 14:47:02,588] INFO django.server:213 — "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[2025-09-25 14:47:02,588] INFO django.server:213 — "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[2025-09-25 14:47:02,633] INFO django.server:213 — "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[2025-09-25 14:47:04,868] INFO orders.views:24 — [{'id': 5, 'session_key': None, 'first_name': 'Іван', 'last_name': 'Петренко', 'middle_name': 'Іванович', 'tracking_number': 'TRACK-20250924174229', 'status': 'PENDING', 'total_price': 7399, 'phone_number': '+380501234567', 'payment_method': 'CASH_ON_DELIVERY', 'shipping_address': 'м. Київ, вул. Хрещатик, 10', 'created_at': '2025-09-24T17:42:29.440312Z', 'updated_at': '2025-09-24T17:42:29.440320Z', 'user': 1}, {'id': 6, 'session_key': None, 'first_name': 'Іван', 'last_name': 'Петренко', 'middle_name': 'Іванович', 'tracking_number': 'TRACK-20250924174814', 'status': 'PENDING', 'total_price': 29596, 'phone_number': '+380501234567', 'payment_method': 'CASH_ON_DELIVERY', 'shipping_address': 'м. Київ, вул. Хрещатик, 10', 'created_at': '2025-09-24T17:48:14.287982Z', 'updated_at': '2025-09-24T17:48:14.287991Z', 'user': 1}]
+[2025-09-25 14:47:04,871] INFO django.server:213 — "GET /order/ HTTP/1.1" 200 6946
+[2025-09-25 14:47:13,753] INFO orders.views:24 — [{'id': 5, 'session_key': None, 'first_name': 'Іван', 'last_name': 'Петренко', 'middle_name': 'Іванович', 'tracking_number': 'TRACK-20250924174229', 'status': 'PENDING', 'total_price': 7399, 'phone_number': '+380501234567', 'payment_method': 'CASH_ON_DELIVERY', 'shipping_address': 'м. Київ, вул. Хрещатик, 10', 'created_at': '2025-09-24T17:42:29.440312Z', 'updated_at': '2025-09-24T17:42:29.440320Z', 'user': 1}, {'id': 6, 'session_key': None, 'first_name': 'Іван', 'last_name': 'Петренко', 'middle_name': 'Іванович', 'tracking_number': 'TRACK-20250924174814', 'status': 'PENDING', 'total_price': 29596, 'phone_number': '+380501234567', 'payment_method': 'CASH_ON_DELIVERY', 'shipping_address': 'м. Київ, вул. Хрещатик, 10', 'created_at': '2025-09-24T17:48:14.287982Z', 'updated_at': '2025-09-24T17:48:14.287991Z', 'user': 1}]
+[2025-09-25 14:47:13,756] INFO django.server:213 — "GET /order/ HTTP/1.1" 200 6946
+[2025-09-25 14:47:23,255] INFO cart.views:26 — []
+[2025-09-25 14:47:23,257] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5171
+[2025-09-25 14:47:26,880] INFO django.server:213 — "GET /cart/api/buy/ HTTP/1.1" 200 6902
+[2025-09-25 14:47:54,096] INFO cart.views:209 — q
+[2025-09-25 14:47:54,104] INFO django.server:213 — "POST /cart/api/buy/ HTTP/1.1" 200 6903
+[2025-09-25 14:47:59,008] INFO orders.views:24 — [{'id': 5, 'session_key': None, 'first_name': 'Іван', 'last_name': 'Петренко', 'middle_name': 'Іванович', 'tracking_number': 'TRACK-20250924174229', 'status': 'PENDING', 'total_price': 7399, 'phone_number': '+380501234567', 'payment_method': 'CASH_ON_DELIVERY', 'shipping_address': 'м. Київ, вул. Хрещатик, 10', 'created_at': '2025-09-24T17:42:29.440312Z', 'updated_at': '2025-09-24T17:42:29.440320Z', 'user': 1}, {'id': 6, 'session_key': None, 'first_name': 'Іван', 'last_name': 'Петренко', 'middle_name': 'Іванович', 'tracking_number': 'TRACK-20250924174814', 'status': 'PENDING', 'total_price': 29596, 'phone_number': '+380501234567', 'payment_method': 'CASH_ON_DELIVERY', 'shipping_address': 'м. Київ, вул. Хрещатик, 10', 'created_at': '2025-09-24T17:48:14.287982Z', 'updated_at': '2025-09-24T17:48:14.287991Z', 'user': 1}, {'id': 7, 'session_key': None, 'first_name': 'Іван', 'last_name': 'Петренко', 'middle_name': 'Іванович', 'tracking_number': 'TRACK-20250925144754', 'status': 'PENDING', 'total_price': 0, 'phone_number': '+380501234567', 'payment_method': 'CASH_ON_DELIVERY', 'shipping_address': 'м. Київ, вул. Хрещатик, 10', 'created_at': '2025-09-25T14:47:54.097371Z', 'updated_at': '2025-09-25T14:47:54.097380Z', 'user': 1}]
+[2025-09-25 14:47:59,011] INFO django.server:213 — "GET /order/ HTTP/1.1" 200 7818
+[2025-09-25 14:48:21,636] INFO cart.views:26 — []
+[2025-09-25 14:48:21,638] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5171
