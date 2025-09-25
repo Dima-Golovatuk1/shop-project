@@ -3905,3 +3905,12 @@ TypeError: 'ReturnDict' object is not callable
 [2025-09-25 15:35:33,234] INFO django.server:213 — "GET /shop/search/?q=w HTTP/1.1" 200 595
 [2025-09-25 15:35:36,222] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
 [2025-09-25 15:35:36,259] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 15:49:11,275] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 15:50:42,478] INFO django.utils.autoreload:265 — /app/backend/settings.py changed, reloading.
+[2025-09-25 15:50:45,467] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 15:51:09,033] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 15:51:09,046] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 15:51:09,236] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 15:51:22,095] INFO cart.views:24 — []
+[2025-09-25 15:51:22,111] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 58
+[2025-09-25 15:51:32,973] INFO django.server:213 — "GET /shop/search/?q=w HTTP/1.1" 200 595

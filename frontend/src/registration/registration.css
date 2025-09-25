@@ -1,4 +1,3 @@
-/* Modern Light Registration & Login Styles - Green/Lime/White Theme */
 :root {
   --lime-primary: #84cc16;
   --lime-light: #a3e635;
@@ -63,7 +62,6 @@
   opacity: 0.2;
 }
 
-/* Close button with modern styling */
 .registration__close-btn {
   position: absolute;
   right: 20px;
@@ -103,7 +101,6 @@
   fill: var(--lime-primary);
 }
 
-/* Main registration form container */
 .registration {
   overflow: hidden;
   width: 450px;
@@ -158,7 +155,6 @@
   border-radius: 32px;
 }
 
-/* Title styling */
 .registration__title {
   font-size: 2.75rem;
   font-weight: 800;
@@ -186,7 +182,6 @@
   opacity: 1;
 }
 
-/* Form container */
 .registration__form {
   display: flex;
   flex-direction: column;
@@ -195,7 +190,6 @@
   gap: 1.75rem;
 }
 
-/* Label styling */
 .registration__label {
   display: flex;
   flex-direction: column;
@@ -207,7 +201,6 @@
   opacity: 1;
 }
 
-/* Input styling */
 .registration__input {
   border: 2px solid var(--lime-ultra-light);
   border-radius: 16px;
@@ -242,7 +235,6 @@
   box-shadow: 0 4px 12px rgba(132, 204, 22, 0.1);
 }
 
-/* Submit button */
 .registration__form__btn {
   width: 240px;
   color: var(--white-pure);
@@ -290,7 +282,6 @@
   transform: translateY(-2px) scale(1.02);
 }
 
-/* Link text styling */
 .registration__form__text {
   position: relative;
   font-weight: 600;
@@ -325,7 +316,6 @@
   width: 80%;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
   .registration {
     width: 340px;
@@ -376,7 +366,6 @@
   }
 }
 
-/* Error states */
 .registration__input.error {
   border-color: var(--error-red);
   background: #fef2f2;
@@ -385,7 +374,6 @@
     0 4px 16px rgba(220, 38, 38, 0.15);
 }
 
-/* Success states */
 .registration__input.success {
   border-color: var(--success-green);
   background: var(--green-ultra-light);
@@ -394,7 +382,6 @@
     0 4px 16px rgba(5, 150, 105, 0.15);
 }
 
-/* Loading state for button */
 .registration__form__btn.loading {
   pointer-events: none;
   opacity: 0.7;

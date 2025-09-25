@@ -1,11 +1,9 @@
-/* Footer Styles */
 .footer {
     background-color: #212529;
-    /* Темний фон, як на Rozetka */
     color: #c0c0c0;
     padding: 40px 0;
     font-family: Arial, sans-serif;
-    border-top: 3px solid #e25a2e;
+    border-top: 3px solid #24b76d;
 }
 
 .footer .container {
@@ -62,8 +60,7 @@
 }
 
 .social-links a:hover {
-    color: #e25a2e;
-    /* Основний колір Розетки */
+    color: #35b81e;
 }
 
 .footer-heading {

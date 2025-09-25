@@ -59,10 +59,6 @@ function Login({ setActivRegistrationForm, setActivLoginForm }) {
                         Email
                         <input className="login__input" name="email" type="email" placeholder="Email" />
                     </label>
-                    {/* <label className="login__label">
-                        Phone Number
-                        <input className="login__input" name="phone" type="tel" placeholder="Phone Number" />
-                    </label> */}
                     <label className="login__label">
                         Password
                         <input className="login__input" name="password" type="password" placeholder="Password" />
