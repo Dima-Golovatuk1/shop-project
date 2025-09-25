@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import UserProfile from './profile/profile' 
 import Search from "./search/search";
 import Order from "./order/order";
+import Footer from"./footer/footer";
 
 function App() {
     const [activRegistrationForm, setActivRegistrationForm] = useState(false);
@@ -64,6 +65,7 @@ function App() {
                     <Route path="/order" element={<Order />} />
                 </Routes>
             </main>
+            <Footer />
         </BrowserRouter>
     );
 }
