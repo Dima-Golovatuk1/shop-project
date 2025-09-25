@@ -39,62 +39,77 @@ def index(request):
 @api_view(['GET'])
 def search(request):
     try:
-        
         categories = Category.objects.all()
         sub_categories = SubCategory.objects.all()
         
         category_serializer = CategorySerializer(categories, many=True)
         sub_category_serializer = SubCategorySerializer(sub_categories, many=True)
         
+        query = request.GET.get('q')
+        description = request.GET.get('d')
+        price = request.GET.get('p')
+        category = request.GET.get('c')
+        sub_category = request.GET.get('sb')
         
-        query = request.GET.get('q') or None
-        description = request.GET.get('d') or None
-        price = request.GET.get('p') or None
-        category = request.GET.get('c') or None
-        sub_category = request.GET.get('sb') or None
-
         filters = Q()
         
-        if query:
-            filters &= Q(title__icontains=query)
-        if description:
-            filters &= Q(description__icontains=description)
+        if query and query.strip():
+            filters &= Q(title__icontains=query.strip())
+            
+        if description and description.strip():
+            filters &= Q(description__icontains=description.strip())
+            
         if price:
-            filters &= Q(price__lte=price)  
-        if category:
-            filters &= Q(category__icontains=category)
-        if sub_category:
-            filters &= Q(subcategory__icontains=sub_category)
-        
-        products = Product.objects.filter(filters)
+            price_float = float(price)
+            if price_float > 0:
+                filters &= Q(price__lte=price_float)
+
+
+        if category and category.strip():
+            filters &= Q(category__name__icontains=category.strip())
+            
+        if sub_category and sub_category.strip():
+            filters &= Q(subcategory__name__icontains=sub_category.strip())
+
+        products = Product.objects.filter(filters).distinct()
         
         if not products.exists():
             return Response({
                 'message': 'No products found matching your criteria.',
+                'products': [],
+                'product_ids': [],
+                'categories': category_serializer.data,
+                'sub_categories': sub_category_serializer.data,
+                'filters': {
+                    'query': query,
+                    'description': description,
+                    'price': price,
+                    'category': category,
+                    'sub_category': sub_category
+                }
             }, status=200)
-
-        products_serializer = ProductSerializer(products, many=True)
         
+        products_serializer = ProductSerializer(products, many=True)
         product_ids = [product.id for product in products]
-
+        
         return Response({
             'message': f"Searched products: {len(product_ids)} found.",
             'product_ids': product_ids,
             'products': products_serializer.data,
-            "categories": category_serializer.data,
-            "sub_categories": sub_category_serializer.data,
-            'filters': { 
+            'categories': category_serializer.data,
+            'sub_categories': sub_category_serializer.data,
+            'filters': {
                 'query': query,
                 'description': description,
-                'price': price, 
+                'price': price,
                 'category': category,
                 'sub_category': sub_category
             }
         }, status=200)
         
     except Exception as e:
-        logger.error(f"Error:\n {str(e)}")
+        logger.error(f"Search API Error: {str(e)}")
         return Response({
-            'message': '\nError:\n',
+            'message': 'An error occurred while searching.',
             'error': str(e)
         }, status=500)

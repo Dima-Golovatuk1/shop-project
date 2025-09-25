@@ -244,12 +244,6 @@ function Search() {
                     </div>
                 )}
 
-                {/* Results Count */}
-                {searchResults.length > 0 && (
-                    <div className="results-count">
-                        Found {searchResults.length} product{searchResults.length !== 1 ? 's' : ''}
-                    </div>
-                )}
 
                 {searchResults.length === 0 ? (
                     <div className="text-center mt-8 text-xl font-semibold">
