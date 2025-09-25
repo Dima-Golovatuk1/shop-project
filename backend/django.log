@@ -4632,3 +4632,4 @@ TypeError: cart_item_delete() missing 1 required positional argument: 'item_id'
 [2025-09-24 20:43:58,987] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 269
 [2025-09-24 20:43:59,878] INFO cart.views:24 — [{'id': 130, 'quantity': 1, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
 [2025-09-24 20:43:59,880] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 272
+[2025-09-25 10:27:21,107] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
