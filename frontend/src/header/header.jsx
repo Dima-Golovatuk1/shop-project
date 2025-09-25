@@ -3,7 +3,8 @@ import { Link, useNavigate  } from "react-router-dom";
 import "./header.css";
 import Registration from "../registration/registration";
 
-function Header({ setActivLoginForm , dataAuthenticated, setActivCart }) {
+function Header({ setActivLoginForm , dataAuthenticated, setActivCart}) {
+  const [searchValue, setSearchValue] = useState('');
   const [activBurger, setActivBurger] = useState(false);
   const navigate = useNavigate();
   console.log(dataAuthenticated);
@@ -21,10 +22,20 @@ function Header({ setActivLoginForm , dataAuthenticated, setActivCart }) {
     setActivCart(true)
   }
 
-
   function homeClick() {
     navigate('/'); 
   }
+
+  function onSearchProduct(e) {
+    e.preventDefault();
+    
+    if (!searchValue.trim()) {
+        return;
+    }
+    
+    navigate(`/search?q=${encodeURIComponent(searchValue.trim())}`);
+  }
+
 
   function userClick() {
     if (dataAuthenticated){
@@ -52,18 +63,13 @@ function Header({ setActivLoginForm , dataAuthenticated, setActivCart }) {
                   </svg>
                 </button>
               </li>
-                <li className="header__nav__item">
-                  <button onClick={homeClick}>
-                  <svg className="header__nav__item__button__svg">
-                    <use href="../../public/img/svg/symbol-defs.svg#icon-user"></use>
-                  </svg>
-                </button>
-              </li>
               <li className="header__nav__item">
-                <form className="header__nav__item__form">
+                <form onSubmit={onSearchProduct} className="header__nav__item__form">
                   <input
                     className="header__nav__item__form__input"
                     type="text"
+                    value={searchValue}
+                    onChange={(e) => setSearchValue(e.target.value)}
                   />
                   <button className="header__nav__item__form__btn">
                     Search
@@ -109,7 +115,7 @@ function Header({ setActivLoginForm , dataAuthenticated, setActivCart }) {
           <nav className="aside__nav">
             <ul className="aside__nav__list">
               <li className="aside__nav__item">
-                <Link to={`/`}>Home</Link>
+                <Link to={`/`}>Catalog</Link>
               </li>
               <li className="aside__nav__item">
                                 <button
