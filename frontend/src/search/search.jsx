@@ -10,14 +10,11 @@ function Search() {
     const [searchParams, setSearchParams] = useSearchParams();
     const [showFilters, setShowFilters] = useState(false);
     
-    // Dynamic data from API
     const [categories, setCategories] = useState([]);
     const [subCategories, setSubCategories] = useState([]);
     
-    // Filter states
     const [filters, setFilters] = useState({
         q: searchParams.get('q') || '',
-        d: searchParams.get('d') || '',
         p: searchParams.get('p') || '',
         c: searchParams.get('c') || '',
         sb: searchParams.get('sb') || ''
@@ -31,7 +28,6 @@ function Search() {
         setIsLoading(true);
         setError(null);
 
-        // Build query string from current searchParams
         const queryString = searchParams.toString();
         if (!queryString) {
             setSearchResults([]);
@@ -50,7 +46,6 @@ function Search() {
             const data = await response.json();
             setSearchResults(data.products || []);
             
-            // Update categories and subcategories from API response
             if (data.categories) {
                 setCategories(data.categories);
             }
@@ -75,7 +70,6 @@ function Search() {
     const applyFilters = () => {
         const newParams = new URLSearchParams();
         
-        // Add non-empty filters to URL params
         Object.entries(filters).forEach(([key, value]) => {
             if (value && value.trim()) {
                 newParams.set(key, value.trim());
@@ -88,7 +82,6 @@ function Search() {
     const clearFilters = () => {
         setFilters({
             q: '',
-            d: '',
             p: '',
             c: '',
             sb: ''
@@ -96,7 +89,6 @@ function Search() {
         setSearchParams(new URLSearchParams());
     };
 
-    // Get filtered subcategories based on selected category
     const getFilteredSubCategories = () => {
         if (!filters.c) return [];
         return subCategories.filter(sub => 
@@ -148,11 +140,9 @@ function Search() {
                     </div>
                 </div>
 
-                {/* Filters Panel */}
                 {showFilters && (
                     <div className="filters-panel">
                         <div className="filters-grid">
-                            {/* Search Query */}
                             <div className="filter-group">
                                 <label htmlFor="query">Search Term</label>
                                 <input
@@ -164,33 +154,20 @@ function Search() {
                                 />
                             </div>
 
-                            {/* Description */}
-                            <div className="filter-group">
-                                <label htmlFor="description">Description Contains</label>
-                                <input
-                                    id="description"
-                                    type="text"
-                                    placeholder="Description keywords..."
-                                    value={filters.d}
-                                    onChange={(e) => handleFilterChange('d', e.target.value)}
-                                />
-                            </div>
 
-                            {/* Max Price */}
                             <div className="filter-group">
                                 <label htmlFor="price">Max Price ($)</label>
                                 <input
                                     id="price"
                                     type="number"
                                     min="0"
-                                    step="0.01"
+                                    step="1"
                                     placeholder="100.00"
                                     value={filters.p}
                                     onChange={(e) => handleFilterChange('p', e.target.value)}
                                 />
                             </div>
 
-                            {/* Category */}
                             <div className="filter-group">
                                 <label htmlFor="category">Category</label>
                                 <select
@@ -198,7 +175,6 @@ function Search() {
                                     value={filters.c}
                                     onChange={(e) => {
                                         handleFilterChange('c', e.target.value);
-                                        // Clear subcategory when category changes
                                         if (e.target.value !== filters.c) {
                                             handleFilterChange('sb', '');
                                         }
@@ -213,7 +189,6 @@ function Search() {
                                 </select>
                             </div>
 
-                            {/* Subcategory */}
                             <div className="filter-group">
                                 <label htmlFor="subcategory">Subcategory</label>
                                 <select
@@ -232,7 +207,6 @@ function Search() {
                             </div>
                         </div>
 
-                        {/* Filter Actions */}
                         <div className="filter-actions">
                             <button onClick={applyFilters} className="apply-filters-btn">
                                 Apply Filters

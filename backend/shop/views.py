@@ -46,7 +46,6 @@ def search(request):
         sub_category_serializer = SubCategorySerializer(sub_categories, many=True)
         
         query = request.GET.get('q')
-        description = request.GET.get('d')
         price = request.GET.get('p')
         category = request.GET.get('c')
         sub_category = request.GET.get('sb')
@@ -54,11 +53,9 @@ def search(request):
         filters = Q()
         
         if query and query.strip():
-            filters &= Q(title__icontains=query.strip())
-            
-        if description and description.strip():
-            filters &= Q(description__icontains=description.strip())
-            
+            q = query.strip()
+            filters &= (Q(title__icontains=q) | Q(description__icontains=q))
+                        
         if price:
             price_float = float(price)
             if price_float > 0:
@@ -82,7 +79,6 @@ def search(request):
                 'sub_categories': sub_category_serializer.data,
                 'filters': {
                     'query': query,
-                    'description': description,
                     'price': price,
                     'category': category,
                     'sub_category': sub_category
@@ -100,7 +96,6 @@ def search(request):
             'sub_categories': sub_category_serializer.data,
             'filters': {
                 'query': query,
-                'description': description,
                 'price': price,
                 'category': category,
                 'sub_category': sub_category

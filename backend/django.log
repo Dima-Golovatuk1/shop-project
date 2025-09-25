@@ -5240,3 +5240,45 @@ TypeError: cart_item_delete() missing 1 required positional argument: 'item_id'
 [2025-09-25 12:12:40,474] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 42
 [2025-09-25 12:12:40,482] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
 [2025-09-25 12:12:41,781] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 92
+[2025-09-25 12:21:56,544] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 12:21:58,657] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 12:22:03,483] ERROR shop.views:107 — Search API Error: name 'description' is not defined
+[2025-09-25 12:22:03,489] ERROR django.request:253 — Internal Server Error: /shop/search/
+[2025-09-25 12:22:03,490] ERROR django.server:213 — "GET /shop/search/?q=rr HTTP/1.1" 500 92
+[2025-09-25 12:23:16,139] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 12:23:16,141] ERROR shop.views:107 — Search API Error: name 'description' is not defined
+[2025-09-25 12:23:16,149] ERROR django.request:253 — Internal Server Error: /shop/search/
+[2025-09-25 12:23:16,152] ERROR django.server:213 — "GET /shop/search/?q=rr HTTP/1.1" 500 92
+[2025-09-25 12:23:17,094] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 12:23:17,095] ERROR shop.views:107 — Search API Error: name 'description' is not defined
+[2025-09-25 12:23:17,104] ERROR django.request:253 — Internal Server Error: /shop/search/
+[2025-09-25 12:23:17,105] ERROR django.server:213 — "GET /shop/search/?q=rr HTTP/1.1" 500 92
+[2025-09-25 12:23:46,746] INFO django.utils.autoreload:265 — /app/shop/views.py changed, reloading.
+[2025-09-25 12:23:47,901] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 12:23:52,685] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 12:23:52,687] INFO django.server:213 — "GET /shop/search/?q=rr HTTP/1.1" 200 334
+[2025-09-25 12:23:57,946] INFO django.server:213 — "GET /shop/search/?q=q HTTP/1.1" 200 333
+[2025-09-25 12:24:00,200] INFO django.server:213 — "GET /shop/search/?q=d HTTP/1.1" 200 595
+[2025-09-25 12:24:02,728] INFO django.server:213 — "GET /shop/search/?q=r HTTP/1.1" 200 599
+[2025-09-25 12:24:04,865] INFO django.server:213 — "GET /shop/search/?q=rr HTTP/1.1" 200 334
+[2025-09-25 12:24:07,382] INFO django.server:213 — "GET /shop/search/?q=r HTTP/1.1" 200 599
+[2025-09-25 12:24:07,866] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-25 12:24:09,295] INFO django.server:213 — "GET /shop/search/?q=r HTTP/1.1" 200 599
+[2025-09-25 12:24:13,076] INFO django.server:213 — "GET /shop/search/?q=RR HTTP/1.1" 200 334
+[2025-09-25 12:25:44,449] INFO django.utils.autoreload:265 — /app/shop/views.py changed, reloading.
+[2025-09-25 12:25:45,271] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 12:26:01,525] INFO django.utils.autoreload:265 — /app/shop/views.py changed, reloading.
+[2025-09-25 12:26:02,412] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 12:26:08,512] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 12:26:08,538] INFO django.server:213 — "GET /shop/search/?q=RR HTTP/1.1" 200 600
+[2025-09-25 12:26:14,039] INFO django.server:213 — "GET /shop/search/?q=arbuz HTTP/1.1" 200 603
+[2025-09-25 12:26:16,185] INFO django.server:213 — "GET /shop/search/?q=da HTTP/1.1" 200 596
+[2025-09-25 12:26:19,137] INFO django.server:213 — "GET /shop/search/?q=r HTTP/1.1" 200 599
+[2025-09-25 12:27:25,164] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 12:27:46,890] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 12:28:36,702] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 12:30:14,304] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 12:30:22,493] INFO django.server:213 — "GET /shop/search/?q=m HTTP/1.1" 200 333
+[2025-09-25 12:30:27,448] INFO django.server:213 — "GET /shop/search/?q=m&p=12 HTTP/1.1" 200 333
+[2025-09-25 12:30:31,199] INFO django.server:213 — "GET /shop/search/?q=m&p=12&c=mx HTTP/1.1" 200 333
+[2025-09-25 12:30:33,745] INFO django.server:213 — "GET /shop/search/?p=12&c=mx HTTP/1.1" 200 596
