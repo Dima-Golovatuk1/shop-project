@@ -94,6 +94,38 @@ function Cart({ setActivCart, activCart }) {
             });
     }
 
+
+    function deleteProduct(productId) {
+    const data = {
+        "item_id": productId
+    };
+
+    const csrfToken = getCookie("csrftoken");
+
+    fetch("http://localhost:8000/cart/api/remove/", {
+        method: "DELETE",
+        credentials: "include",
+        headers: {
+            "Content-Type": "application/json",
+            "X-CSRFToken": csrfToken
+        },
+        body: JSON.stringify(data)
+    })
+        .then(res => {
+            if (!res.ok) {
+                throw new Error(`Server responded with status: ${res.status}`);
+            }
+            return res.json();
+        })
+        .then(data => {
+            console.log("Server Response (deleteProduct):", data);
+            setProducts(data.items);
+        })
+        .catch(err => {
+            console.error("Error in deleteProduct:", err);
+        });
+}
+
     useEffect(() => {
         const API_URL = "http://localhost:8000/cart/";
 
@@ -161,7 +193,7 @@ function Cart({ setActivCart, activCart }) {
                                         Title: {product.product_title}
                                     </h3>
                                     <p className="cart__item__div__text">
-                                        Price: {product.product_price}
+                                        Price: {product.product_price}$
                                     </p>
                                 </div>
                                 <div className="cart__item__div cart__item__div-quantity">
@@ -198,7 +230,7 @@ function Cart({ setActivCart, activCart }) {
                         </li>
                     )}
                 </ul>
-                <p className="cart__text">Total price: {totalPrice}</p>
+                <p className="cart__text">Total price: {totalPrice}$</p>
                 <button className="cart__btn">Buy</button>
             </section>
         </>

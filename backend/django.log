@@ -4633,3 +4633,47 @@ TypeError: cart_item_delete() missing 1 required positional argument: 'item_id'
 [2025-09-24 20:43:59,878] INFO cart.views:24 — [{'id': 130, 'quantity': 1, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
 [2025-09-24 20:43:59,880] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 272
 [2025-09-25 10:27:21,107] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 10:29:51,649] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-25 10:30:06,655] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 10:30:13,820] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-25 10:30:13,824] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:30:14,922] INFO cart.views:24 — []
+[2025-09-25 10:30:14,927] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 49
+[2025-09-25 10:30:17,494] INFO django.server:213 — "OPTIONS /cart/api/add/ HTTP/1.1" 200 0
+[2025-09-25 10:30:17,596] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 201
+[2025-09-25 10:30:18,497] INFO cart.views:24 — [{'id': 31, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}]
+[2025-09-25 10:30:18,501] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 204
+[2025-09-25 10:30:31,713] INFO django.server:213 — "OPTIONS /cart/api/update_add/ HTTP/1.1" 200 0
+[2025-09-25 10:30:31,804] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 201
+[2025-09-25 10:30:31,776] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 201
+[2025-09-25 10:30:33,251] INFO django.server:213 — "OPTIONS /cart/api/update_remove/ HTTP/1.1" 200 0
+[2025-09-25 10:30:33,334] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 201
+[2025-09-25 10:30:33,650] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 201
+[2025-09-25 10:30:55,599] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:30:55,672] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:30:56,578] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 333
+[2025-09-25 10:30:57,682] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 348
+[2025-09-25 10:30:58,856] INFO cart.views:24 — [{'id': 31, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}, {'id': 32, 'quantity': 1, 'product_id': 1, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-25 10:30:58,858] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 351
+[2025-09-25 10:31:02,407] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 348
+[2025-09-25 10:31:23,937] INFO cart.views:24 — [{'id': 31, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}, {'id': 32, 'quantity': 2, 'product_id': 1, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-25 10:31:23,939] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 351
+[2025-09-25 10:31:59,884] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 333
+[2025-09-25 10:31:59,884] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:32:05,396] INFO cart.views:24 — [{'id': 31, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}, {'id': 32, 'quantity': 2, 'product_id': 1, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-25 10:32:05,398] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 351
+[2025-09-25 10:36:23,081] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 333
+[2025-09-25 10:36:23,088] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:36:24,460] INFO cart.views:24 — [{'id': 31, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}, {'id': 32, 'quantity': 2, 'product_id': 1, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-25 10:36:24,464] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 351
+[2025-09-25 10:36:25,597] INFO django.server:213 — "OPTIONS /cart/api/remove/ HTTP/1.1" 200 0
+[2025-09-25 10:36:25,702] INFO django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 200 201
+[2025-09-25 10:36:27,993] INFO django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 200 46
+[2025-09-25 10:36:29,600] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 192
+[2025-09-25 10:36:30,797] INFO cart.views:24 — [{'id': 33, 'quantity': 1, 'product_id': 1, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-25 10:36:30,799] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 195
+[2025-09-25 10:36:31,810] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 192
+[2025-09-25 10:36:31,969] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 192
+[2025-09-25 10:36:32,609] INFO django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 200 46
+[2025-09-25 10:37:14,215] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:37:14,307] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778

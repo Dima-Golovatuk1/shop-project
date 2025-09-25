@@ -72,4 +72,4 @@ function Search() {
 
 
 
-export default Catalog;
+export default Search;
