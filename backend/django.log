@@ -4885,3 +4885,358 @@ TypeError: cart_item_delete() missing 1 required positional argument: 'item_id'
 [2025-09-25 10:59:53,550] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
 [2025-09-25 10:59:56,021] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
 [2025-09-25 11:00:07,071] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:01:32,130] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 11:01:36,514] INFO cart.views:24 — []
+[2025-09-25 11:01:36,516] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 46
+[2025-09-25 11:01:52,849] INFO cart.views:24 — []
+[2025-09-25 11:01:52,851] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 46
+[2025-09-25 11:03:48,338] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 11:03:48,370] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:03:53,712] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:03:53,712] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 11:04:11,947] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 11:04:13,893] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:04:23,642] INFO django.server:213 — "GET /shop/search/?q=%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD HTTP/1.1" 200 902
+[2025-09-25 11:04:35,342] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:04:38,905] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 11:04:40,497] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:05:17,371] WARNING django.request:253 — Not Found: /\u0433\u044b\u0443\u043a/logout
+[2025-09-25 11:05:17,372] WARNING django.server:213 — "GET /%D0%B3%D1%8B%D1%83%D0%BA/logout HTTP/1.1" 404 3151
+[2025-09-25 11:05:25,095] INFO django.server:213 — "GET /user/logout HTTP/1.1" 301 0
+[2025-09-25 11:05:25,163] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5231
+[2025-09-25 11:05:27,386] WARNING django.request:253 — Not Found: /user/logout/
+[2025-09-25 11:05:27,387] WARNING django.server:213 — "GET /user/logout/ HTTP/1.1" 404 5211
+[2025-09-25 11:05:30,539] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:06:23,449] INFO django.server:213 — "OPTIONS /user/register/ HTTP/1.1" 200 0
+[2025-09-25 11:06:24,272] INFO django.server:213 — "POST /user/register/ HTTP/1.1" 201 142
+[2025-09-25 11:07:15,987] INFO django.server:213 — "OPTIONS /user/login/ HTTP/1.1" 200 0
+[2025-09-25 11:07:16,740] INFO users.views:93 — user: dimagolovatuk
+[2025-09-25 11:07:16,746] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 165
+[2025-09-25 11:07:19,997] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 11:07:55,634] INFO django.server:213 — "GET /admin/ HTTP/1.1" 302 0
+[2025-09-25 11:07:55,737] INFO django.server:213 — "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3695
+[2025-09-25 11:07:55,776] INFO django.server:213 — "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[2025-09-25 11:13:25,736] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 11:16:35,740] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 5426
+[2025-09-25 11:19:10,299] INFO django.server:213 — "OPTIONS /user/profile/ HTTP/1.1" 200 0
+[2025-09-25 11:19:10,320] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 11:19:10,332] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 11:20:29,189] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 11:20:29,190] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 11:20:54,715] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 11:20:54,716] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 11:20:59,905] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 11:20:59,905] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 11:25:53,001] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 11:25:53,001] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 11:28:41,421] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 11:28:41,423] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 11:31:01,876] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 11:31:01,876] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 11:31:09,106] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 11:31:09,109] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 11:31:12,419] INFO django.server:213 — "OPTIONS /user/logout/ HTTP/1.1" 200 0
+[2025-09-25 11:31:12,443] WARNING django.request:253 — Forbidden: /user/logout/
+[2025-09-25 11:31:12,444] WARNING django.server:213 — "POST /user/logout/ HTTP/1.1" 403 45
+[2025-09-25 11:32:06,849] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5231
+[2025-09-25 11:32:07,105] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-25 11:32:07,106] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 3123
+[2025-09-25 11:35:05,401] WARNING django.request:253 — Unauthorized: /user/profile/
+[2025-09-25 11:35:05,405] WARNING django.server:213 — "GET /user/profile/ HTTP/1.1" 401 38
+[2025-09-25 11:35:05,405] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:35:12,329] WARNING django.request:253 — Unauthorized: /user/profile/
+[2025-09-25 11:35:12,331] WARNING django.server:213 — "GET /user/profile/ HTTP/1.1" 401 5189
+[2025-09-25 11:35:20,671] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:35:33,186] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:35:33,247] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:35:33,581] INFO users.views:93 — user: dimagolovatuk
+[2025-09-25 11:35:40,139] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:35:40,172] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:35:54,936] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:35:54,963] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:36:03,992] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:36:04,035] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:36:04,435] INFO users.views:93 — user: 1
+[2025-09-25 11:36:04,444] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-25 11:36:09,126] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:36:09,156] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:41:53,015] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:41:53,079] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:42:04,162] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:42:04,191] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:42:04,604] INFO users.views:93 — user: 1
+[2025-09-25 11:42:04,610] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-25 11:43:09,970] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:43:10,000] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:43:10,449] INFO users.views:93 — user: 1
+[2025-09-25 11:43:10,453] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-25 11:44:14,596] WARNING django.request:253 — Unauthorized: /user/profile/
+[2025-09-25 11:44:14,598] WARNING django.server:213 — "GET /user/profile/ HTTP/1.1" 401 5189
+[2025-09-25 11:44:19,162] WARNING django.request:253 — Not Found: /user/logout/
+[2025-09-25 11:44:19,163] WARNING django.server:213 — "GET /user/logout/ HTTP/1.1" 404 5211
+[2025-09-25 11:44:19,912] WARNING django.request:253 — Not Found: /user/logout/
+[2025-09-25 11:44:19,913] WARNING django.server:213 — "GET /user/logout/ HTTP/1.1" 404 5211
+[2025-09-25 11:44:27,720] INFO django.server:213 — "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-09-25 11:44:27,782] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 16420
+[2025-09-25 11:44:30,687] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5231
+[2025-09-25 11:44:34,677] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:44:34,716] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:44:40,092] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:44:40,124] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:45:18,837] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:45:18,897] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:45:20,409] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:45:20,443] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:45:33,201] WARNING django.request:253 — Not Found: /user/logout/
+[2025-09-25 11:45:33,203] WARNING django.server:213 — "GET /user/logout/ HTTP/1.1" 404 5211
+[2025-09-25 11:45:39,662] INFO django.server:213 — "GET /admin/ HTTP/1.1" 302 0
+[2025-09-25 11:45:39,673] INFO django.server:213 — "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+[2025-09-25 11:45:44,977] INFO django.server:213 — "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-09-25 11:45:45,020] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 16420
+[2025-09-25 11:45:47,440] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5231
+[2025-09-25 11:45:48,233] WARNING django.request:253 — Not Found: /user/logout/
+[2025-09-25 11:45:48,235] WARNING django.server:213 — "GET /user/logout/ HTTP/1.1" 404 5211
+[2025-09-25 11:45:49,648] WARNING django.request:253 — Not Found: /user/logout/
+[2025-09-25 11:45:49,649] WARNING django.server:213 — "GET /user/logout/ HTTP/1.1" 404 5211
+[2025-09-25 11:45:52,118] INFO django.server:213 — "GET /admin/ HTTP/1.1" 302 0
+[2025-09-25 11:45:52,137] INFO django.server:213 — "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+[2025-09-25 11:45:52,915] INFO django.server:213 — "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+[2025-09-25 11:46:10,873] WARNING django.request:253 — Not Found: /user/logout/
+[2025-09-25 11:46:10,875] WARNING django.server:213 — "GET /user/logout/ HTTP/1.1" 404 5211
+[2025-09-25 11:47:06,724] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:47:06,749] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:47:17,118] INFO users.views:93 — user: 1
+[2025-09-25 11:47:17,124] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-25 11:47:22,912] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5231
+[2025-09-25 11:47:23,816] WARNING django.request:253 — Not Found: /user/logout/
+[2025-09-25 11:47:23,817] WARNING django.server:213 — "GET /user/logout/ HTTP/1.1" 404 5211
+[2025-09-25 11:47:24,431] WARNING django.request:253 — Not Found: /user/logout/
+[2025-09-25 11:47:24,432] WARNING django.server:213 — "GET /user/logout/ HTTP/1.1" 404 5211
+[2025-09-25 11:48:35,738] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 11:48:51,304] WARNING django.request:253 — Not Found: /user/logout/
+[2025-09-25 11:48:51,305] WARNING django.server:213 — "GET /user/logout/ HTTP/1.1" 404 5211
+[2025-09-25 11:48:52,377] WARNING django.request:253 — Not Found: /user/logout/
+[2025-09-25 11:48:52,378] WARNING django.server:213 — "GET /user/logout/ HTTP/1.1" 404 5211
+[2025-09-25 11:48:56,841] WARNING django.security.csrf:253 — Forbidden (CSRF token from POST incorrect.): /admin/login/
+[2025-09-25 11:48:56,843] WARNING django.server:213 — "POST /admin/login/?next=/admin/ HTTP/1.1" 403 2503
+[2025-09-25 11:49:02,952] WARNING django.request:253 — Not Found: /user/logout/
+[2025-09-25 11:49:02,953] WARNING django.server:213 — "GET /user/logout/ HTTP/1.1" 404 5211
+[2025-09-25 11:49:44,466] WARNING django.security.csrf:253 — Forbidden (CSRF token from POST incorrect.): /admin/login/
+[2025-09-25 11:49:44,468] WARNING django.server:213 — "POST /admin/login/?next=/admin/ HTTP/1.1" 403 2503
+[2025-09-25 11:49:45,816] INFO django.server:213 — "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+[2025-09-25 11:49:49,464] INFO django.server:213 — "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-09-25 11:49:49,538] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 16420
+[2025-09-25 11:49:52,081] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 16420
+[2025-09-25 11:49:52,885] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 16420
+[2025-09-25 11:49:53,320] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 16420
+[2025-09-25 11:49:53,640] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 16420
+[2025-09-25 11:49:53,856] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 16420
+[2025-09-25 11:49:54,040] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 16420
+[2025-09-25 11:49:54,253] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 16420
+[2025-09-25 11:49:57,443] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5231
+[2025-09-25 11:49:57,943] WARNING django.request:253 — Not Found: /user/logout/
+[2025-09-25 11:49:57,944] WARNING django.server:213 — "GET /user/logout/ HTTP/1.1" 404 5211
+[2025-09-25 11:49:58,552] WARNING django.request:253 — Not Found: /user/logout/
+[2025-09-25 11:49:58,553] WARNING django.server:213 — "GET /user/logout/ HTTP/1.1" 404 5211
+[2025-09-25 11:50:00,324] INFO django.server:213 — "GET /admin/ HTTP/1.1" 302 0
+[2025-09-25 11:50:00,338] INFO django.server:213 — "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+[2025-09-25 11:50:04,814] INFO django.server:213 — "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-09-25 11:50:04,858] INFO django.server:213 — "GET /admin/ HTTP/1.1" 200 16420
+[2025-09-25 11:50:48,007] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5294
+[2025-09-25 11:50:49,968] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5294
+[2025-09-25 11:50:50,500] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5294
+[2025-09-25 11:50:50,858] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5294
+[2025-09-25 11:50:51,110] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5294
+[2025-09-25 11:50:51,349] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5294
+[2025-09-25 11:50:51,549] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 5294
+[2025-09-25 11:50:57,065] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 11:50:57,090] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:51:02,744] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:51:19,872] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 11:51:19,881] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:51:43,859] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 75
+[2025-09-25 11:51:43,867] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 11:52:02,708] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 75
+[2025-09-25 11:52:02,708] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 11:52:03,838] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 45
+[2025-09-25 11:52:03,895] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:52:06,892] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:52:06,918] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:52:14,832] INFO users.views:93 — user: 1
+[2025-09-25 11:52:14,838] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-25 11:52:17,778] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 11:52:17,791] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:52:19,467] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 75
+[2025-09-25 11:52:21,143] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 45
+[2025-09-25 11:52:21,195] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:52:22,360] WARNING django.request:253 — Unauthorized: /user/profile/
+[2025-09-25 11:52:22,362] WARNING django.server:213 — "GET /user/profile/ HTTP/1.1" 401 38
+[2025-09-25 11:52:26,563] WARNING django.request:253 — Unauthorized: /user/profile/
+[2025-09-25 11:52:26,566] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:52:26,589] WARNING django.server:213 — "GET /user/profile/ HTTP/1.1" 401 38
+[2025-09-25 11:52:34,478] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:52:55,782] INFO users.views:93 — user: dimagolovatuk
+[2025-09-25 11:52:55,788] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 165
+[2025-09-25 11:52:57,647] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 11:52:57,676] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:53:02,559] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 11:53:02,571] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:53:03,240] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 11:53:24,386] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:53:26,703] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 11:53:27,546] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 45
+[2025-09-25 11:53:27,606] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:53:33,427] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:53:33,466] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:53:47,621] INFO cart.views:24 — []
+[2025-09-25 11:53:47,628] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 58
+[2025-09-25 11:53:49,861] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 11:53:51,106] INFO django.server:213 — "OPTIONS /cart/api/add/ HTTP/1.1" 200 0
+[2025-09-25 11:53:51,145] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 281
+[2025-09-25 11:53:53,410] INFO cart.views:24 — [{'id': 166, 'quantity': 1, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 11:53:53,411] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 284
+[2025-09-25 11:54:07,321] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 11:54:07,331] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:54:07,776] INFO users.views:93 — user: dimagolovatuk
+[2025-09-25 11:54:07,779] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 165
+[2025-09-25 11:54:15,755] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 11:54:15,760] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:55:38,343] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:55:38,365] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 11:55:51,653] INFO users.views:93 — user: dimagolovatuk
+[2025-09-25 11:55:51,659] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 165
+[2025-09-25 11:55:57,341] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 11:55:57,344] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 11:55:58,762] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 11:56:02,743] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:59:18,531] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 11:59:18,534] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:59:19,913] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 11:59:20,705] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 45
+[2025-09-25 11:59:20,767] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:59:21,959] WARNING django.request:253 — Unauthorized: /user/profile/
+[2025-09-25 11:59:21,960] WARNING django.server:213 — "GET /user/profile/ HTTP/1.1" 401 38
+[2025-09-25 11:59:26,202] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:59:29,919] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 11:59:29,953] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 11:59:43,454] INFO users.views:93 — user: dimagolovatuk
+[2025-09-25 11:59:43,459] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 165
+[2025-09-25 11:59:43,508] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 11:59:46,684] WARNING django.request:253 — Forbidden: /user/login/
+[2025-09-25 11:59:46,685] WARNING django.server:213 — "POST /user/login/ HTTP/1.1" 403 45
+[2025-09-25 11:59:48,906] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 11:59:48,909] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 12:00:40,964] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:00:42,495] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 12:00:45,322] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 12:00:46,175] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 45
+[2025-09-25 12:00:46,226] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:00:48,026] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 12:00:50,820] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:00:53,623] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 12:00:53,673] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:02:13,382] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 12:02:13,413] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:02:22,592] INFO users.views:93 — user: 1
+[2025-09-25 12:02:22,596] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-25 12:02:23,010] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 12:02:23,012] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:02:24,430] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 75
+[2025-09-25 12:02:35,655] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 45
+[2025-09-25 12:02:35,725] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:02:41,654] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 12:02:41,683] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:02:55,672] ERROR django.request:253 — Internal Server Error: /user/login/
+[2025-09-25 12:02:55,673] ERROR django.server:213 — "POST /user/login/ HTTP/1.1" 500 105
+[2025-09-25 12:02:55,715] WARNING django.request:253 — Unauthorized: /user/profile/
+[2025-09-25 12:02:55,718] WARNING django.server:213 — "GET /user/profile/ HTTP/1.1" 401 38
+[2025-09-25 12:02:56,185] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 12:02:56,224] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:03:08,075] INFO users.views:93 — user: dimagolovatuk
+[2025-09-25 12:03:08,081] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 165
+[2025-09-25 12:03:08,167] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 12:03:08,548] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:03:08,548] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 12:03:10,926] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 12:05:25,716] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 12:05:25,717] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 12:05:26,807] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 45
+[2025-09-25 12:05:26,860] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:05:29,038] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 12:05:29,091] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:05:36,460] ERROR django.request:253 — Internal Server Error: /user/login/
+[2025-09-25 12:05:36,461] ERROR django.server:213 — "POST /user/login/ HTTP/1.1" 500 105
+[2025-09-25 12:05:45,137] ERROR django.request:253 — Internal Server Error: /user/login/
+[2025-09-25 12:05:45,138] ERROR django.server:213 — "POST /user/login/ HTTP/1.1" 500 105
+[2025-09-25 12:05:53,500] ERROR django.request:253 — Internal Server Error: /user/login/
+[2025-09-25 12:05:53,501] ERROR django.server:213 — "POST /user/login/ HTTP/1.1" 500 105
+[2025-09-25 12:05:59,752] INFO users.views:93 — user: 1
+[2025-09-25 12:05:59,757] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 136
+[2025-09-25 12:06:00,248] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 12:06:00,248] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:06:04,892] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 75
+[2025-09-25 12:06:05,982] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 45
+[2025-09-25 12:06:06,036] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:06:06,832] WARNING django.request:253 — Unauthorized: /user/profile/
+[2025-09-25 12:06:06,833] WARNING django.server:213 — "GET /user/profile/ HTTP/1.1" 401 38
+[2025-09-25 12:06:09,125] WARNING django.request:253 — Unauthorized: /user/profile/
+[2025-09-25 12:06:09,128] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 12:06:09,129] WARNING django.server:213 — "GET /user/profile/ HTTP/1.1" 401 38
+[2025-09-25 12:06:10,967] WARNING django.request:253 — Unauthorized: /user/profile/
+[2025-09-25 12:06:10,970] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 12:06:10,973] WARNING django.server:213 — "GET /user/profile/ HTTP/1.1" 401 38
+[2025-09-25 12:06:27,456] INFO users.views:93 — user: dimagolovatuk
+[2025-09-25 12:06:27,460] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 165
+[2025-09-25 12:06:28,010] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 12:06:28,010] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 12:06:33,326] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:06:35,512] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 12:06:36,122] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 45
+[2025-09-25 12:06:36,207] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:06:36,921] WARNING django.request:253 — Unauthorized: /user/profile/
+[2025-09-25 12:06:36,922] WARNING django.server:213 — "GET /user/profile/ HTTP/1.1" 401 38
+[2025-09-25 12:06:38,928] WARNING django.request:253 — Unauthorized: /user/profile/
+[2025-09-25 12:06:38,930] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 12:06:38,931] WARNING django.server:213 — "GET /user/profile/ HTTP/1.1" 401 38
+[2025-09-25 12:06:40,582] WARNING django.request:253 — Unauthorized: /user/profile/
+[2025-09-25 12:06:40,586] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 12:06:40,591] WARNING django.server:213 — "GET /user/profile/ HTTP/1.1" 401 38
+[2025-09-25 12:06:42,450] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:07:02,045] ERROR django.request:253 — Internal Server Error: /user/login/
+[2025-09-25 12:07:02,047] ERROR django.server:213 — "POST /user/login/ HTTP/1.1" 500 105
+[2025-09-25 12:07:10,317] INFO users.views:93 — user: dimagolovatuk
+[2025-09-25 12:07:10,323] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 165
+[2025-09-25 12:07:10,908] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 49
+[2025-09-25 12:07:10,914] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:07:12,639] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 104
+[2025-09-25 12:07:24,852] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 45
+[2025-09-25 12:07:24,922] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:07:25,690] WARNING django.request:253 — Unauthorized: /user/profile/
+[2025-09-25 12:07:25,693] WARNING django.server:213 — "GET /user/profile/ HTTP/1.1" 401 38
+[2025-09-25 12:07:27,564] WARNING django.request:253 — Unauthorized: /user/profile/
+[2025-09-25 12:07:27,576] WARNING django.server:213 — "GET /user/profile/ HTTP/1.1" 401 38
+[2025-09-25 12:07:27,579] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 12:08:04,630] INFO django.server:213 — "GET /admin/users/myuser/ HTTP/1.1" 302 0
+[2025-09-25 12:08:04,651] INFO django.server:213 — "GET /admin/login/?next=/admin/users/myuser/ HTTP/1.1" 200 4199
+[2025-09-25 12:08:11,537] ERROR django.request:253 — Internal Server Error: /user/register/
+[2025-09-25 12:08:11,538] ERROR django.server:213 — "POST /user/register/ HTTP/1.1" 500 105
+[2025-09-25 12:08:18,433] INFO django.server:213 — "POST /admin/login/?next=/admin/users/myuser/ HTTP/1.1" 302 0
+[2025-09-25 12:08:18,509] INFO django.server:213 — "GET /admin/users/myuser/ HTTP/1.1" 200 16319
+[2025-09-25 12:08:18,578] INFO django.server:213 — "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+[2025-09-25 12:08:18,590] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-25 12:08:20,317] INFO django.server:213 — "GET /admin/users/myuser/ HTTP/1.1" 200 16319
+[2025-09-25 12:08:20,366] INFO django.server:213 — "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-09-25 12:11:19,595] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 75
+[2025-09-25 12:11:19,595] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 12:11:21,058] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 45
+[2025-09-25 12:11:21,111] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:11:23,253] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 12:11:23,288] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:12:10,321] ERROR django.request:253 — Internal Server Error: /user/register/
+[2025-09-25 12:12:10,322] ERROR django.server:213 — "POST /user/register/ HTTP/1.1" 500 105
+[2025-09-25 12:12:29,711] INFO django.server:213 — "POST /user/register/ HTTP/1.1" 201 130
+[2025-09-25 12:12:40,043] INFO users.views:93 — user: dimago
+[2025-09-25 12:12:40,048] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 153
+[2025-09-25 12:12:40,474] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 42
+[2025-09-25 12:12:40,482] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 12:12:41,781] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 92
