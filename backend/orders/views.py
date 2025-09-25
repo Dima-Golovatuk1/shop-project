@@ -39,7 +39,7 @@ def orders(request):
         logger.info(serializer.data)
         
         return Response({
-            "message": f"Cart details for {request.user}",
+            "message": f"Order details for {request.user}",
             "products": serializer.data
         }, status=200)
             

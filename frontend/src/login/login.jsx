@@ -1,15 +1,17 @@
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import '../login/login.css';
 
 function Login({ setActivRegistrationForm, setActivLoginForm }) {
     const formLoginRef = useRef(null);
+    const navigate = useNavigate();
 
     function closeForm() {
         setActivLoginForm(false);
     }
 
 
-    function openRegistrationForm(){
+    function openRegistrationForm() {
         setActivLoginForm(false);
         setActivRegistrationForm(true);
     }
@@ -18,9 +20,6 @@ function Login({ setActivRegistrationForm, setActivLoginForm }) {
         e.preventDefault();
         const formData = new FormData(formLoginRef.current);
         const formDataObject = Object.fromEntries(formData);
-        const formDataObjectt = Object.fromEntries(formData.entries());
-
-        console.log(formDataObjectt);
 
         fetch("http://localhost:8000/user/login/", {
             method: "POST",
@@ -30,11 +29,19 @@ function Login({ setActivRegistrationForm, setActivLoginForm }) {
             body: JSON.stringify(formDataObject),
             credentials: "include"
         })
-            .then(res => res.json())
-            .then(data => {
-                console.log("Server Response:", data);
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error(`HTTP error! status: ${res.status}`);
+                }
+                return res.json(); 
             })
-            .catch(err => console.error("Error:", err));
+            .then(data => {
+                console.log("Login successful:", data);
+                window.location.reload();
+            })
+            .catch(err => {
+                console.error("Login failed:", err);
+            });
     }
 
     return (
