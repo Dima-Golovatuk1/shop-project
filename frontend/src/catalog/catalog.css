@@ -432,3 +432,15 @@
 .catalog__item__link:hover .catalog__item__div::before {
   opacity: 0.5;
 }
+
+.flash-message {
+  background: #16a34a;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 10px auto;
+  width: fit-content;
+  font-weight: 600;
+  animation: fadeInOut 3s ease forwards;
+}

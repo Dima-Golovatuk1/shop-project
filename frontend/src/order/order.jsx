@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, use } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Order.css";
 
@@ -60,6 +60,9 @@ function Order() {
             [name]: value,
         });
     };
+
+    function userClick() {
+        navigate('/'); }
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -170,7 +173,7 @@ function Order() {
                         <span>Total sum:</span>
                         <span>{totalAmount.toFixed(2)}$</span>
                     </div>
-                    <button type="submit" onClick={handleSubmit} className="order-submit-btn">Confirm order </button>
+                    <button type="submit" onClick={userClick} className="order-submit-btn">Confirm order </button>
                 </div>
             </div>
         </div>

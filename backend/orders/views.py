@@ -14,7 +14,7 @@ logger = getLogger(__name__)
 def thanks_for_order(request):
     try:      
         return Response({
-            "message": f"Cart details for {request.user}",
+            "message": f" Thanks for order! {request.user}",
         }, status=200)
             
     except Exception as e:
