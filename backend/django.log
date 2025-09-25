@@ -3782,3 +3782,6 @@ TypeError: 'ReturnDict' object is not callable
 [2025-09-25 14:47:59,011] INFO django.server:213 — "GET /order/ HTTP/1.1" 200 7818
 [2025-09-25 14:48:21,636] INFO cart.views:26 — []
 [2025-09-25 14:48:21,638] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5171
+[2025-09-25 15:09:51,416] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 15:11:29,798] INFO django.utils.autoreload:265 — /app/orders/urls.py changed, reloading.
+[2025-09-25 15:11:30,724] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
