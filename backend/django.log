@@ -3785,3 +3785,53 @@ TypeError: 'ReturnDict' object is not callable
 [2025-09-25 15:09:51,416] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
 [2025-09-25 15:11:29,798] INFO django.utils.autoreload:265 — /app/orders/urls.py changed, reloading.
 [2025-09-25 15:11:30,724] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 15:12:02,116] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 15:16:32,495] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 15:16:32,500] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 17714
+[2025-09-25 15:16:32,548] INFO django.server:213 — "GET /media/catalog/423063182.png HTTP/1.1" 304 0
+[2025-09-25 15:16:32,551] INFO django.server:213 — "GET /media/catalog/285951013.png HTTP/1.1" 304 0
+[2025-09-25 15:16:32,556] INFO django.server:213 — "GET /media/catalog/1.png HTTP/1.1" 304 0
+[2025-09-25 15:16:32,557] INFO django.server:213 — "GET /media/catalog/3.png HTTP/1.1" 304 0
+[2025-09-25 15:16:32,557] INFO django.server:213 — "GET /media/catalog/6.png HTTP/1.1" 304 0
+[2025-09-25 15:16:32,561] INFO django.server:213 — "GET /media/catalog/2.png HTTP/1.1" 304 0
+[2025-09-25 15:16:32,581] INFO django.server:213 — "GET /media/catalog/5.png HTTP/1.1" 304 0
+[2025-09-25 15:16:32,584] INFO django.server:213 — "GET /media/catalog/11.png HTTP/1.1" 304 0
+[2025-09-25 15:16:32,587] INFO django.server:213 — "GET /media/catalog/13.png HTTP/1.1" 304 0
+[2025-09-25 15:21:19,449] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 17714
+[2025-09-25 15:21:19,450] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 15:21:19,491] INFO django.server:213 — "GET /media/catalog/3.png HTTP/1.1" 304 0
+[2025-09-25 15:21:19,492] INFO django.server:213 — "GET /media/catalog/5.png HTTP/1.1" 304 0
+[2025-09-25 15:21:19,493] INFO django.server:213 — "GET /media/catalog/6.png HTTP/1.1" 304 0
+[2025-09-25 15:21:19,493] INFO django.server:213 — "GET /media/catalog/11.png HTTP/1.1" 304 0
+[2025-09-25 15:21:19,494] INFO django.server:213 — "GET /media/catalog/13.png HTTP/1.1" 304 0
+[2025-09-25 15:21:35,681] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 15:21:35,685] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 17714
+[2025-09-25 15:21:56,320] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 15:21:56,320] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 17714
+[2025-09-25 15:21:56,351] INFO django.server:213 — "GET /media/catalog/1.png HTTP/1.1" 304 0
+[2025-09-25 15:21:56,352] INFO django.server:213 — "GET /media/catalog/2.png HTTP/1.1" 304 0
+[2025-09-25 15:26:26,301] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 15:26:26,304] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 17714
+[2025-09-25 15:26:26,338] INFO django.server:213 — "GET /media/catalog/423063182.png HTTP/1.1" 304 0
+[2025-09-25 15:26:26,345] INFO django.server:213 — "GET /media/catalog/285951013.png HTTP/1.1" 304 0
+[2025-09-25 15:26:26,348] INFO django.server:213 — "GET /media/catalog/3.png HTTP/1.1" 304 0
+[2025-09-25 15:26:26,351] INFO django.server:213 — "GET /media/catalog/6.png HTTP/1.1" 304 0
+[2025-09-25 15:26:26,353] INFO django.server:213 — "GET /media/catalog/11.png HTTP/1.1" 304 0
+[2025-09-25 15:26:26,354] INFO django.server:213 — "GET /media/catalog/5.png HTTP/1.1" 304 0
+[2025-09-25 15:26:26,362] INFO django.server:213 — "GET /media/catalog/13.png HTTP/1.1" 304 0
+[2025-09-25 15:26:33,787] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 15:26:33,791] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 17714
+[2025-09-25 15:26:48,841] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 781
+[2025-09-25 15:26:48,855] INFO cart.views:24 — [{'id': 171, 'quantity': 1, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 15:26:48,856] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 272
+[2025-09-25 15:26:55,527] INFO cart.views:24 — [{'id': 171, 'quantity': 1, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 15:26:55,528] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 272
+[2025-09-25 15:26:58,014] INFO django.server:213 — "OPTIONS /cart/api/update_add/ HTTP/1.1" 200 0
+[2025-09-25 15:26:58,056] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 269
+[2025-09-25 15:27:00,478] INFO django.server:213 — "OPTIONS /cart/api/update_remove/ HTTP/1.1" 200 0
+[2025-09-25 15:27:00,513] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 269
+[2025-09-25 15:27:01,499] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 269
+[2025-09-25 15:27:01,669] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 269
+[2025-09-25 15:27:02,692] INFO cart.views:24 — [{'id': 171, 'quantity': 3, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 15:27:02,694] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 272
+[2025-09-25 15:27:09,253] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 17714

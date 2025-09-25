@@ -17,7 +17,7 @@ function Footer() {
         <div className="footer-top">
           <div className="footer-section footer-contact">
             <div className="footer-logo">
-              <span className="logo-text">Rozetka 2.0</span>
+              <span className="logo-text">ClickShop</span>
             </div>
             <p className="contact-text">Our internet-shop suggests many products.</p>
             <ul className="social-links">
@@ -48,7 +48,7 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p className="copyright">© 2025 Rozetka 2.0. All rights deserved</p>
+          <p className="copyright">© 2025 ClickShop. All rights deserved</p>
           <p className="developer-info">Made in <a href="#">React</a> & <a href="#">Django</a></p>
         </div>
       </div>  
