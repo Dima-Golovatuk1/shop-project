@@ -4632,152 +4632,256 @@ TypeError: cart_item_delete() missing 1 required positional argument: 'item_id'
 [2025-09-24 20:43:58,987] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 269
 [2025-09-24 20:43:59,878] INFO cart.views:24 — [{'id': 130, 'quantity': 1, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
 [2025-09-24 20:43:59,880] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 272
-[2025-09-25 10:27:21,107] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
-[2025-09-25 10:29:51,649] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
-[2025-09-25 10:30:06,655] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
-[2025-09-25 10:30:13,820] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
-[2025-09-25 10:30:13,824] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:30:14,922] INFO cart.views:24 — []
-[2025-09-25 10:30:14,927] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 49
-[2025-09-25 10:30:17,494] INFO django.server:213 — "OPTIONS /cart/api/add/ HTTP/1.1" 200 0
-[2025-09-25 10:30:17,596] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 201
-[2025-09-25 10:30:18,497] INFO cart.views:24 — [{'id': 31, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}]
-[2025-09-25 10:30:18,501] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 204
-[2025-09-25 10:30:31,713] INFO django.server:213 — "OPTIONS /cart/api/update_add/ HTTP/1.1" 200 0
-[2025-09-25 10:30:31,804] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 201
-[2025-09-25 10:30:31,776] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 201
-[2025-09-25 10:30:33,251] INFO django.server:213 — "OPTIONS /cart/api/update_remove/ HTTP/1.1" 200 0
-[2025-09-25 10:30:33,334] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 201
-[2025-09-25 10:30:33,650] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 201
-[2025-09-25 10:30:55,599] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:30:55,672] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:30:56,578] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 333
-[2025-09-25 10:30:57,682] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 348
-[2025-09-25 10:30:58,856] INFO cart.views:24 — [{'id': 31, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}, {'id': 32, 'quantity': 1, 'product_id': 1, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
-[2025-09-25 10:30:58,858] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 351
-[2025-09-25 10:31:02,407] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 348
-[2025-09-25 10:31:23,937] INFO cart.views:24 — [{'id': 31, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}, {'id': 32, 'quantity': 2, 'product_id': 1, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
-[2025-09-25 10:31:23,939] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 351
-[2025-09-25 10:31:59,884] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 333
-[2025-09-25 10:31:59,884] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:32:05,396] INFO cart.views:24 — [{'id': 31, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}, {'id': 32, 'quantity': 2, 'product_id': 1, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
-[2025-09-25 10:32:05,398] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 351
-[2025-09-25 10:36:23,081] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 333
-[2025-09-25 10:36:23,088] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:36:24,460] INFO cart.views:24 — [{'id': 31, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}, {'id': 32, 'quantity': 2, 'product_id': 1, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
-[2025-09-25 10:36:24,464] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 351
-[2025-09-25 10:36:25,597] INFO django.server:213 — "OPTIONS /cart/api/remove/ HTTP/1.1" 200 0
-[2025-09-25 10:36:25,702] INFO django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 200 201
-[2025-09-25 10:36:27,993] INFO django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 200 46
-[2025-09-25 10:36:29,600] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 192
-[2025-09-25 10:36:30,797] INFO cart.views:24 — [{'id': 33, 'quantity': 1, 'product_id': 1, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
-[2025-09-25 10:36:30,799] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 195
-[2025-09-25 10:36:31,810] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 192
-[2025-09-25 10:36:31,969] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 192
-[2025-09-25 10:36:32,609] INFO django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 200 46
-[2025-09-25 10:37:14,215] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:37:14,307] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:43:20,720] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:43:20,803] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:43:20,817] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:43:24,747] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:43:24,794] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:44:59,766] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:44:59,804] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:44:59,829] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:45:14,569] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:45:14,593] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:45:15,962] INFO cart.views:24 — []
-[2025-09-25 10:45:15,963] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 49
-[2025-09-25 10:46:24,336] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:46:24,360] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:46:24,473] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:46:28,486] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:46:28,498] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:46:28,780] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:47:07,748] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:47:07,834] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:47:07,871] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:47:11,325] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:47:11,340] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:47:11,405] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:47:14,905] INFO cart.views:24 — []
-[2025-09-25 10:47:14,906] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 49
-[2025-09-25 10:47:17,434] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:47:17,510] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:47:47,768] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:47:47,779] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:47:47,853] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:48:13,440] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:48:13,449] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:48:13,494] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:48:18,324] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:48:18,361] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:48:18,798] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:48:22,481] INFO cart.views:24 — []
-[2025-09-25 10:48:22,486] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 49
-[2025-09-25 10:48:25,157] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:48:25,204] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:49:10,485] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:49:10,501] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:49:10,805] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:50:04,620] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:50:04,640] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:50:05,277] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:50:19,835] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:50:19,853] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:50:20,386] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:50:32,014] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:50:32,044] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:50:32,167] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:56:00,600] WARNING django.request:253 — Not Found: /
-[2025-09-25 10:56:00,602] WARNING django.server:213 — "GET / HTTP/1.1" 404 3072
-[2025-09-25 10:56:00,979] WARNING django.request:253 — Not Found: /favicon.ico
-[2025-09-25 10:56:00,980] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 3123
-[2025-09-25 10:56:04,862] INFO django.server:213 — "GET /order HTTP/1.1" 301 0
-[2025-09-25 10:56:04,901] INFO orders.views:24 — []
-[2025-09-25 10:56:04,952] INFO django.server:213 — "GET /order/ HTTP/1.1" 200 5197
-[2025-09-25 10:56:05,003] INFO django.server:213 — "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
-[2025-09-25 10:56:05,003] INFO django.server:213 — "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
-[2025-09-25 10:56:05,003] INFO django.server:213 — "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
-[2025-09-25 10:56:05,008] INFO django.server:213 — "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
-[2025-09-25 10:56:05,008] INFO django.server:213 — "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
-[2025-09-25 10:56:05,009] INFO django.server:213 — "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
-[2025-09-25 10:56:05,195] INFO django.server:213 — "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
-[2025-09-25 10:56:05,196] INFO django.server:213 — "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
-[2025-09-25 10:56:05,196] INFO django.server:213 — "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
-[2025-09-25 10:56:05,197] INFO django.server:213 — "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
-[2025-09-25 10:56:05,198] INFO django.server:213 — "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
-[2025-09-25 10:56:05,217] INFO django.server:213 — "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
-[2025-09-25 10:56:05,282] WARNING django.request:253 — Not Found: /favicon.ico
-[2025-09-25 10:56:05,283] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 3123
-[2025-09-25 10:57:00,059] INFO django.utils.autoreload:265 — /app/orders/views.py changed, reloading.
-[2025-09-25 10:57:01,207] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
-[2025-09-25 10:57:41,741] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
-[2025-09-25 10:57:42,434] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:57:42,485] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:57:45,060] INFO cart.views:24 — []
-[2025-09-25 10:57:45,063] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 49
-[2025-09-25 10:58:19,960] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:58:19,997] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:58:20,028] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:58:41,946] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:58:41,960] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:58:41,997] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:59:05,591] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:59:05,600] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:59:05,672] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:59:07,088] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:59:07,100] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:59:07,153] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:59:45,196] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:59:45,212] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
-[2025-09-25 10:59:45,279] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 10:59:51,250] INFO cart.views:24 — []
-[2025-09-25 10:59:51,253] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 49
-[2025-09-25 10:59:54,791] INFO cart.views:24 — []
-[2025-09-25 10:59:54,792] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 49
-[2025-09-25 10:59:56,396] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
-[2025-09-25 10:59:56,434] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
-[2025-09-25 11:02:59,175] INFO cart.views:24 — []
-[2025-09-25 11:02:59,177] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 49
+[2025-09-25 08:30:08,927] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 08:34:12,850] WARNING django.request:253 — Method Not Allowed: /cart/api/remove/
+[2025-09-25 08:34:12,852] WARNING django.server:213 — "GET /cart/api/remove/ HTTP/1.1" 405 5147
+[2025-09-25 08:34:13,244] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-25 08:34:13,253] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 3123
+[2025-09-25 08:34:22,427] WARNING django.request:253 — Method Not Allowed: /cart/api/remove/
+[2025-09-25 08:34:22,428] WARNING django.server:213 — "GET /cart/api/remove/ HTTP/1.1" 405 5147
+[2025-09-25 08:34:25,119] INFO cart.views:24 — [{'id': 130, 'quantity': 1, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 08:34:25,124] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5584
+[2025-09-25 08:34:28,907] INFO cart.views:24 — [{'id': 130, 'quantity': 1, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 08:34:28,914] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5584
+[2025-09-25 08:34:30,951] WARNING django.request:253 — Method Not Allowed: /cart/api/update_remove/
+[2025-09-25 08:34:30,953] WARNING django.server:213 — "GET /cart/api/update_remove/ HTTP/1.1" 405 5876
+[2025-09-25 08:34:38,076] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 08:34:38,079] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 08:34:38,107] INFO django.server:213 — "GET /media/catalog/487793279_I0LTg7r.png HTTP/1.1" 304 0
+[2025-09-25 08:34:39,098] INFO cart.views:24 — [{'id': 130, 'quantity': 1, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 08:34:39,100] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 272
+[2025-09-25 08:34:40,396] INFO django.server:213 — "OPTIONS /cart/api/update_add/ HTTP/1.1" 200 0
+[2025-09-25 08:34:40,442] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 269
+[2025-09-25 08:34:40,883] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 269
+[2025-09-25 08:34:41,143] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 269
+[2025-09-25 08:34:41,329] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 269
+[2025-09-25 08:34:45,790] WARNING django.request:253 — Method Not Allowed: /cart/api/remove/
+[2025-09-25 08:34:45,791] WARNING django.server:213 — "GET /cart/api/remove/ HTTP/1.1" 405 5147
+[2025-09-25 08:34:51,479] INFO cart.views:24 — [{'id': 130, 'quantity': 5, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 08:34:51,483] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5584
+[2025-09-25 08:34:52,331] INFO cart.views:24 — [{'id': 130, 'quantity': 5, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 08:34:52,338] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5584
+[2025-09-25 08:34:57,674] INFO django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 200 5556
+[2025-09-25 08:35:02,197] INFO django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 200 5556
+[2025-09-25 08:35:03,795] WARNING django.request:253 — Method Not Allowed: /cart/api/remove/
+[2025-09-25 08:35:03,798] WARNING django.server:213 — "GET /cart/api/remove/ HTTP/1.1" 405 5147
+[2025-09-25 08:35:05,887] INFO django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 200 5556
+[2025-09-25 08:35:08,395] INFO cart.views:24 — [{'id': 130, 'quantity': 5, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 08:35:08,400] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5584
+[2025-09-25 08:35:08,928] INFO cart.views:24 — [{'id': 130, 'quantity': 5, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 08:35:08,932] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5584
+[2025-09-25 08:35:09,139] INFO cart.views:24 — [{'id': 130, 'quantity': 5, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 08:35:09,147] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5584
+[2025-09-25 08:36:10,690] INFO django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 200 5556
+[2025-09-25 08:36:13,050] INFO django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 200 5556
+[2025-09-25 08:36:15,337] WARNING django.request:253 — Method Not Allowed: /cart/api/remove/
+[2025-09-25 08:36:15,339] WARNING django.server:213 — "GET /cart/api/remove/ HTTP/1.1" 405 5147
+[2025-09-25 08:36:18,034] INFO django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 200 5556
+[2025-09-25 08:36:20,213] WARNING django.request:253 — Method Not Allowed: /cart/api/remove/
+[2025-09-25 08:36:20,214] WARNING django.server:213 — "GET /cart/api/remove/ HTTP/1.1" 405 5147
+[2025-09-25 08:36:28,768] WARNING django.request:253 — Method Not Allowed: /cart/api/update_remove/
+[2025-09-25 08:36:28,770] WARNING django.server:213 — "GET /cart/api/update_remove/ HTTP/1.1" 405 5876
+[2025-09-25 08:36:32,184] WARNING django.request:253 — Method Not Allowed: /cart/api/update_add/
+[2025-09-25 08:36:32,185] WARNING django.server:213 — "GET /cart/api/update_add/ HTTP/1.1" 405 5854
+[2025-09-25 08:36:37,802] INFO cart.views:24 — [{'id': 130, 'quantity': 5, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 08:36:37,808] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5584
+[2025-09-25 08:36:39,058] INFO cart.views:24 — [{'id': 130, 'quantity': 5, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 08:36:39,064] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5584
+[2025-09-25 08:36:39,722] INFO cart.views:24 — [{'id': 130, 'quantity': 5, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 08:36:39,728] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5584
+[2025-09-25 08:36:40,239] INFO cart.views:24 — [{'id': 130, 'quantity': 5, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 08:36:40,246] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5584
+[2025-09-25 08:36:50,644] INFO cart.views:24 — [{'id': 130, 'quantity': 5, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 08:36:50,650] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 5584
+[2025-09-25 08:37:43,627] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 08:37:43,630] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 08:37:44,166] INFO cart.views:24 — [{'id': 130, 'quantity': 5, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 08:37:44,167] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 272
+[2025-09-25 08:37:45,428] INFO django.server:213 — "OPTIONS /cart/api/remove/ HTTP/1.1" 200 0
+[2025-09-25 08:37:45,461] INFO django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 200 43
+[2025-09-25 08:37:52,702] INFO cart.views:24 — []
+[2025-09-25 08:37:52,703] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 46
+[2025-09-25 08:37:55,005] INFO django.server:213 — "OPTIONS /cart/api/add/ HTTP/1.1" 200 0
+[2025-09-25 08:37:55,055] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 269
+[2025-09-25 08:37:56,257] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 269
+[2025-09-25 08:37:56,699] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 269
+[2025-09-25 08:37:56,863] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 269
+[2025-09-25 08:38:00,005] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 269
+[2025-09-25 08:38:01,411] INFO cart.views:24 — [{'id': 163, 'quantity': 5, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 08:38:01,412] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 272
+[2025-09-25 08:38:03,340] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 269
+[2025-09-25 08:38:03,497] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 269
+[2025-09-25 08:38:03,662] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 269
+[2025-09-25 08:38:03,820] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 269
+[2025-09-25 08:38:05,251] INFO cart.views:24 — [{'id': 163, 'quantity': 9, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 08:38:05,252] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 272
+[2025-09-25 08:38:06,510] INFO django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 200 43
+[2025-09-25 08:38:15,950] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 269
+[2025-09-25 08:38:16,745] INFO cart.views:24 — [{'id': 164, 'quantity': 1, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 08:38:16,747] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 272
+[2025-09-25 08:38:18,599] INFO django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 200 43
+[2025-09-25 08:38:30,460] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 08:38:32,812] INFO cart.views:24 — []
+[2025-09-25 08:38:32,813] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 46
+[2025-09-25 08:38:36,339] INFO cart.views:24 — []
+[2025-09-25 08:38:36,340] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 46
+[2025-09-25 08:38:40,492] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 08:38:41,809] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 08:40:45,823] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 08:40:45,823] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 08:41:11,308] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 08:41:11,308] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 08:41:14,595] INFO cart.views:24 — []
+[2025-09-25 08:41:14,597] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 46
+[2025-09-25 08:41:40,738] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 08:41:40,755] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 08:41:46,050] INFO cart.views:24 — []
+[2025-09-25 08:41:46,052] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 46
+[2025-09-25 08:50:01,639] WARNING django.request:253 — Not Found: /api/search/
+[2025-09-25 08:50:01,641] WARNING django.server:213 — "GET /api/search/?q=1 HTTP/1.1" 404 3127
+[2025-09-25 08:50:06,308] WARNING django.request:253 — Not Found: /api/search/
+[2025-09-25 08:50:06,309] WARNING django.server:213 — "GET /api/search/?q= HTTP/1.1" 404 3126
+[2025-09-25 08:50:14,637] WARNING django.request:253 — Not Found: /api/search/
+[2025-09-25 08:50:14,638] WARNING django.server:213 — "GET /api/search/?q=%22%22 HTTP/1.1" 404 3132
+[2025-09-25 08:50:26,376] WARNING django.request:253 — Not Found: /api/search/
+[2025-09-25 08:50:26,377] WARNING django.server:213 — "GET /api/search/?q=%D0%9C%D0%BE%D0%B1%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%20Samsung%20Galaxy%20A16%208/256GB%20Light%20Green%20(SM-A165FLGCEUC) HTTP/1.1" 404 3295
+[2025-09-25 08:50:54,523] INFO django.server:213 — "GET /shop HTTP/1.1" 301 0
+[2025-09-25 08:50:54,574] INFO django.server:213 — "GET /shop/ HTTP/1.1" 200 6751
+[2025-09-25 08:51:26,756] INFO django.server:213 — "GET /shop/search/ HTTP/1.1" 200 6702
+[2025-09-25 08:51:35,282] WARNING django.request:253 — Not Found: /shop/search/q=1
+[2025-09-25 08:51:35,284] WARNING django.server:213 — "GET /shop/search/q=1 HTTP/1.1" 404 3472
+[2025-09-25 08:51:38,786] INFO django.server:213 — "GET /shop/search/ HTTP/1.1" 200 6702
+[2025-09-25 08:52:05,390] WARNING django.request:253 — Not Found: /shop/search/q=\u041c\u043e\u0431\u0456\u043b\u044c\u043d\u0438\u0439 \u0442\u0435\u043b\u0435\u0444\u043e\u043d Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)
+[2025-09-25 08:52:05,391] WARNING django.server:213 — "GET /shop/search/q=%D0%9C%D0%BE%D0%B1%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%20Samsung%20Galaxy%20A16%208/256GB%20Light%20Green%20(SM-A165FLGCEUC) HTTP/1.1" 404 3816
+[2025-09-25 08:55:27,955] INFO django.server:213 — "GET /shop/search/ HTTP/1.1" 200 6702
+[2025-09-25 08:58:06,624] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 08:58:06,624] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 08:58:10,782] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 08:58:14,725] WARNING django.request:253 — Not Found: /api/search/
+[2025-09-25 08:58:14,726] WARNING django.server:213 — "GET /api/search/?q=%D0%9C%D0%BE%D0%B1%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%20Samsung%20Galaxy%20A16 HTTP/1.1" 404 3250
+[2025-09-25 08:58:15,515] WARNING django.request:253 — Not Found: /api/search/
+[2025-09-25 08:58:15,519] WARNING django.server:213 — "GET /api/search/?q=%D0%9C%D0%BE%D0%B1%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%20Samsung%20Galaxy%20A16 HTTP/1.1" 404 3250
+[2025-09-25 08:58:16,131] WARNING django.request:253 — Not Found: /api/search/
+[2025-09-25 08:58:16,133] WARNING django.server:213 — "GET /api/search/?q=%D0%9C%D0%BE%D0%B1%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%20Samsung%20Galaxy%20A16 HTTP/1.1" 404 3250
+[2025-09-25 08:58:16,299] WARNING django.request:253 — Not Found: /api/search/
+[2025-09-25 08:58:16,301] WARNING django.server:213 — "GET /api/search/?q=%D0%9C%D0%BE%D0%B1%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%20Samsung%20Galaxy%20A16 HTTP/1.1" 404 3250
+[2025-09-25 08:58:18,562] INFO cart.views:24 — []
+[2025-09-25 08:58:18,564] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 46
+[2025-09-25 08:58:20,503] INFO cart.views:24 — []
+[2025-09-25 08:58:20,505] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 46
+[2025-09-25 08:58:23,527] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 08:58:24,704] WARNING django.request:253 — Not Found: /api/search/
+[2025-09-25 08:58:24,705] WARNING django.server:213 — "GET /api/search/?q=%D0%9C%D0%BE%D0%B1%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%20Samsung%20Galaxy%20A16 HTTP/1.1" 404 3250
+[2025-09-25 08:58:25,087] WARNING django.request:253 — Not Found: /api/search/
+[2025-09-25 08:58:25,088] WARNING django.server:213 — "GET /api/search/?q=%D0%9C%D0%BE%D0%B1%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%20Samsung%20Galaxy%20A16 HTTP/1.1" 404 3250
+[2025-09-25 08:58:25,235] WARNING django.request:253 — Not Found: /api/search/
+[2025-09-25 08:58:25,237] WARNING django.server:213 — "GET /api/search/?q=%D0%9C%D0%BE%D0%B1%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%20Samsung%20Galaxy%20A16 HTTP/1.1" 404 3250
+[2025-09-25 08:58:26,978] WARNING django.request:253 — Not Found: /api/search/
+[2025-09-25 08:58:26,980] WARNING django.server:213 — "GET /api/search/?q=%D0%9C%D0%BE%D0%B1%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%20Samsung%20Galaxy%20A16 HTTP/1.1" 404 3250
+[2025-09-25 08:58:32,048] WARNING django.request:253 — Not Found: /api/search/
+[2025-09-25 08:58:32,050] WARNING django.server:213 — "GET /api/search/?q=%D0%9C%D0%BE%D0%B1%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%20Samsung%20Galaxy%20A16 HTTP/1.1" 404 3250
+[2025-09-25 08:58:32,547] WARNING django.request:253 — Not Found: /api/search/
+[2025-09-25 08:58:32,548] WARNING django.server:213 — "GET /api/search/?q=%D0%9C%D0%BE%D0%B1%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%20Samsung%20Galaxy%20A16 HTTP/1.1" 404 3250
+[2025-09-25 08:59:16,502] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 08:59:16,503] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 08:59:21,101] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 08:59:26,124] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 08:59:28,010] INFO django.server:213 — "GET /shop/search/?q=%D0%9C%D0%BE%D0%B1%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%20Samsung%20Galaxy%20A16%208%2F256GB%20Light%20Green HTTP/1.1" 200 960
+[2025-09-25 09:10:40,631] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 09:10:40,631] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 09:10:41,854] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 09:10:44,249] INFO cart.views:24 — []
+[2025-09-25 09:10:44,250] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 46
+[2025-09-25 09:10:47,602] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 09:10:53,294] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 09:10:57,277] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 09:10:58,770] INFO django.server:213 — "GET /shop/search/?q=%D0%9C%D0%BE%D0%B1%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%20Samsung%20Galaxy HTTP/1.1" 200 936
+[2025-09-25 09:11:00,441] INFO django.server:213 — "GET /shop/search/?q=%D0%9C%D0%BE%D0%B1%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%20Samsung%20Galaxy HTTP/1.1" 200 936
+[2025-09-25 09:11:00,668] INFO django.server:213 — "GET /shop/search/?q=%D0%9C%D0%BE%D0%B1%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%20Samsung%20Galaxy HTTP/1.1" 200 936
+[2025-09-25 09:11:06,432] INFO django.server:213 — "GET /shop/search/?q=15155 HTTP/1.1" 200 55
+[2025-09-25 09:11:20,534] INFO django.server:213 — "GET /shop/search/?q=%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD HTTP/1.1" 200 902
+[2025-09-25 09:11:32,909] INFO django.server:213 — "GET /shop/search/?q=%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BA%D0%BD HTTP/1.1" 200 55
+[2025-09-25 09:11:42,728] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 09:24:22,157] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 09:24:22,176] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 09:24:27,382] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 09:24:32,468] INFO cart.views:24 — []
+[2025-09-25 09:24:32,470] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 46
+[2025-09-25 09:24:37,111] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 09:24:43,250] INFO django.server:213 — "GET /shop/search/?q=12 HTTP/1.1" 200 55
+[2025-09-25 09:24:45,423] INFO django.server:213 — "GET /shop/search/?q=12 HTTP/1.1" 200 55
+[2025-09-25 09:24:48,387] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 09:24:50,864] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 09:26:36,201] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 09:26:36,202] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 09:26:39,615] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 09:26:41,560] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 09:27:37,604] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 269
+[2025-09-25 09:27:37,759] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 269
+[2025-09-25 09:27:37,915] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 269
+[2025-09-25 09:27:38,051] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 269
+[2025-09-25 09:27:39,849] INFO cart.views:24 — [{'id': 165, 'quantity': 4, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 09:27:39,850] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 272
+[2025-09-25 09:28:01,052] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 269
+[2025-09-25 09:28:05,839] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 09:28:05,982] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 09:28:08,629] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 09:28:08,632] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 09:28:10,883] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 09:28:12,152] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 269
+[2025-09-25 09:28:13,454] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 09:28:18,279] INFO cart.views:24 — [{'id': 165, 'quantity': 6, 'product_id': 1, 'product_title': 'Мобільний телефон Samsung Galaxy A16 8/256GB Light Green (SM-A165FLGCEUC)', 'product_photo_url': '/media/catalog/487793279_I0LTg7r.png', 'product_price': 7399}]
+[2025-09-25 09:28:18,281] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 272
+[2025-09-25 09:28:19,645] INFO django.server:213 — "OPTIONS /cart/api/update_remove/ HTTP/1.1" 200 0
+[2025-09-25 09:28:19,687] INFO django.server:213 — "PUT /cart/api/update_remove/ HTTP/1.1" 200 269
+[2025-09-25 09:28:20,250] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 269
+[2025-09-25 09:28:20,439] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 269
+[2025-09-25 09:28:20,601] INFO django.server:213 — "PUT /cart/api/update_add/ HTTP/1.1" 200 269
+[2025-09-25 09:28:21,536] INFO django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 200 43
+[2025-09-25 10:41:50,965] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 10:41:50,965] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:41:52,341] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:42:27,773] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:44:07,173] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:44:09,303] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:44:10,443] INFO cart.views:24 — []
+[2025-09-25 10:44:10,445] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 46
+[2025-09-25 10:44:15,311] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:44:15,327] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 10:44:16,239] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 10:44:20,930] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:47:07,868] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:47:24,416] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:47:24,431] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 10:47:32,377] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:48:14,225] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:48:49,943] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:51:56,034] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:51:59,795] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:53:46,565] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:53:46,570] INFO django.server:213 — "GET /shop/search/?q=411 HTTP/1.1" 200 55
+[2025-09-25 10:54:05,392] INFO django.server:213 — "GET /shop/search/?q=%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD HTTP/1.1" 200 902
+[2025-09-25 10:56:06,067] INFO django.server:213 — "GET /shop/search/?q=%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD HTTP/1.1" 200 902
+[2025-09-25 10:56:06,068] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:56:14,202] INFO django.server:213 — "GET /shop/search/?q=411 HTTP/1.1" 200 55
+[2025-09-25 10:56:16,936] INFO django.server:213 — "GET /shop/search/?q=%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD HTTP/1.1" 200 902
+[2025-09-25 10:56:23,483] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:56:23,488] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 10:56:34,818] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 10:56:39,572] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 10:56:50,740] INFO django.server:213 — "GET /shop/search/?q=12 HTTP/1.1" 200 55
+[2025-09-25 10:56:57,758] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 10:57:33,334] INFO django.server:213 — "GET /shop/search/?q=%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD HTTP/1.1" 200 902
+[2025-09-25 10:58:14,980] INFO django.server:213 — "GET /shop/search/?q=%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD HTTP/1.1" 200 902
+[2025-09-25 10:58:14,980] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:58:47,928] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 10:58:50,588] INFO cart.views:24 — []
+[2025-09-25 10:58:50,590] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 46
+[2025-09-25 10:59:47,253] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 10:59:47,258] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 10:59:50,545] INFO cart.views:24 — []
+[2025-09-25 10:59:50,546] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 46
+[2025-09-25 10:59:52,506] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 10:59:53,550] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 10:59:56,021] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 782
+[2025-09-25 11:00:07,071] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960

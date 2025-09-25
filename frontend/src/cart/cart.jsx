@@ -29,14 +29,10 @@ function Cart({ setActivCart, activCart }) {
 
 
     function addQuantity(productId) {
-        console.log(productId);
-
         const data = {
             "item_id": productId
         };
-
         const csrfToken = getCookie("csrftoken");
-
         fetch("http://localhost:8000/cart/api/update_add/", {
             method: "PUT",
             credentials: "include",
@@ -66,9 +62,7 @@ function Cart({ setActivCart, activCart }) {
         const data = {
             "item_id": productId
         };
-
         const csrfToken = getCookie("csrftoken");
-
         fetch("http://localhost:8000/cart/api/update_remove/", {
             method: "PUT",
             credentials: "include",
@@ -94,37 +88,35 @@ function Cart({ setActivCart, activCart }) {
             });
     }
 
-
-    function deleteProduct(productId) {
-    const data = {
-        "item_id": productId
-    };
-
-    const csrfToken = getCookie("csrftoken");
-
-    fetch("http://localhost:8000/cart/api/remove/", {
-        method: "DELETE",
-        credentials: "include",
-        headers: {
-            "Content-Type": "application/json",
-            "X-CSRFToken": csrfToken
-        },
-        body: JSON.stringify(data)
-    })
-        .then(res => {
-            if (!res.ok) {
-                throw new Error(`Server responded with status: ${res.status}`);
-            }
-            return res.json();
+    function deleteProduct(productId){
+        const data = {
+            "item_id": productId
+        };
+        const csrfToken = getCookie("csrftoken");
+        fetch("http://localhost:8000/cart/api/remove/", {
+            method: "DELETE",
+            credentials: "include",
+            headers: {
+                "Content-Type": "application/json",
+                "X-CSRFToken": csrfToken
+            },
+            body: JSON.stringify(data),
+            credentials: 'include'
         })
-        .then(data => {
-            console.log("Server Response (deleteProduct):", data);
-            setProducts(data.items);
-        })
-        .catch(err => {
-            console.error("Error in deleteProduct:", err);
-        });
-}
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error(`Server responded with status: ${res.status}`);
+                }
+                return res.json();
+            })
+            .then(data => {
+                console.log("Server Response (deleteProduct):", data);
+                setProducts(data.items);
+            })
+            .catch(err => {
+                console.error("Error in deleteProduct:", err);
+            });
+    }
 
     useEffect(() => {
         const API_URL = "http://localhost:8000/cart/";
@@ -152,6 +144,7 @@ function Cart({ setActivCart, activCart }) {
         }
         fetchProducts();
     }, [activCart]);
+
 
     const totalPrice = products.reduce((total, product) => {
         const price = parseFloat(product.product_price) || 0;
