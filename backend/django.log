@@ -4677,3 +4677,107 @@ TypeError: cart_item_delete() missing 1 required positional argument: 'item_id'
 [2025-09-25 10:36:32,609] INFO django.server:213 — "DELETE /cart/api/remove/ HTTP/1.1" 200 46
 [2025-09-25 10:37:14,215] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
 [2025-09-25 10:37:14,307] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:43:20,720] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:43:20,803] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:43:20,817] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:43:24,747] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:43:24,794] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:44:59,766] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:44:59,804] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:44:59,829] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:45:14,569] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:45:14,593] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:45:15,962] INFO cart.views:24 — []
+[2025-09-25 10:45:15,963] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 49
+[2025-09-25 10:46:24,336] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:46:24,360] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:46:24,473] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:46:28,486] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:46:28,498] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:46:28,780] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:47:07,748] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:47:07,834] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:47:07,871] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:47:11,325] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:47:11,340] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:47:11,405] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:47:14,905] INFO cart.views:24 — []
+[2025-09-25 10:47:14,906] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 49
+[2025-09-25 10:47:17,434] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:47:17,510] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:47:47,768] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:47:47,779] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:47:47,853] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:48:13,440] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:48:13,449] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:48:13,494] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:48:18,324] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:48:18,361] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:48:18,798] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:48:22,481] INFO cart.views:24 — []
+[2025-09-25 10:48:22,486] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 49
+[2025-09-25 10:48:25,157] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:48:25,204] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:49:10,485] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:49:10,501] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:49:10,805] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:50:04,620] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:50:04,640] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:50:05,277] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:50:19,835] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:50:19,853] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:50:20,386] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:50:32,014] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:50:32,044] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:50:32,167] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:56:00,600] WARNING django.request:253 — Not Found: /
+[2025-09-25 10:56:00,602] WARNING django.server:213 — "GET / HTTP/1.1" 404 3072
+[2025-09-25 10:56:00,979] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-25 10:56:00,980] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 3123
+[2025-09-25 10:56:04,862] INFO django.server:213 — "GET /order HTTP/1.1" 301 0
+[2025-09-25 10:56:04,901] INFO orders.views:24 — []
+[2025-09-25 10:56:04,952] INFO django.server:213 — "GET /order/ HTTP/1.1" 200 5197
+[2025-09-25 10:56:05,003] INFO django.server:213 — "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[2025-09-25 10:56:05,003] INFO django.server:213 — "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[2025-09-25 10:56:05,003] INFO django.server:213 — "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[2025-09-25 10:56:05,008] INFO django.server:213 — "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[2025-09-25 10:56:05,008] INFO django.server:213 — "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[2025-09-25 10:56:05,009] INFO django.server:213 — "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[2025-09-25 10:56:05,195] INFO django.server:213 — "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[2025-09-25 10:56:05,196] INFO django.server:213 — "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[2025-09-25 10:56:05,196] INFO django.server:213 — "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[2025-09-25 10:56:05,197] INFO django.server:213 — "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+[2025-09-25 10:56:05,198] INFO django.server:213 — "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[2025-09-25 10:56:05,217] INFO django.server:213 — "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[2025-09-25 10:56:05,282] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-25 10:56:05,283] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 3123
+[2025-09-25 10:57:00,059] INFO django.utils.autoreload:265 — /app/orders/views.py changed, reloading.
+[2025-09-25 10:57:01,207] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 10:57:41,741] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-25 10:57:42,434] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:57:42,485] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:57:45,060] INFO cart.views:24 — []
+[2025-09-25 10:57:45,063] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 49
+[2025-09-25 10:58:19,960] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:58:19,997] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:58:20,028] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:58:41,946] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:58:41,960] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:58:41,997] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:59:05,591] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:59:05,600] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:59:05,672] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:59:07,088] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:59:07,100] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:59:07,153] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:59:45,196] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:59:45,212] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 10:59:45,279] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 10:59:51,250] INFO cart.views:24 — []
+[2025-09-25 10:59:51,253] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 49
+[2025-09-25 10:59:54,791] INFO cart.views:24 — []
+[2025-09-25 10:59:54,792] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 49
+[2025-09-25 10:59:56,396] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 10:59:56,434] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 11:02:59,175] INFO cart.views:24 — []
+[2025-09-25 11:02:59,177] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 49
