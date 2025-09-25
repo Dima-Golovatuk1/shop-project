@@ -17,9 +17,6 @@ function Registration({ setActivRegistrationForm, setActivLoginForm }) {
         e.preventDefault();
         const formData = new FormData(formRegistrRef.current);
         const formDataObject = Object.fromEntries(formData);
-        const formDataObjectt = Object.fromEntries(formData.entries());
-
-        console.log(formDataObjectt);
 
         fetch("http://localhost:8000/user/register/", {
             method: "POST",
@@ -28,11 +25,22 @@ function Registration({ setActivRegistrationForm, setActivLoginForm }) {
             },
             body: JSON.stringify(formDataObject)
         })
-            .then(res => res.json())
-            .then(data => {
-                console.log("Server Response:", data);
+            .then(res => {
+                if (!res.ok) {
+                    return res.json().then(errData => {
+                        throw new Error(errData.error || `HTTP error! status: ${res.status}`);
+                    });
+                }
+                return res.json();
             })
-            .catch(err => console.error("Error:", err));
+            .then(data => {
+                console.log("Registration successful:", data);
+                setActivLoginForm(true);
+                setActivRegistrationForm(false);
+            })
+            .catch(err => {
+                console.error("Registration failed:", err.message);
+            });
     }
 
 
