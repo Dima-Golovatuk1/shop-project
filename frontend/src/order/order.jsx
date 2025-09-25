@@ -65,14 +65,14 @@ function Order() {
         e.preventDefault();
 
         if (cartItems.length === 0) {
-            setError("Кошик порожній. Додайте товари для замовлення.");
+            setError("Cart is empty");
             return;
         }
 
         const orderData = {
             ...formData,
             items: cartItems.map(item => ({
-                product_id: item.product_id, // Змінено на product_id
+                product_id: item.product_id, 
                 quantity: item.quantity,
             })),
         };
@@ -95,7 +95,7 @@ function Order() {
 
             const result = await response.json();
             console.log("Order created successfully:", result);
-            alert("Замовлення успішно оформлено!");
+            alert("Order succesfuly completed");
             navigate("/");
         } catch (e) {
             console.error("Error creating order:", e);
@@ -103,76 +103,74 @@ function Order() {
         }
     };
 
-    // Обчислення загальної суми
     const totalAmount = cartItems.reduce((total, item) => {
-        // Звертаємося до product_price
         return total + (item.product_price * item.quantity);
     }, 0);
 
     if (isLoading) {
-        return <div className="order-loading">Завантаження кошика...</div>;
+        return <div className="order-loading">Loading...</div>;
     }
 
     if (error) {
-        return <div className="order-error">Помилка: {error}</div>;
+        return <div className="order-error">Error: {error}</div>;
     }
 
     return (
         <div className="order-container">
-            <h2 className="order-title">Оформлення замовлення</h2>
+            <h2 className="order-title">Order processing</h2>
             
             <div className="order-main">
                 <div className="order-form-block">
                     <form onSubmit={handleSubmit} className="order-form">
                         <div className="form-group">
-                            <label>Ім'я:</label>
+                            <label>Name:</label>
                             <input type="text" name="first_name" value={formData.first_name} onChange={handleInputChange} required />
                         </div>
                         <div className="form-group">
-                            <label>Прізвище:</label>
+                            <label>Surname:</label>
                             <input type="text" name="last_name" value={formData.last_name} onChange={handleInputChange} required />
                         </div>
                         <div className="form-group">
-                            <label>Адреса:</label>
+                            <label>Addres:</label>
                             <input type="text" name="address" value={formData.address} onChange={handleInputChange} required />
                         </div>
                         <div className="form-group">
-                            <label>Телефон:</label>
+                            <label>Phone number:</label>
                             <input type="tel" name="phone" value={formData.phone} onChange={handleInputChange} required />
                         </div>
                         <div className="form-group">
-                            <label>Спосіб оплати:</label>
+                            <label>Payment methods:</label>
                             <select name="payment_method" value={formData.payment_method} onChange={handleInputChange}>
-                                <option value="card">Оплата карткою</option>
-                                <option value="cash">Готівкою при отриманні</option>
+                                <option value="card">Card</option>
+                                <option value="cash">Cash</option>
                             </select>
                         </div>
                     </form>
                 </div>
 
                 <div className="order-summary-block">
-                    <h3>Ваше замовлення:</h3>
+                    <h3>Your order:</h3>
                     <ul className="order-items-list">
                         {cartItems.map(item => (
                             <li key={item.id} className="order-item">
                                 <img 
-                                    src={`http://localhost:8000${item.product_photo_url}`} // Змінено
-                                    alt={item.product_title} // Змінено
+                                    src={`http://localhost:8000${item.product_photo_url}`}
+                                    alt={item.product_title}
                                     className="order-item-img" 
                                 />
                                 <div className="order-item-details">
-                                    <span className="order-item-title">{item.product_title}</span> {/* Змінено */}
-                                    <span className="order-item-quantity">{item.quantity} шт.</span>
-                                    <span className="order-item-price">{(item.product_price * item.quantity).toFixed(2)}$</span> {/* Змінено */}
+                                    <span className="order-item-title">{item.product_title}</span> 
+                                    <span className="order-item-quantity">{item.quantity} thing</span>
+                                    <span className="order-item-price">{(item.product_price * item.quantity).toFixed(2)}$</span>
                                 </div>
                             </li>
                         ))}
                     </ul>
                     <div className="order-total-price">
-                        <span>Загальна сума:</span>
+                        <span>Total sum:</span>
                         <span>{totalAmount.toFixed(2)}$</span>
                     </div>
-                    <button type="submit" onClick={handleSubmit} className="order-submit-btn">Підтвердити замовлення</button>
+                    <button type="submit" onClick={handleSubmit} className="order-submit-btn">Confirm order </button>
                 </div>
             </div>
         </div>

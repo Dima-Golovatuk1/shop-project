@@ -5370,3 +5370,163 @@ TypeError: cart_item_delete() missing 1 required positional argument: 'item_id'
 [2025-09-25 13:02:16,990] INFO cart.views:24 — []
 [2025-09-25 13:02:16,992] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 51
 [2025-09-25 13:02:22,583] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 960
+[2025-09-25 14:13:09,802] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 14:13:14,628] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 5231
+[2025-09-25 14:13:20,155] WARNING django.request:253 — Not Found: /favicon.ico
+[2025-09-25 14:13:20,159] WARNING django.server:213 — "GET /favicon.ico HTTP/1.1" 404 3123
+[2025-09-25 14:13:20,570] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 14:13:20,570] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 14:13:24,611] INFO cart.views:24 — []
+[2025-09-25 14:13:24,626] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 58
+[2025-09-25 14:21:32,912] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 14:21:39,936] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 14:21:39,946] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 14:21:40,175] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:22:23,544] INFO django.utils.autoreload:667 — Watching for file changes with StatReloader
+[2025-09-25 14:22:31,497] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 14:22:31,506] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 14:22:31,592] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:23:27,657] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 14:23:27,668] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 14:23:27,699] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:24:15,045] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 14:24:15,052] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 14:24:15,084] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:28:15,618] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 14:28:15,638] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 14:28:15,680] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:28:40,762] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 14:28:40,773] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 14:28:40,828] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:34:54,310] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 14:34:54,338] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 14:34:54,346] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:35:23,482] INFO django.server:213 — "GET /products/api HTTP/1.1" 301 0
+[2025-09-25 14:35:23,501] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 14:35:23,522] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:35:23,577] INFO django.server:213 — "GET /media/catalog/photo_2025-06-17_19-04-21.jpg HTTP/1.1" 200 51047
+[2025-09-25 14:35:23,593] INFO django.server:213 — "GET /media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg HTTP/1.1" 200 127260
+[2025-09-25 14:36:39,561] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 14:36:39,586] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:36:41,673] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 333
+[2025-09-25 14:36:41,685] INFO cart.views:24 — []
+[2025-09-25 14:36:41,688] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 58
+[2025-09-25 14:36:43,228] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:36:55,887] INFO django.server:213 — "OPTIONS /user/login/ HTTP/1.1" 200 0
+[2025-09-25 14:36:56,400] INFO users.views:93 — user: maxx
+[2025-09-25 14:36:56,426] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 142
+[2025-09-25 14:36:56,831] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:36:56,832] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 14:36:58,866] INFO django.server:213 — "OPTIONS /user/profile/ HTTP/1.1" 200 0
+[2025-09-25 14:36:58,899] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 81
+[2025-09-25 14:39:50,180] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 14:39:50,180] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 81
+[2025-09-25 14:39:50,771] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 81
+[2025-09-25 14:39:50,773] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 14:40:07,432] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 81
+[2025-09-25 14:40:07,432] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 14:41:21,291] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 14:41:21,291] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 81
+[2025-09-25 14:41:23,150] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 81
+[2025-09-25 14:41:23,150] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 14:41:26,441] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 14:41:26,442] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 81
+[2025-09-25 14:41:28,303] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 40
+[2025-09-25 14:41:28,303] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 81
+[2025-09-25 14:43:05,867] INFO django.server:213 — "OPTIONS /user/logout/ HTTP/1.1" 200 0
+[2025-09-25 14:43:05,889] INFO django.server:213 — "GET /user/logout/ HTTP/1.1" 200 45
+[2025-09-25 14:43:05,933] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:43:07,201] WARNING django.request:253 — Unauthorized: /user/profile/
+[2025-09-25 14:43:07,217] WARNING django.server:213 — "GET /user/profile/ HTTP/1.1" 401 38
+[2025-09-25 14:43:09,718] WARNING django.request:253 — Unauthorized: /user/profile/
+[2025-09-25 14:43:09,722] WARNING django.server:213 — "GET /user/profile/ HTTP/1.1" 401 38
+[2025-09-25 14:43:09,734] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 14:43:14,619] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:43:22,260] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 23
+[2025-09-25 14:43:22,276] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:43:46,803] INFO django.server:213 — "OPTIONS /user/register/ HTTP/1.1" 200 0
+[2025-09-25 14:43:47,309] INFO django.server:213 — "POST /user/register/ HTTP/1.1" 201 116
+[2025-09-25 14:43:55,624] INFO users.views:93 — user: x
+[2025-09-25 14:43:55,631] INFO django.server:213 — "POST /user/login/ HTTP/1.1" 200 139
+[2025-09-25 14:43:55,953] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 14:43:55,953] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:43:56,579] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 78
+[2025-09-25 14:44:00,007] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:44:01,038] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 78
+[2025-09-25 14:44:04,043] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:44:04,719] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 78
+[2025-09-25 14:44:23,343] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:44:23,090] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-25 14:44:23,095] INFO cart.views:24 — []
+[2025-09-25 14:44:23,095] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 46
+[2025-09-25 14:44:24,089] INFO django.server:213 — "OPTIONS /cart/api/add/ HTTP/1.1" 200 0
+[2025-09-25 14:44:24,157] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 198
+[2025-09-25 14:44:34,505] INFO cart.views:24 — [{'id': 35, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}]
+[2025-09-25 14:44:34,508] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 201
+[2025-09-25 14:44:37,132] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-25 14:44:37,133] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 14:44:37,137] INFO cart.views:24 — [{'id': 35, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}]
+[2025-09-25 14:44:37,141] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 201
+[2025-09-25 14:44:38,211] INFO cart.views:24 — [{'id': 35, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}]
+[2025-09-25 14:44:38,216] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 201
+[2025-09-25 14:44:39,619] INFO cart.views:24 — [{'id': 35, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}]
+[2025-09-25 14:44:39,620] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 201
+[2025-09-25 14:44:42,304] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-25 14:44:42,313] INFO cart.views:24 — [{'id': 35, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}]
+[2025-09-25 14:44:42,315] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 201
+[2025-09-25 14:44:43,170] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:44:45,094] INFO django.server:213 — "GET /shop/search/?q=w HTTP/1.1" 200 595
+[2025-09-25 14:44:48,139] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:44:49,203] INFO django.server:213 — "GET /products/3/ HTTP/1.1" 200 337
+[2025-09-25 14:44:49,210] INFO cart.views:24 — [{'id': 35, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}]
+[2025-09-25 14:44:49,211] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 201
+[2025-09-25 14:44:51,060] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:44:51,882] INFO cart.views:24 — [{'id': 35, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}]
+[2025-09-25 14:44:51,884] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 201
+[2025-09-25 14:44:51,731] INFO cart.views:24 — [{'id': 35, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}]
+[2025-09-25 14:44:51,732] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 201
+[2025-09-25 14:44:54,400] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 78
+[2025-09-25 14:47:01,580] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 14:47:01,581] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 78
+[2025-09-25 14:47:02,766] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 78
+[2025-09-25 14:47:02,766] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 14:47:05,571] INFO cart.views:24 — [{'id': 35, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}]
+[2025-09-25 14:47:05,572] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 201
+[2025-09-25 14:47:07,108] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:47:08,059] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 78
+[2025-09-25 14:47:17,261] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:47:18,033] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 78
+[2025-09-25 14:47:58,087] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 14:47:58,088] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 78
+[2025-09-25 14:48:03,186] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 14:48:03,187] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 78
+[2025-09-25 14:48:46,065] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 78
+[2025-09-25 14:48:46,065] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 14:49:08,178] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:49:10,507] INFO django.server:213 — "GET /products/1/ HTTP/1.1" 200 333
+[2025-09-25 14:49:10,511] INFO cart.views:24 — [{'id': 35, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}]
+[2025-09-25 14:49:10,512] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 201
+[2025-09-25 14:49:11,483] INFO django.server:213 — "POST /cart/api/add/ HTTP/1.1" 200 345
+[2025-09-25 14:49:12,349] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 14:49:13,089] INFO cart.views:24 — [{'id': 35, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}, {'id': 36, 'quantity': 1, 'product_id': 1, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-25 14:49:13,090] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 348
+[2025-09-25 14:49:15,307] INFO cart.views:24 — [{'id': 35, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}, {'id': 36, 'quantity': 1, 'product_id': 1, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-25 14:49:15,308] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 348
+[2025-09-25 14:53:27,935] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 14:53:27,941] INFO cart.views:24 — [{'id': 35, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}, {'id': 36, 'quantity': 1, 'product_id': 1, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-25 14:53:27,942] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 348
+[2025-09-25 14:57:24,461] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 14:57:24,465] INFO cart.views:24 — [{'id': 35, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}, {'id': 36, 'quantity': 1, 'product_id': 1, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-25 14:57:24,466] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 348
+[2025-09-25 14:58:21,695] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 14:58:21,701] INFO cart.views:24 — [{'id': 35, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}, {'id': 36, 'quantity': 1, 'product_id': 1, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-25 14:58:21,703] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 348
+[2025-09-25 14:58:55,250] INFO django.server:213 — "OPTIONS /orders/create/ HTTP/1.1" 200 0
+[2025-09-25 14:58:55,262] WARNING django.request:253 — Not Found: /orders/create/
+[2025-09-25 14:58:55,263] WARNING django.server:213 — "POST /orders/create/ HTTP/1.1" 404 3133
+[2025-09-25 14:59:26,541] INFO django.server:213 — "GET /user/api/check-auth/ HTTP/1.1" 200 37
+[2025-09-25 14:59:26,549] INFO cart.views:24 — [{'id': 35, 'quantity': 1, 'product_id': 3, 'product_title': 'Arbuz', 'product_photo_url': '/media/catalog/photo_2025-06-24_19-26-47_vPQ1Hqk.jpg', 'product_price': 69}, {'id': 36, 'quantity': 1, 'product_id': 1, 'product_title': 'tadwa', 'product_photo_url': '/media/catalog/photo_2025-06-17_19-04-21.jpg', 'product_price': 3}]
+[2025-09-25 14:59:26,551] INFO django.server:213 — "GET /cart/ HTTP/1.1" 200 348
+[2025-09-25 15:00:41,681] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
+[2025-09-25 15:00:47,458] INFO django.server:213 — "GET /user/profile/ HTTP/1.1" 200 78
+[2025-09-25 15:00:49,868] INFO django.server:213 — "GET /products/api/ HTTP/1.1" 200 778
