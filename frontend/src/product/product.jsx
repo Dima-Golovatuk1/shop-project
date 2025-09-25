@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "./product.css";
 
 function Product() {
@@ -8,6 +8,7 @@ function Product() {
     const [product, setProduct] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [isInCart, setIsInCart] = useState(false);
 
     function getCookie(name) {
         let cookieValue = null;
@@ -26,8 +27,8 @@ function Product() {
 
     const csrfToken = getCookie("csrftoken");
 
-
     function submitAddCart(e) {
+        e.preventDefault();
         const data = {
             product_id: id,
         };
@@ -36,48 +37,69 @@ function Product() {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "X-CSRFToken": csrfToken
+                "X-CSRFToken": csrfToken,
             },
             body: JSON.stringify(data),
             credentials: "include",
         })
-            .then((res) => res.json())
-            .then((data) => {
-                console.log("Server Response:", data);
+            .then((res) => {
+                if (!res.ok) {
+                    throw new Error(`HTTP error! status: ${res.status}`);
+                }
+                return res.json();
             })
-            .catch((err) => console.error("Error:", err));
+            .then(() => {
+                console.log("Product added to cart successfully.");
+                setIsInCart(true);
+            })
+            .catch((err) => {
+                console.error("Error adding product to cart:", err);
+                setError("Error adding product to cart.");
+            });
     }
 
     useEffect(() => {
-        const API_URL = `http://localhost:8000/products/${id}/`;
-
-        async function fetchProduct() {
+        const fetchAllData = async () => {
+            setIsLoading(true);
             try {
-                const response = await fetch(API_URL);
+                const [productResponse, cartResponse] = await Promise.all([
+                    fetch(`http://localhost:8000/products/${id}/`),
+                    fetch("http://localhost:8000/cart/", {
+                        method: "GET",
+                        credentials: "include",
+                    }),
+                ]);
 
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
+                if (!productResponse.ok || !cartResponse.ok) {
+                    throw new Error("Failed to fetch data.");
                 }
 
-                const data = await response.json();
-                console.log("Data:", data);
-                setProduct(data.products);
+                const productData = await productResponse.json();
+                const cartData = await cartResponse.json();
+
+                setProduct(productData.products);
+
+                const productInCart = (cartData.products || []).some(
+                    (item) => parseInt(item.id) === parseInt(id)
+                );
+                setIsInCart(productInCart);
+
                 setError(null);
             } catch (e) {
-                setError("Error while downloading product");
-                console.error("Error:", e);
+                console.error("Error during data fetching:", e);
+                setError("An error occurred while loading data.");
             } finally {
                 setIsLoading(false);
             }
-        }
+        };
 
-        fetchProduct();
+        fetchAllData();
     }, [id]);
 
     if (isLoading) {
         return (
             <div className="text-center mt-8 text-xl font-semibold">
-                Downloading...
+                Завантаження...
             </div>
         );
     }
@@ -85,6 +107,14 @@ function Product() {
     if (error) {
         return (
             <div className="text-center mt-8 text-red-500 font-semibold">{error}</div>
+        );
+    }
+
+    if (!product) {
+        return (
+            <div className="text-center mt-8 text-gray-500">
+                Товар не знайдено.
+            </div>
         );
     }
 
@@ -102,9 +132,15 @@ function Product() {
                         <p className="product__text-description">{product.description}</p>
                         <div className="product__div-buy">
                             <p className="product__text-price">{product.price}$</p>
-                            <button onClick={submitAddCart} className="product__btn">
-                                Buy
-                            </button>
+                            {isInCart ? (
+                                <div className="product__in-cart-text">
+                                    В кошику
+                                </div>
+                            ) : (
+                                <button onClick={submitAddCart} className="product__btn">
+                                    Купити
+                                </button>
+                            )}
                         </div>
                     </div>
                 </div>
