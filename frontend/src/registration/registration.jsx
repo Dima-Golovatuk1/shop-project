@@ -46,6 +46,7 @@ function Registration({ setActivRegistrationForm, setActivLoginForm }) {
 
     return (
         <>
+        <br></br>
             <div className="backdrop-registration"></div>
             <div className="registration">
                 <button onClick={closeForm} className="registration__close-btn">
