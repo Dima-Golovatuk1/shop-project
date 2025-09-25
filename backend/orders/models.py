@@ -4,7 +4,7 @@ from django.utils.timezone import now
 from products.models import Product
 from backend.settings import AUTH_USER_MODEL
 
-# Create your models here.
+import time
 
 
 class Order(models.Model):
