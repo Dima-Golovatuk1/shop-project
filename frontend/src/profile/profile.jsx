@@ -142,7 +142,7 @@ const UserProfile = ({ setActivLoginForm }) => {
               <span className="info-icon email-icon">📧</span>
               <div>
                 <label className="info-label">Email</label>
-                <p className="info-value">{user.emawil}</p>
+                <p className="info-value">{user.email}</p>
               </div>
             </div>
 
