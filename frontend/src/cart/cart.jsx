@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
+import { useNavigate  } from "react-router-dom";
 import "./cart.css";
 
 function Cart({ setActivCart, activCart }) {
     const [products, setProducts] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
+    const navigate = useNavigate();
 
     function getCookie(name) {
         let cookieValue = null;
@@ -118,6 +120,11 @@ function Cart({ setActivCart, activCart }) {
             });
     }
 
+    function onBuy(){
+        navigate('/order');
+        setActivCart(false);
+    }
+
     useEffect(() => {
         const API_URL = "http://localhost:8000/cart/";
 
@@ -224,7 +231,7 @@ function Cart({ setActivCart, activCart }) {
                     )}
                 </ul>
                 <p className="cart__text">Total price: {totalPrice}$</p>
-                <button className="cart__btn">Buy</button>
+                <button onClick={onBuy} className="cart__btn">Buy</button>
             </section>
         </>
     );

@@ -8,6 +8,7 @@ import Cart from "./cart/cart";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import UserProfile from './profile/profile' 
 import Search from "./search/search";
+import Order from "./order/order";
 
 function App() {
     const [activRegistrationForm, setActivRegistrationForm] = useState(false);
@@ -59,6 +60,8 @@ function App() {
                     <Route path="/search" element={<Search />}/>
 
                     <Route path="/profile" element={<UserProfile />} />
+
+                    <Route path="/order" element={<Order />} />
                 </Routes>
             </main>
         </BrowserRouter>
