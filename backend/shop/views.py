@@ -39,6 +39,14 @@ def index(request):
 @api_view(['GET'])
 def search(request):
     try:
+        
+        categories = Category.objects.all()
+        sub_categories = SubCategory.objects.all()
+        
+        category_serializer = CategorySerializer(categories, many=True)
+        sub_category_serializer = SubCategorySerializer(sub_categories, many=True)
+        
+        
         query = request.GET.get('q') or None
         description = request.GET.get('d') or None
         price = request.GET.get('p') or None
@@ -73,10 +81,12 @@ def search(request):
             'message': f"Searched products: {len(product_ids)} found.",
             'product_ids': product_ids,
             'products': products_serializer.data,
+            "categories": category_serializer.data,
+            "sub_categories": sub_category_serializer.data,
             'filters': { 
                 'query': query,
                 'description': description,
-                'price': price,
+                'price': price, 
                 'category': category,
                 'sub_category': sub_category
             }

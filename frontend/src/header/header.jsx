@@ -36,7 +36,6 @@ function Header({ setActivLoginForm , dataAuthenticated, setActivCart}) {
     navigate(`/search?q=${encodeURIComponent(searchValue.trim())}`);
   }
 
-
   function userClick() {
     if (dataAuthenticated){
       navigate('/profile'); 
@@ -62,11 +61,22 @@ function Header({ setActivLoginForm , dataAuthenticated, setActivCart}) {
                   </svg>
                 </button>
               </li>
+
+              <li className="header__nav__item">
+                <button onClick={homeClick} className="header__nav__item__button">
+                  <svg className="header__nav__item__button__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    <polyline points="9,22 9,12 15,12 15,22"/>
+                  </svg>
+                </button>
+              </li>
+
               <li className="header__nav__item">
                 <form onSubmit={onSearchProduct} className="header__nav__item__form">
                   <input
                     className="header__nav__item__form__input"
                     type="text"
+                    placeholder="Search..."
                     value={searchValue}
                     onChange={(e) => setSearchValue(e.target.value)}
                   />
