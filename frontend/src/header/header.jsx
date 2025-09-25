@@ -36,7 +36,6 @@ function Header({ setActivLoginForm , dataAuthenticated, setActivCart}) {
     navigate(`/search?q=${encodeURIComponent(searchValue.trim())}`);
   }
 
-
   function userClick() {
     if (dataAuthenticated){
       navigate('/profile'); 
@@ -45,14 +44,13 @@ function Header({ setActivLoginForm , dataAuthenticated, setActivCart}) {
     }
   }
 
-
   return (
     <>
       <header>
         <div className="container">
           <nav className="header__nav">
             <ul className="header__nav__list">
-              <li className="header__nav__item">
+              <li className="header__nav__item header__nav__item--burger">
                 <button
                   onClick={onClickBurger}
                   id="header-burger"
@@ -63,11 +61,22 @@ function Header({ setActivLoginForm , dataAuthenticated, setActivCart}) {
                   </svg>
                 </button>
               </li>
+
+              <li className="header__nav__item">
+                <button onClick={homeClick} className="header__nav__item__button">
+                  <svg className="header__nav__item__button__svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    <polyline points="9,22 9,12 15,12 15,22"/>
+                  </svg>
+                </button>
+              </li>
+
               <li className="header__nav__item">
                 <form onSubmit={onSearchProduct} className="header__nav__item__form">
                   <input
                     className="header__nav__item__form__input"
                     type="text"
+                    placeholder="Search..."
                     value={searchValue}
                     onChange={(e) => setSearchValue(e.target.value)}
                   />
@@ -76,7 +85,8 @@ function Header({ setActivLoginForm , dataAuthenticated, setActivCart}) {
                   </button>
                 </form>
               </li>
-              <li className="header__nav__item">
+
+              <li className="header__nav__item header__nav__item--desktop">
                 <button
                   onClick={onCloseCart}
                   className="header__nav__item__button"
@@ -86,7 +96,8 @@ function Header({ setActivLoginForm , dataAuthenticated, setActivCart}) {
                   </svg>
                 </button>
               </li>
-              <li className="header__nav__item">
+
+              <li className="header__nav__item header__nav__item--desktop">
                 <button onClick={userClick} className="header__nav__item__button">
                   <svg className="header__nav__item__button__svg">
                     <use href="../../public/img/svg/symbol-defs.svg#icon-user"></use>
@@ -118,10 +129,14 @@ function Header({ setActivLoginForm , dataAuthenticated, setActivCart}) {
                 <Link to={`/`}>Catalog</Link>
               </li>
               <li className="aside__nav__item">
-                                <button
-                  onClick={onCloseCart}
-                  className="header__nav__item__button"
-                >Cart</button>
+                <button onClick={onCloseCart}>
+                  Cart
+                </button>
+              </li>
+              <li className="aside__nav__item">
+                <button onClick={userClick}>
+                  {dataAuthenticated ? 'Profile' : 'Login'}
+                </button>
               </li>
             </ul>
           </nav>
