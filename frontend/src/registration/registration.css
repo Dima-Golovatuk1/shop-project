@@ -1,0 +1,402 @@
+:root {
+  --lime-primary: #84cc16;
+  --lime-light: #a3e635;
+  --lime-ultra-light: #ecfccb;
+  --lime-soft: #f7fee7;
+  --green-primary: #16a34a;
+  --green-light: #22c55e;
+  --green-ultra-light: #dcfce7;
+  --green-soft: #f0fdf4;
+  --white-pure: #ffffff;
+  --white-soft: #fefefe;
+  --text-green: #166534;
+  --text-lime: #365314;
+  --error-red: #dc2626;
+  --success-green: #059669;
+}
+
+.backdrop-registration {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--white-pure) 0%, var(--lime-soft) 30%, var(--green-soft) 70%, var(--white-pure) 100%);
+  opacity: 1;
+  backdrop-filter: blur(8px);
+}
+
+.backdrop-registration::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, var(--lime-ultra-light) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, var(--green-ultra-light) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, var(--lime-soft) 0%, transparent 40%);
+  opacity: 0.6;
+}
+
+.backdrop-registration::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: 
+    conic-gradient(from 0deg at 50% 50%, 
+      transparent 0deg, 
+      var(--lime-ultra-light) 45deg,
+      var(--green-ultra-light) 90deg, 
+      transparent 135deg,
+      var(--lime-soft) 180deg,
+      transparent 225deg,
+      var(--green-soft) 270deg,
+      transparent 315deg,
+      transparent 360deg);
+  opacity: 0.2;
+}
+
+.registration__close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: var(--white-pure);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 
+    0 4px 12px rgba(132, 204, 22, 0.1),
+    0 2px 6px rgba(22, 163, 74, 0.05);
+  z-index: 10;
+}
+
+.registration__close-btn:hover {
+  background: var(--lime-ultra-light);
+  transform: scale(1.1);
+  box-shadow: 
+    0 8px 25px rgba(132, 204, 22, 0.15),
+    0 4px 12px rgba(22, 163, 74, 0.1);
+}
+
+.registration__close-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--text-green);
+  transition: all 0.3s ease;
+}
+
+.registration__close-btn:hover svg {
+  fill: var(--lime-primary);
+}
+
+.registration {
+  overflow: hidden;
+  width: 450px;
+  min-height: 650px;
+  background: var(--white-pure);
+  z-index: 6;
+  padding: 3rem 2.5rem;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 32px;
+  box-shadow: 
+    0 25px 50px rgba(132, 204, 22, 0.1),
+    0 10px 25px rgba(22, 163, 74, 0.08),
+    0 0 0 1px rgba(132, 204, 22, 0.1);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  opacity: 1;
+}
+
+.registration::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(135deg, var(--lime-light) 0%, var(--green-light) 100%);
+  border-radius: 35px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.registration::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg, 
+    var(--lime-ultra-light) 0%, 
+    transparent 30%,
+    transparent 70%,
+    var(--green-ultra-light) 100%
+  );
+  opacity: 0.3;
+  pointer-events: none;
+  border-radius: 32px;
+}
+
+.registration__title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: var(--text-green);
+  position: relative;
+  background: linear-gradient(135deg, var(--lime-primary) 0%, var(--green-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 1;
+}
+
+.registration__title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--lime-primary) 0%, var(--green-primary) 100%);
+  border-radius: 2px;
+  opacity: 1;
+}
+
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.registration__label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  font-weight: 600;
+  color: var(--text-green);
+  font-size: 0.95rem;
+  opacity: 1;
+}
+
+.registration__input {
+  border: 2px solid var(--lime-ultra-light);
+  border-radius: 16px;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-green);
+  background: var(--white-pure);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(132, 204, 22, 0.05);
+  position: relative;
+}
+
+.registration__input::placeholder {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.registration__input:focus {
+  outline: none;
+  border: 2px solid var(--lime-primary);
+  background: var(--lime-soft);
+  box-shadow: 
+    0 0 0 4px rgba(132, 204, 22, 0.1),
+    0 4px 16px rgba(132, 204, 22, 0.15);
+  transform: translateY(-2px);
+}
+
+.registration__input:hover {
+  border-color: var(--lime-light);
+  box-shadow: 0 4px 12px rgba(132, 204, 22, 0.1);
+}
+
+.registration__form__btn {
+  width: 240px;
+  color: var(--white-pure);
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, var(--lime-primary) 0%, var(--green-primary) 100%);
+  border: none;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 
+    0 8px 25px rgba(132, 204, 22, 0.2),
+    0 4px 12px rgba(22, 163, 74, 0.15);
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+  opacity: 1;
+}
+
+.registration__form__btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.registration__form__btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: linear-gradient(135deg, var(--lime-light) 0%, var(--green-light) 100%);
+  box-shadow: 
+    0 15px 35px rgba(132, 204, 22, 0.25),
+    0 8px 20px rgba(22, 163, 74, 0.2);
+}
+
+.registration__form__btn:hover::before {
+  left: 100%;
+}
+
+.registration__form__btn:active {
+  transform: translateY(-2px) scale(1.02);
+}
+
+.registration__form__text {
+  position: relative;
+  font-weight: 600;
+  color: var(--text-green);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  opacity: 1;
+}
+
+.registration__form__text::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--lime-primary) 0%, var(--green-primary) 100%);
+  border-radius: 1px;
+  transition: width 0.3s ease;
+}
+
+.registration__form__text:hover {
+  color: var(--lime-primary);
+  transform: translateY(-2px);
+  background: var(--lime-ultra-light);
+}
+
+.registration__form__text:hover::after {
+  width: 80%;
+}
+
+@media (max-width: 600px) {
+  .registration {
+    width: 340px;
+    min-height: 600px;
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
+
+  .registration__title {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .registration__input {
+    padding: 0.875rem 1.25rem;
+  }
+
+  .registration__form__btn {
+    width: 200px;
+    padding: 0.875rem 1.5rem;
+  }
+
+  .registration__form {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .registration {
+    width: 300px;
+    padding: 1.5rem 1rem;
+  }
+
+  .registration__title {
+    font-size: 2rem;
+  }
+
+  .registration__close-btn {
+    width: 35px;
+    height: 35px;
+    right: 15px;
+    top: 15px;
+  }
+
+  .registration__close-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.registration__input.error {
+  border-color: var(--error-red);
+  background: #fef2f2;
+  box-shadow: 
+    0 0 0 4px rgba(220, 38, 38, 0.1),
+    0 4px 16px rgba(220, 38, 38, 0.15);
+}
+
+.registration__input.success {
+  border-color: var(--success-green);
+  background: var(--green-ultra-light);
+  box-shadow: 
+    0 0 0 4px rgba(5, 150, 105, 0.1),
+    0 4px 16px rgba(5, 150, 105, 0.15);
+}
+
+.registration__form__btn.loading {
+  pointer-events: none;
+  opacity: 0.7;
+  position: relative;
+}
+
+.registration__form__btn.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+}

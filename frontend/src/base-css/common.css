@@ -1,0 +1,44 @@
+:root {
+    /* Light */
+    --main-color: #0C5AA6;
+    --secondary-color: #100B6C;
+    --button-color: #003e28;
+    --button-color-hover: #005d3c;
+    --card-color: #053564;
+    --text-color: #acd7ff;
+    --text-color-hover: #ffffff;
+    --hover-card: #006843;
+    /* Dark */
+}
+
+
+.container{
+    width: calc(100% - (20px + 18px));
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* mobile 480px */
+@media screen and (min-width: 480px) {
+    .container{
+        width: calc(480px - (20px + 18px));
+    }
+}
+
+
+/* tablet 768px */
+@media screen and (min-width: 768px) {
+    .container{
+        width: calc(768px - (20px + 18px));
+    }
+}
+
+
+/* desctop 1200px */
+@media screen and (min-width: 1200px) {
+    .container{
+        width: calc(1200px - (20px + 18px));
+    }
+}
